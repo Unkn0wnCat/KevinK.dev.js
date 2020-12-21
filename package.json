@@ -1,0 +1,39 @@
+{
+  "name": "kevin-k.dev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KevinK.dev",
+  "author": "Kevin Kandlbinder",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/plugin-transform-typescript": "^7.12.1",
+    "babel-plugin-i18next-extract": "^0.8.2",
+    "gatsby": "^2.26.1",
+    "gatsby-plugin-manifest": "^2.9.0",
+    "gatsby-plugin-offline": "^3.7.0",
+    "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby-plugin-react-i18next": "0.0.27",
+    "gatsby-plugin-robots-txt": "^1.5.3",
+    "gatsby-plugin-sass": "^2.8.0",
+    "gatsby-plugin-sharp": "^2.11.1",
+    "gatsby-plugin-sitemap": "^2.9.0",
+    "i18next": "^19.8.4",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.8.4"
+  }
+}

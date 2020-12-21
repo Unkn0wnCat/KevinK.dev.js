@@ -1,0 +1,146 @@
+@import "../variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body, html, #___gatsby, #gatsby-focus-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+#gatsby-focus-wrapper {
+    background: $background;
+    color: $textColor;
+    transition: background .25s, color .25s;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background: #000710;
+    width: 100%;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline dotted currentColor;
+}
+
+#content {
+    /*min-height: calc(100vh - 26px);*/
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.topBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background: #000710;
+    z-index: 999;
+    transition: background .25s;
+}
+
+.homeBar.homeBarTransparent {
+    background: transparent;
+}
+
+.topBarInner {
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.topBar a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    /*text-decoration: underline dotted white;*/
+    text-decoration: none;
+    border-top: 2px solid transparent;
+}
+
+.topBar a:hover {
+    border-color: rgba(255, 255, 255, .25);
+}
+
+.topBar a.active {
+    border-color: white;
+}
+
+.flexSpacer {
+    flex-grow: 1;
+    text-align: center;
+}
+
+section > div:not(.profile), section > article, .section > div:not(.profile), .section > article {
+    max-width: $layoutWidth;
+    width: 100%;
+    padding: 39px 20px;
+    margin: 0 auto;
+}
+
+article p {
+    text-align: justify;
+}
+
+article h1, section > div > h1 {
+    font-size: 2em;
+}
+
+article a {
+    color: $accentColor;
+    text-decoration: underline dotted currentColor;
+    text-decoration-skip: none;
+}.languageModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity .25s;
+    -moz-transition: opacity .25s;
+    -ms-transition: opacity .25s;
+    -o-transition: opacity .25s;
+    transition: opacity .25s;
+}
+
+.languageModal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.languageModalInner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: black;
+    font-family: 'Anonymous Pro', monospace;
+    padding: 20px;
+    border-radius: 5px;
+}
+.languageModalInner a {
+    color: white;
+    text-decoration-style: dotted;
+}
+
+.modalCloseLink {
+    text-decoration: none;
+}
