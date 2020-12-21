@@ -27,11 +27,12 @@ query GetProject($urlname: String!, $lang: String!) {
 `
 
 export default function ProjectTemplate({data}) {
+  const {t} = useTranslation();
   let project = data.allProjectsJson.nodes[0];
   let projectName = project.name;
 
     return (
-        <Layout>
+        <Layout description={project.shortDescription} title={t("project")+": "+projectName}>
           <section className={styles.projectHeader}>
             <div>
               <div className={styles.headerBackground} style={{backgroundImage: "url("+project.image.publicURL+")"}}></div> 
