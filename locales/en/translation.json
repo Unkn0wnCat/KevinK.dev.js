@@ -4,6 +4,7 @@
     "datasec": "Data Protection",
     "disclaimer": "Disclaimer",
     "projects": "Projects",
+    "project": "Project",
     "social": "Social",
     "homeHello": "Hello, I am",
     "homeMe": "I am",
@@ -15,5 +16,10 @@
     "donationCatchphrase": "Like what you're seeing? Consider donating.",
     "homeImageCredit": "Portrait taken by Jannik Kiel",
     "de": "German",
-    "en": "English"
+    "en": "English",
+    "projectAboutHeader": "About {{projectName}}",
+    "projectViewGitHub": "View on GitHub",
+    "projectViewWebsite": "View Project-Website",
+    "projectsDescription": "This is what I am working on or have worked on.",
+    "projectView": "View"
 }

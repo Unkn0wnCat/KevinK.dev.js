@@ -1,0 +1,127 @@
+@import "../variables";
+
+.projectList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.projectCard {
+    background: $background;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 15px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: calc(100% / 4);
+    box-shadow: -1px 11px 33px -10px rgba(127,127,127,0.3);
+    max-width: 300px;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.projectCard:hover {
+    transform: scale(1.05);
+    box-shadow: -1px 11px 33px -10px rgba(127,127,127,0.4);
+}
+
+@media(max-width: 800px) {
+    .projectCard {
+        width: calc((100% / 2) - 30px);
+    }
+}
+
+@media(max-width: 500px) {
+    .projectCard {
+        width: 100%;
+    }
+}
+
+.projectCardActivityIndicator {
+    position: absolute;
+    margin: 12px;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.activityIndicatorGreen {
+    background: #26de81;
+}
+
+.activityIndicatorYellow {
+    background: #f7b731;
+}
+
+.activityIndicatorRed {
+    background: #fc5c65;
+}
+
+.activityIndicatorBlue {
+    background: #45aaf2;
+}
+
+.projectCardImage {
+    display: block;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+
+.projectCardMeta {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.projectCardTitle {
+    display: block;
+    font-size: 1.2em;
+}
+
+.projectCardCTA {
+    display: block;
+}
+
+.projectCardCTA a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: var(--accent-color);
+    color: white;
+    text-decoration: none;
+}
+
+.projectCardCTAContainer {
+    display: flex;
+}
+
+@media(max-width: 900px) {
+    .projectCardCTAContainer {
+        flex-direction: column;
+    }
+
+    .projectCardCTA:nth-child(2) {
+        border-left: none;
+    }
+
+
+}
+
+.projectCardCTAContainer > * {
+    flex-grow: 1;
+}
+
+.projectCardCTA {
+    display: block;
+}
+
+.projectCardCTA a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: $accentColor;
+    color: white;
+    text-decoration: none;
+}

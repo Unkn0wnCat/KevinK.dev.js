@@ -6,6 +6,13 @@ module.exports = {
       },
     plugins: [
         `gatsby-plugin-sharp`,
+        `gatsby-transformer-json`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `./content/`,
+            },
+        },
         `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-manifest`,
@@ -45,7 +52,14 @@ module.exports = {
                 },
                 keySeparator: false,
                 nsSeparator: false
-              }
+              },
+              pages: [
+                  {
+                      matchPath: '/:lang/projects/:urlname',
+                      getLanguageFromPath: true,
+                      excludeLanguages: ['en', 'de']
+                  }
+              ]
             }
           }
     ]
