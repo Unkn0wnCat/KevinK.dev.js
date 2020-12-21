@@ -1,7 +1,6 @@
 module.exports = {
     siteMetadata: {
         title: `KevinK.dev`,
-        description: `Hallo, ich bin Kevin Kandlbinder, ein Entwickler und Hobby-Fotograf aus Norddeutschland.`,
         author: `@Unkn0wnKevin`,
         siteUrl: `https://kevink.dev`,
       },
@@ -25,7 +24,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-offline`,
             options: {
-                precachePages: ["/", "/projects", "/projects/*", "/social", "/social/*"],
+                precachePages: ["/en", "/de"],
                 workboxConfig: {
                 globPatterns: ['**/*']
                 }

@@ -2,15 +2,16 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "gatsby-plugin-react-i18next"
 import { useStaticQuery, graphql } from "gatsby"
+import {useTranslation} from 'gatsby-plugin-react-i18next';
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, meta, title }) {
+  const {t} = useTranslation();
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
-            description
             author
           }
         }
@@ -18,7 +19,7 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || t("siteDescription");
 
   return (
     <Helmet
