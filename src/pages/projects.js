@@ -5,7 +5,7 @@ import { Trans, Link, useI18next } from "gatsby-plugin-react-i18next"
 import styles from "./projects.module.scss";
 
 export const query = graphql`
-query GetProjects($language: String!) {
+query GetProjects($language: String) {
   allProjectsJson(filter: {lang: {eq: $language}}) {
     nodes {
       lang
