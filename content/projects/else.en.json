@@ -1,0 +1,10 @@
+{
+    "urlname": "else",
+    "lang": "en",
+    "name": "Student Newspaper \"ELSE\"",
+    "shortDescription": "A news-site for the my schools school paper.",
+    "links": {
+        "website": "https://schuelerzeitung-elsensee.de"
+    },
+    "image": "../images/ELSE.png"
+}

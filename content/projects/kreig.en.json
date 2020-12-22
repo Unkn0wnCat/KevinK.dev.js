@@ -1,0 +1,11 @@
+{
+    "urlname": "kreig",
+    "lang": "en",
+    "name": "KREIG.de",
+    "shortDescription": " A simple but nice gaming website. ",
+    "longDescription": "Video games are a big part of today's society. Competitive or just for fun: Almost everyone has some contact with video games. I am no different to that and for my gaming clan I've created this site, which combines a modern design with the feeling of classical gaming sites on the early web.",
+    "links": {
+        "website": "https://kreig.de"
+    },
+    "image": "../images/KREIG.de.jpg"
+}
