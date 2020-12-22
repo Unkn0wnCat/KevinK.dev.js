@@ -1,8 +1,11 @@
+const extConfig = require("./config")
+
 module.exports = {
     siteMetadata: {
-        title: `KevinK.dev`,
-        author: `@Unkn0wnKevin`,
-        siteUrl: `https://kevink.dev`,
+        title: extConfig.siteName,
+        author: extConfig.siteAuthor,
+        siteUrl: extConfig.siteURL,
+        keywords: extConfig.siteKeywords
       },
     plugins: [
         `gatsby-plugin-sharp`,
@@ -17,13 +20,13 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `KevinK.dev`,
-                short_name: `KevinK.dev`,
+                name: extConfig.siteName,
+                short_name: extConfig.siteName,
                 start_url: `/`,
                 background_color: `#000710`,
                 theme_color: `#000710`,
                 display: `minimal-ui`,
-                icon: `src/images/fullbglogo@10x.png`, // This path is relative to the root of the site.
+                icon: extConfig.iconPath, // This path is relative to the root of the site.
                 cache_busting_mode: 'none',
             },
         },
@@ -43,7 +46,7 @@ module.exports = {
             resolve: `gatsby-plugin-react-i18next`,
             options: {
               path: `${__dirname}/locales`,
-              languages: [`en`, `de`],
+              languages: extConfig.languages,
               defaultLanguage: null,
               siteURL: "https://kevink.dev",
               i18nextOptions: {
@@ -57,7 +60,7 @@ module.exports = {
                   {
                       matchPath: '/:lang/projects/:urlname',
                       getLanguageFromPath: true,
-                      excludeLanguages: ['en', 'de']
+                      excludeLanguages: extConfig.languages
                   }
               ]
             }

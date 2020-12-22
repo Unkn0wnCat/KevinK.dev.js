@@ -13,6 +13,7 @@ function SEO({ description, meta, title }) {
           siteMetadata {
             title
             author
+            keywords
           }
         }
       }
@@ -60,7 +61,7 @@ function SEO({ description, meta, title }) {
         },
         {
             name: "keywords",
-            content: "Kevin Kandlbinder, Kevin, Kandlbinder, Web, Web Developer, Developer, JavaScript, PHP, Java, Photos, Fotos"
+            content: site.siteMetadata.keywords
         }
       ].concat(meta)} 
     >
