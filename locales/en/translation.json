@@ -21,5 +21,9 @@
     "projectViewGitHub": "View on GitHub",
     "projectViewWebsite": "View Project-Website",
     "projectsDescription": "This is what I am working on or have worked on.",
-    "projectView": "View"
+    "projectView": "View",
+    "socialDescriptionWithLink": "Find me on other platforms or <1>visit my friends</1>!",
+    "socialDescription": "Find me on other platforms!",
+    "friends": "Friends",
+    "friendsDescription": "In this list you can find friends of mine and this site. Feel free to check them out for more interesting projects."
 }

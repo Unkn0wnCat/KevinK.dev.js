@@ -1,17 +1,51 @@
 import React from "react"
 import Layout from "../layouts/default";
 import { Trans, Link, useI18next } from "gatsby-plugin-react-i18next"
+import { graphql } from 'gatsby'
 
-export default function SocialPage() {
+import styles from "./social.module.scss";
+
+export const query = graphql`
+query AllSocialsQuery {
+    allSocialsJson {
+      nodes {
+        image
+        platformHandle
+        platformName
+        url
+      }
+    }
+  }  
+`
+
+export default function SocialPage({data}) {
     
     const {t} = useI18next();
     return (
-        <Layout module="social" title={t("social")}>
+        <Layout module="social" title={t("social")} description={t("socialDescription")}>
             <section>
-                <div>
+                <article>
                     <h1><Trans>social</Trans></h1>
 
-                </div>
+                    <p><Trans i18nKey="socialDescriptionWithLink">socialDescriptionWith<Link to="/friends">Link</Link></Trans></p>
+
+                    <div className={styles.socialList}>
+                        {
+                            data.allSocialsJson.nodes.map((social) => {
+                                return (
+                                    <a className={styles.socialCard} href={social.url}>
+                                        <div className={styles.socialImage} style={{backgroundImage: "url("+social.image+")"}}>
+                                            <span className={styles.socialName}>{social.platformName}</span>
+                                            <span className={styles.socialUsername}>{social.platformHandle}</span>
+                                        </div>
+                                    </a>
+                                );
+                            })
+                        }
+                    </div>
+
+                    {/*<pre>{JSON.stringify(data, null, 2)}</pre>*/}
+                </article>
             </section>
         </Layout>
     );

@@ -1,0 +1,45 @@
+@import "../variables";
+
+.socialList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.socialCard {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -1px 11px 33px -10px rgba(127,127,127,0.3);
+    transition: transform .25s;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.socialImage {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    padding: 10px;
+    flex-direction: column-reverse;
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 20px black;
+}
+
+.socialName {
+    font-size: 2em;
+    margin-top: -5px;
+}
+
+.socialUsername {
+    margin-top: auto;
+}
+
+.socialCard:hover, .socialCard:focus {
+    transform: scale(1.05);
+}
