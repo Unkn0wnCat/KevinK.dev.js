@@ -1,7 +1,6 @@
 // For more information, see https://fab.dev/kb/configuration
 {
   plugins: {
-    './src/server/languageRedirect.js': {},
     '@fab/input-static': {
       dir: 'public'
     },
