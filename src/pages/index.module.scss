@@ -9,6 +9,10 @@
     overflow: hidden;
     background: radial-gradient(ellipse at top left, #1f0ba659, transparent), radial-gradient(ellipse at bottom right, #4a086829, transparent);
 
+    @media(pointer: coarse), (pointer: none) {
+        min-height: 700px;
+    }
+
     .profile {
         position: relative;
         left: 50%;
@@ -16,6 +20,8 @@
         max-width: 600px;
         max-height: 400px;
         transform: translate(-50%, 0%);
+
+
 
     
 
@@ -26,8 +32,6 @@
         &:hover .profileImageDummy {
             transform: translate(-3px, 3px);
         }
-
-        
     
         .hello {
             font-weight: 100;
@@ -58,6 +62,11 @@
             text-decoration: underline dotted rgba(0, 0, 0, 0);
             padding: 6px 0 6px 25px;
             color: $textColor;
+
+            @media(pointer: coarse), (pointer: none) {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
         }
         
         .contactLink:hover, .contactLink:active {
