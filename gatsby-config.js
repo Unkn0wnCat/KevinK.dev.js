@@ -52,7 +52,7 @@ module.exports = {
               path: `${__dirname}/locales`,
               languages: extConfig.languages,
               defaultLanguage: null,
-              siteURL: "https://kevink.dev",
+              siteUrl: extConfig.siteURL,
               i18nextOptions: {
                 interpolation: {
                   escapeValue: false // not needed for react as it escapes by default
