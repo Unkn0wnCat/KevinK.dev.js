@@ -33,6 +33,13 @@ async function checkLang({ request }) {
     
     requestURL.pathname = "/"+selectedLanguage+requestURL.pathname;
         
-    return Response.redirect(requestURL.toString(), 302);
+    ///return Response.redirect(requestURL.toString(), 302);
+    
+    return new Response(null, {
+        status: 302,
+        headers: {
+            Location: requestURL.toString(),
+        },
+    });
   }
   
