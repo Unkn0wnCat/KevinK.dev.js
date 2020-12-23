@@ -9,13 +9,12 @@ body, html, #___gatsby, #gatsby-focus-wrapper {
     padding: 0;
     width: 100%;
     min-height: 100vh;
-    font-family: 'Anonymous Pro', monospace;
+    font-family: $mainFont;
 }
 
 #gatsby-focus-wrapper {
     background: $background;
     color: $textColor;
-    transition: background .25s, color .25s;
     display: flex;
     flex-direction: column;
 }
@@ -26,11 +25,11 @@ footer {
     color: white;
     padding: 5px;
     text-align: center;
-}
 
-footer a {
-    color: white;
-    text-decoration: underline dotted currentColor;
+    a {
+        color: white;
+        text-decoration: underline dotted currentColor;
+    }
 }
 
 #content {
@@ -49,34 +48,34 @@ footer a {
     background: #000710;
     z-index: 999;
     transition: background .25s;
+
+    .topBarInner {
+        display: flex;
+        width: 90%;
+        max-width: 900px;
+        margin: auto;
+        
+        a {
+            display: block;
+            padding: 10px 15px;
+            color: white;
+            /*text-decoration: underline dotted white;*/
+            text-decoration: none;
+            border-top: 2px solid transparent;
+
+            &:hover {
+                border-color: rgba(255, 255, 255, .25);
+            }
+
+            &.active {
+                border-color: white;
+            }
+        }
+    }
 }
 
 .homeBar.homeBarTransparent {
     background: transparent;
-}
-
-.topBarInner {
-    display: flex;
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-}
-
-.topBar a {
-    display: block;
-    padding: 10px 15px;
-    color: white;
-    /*text-decoration: underline dotted white;*/
-    text-decoration: none;
-    border-top: 2px solid transparent;
-}
-
-.topBar a:hover {
-    border-color: rgba(255, 255, 255, .25);
-}
-
-.topBar a.active {
-    border-color: white;
 }
 
 .flexSpacer {
@@ -91,19 +90,23 @@ section > div:not(.profile), section > article, .section > div:not(.profile), .s
     margin: 0 auto;
 }
 
-article p {
-    text-align: justify;
+article {
+    p {
+        text-align: justify;
+    }
+
+    a {
+        color: $accentColor;
+        text-decoration: underline dotted currentColor;
+        text-decoration-skip: none;
+    }
 }
 
-article h1, section > div > h1 {
+h1 {
     font-size: 2em;
 }
 
-article a {
-    color: $accentColor;
-    text-decoration: underline dotted currentColor;
-    text-decoration-skip: none;
-}.languageModal {
+.languageModal {
     position: fixed;
     top: 0;
     left: 0;
@@ -113,34 +116,32 @@ article a {
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
-    -webkit-transition: opacity .25s;
-    -moz-transition: opacity .25s;
-    -ms-transition: opacity .25s;
-    -o-transition: opacity .25s;
     transition: opacity .25s;
-}
 
-.languageModal:target {
-    opacity: 1;
-    pointer-events: auto;
-}
+    &:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
 
-.languageModalInner {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background: black;
-    font-family: 'Anonymous Pro', monospace;
-    padding: 20px;
-    border-radius: 5px;
-}
-.languageModalInner a {
-    color: white;
-    text-decoration-style: dotted;
-}
+    .languageModalInner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background: black;
+        font-family: 'Anonymous Pro', monospace;
+        padding: 20px;
+        border-radius: 5px;
 
-.modalCloseLink {
-    text-decoration: none;
+        a {
+            color: white;
+            text-decoration-style: dotted;
+        }
+        
+    }
+
+    .modalCloseLink {
+        text-decoration: none;
+    }
 }

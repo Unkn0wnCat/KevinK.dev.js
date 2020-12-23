@@ -1,73 +1,60 @@
 @import "../variables";
+@import "../mixins";
 
 .friendsList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    @include flexList;
 
-.friendProfile {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: -1px 11px 33px -10px rgba(127,127,127,0.3);
-    transition: transform .25s;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    color: white;
-    text-decoration: none;
-}
+    .friendProfile {
+        @include cardGeneric;
+        display: flex;
+        flex-direction: column;
 
-.friendImage {
-    width: 100%;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    padding: 10px;
-    flex-direction: column-reverse;
-    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 20px black;
-}
+        .friendImage {
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            padding: 10px;
+            flex-direction: column-reverse;
+            text-shadow: 0 0 10px black, 0 0 10px black, 0 0 20px black;
 
-.friendBio {
-    padding: 15px;
-    flex-grow: 1;
-    text-align: justify;
-    display: block;
-    padding-bottom: 0;
-}
+            .friendName {
+                font-size: 2em;
+                margin-top: -5px;
+            }
+            
+            .friendTitle {
+                margin-top: auto;
+            }
+        }
 
-.friendProfile .contactLinks {
-    padding: 15px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
+        .friendBio {
+            padding: 15px;
+            flex-grow: 1;
+            text-align: justify;
+            display: block;
+            padding-bottom: 0;
+        }
+        
+        .contactLinks {
+            padding: 15px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
 
-.contactLink {
-    transition: text-decoration .5s;
-    text-decoration: underline dotted rgba(0, 0, 0, 0);
-    padding: 6px 0 6px 25px;
-    color: $textColor;
-}
+            .contactLink {
+                transition: text-decoration .5s;
+                text-decoration: underline dotted rgba(0, 0, 0, 0);
+                padding: 6px 0 6px 25px;
+                color: $textColor;
 
-.contactLink > i {
-    color: $accentColor;
-    margin-left: -25px;
-    margin-right: 5px;
-}
-
-.friendProfile:hover {
-    transform: scale(1.05);
-}
-
-.friendName {
-    font-size: 2em;
-    margin-top: -5px;
-}
-
-.friendTitle {
-    margin-top: auto;
+                > i {
+                    color: $accentColor;
+                    margin-left: -25px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
 }

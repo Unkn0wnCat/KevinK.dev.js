@@ -1,50 +1,48 @@
 @import "../variables";
 
-.projectHeader .headerBackground {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-}
+.projectHeader {
+    > div {
+        padding-bottom: 0 !important;
+    }
 
-.projectHeader header {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background: rgba(0, 0, 0, .5);
-}
+    .headerBackground {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
 
-.projectHeader .headerInner {
-    max-width: $layoutWidth;
-    width: 100%;
-    margin: 0 auto;
-    padding: 65px 20px 0;
-}
+    header {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background: rgba(0, 0, 0, .5);
+        
+        .headerInner {
+            max-width: $layoutWidth;
+            width: 100%;
+            margin: 0 auto;
+            padding: 65px 20px 0;
 
-.projectHeader .headerInner * {
-    margin: 0;
-    color: white;
-}
+            * {
+                margin: 0;
+                color: white;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+        
+    }
 
-.headerPlaceholder {
-    width: 100%;
-    height: 225px;
-}
-
-.projectHeader .headerPlaceholder {
-    width: 100%;
-    height: 200px;
-}
-
-.projectHeader h1 {
-    font-size: 2em;
-}
-
-.projectHeader > div {
-    padding-bottom: 0 !important;
+    .headerPlaceholder {
+        width: 100%;
+        height: 200px;
+    }
 }
 
 .projectAbout {
@@ -52,23 +50,25 @@
     color: white;
 }
 
-.projectLinks .linkList {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+.projectLinks {
+    .linkList {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-.projectLinks a {
-    display: inline-block;
-    border: thin solid rgb(200, 200, 200);
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin: 5px;
-    color: $textColor;
-    text-decoration-skip: none;
-    text-decoration: underline dotted currentColor;
-}
+    a {
+        display: inline-block;
+        border: thin solid rgb(200, 200, 200);
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin: 5px;
+        color: $textColor;
+        text-decoration-skip: none;
+        text-decoration: underline dotted currentColor;
 
-.projectLinks a i.fab, .projectLinks a i.fas, .projectLinks a i.fa, .projectLinks a i.far, .projectLinks a i.fal {
-    display: inline;
+        i.fab, i.fas, i.fa, i.far, i.fal {
+            display: inline;
+        }
+    }
 }

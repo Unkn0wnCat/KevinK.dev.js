@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../mixins";
 
 .heroSection {
     width: 100%;
@@ -125,59 +126,21 @@
 }
 
 .amazonAlexaSection, .donationSection, .hireMeSection {
-    min-height: 90px;
-    background: #10141e;
-    cursor: pointer;
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.amazonAlexaSection img {
-    height: 50px;
-}
-
-.amazonAlexaSection > div, .donationSection > div, .hireMeSection > div {
-    display: flex;
-    height: 100%;
-    padding: 20px !important;
-    line-height: 50px;
-    font-size: 1.7em;
-    color: white;
-}
-
-.amazonAlexaSection > div > span, .donationSection > div > span, .hireMeSection > div > span {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.amazonAlexaSection > div > i, .donationSection > div > i, .hireMeSection > div > i {
-    line-height: 50px !important;
+    @include homeBanner;
 }
 
 .creditSection {
+    @include homeBanner;
     background: #060606;
-    cursor: pointer;
-    display: block;
-    text-decoration: none;
-    color: inherit;
+    
+    > div {
+        padding: 15px !important;
+        line-height: 15px;
+        font-size: 1.2em;
+        color: white;
+        
+        > span > i {
+            line-height: 15px !important;
+        }
+    }
 }
-
-.creditSection > div {
-    display: flex;
-    height: 100%;
-    padding: 15px !important;
-    line-height: 15px;
-    font-size: 1.2em;
-    color: white;
-}
-
-.creditSection > div > span {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.creditSection > div > i {
-    line-height: 15px !important;
-}
-

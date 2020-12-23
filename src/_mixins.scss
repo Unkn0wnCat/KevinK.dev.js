@@ -1,0 +1,65 @@
+@import "./variables";
+
+@mixin flexList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+@mixin cardGeneric {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -1px 11px 33px -10px rgba(127,127,127,0.3);
+    transition: transform .25s, box-shadow .25s;
+    color: $textColor;
+    text-decoration: none;
+    margin: 20px;
+    background: $background;
+
+    &:hover, &:active, &:focus {
+        transform: scale(1.05);
+        box-shadow: -1px 11px 33px -10px rgba(127,127,127,0.4);
+    }
+}
+
+@mixin buttonBasic {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background: $accentColor;
+    color: white;
+    text-decoration: none;
+}
+
+@mixin homeBanner {
+    background: #10141e;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    img {
+        height: 50px;
+    }
+
+    > div {
+        display: flex;
+        height: 100%;
+        padding: 20px !important;
+        line-height: 50px;
+        font-size: 1.7em;
+        color: white;
+
+        > span {
+            margin-left: auto;
+            margin-right: auto;
+
+            > i {
+                line-height: 50px !important;
+            }
+        }
+    }
+}
