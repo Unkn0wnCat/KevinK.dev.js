@@ -1,6 +1,7 @@
-const config = require("../../config"), locale = require("locale");
+const config = require("../../config");
+const locale = require("locale");
 
-let supported = new locale.Locales(conifg.languages);
+let supported = new locale.Locales(config.languages);
 let defaultLang = "en";
 
 export default ({ Router }) => {
