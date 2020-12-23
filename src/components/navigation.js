@@ -1,17 +1,26 @@
 import React from "react"
 import { Trans, Link } from "gatsby-plugin-react-i18next"
+import { graphql, StaticQuery } from 'gatsby'
 
-export default class Navigation extends React.Component {
-    render() {
-        return (
-            <div className={"topBar" + (this.props.isHome ? " homeBar" : "")}>
-                <nav className="topBarInner">
-                    <Link to="/" className={"logo" + (this.props.module == "home" ? " active" : "")}>KevinK.dev</Link>
-                    <div className="flexSpacer"></div>
-                    <Link id="navBtnProjects" to="/projects" className={(this.props.module == "projects" ? "active" : "")}><Trans>projects</Trans></Link>
-                    <Link id="navBtnSocial" to="/social" className={(this.props.module == "social" ? "active" : "")}><Trans>social</Trans></Link>
-                </nav>
-            </div>
-        );
-    }
+export default function Navigation({isHome, module}) {
+    return (
+        <div className={"topBar" + (isHome ? " homeBar" : "")}>
+            <nav className="topBarInner">
+                <StaticQuery query={graphql`
+                    query {
+                        site {
+                            siteMetadata {
+                                title
+                            }
+                        }
+                    }
+                `} render={data => (
+                    <Link to="/" className={"logo" + (module == "home" ? " active" : "")}>{data.site.siteMetadata.title}</Link>
+                )} />
+                <div className="flexSpacer"></div>
+                <Link id="navBtnProjects" to="/projects" className={(module == "projects" ? "active" : "")}><Trans>projects</Trans></Link>
+                <Link id="navBtnSocial" to="/social" className={(module == "social" ? "active" : "")}><Trans>social</Trans></Link>
+            </nav>
+        </div>
+    );
 }
