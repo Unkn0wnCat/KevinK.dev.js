@@ -13,7 +13,12 @@ async function checkLang({ request }) {
 
     let requestURL = new URL(url);
 
-    if(requestURL.pathname.startsWith("/assets") || requestURL.pathname.startsWith("/icons") || requestURL.pathname.startsWith("/manifest.webmanifest") || requestURL.pathname.startsWith("/favicon")) {
+    if(requestURL.pathname.startsWith("/assets") || 
+       requestURL.pathname.startsWith("/icons") || 
+       requestURL.pathname.startsWith("/manifest.webmanifest") || 
+       requestURL.pathname.startsWith("/favicon")  || 
+       requestURL.pathname.startsWith("/sw.js")) {
+           
         return;
     }
 
