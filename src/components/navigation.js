@@ -15,11 +15,11 @@ export default function Navigation({isHome, module}) {
                         }
                     }
                 `} render={data => (
-                    <Link to="/" className={"logo" + (module == "home" ? " active" : "")}>{data.site.siteMetadata.title}</Link>
+                    <Link to="/" className={"logo" + (module === "home" ? " active" : "")}>{data.site.siteMetadata.title}</Link>
                 )} />
                 <div className="flexSpacer"></div>
-                <Link id="navBtnProjects" to="/projects" className={(module == "projects" ? "active" : "")}><Trans>projects</Trans></Link>
-                <Link id="navBtnSocial" to="/social" className={(module == "social" ? "active" : "")}><Trans>social</Trans></Link>
+                <Link id="navBtnProjects" to="/projects" className={(module === "projects" ? "active" : "")}><Trans>projects</Trans></Link>
+                <Link id="navBtnSocial" to="/social" className={(module === "social" ? "active" : "")}><Trans>social</Trans></Link>
             </nav>
         </div>
     );

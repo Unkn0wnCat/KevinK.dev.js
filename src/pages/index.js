@@ -4,10 +4,27 @@ import Layout from "../layouts/default"
 import styles from "./index.module.scss"
 
 import { Trans, Link } from "gatsby-plugin-react-i18next"
+import {graphql} from "gatsby";
 
-// markup
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        contactEmail
+        contactPhone
+        mapsLink
+        contactTwitter
+        contactGitHub
+      }
+    }
+  }
+`;
+
 class IndexPage extends React.Component {
   render() {
+    let meta = this.props.data.site.siteMetadata;
+
     return (
       <Layout title="Kevin Kandlbinder" module="home">
         <section className={styles.heroSection}>
@@ -20,11 +37,11 @@ class IndexPage extends React.Component {
               <span className={styles.description}><Trans>homeMe</Trans> <span id="descriptionType"><Trans>homeWebDeveloper</Trans></span>.</span>
   
               <div className={styles.contactLinks}>
-                <a className={styles.contactLink} href="tel:+4941068068004"><i className="fas fa-fw fa-phone"></i>+49 4106 8068004</a>
-                <a className={styles.contactLink} href="mailto:kevin@kevink.dev?subject=%5Bkevink.dev%5D%20"><i className="far fa-fw fa-envelope"></i>kevin@kevink.dev</a>
-                <a className={styles.contactLink} href="https://goo.gl/maps/KVq9z1PVaVP2" rel="noopener" target="_blank"><i className="fas fa-fw fa-map-marker-alt"></i><Trans>homeMyLocation</Trans></a>
-                <a className={styles.contactLink} href="https://twitter.com/unkn0wnkevin" rel="noopener" target="_blank"><i className="fab fa-fw fa-twitter"></i>@Unkn0wnKevin</a>
-                <a className={styles.contactLink} href="https://github.com/unkn0wncat" rel="noopener" target="_blank"><i className="fab fa-fw fa-github"></i>Unkn0wnCat</a>
+                <a className={styles.contactLink} href={"tel:"+meta.contactPhone}><i className="fas fa-fw fa-phone"></i>{meta.contactPhone}</a>
+                <a className={styles.contactLink} href={"mailto:"+meta.contactEmail}><i className="far fa-fw fa-envelope"></i>{meta.contactEmail}</a>
+                <a className={styles.contactLink} href={meta.mapsLink} rel="noopener" target="_blank"><i className="fas fa-fw fa-map-marker-alt"></i><Trans>homeMyLocation</Trans></a>
+                <a className={styles.contactLink} href={"https://twitter.com/"+meta.contactTwitter} rel="noopener" target="_blank"><i className="fab fa-fw fa-twitter"></i>@{meta.contactTwitter}</a>
+                <a className={styles.contactLink} href={"https://github.com/"+meta.contactGitHub} rel="noopener" target="_blank"><i className="fab fa-fw fa-github"></i>{meta.contactGitHub}</a>
               </div>
             </div>
           </div>

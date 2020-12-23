@@ -6,7 +6,7 @@ export default function LanguageSwitcher() {
 
     return (
         <div class="languageModalInner">
-            <h2>Languages (<a href="#" class="modalCloseLink">&times;</a>)</h2>
+            <h2>Languages (<a href="#top" class="modalCloseLink">&times;</a>)</h2>
             <ul>
                 {languages.map((lng) => (
                     <li key={lng}>

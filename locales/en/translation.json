@@ -27,5 +27,7 @@
   "friends": "Friends",
   "friendsDescription": "In this list you can find friends of mine and this site. Feel free to check them out for more interesting projects.",
   "donate": "Donate",
-  "donateDescription": "Hey! It looks like you're thinking about donating to me. That's nice of you! If you want your donation to go towards a specific project, feel free to write your wishes into the donation comment."
+  "donateDescription": "Hey! It looks like you're thinking about donating to me. That's nice of you! If you want your donation to go towards a specific project, feel free to write your wishes into the donation comment.",
+  "donateThanks": "Thanks for donating!",
+  "donateThanksText": "I really appreciate you appreciating my work and showing it! Feel free to mail me at <1>{{contactEmail}}</1> if you have anything you want to talk about!"
 }

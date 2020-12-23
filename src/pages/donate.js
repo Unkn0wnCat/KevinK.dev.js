@@ -12,7 +12,7 @@ export default function DonatePage() {
     const {t} = useI18next();
     const {language, path} = React.useContext(I18nextContext);
 
-    const { site } = useStaticQuery(
+    const { site, file } = useStaticQuery(
         graphql`
           query {
             site {
@@ -21,6 +21,13 @@ export default function DonatePage() {
                 siteUrl
                 payPalMail
               }
+            }
+            file(relativePath: {eq: "images/pplogo.png"}) {
+                childImageSharp {
+                    resize(width: 240, height: 240, fit: CONTAIN) {
+                        src
+                    }
+                }
             }
           }
         `
@@ -40,7 +47,7 @@ export default function DonatePage() {
                         <div>€</div>
                     </div>
 
-                    <a className={styles.donateButton} rel="noopener" id="payPalBtn" href={"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business="+encodeURIComponent(site.siteMetadata.payPalMail)+"&item_name="+encodeURIComponent(site.siteMetadata.title)+"&currency_code=EUR&image_url="+(encodeURIComponent(site.siteMetadata.siteUrl+logo))+"&return="+(encodeURIComponent(site.siteMetadata.siteUrl+"/"+path+"thank-you/"))+"&rm=0&cancel_return="+(encodeURIComponent(site.siteMetadata.siteUrl+"/"+path))+"&amount="+amount}><span>Donate using PayPal</span><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i></a>
+                    <a className={styles.donateButton} rel="noopener" id="payPalBtn" href={"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business="+encodeURIComponent(site.siteMetadata.payPalMail)+"&item_name="+encodeURIComponent(site.siteMetadata.title)+"&currency_code=EUR&image_url="+(encodeURIComponent(site.siteMetadata.siteUrl+file.childImageSharp.resize.src))+"&return="+(encodeURIComponent(site.siteMetadata.siteUrl+"/"+path+"thank-you/"))+"&rm=0&cancel_return="+(encodeURIComponent(site.siteMetadata.siteUrl+"/"+path))+"&amount="+amount}><span>Donate using PayPal</span><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i></a>
                 </article>
             </section>
         </Layout>

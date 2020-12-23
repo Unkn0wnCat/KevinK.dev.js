@@ -5,5 +5,10 @@ module.exports = {
     "payPalMail": "kevin@1in9.net",
     "siteKeywords": "Kevin Kandlbinder, Kevin, Kandlbinder, Web, Web Developer, Developer, JavaScript, PHP, Java, Photos, Fotos",
     "iconPath": "src/images/fullbglogo@10x.png",
-    "languages": ["en", "de"]
+    "languages": ["en", "de"],
+    "contactEmail": "kevin@kevink.dev",
+    "contactPhone": "+4941068068004",
+    "mapsLink": "https://goo.gl/maps/KVq9z1PVaVP2",
+    "contactTwitter": "Unkn0wnKevin",
+    "contactGitHub": "Unkn0wnCat"
 };

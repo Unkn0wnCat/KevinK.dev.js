@@ -6,7 +6,12 @@ module.exports = {
         author: extConfig.siteAuthor,
         siteUrl: extConfig.siteURL,
         keywords: extConfig.siteKeywords,
-        payPalMail: extConfig.payPalMail
+        payPalMail: extConfig.payPalMail,
+        contactEmail: extConfig.contactEmail,
+        contactPhone: extConfig.contactPhone,
+        mapsLink: extConfig.mapsLink,
+        contactTwitter: extConfig.contactTwitter,
+        contactGitHub: extConfig.contactGitHub
       },
     assetPrefix: "/assets",
     plugins: [
