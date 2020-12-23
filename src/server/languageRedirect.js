@@ -1,6 +1,7 @@
-const config = require("../../config"), locale = require("locale");
+const config = require("../../config");
+const locale = require("locale");
 
-let supported = new locale.Locales(conifg.languages);
+let supported = new locale.Locales(config.languages);
 let defaultLang = "en";
 
 export default ({ Router }) => {
@@ -12,11 +13,13 @@ async function checkLang({ request }) {
 
     let requestURL = new URL(url);
 
-    config.languages.forEach((language) => {
-        if(requestURL.pathname.startsWith("/"+language+"/")) {
+    for (let i = 0; i < config.languages.length; i++) {
+        const language = config.languages[i];
+
+        if(requestURL.pathname.startsWith("/"+language)) {
             return;
         }
-    });
+    }
 
     let headers = request.headers;
 
@@ -32,6 +35,13 @@ async function checkLang({ request }) {
     
     requestURL.pathname = "/"+selectedLanguage+requestURL.pathname;
         
-    return Response.redirect(requestURL.toString(), 302);
+    ///return Response.redirect(requestURL.toString(), 302);
+    
+    return new Response(null, {
+        status: 302,
+        headers: {
+            Location: requestURL.toString(),
+        },
+    });
   }
   
