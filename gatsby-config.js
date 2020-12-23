@@ -7,7 +7,11 @@ module.exports = {
         siteUrl: extConfig.siteURL,
         keywords: extConfig.siteKeywords
       },
+    assetPrefix: "/assets",
     plugins: [
+        {
+            resolve: "gatsby-plugin-asset-path"
+        },
         `gatsby-plugin-sharp`,
         `gatsby-transformer-json`,
         {

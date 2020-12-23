@@ -13,6 +13,10 @@ async function checkLang({ request }) {
 
     let requestURL = new URL(url);
 
+    if(requestURL.pathname.startsWith("/assets") || requestURL.pathname.startsWith("/icons") || requestURL.pathname.startsWith("/manifest.webmanifest")) {
+        return;
+    }
+
     for (let i = 0; i < config.languages.length; i++) {
         const language = config.languages[i];
 

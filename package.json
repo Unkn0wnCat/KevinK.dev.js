@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "build:fab": "npm run build && npm run fab:build",
     "fab:build": "fab build",
     "fab:serve": "fab serve fab.zip",
@@ -23,6 +23,7 @@
     "@babel/plugin-transform-typescript": "^7.12.1",
     "babel-plugin-i18next-extract": "^0.8.2",
     "gatsby": "^2.26.1",
+    "gatsby-plugin-asset-path": "^3.0.2",
     "gatsby-plugin-manifest": "^2.9.0",
     "gatsby-plugin-offline": "^3.7.0",
     "gatsby-plugin-react-helmet": "^3.7.0",
