@@ -38,9 +38,9 @@ module.exports = {
         {
             resolve: `gatsby-plugin-offline`,
             options: {
-                precachePages: ["/en", "/de"],
+                precachePages: ["/", "/en", "/en/projects", "/de", "/de/projects"],
                 workboxConfig: {
-                globPatterns: ['**/*']
+                    globPatterns: ['**/*']
                 }
             },
         },
