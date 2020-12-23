@@ -13,11 +13,13 @@ async function checkLang({ request }) {
 
     let requestURL = new URL(url);
 
-    config.languages.forEach((language) => {
-        if(requestURL.pathname.startsWith("/"+language+"/")) {
+    for (let i = 0; i < config.languages.length; i++) {
+        const language = config.languages[i];
+
+        if(requestURL.pathname.startsWith("/"+language)) {
             return;
         }
-    });
+    }
 
     let headers = request.headers;
 
