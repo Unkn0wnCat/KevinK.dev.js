@@ -5,7 +5,8 @@ module.exports = {
         title: extConfig.siteName,
         author: extConfig.siteAuthor,
         siteUrl: extConfig.siteURL,
-        keywords: extConfig.siteKeywords
+        keywords: extConfig.siteKeywords,
+        payPalMail: extConfig.payPalMail
       },
     assetPrefix: "/assets",
     plugins: [
@@ -13,6 +14,7 @@ module.exports = {
             resolve: "gatsby-plugin-asset-path"
         },
         `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         `gatsby-transformer-json`,
         {
             resolve: `gatsby-source-filesystem`,

@@ -34,6 +34,11 @@
     text-decoration: none;
 }
 
+@mixin button {
+    @include buttonBasic;
+    border-radius: 5px;
+}
+
 @mixin homeBanner {
     background: #10141e;
     cursor: pointer;

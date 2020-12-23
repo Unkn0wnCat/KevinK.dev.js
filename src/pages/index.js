@@ -41,12 +41,12 @@ class IndexPage extends React.Component {
             <i className="fas fa-fw fa-chevron-right"></i>
           </div>
         </a>
-        <a className={styles.section + " " + styles.donationSection} href="TODO: Path">
+        <Link className={styles.section + " " + styles.donationSection} to="/donate">
           <div>
             <span><Trans>donationCatchphrase</Trans></span>
             <i className="fas fa-fw fa-chevron-right"></i>
           </div>
-        </a>
+        </Link>
       </Layout>
     )
   }
