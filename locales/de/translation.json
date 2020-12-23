@@ -25,5 +25,9 @@
     "socialDescriptionWithLink": "Finde mich auf anderen Plattformen oder <1>besuche meine Freunde</1>!",
     "socialDescription": "Finde mich auf anderen Plattformen!",
     "friends": "Freunde",
-    "friendsDescription": "In dieser Liste stehen Freunde von mir und meiner Seite. Schau doch bei ihnen mal rein, wenn du mehr interessante Projekte sehen willst."
+    "friendsDescription": "In dieser Liste stehen Freunde von mir und meiner Seite. Schau doch bei ihnen mal rein, wenn du mehr interessante Projekte sehen willst.",
+    "donateThanksText": "Ich finde es schön, dass du meine Arbeit schön findest und das zeigst! Sende mir gerne eine E-Mail an <1>{{contactEmail}}</1> wenn du mit mir über irgendwas reden möchtest!",
+    "donateThanks": "Danke für die Spende!",
+    "donateDescription": "Hey! Es sieht so aus als würdest du über eine Spende nachdenken. Das ist nett! Wenn du ein bestimmtes Projekt unterstützen willst, schreibe deine Wünsche gerne in den Spendenkommentar.",
+    "donate": "Spenden"
 }
