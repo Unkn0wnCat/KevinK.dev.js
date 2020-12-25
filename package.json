@@ -30,7 +30,7 @@
     "gatsby-plugin-react-i18next": "0.0.27",
     "gatsby-plugin-robots-txt": "^1.5.3",
     "gatsby-plugin-sass": "^2.8.0",
-    "gatsby-plugin-sharp": "^2.11.1",
+    "gatsby-plugin-sharp": "^2.11.2",
     "gatsby-plugin-sitemap": "^2.9.0",
     "gatsby-source-filesystem": "^2.8.0",
     "gatsby-transformer-json": "^2.8.0",
