@@ -24,7 +24,7 @@
     "babel-plugin-i18next-extract": "^0.8.2",
     "gatsby": "^2.26.1",
     "gatsby-plugin-asset-path": "^3.0.2",
-    "gatsby-plugin-manifest": "^2.9.0",
+    "gatsby-plugin-manifest": "^2.9.1",
     "gatsby-plugin-offline": "^3.7.0",
     "gatsby-plugin-react-helmet": "^3.7.0",
     "gatsby-plugin-react-i18next": "0.0.27",
