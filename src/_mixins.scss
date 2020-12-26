@@ -65,10 +65,13 @@
         > span {
             margin-left: auto;
             margin-right: auto;
+        }
 
-            > i, > i::before {
-                line-height: 50px !important;
-            }
+        > i {
+            
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 }

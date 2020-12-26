@@ -69,7 +69,7 @@ class IndexPage extends React.Component {
             <p><Trans>homeAboutMeHello</Trans><br/><Trans>homeAboutMeText</Trans></p>
           </article>
         </section>
-        <a className={styles.section + " " + styles.creditSection} href="https://unsplash.com/@jannikkiel" target="_blank" rel="noopener">
+        <a className={styles.creditSection} href="https://unsplash.com/@jannikkiel" target="_blank" rel="noopener">
           <div>
             <span><i className="fas fa-fw fa-camera"></i> <Trans>homeImageCredit</Trans></span>
             <i className="fas fa-fw fa-chevron-right"></i>
@@ -100,7 +100,7 @@ class IndexPage extends React.Component {
             <Link to="/projects" className={styles.seeMoreButton}><Trans>seeMore</Trans> <i className="fas fa-fw fa-chevron-right"></i></Link>
           </article>
         </section>
-        <Link className={styles.section + " " + styles.donationSection} to="/donate">
+        <Link className={styles.donationSection} to="/donate">
           <div>
             <span><Trans>donationCatchphrase</Trans></span>
             <i className="fas fa-fw fa-chevron-right"></i>
