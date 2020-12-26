@@ -11,15 +11,8 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    width: calc(100% / 4);
-
-    @media(max-width: 800px) {
-        width: calc((100% / 2) - 30px);
-    }
-
-    @media(max-width: 500px) {
-        width: 100%;
-    }
+    width: 250px;
+    flex-shrink: 0;
 
     .projectCardActivityIndicator {
         position: absolute;
@@ -45,20 +38,27 @@
     }
 
     .projectCardImage {
-        display: block;
-        height: 150px;
+        width: 100%;
+        height: 250px;
         background-position: center;
         background-size: cover;
+        text-shadow: 0 0 10px black, 0 0 10px black, 0 0 20px black;
     }
 
     .projectCardMeta {
         padding: 10px;
         flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent, black);
     }
 
     .projectCardTitle {
         display: block;
-        font-size: 1.2em;
+        font-size: 1.5em;
+        margin-top: auto;
     }
 
     .projectCardCTA {

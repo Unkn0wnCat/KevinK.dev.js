@@ -32,9 +32,9 @@ export default function ProjectTemplate({data}) {
   let projectName = project.name;
 
     return (
-        <Layout description={project.shortDescription} title={t("project")+": "+projectName}>
+        <Layout description={project.shortDescription} title={t("project")+": "+projectName}  transparentTopbar={true}>
           <section className={styles.projectHeader}>
-            <div>
+            <div style={{paddingTop: 0}}>
               <div className={styles.headerBackground} style={{backgroundImage: "url("+project.image.publicURL+")"}}></div> 
               <header>
                 <div className={styles.headerInner}>

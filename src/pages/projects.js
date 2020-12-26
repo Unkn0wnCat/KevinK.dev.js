@@ -14,7 +14,7 @@ query GetProjects($language: String) {
       name
       image {
         childImageSharp {
-          resize(width: 250) {
+          resize(width: 400, quality: 90) {
             src
           }
         }
@@ -41,11 +41,13 @@ export default function ProjectsPage({data}) {
                             return (
                                 <div className={styles.projectCard}>
                                     {/*<div className="projectCardActivityIndicator activityIndicatorBlue">Live</div>*/}
-                                    <div className={styles.projectCardImage} style={{ backgroundImage: "url("+project.image.childImageSharp.resize.src+")" }}></div>
-                                    <div className={styles.projectCardMeta}>
-                                        <span className={styles.projectCardTitle}>{project.name}</span>
-                                        <span className={styles.projectCardTeaser}>{project.shortDescription}</span>
+                                    <div className={styles.projectCardImage} style={{ backgroundImage: "url("+project.image.childImageSharp.resize.src+")" }}>
+                                      <div className={styles.projectCardMeta}>
+                                          <span className={styles.projectCardTitle}>{project.name}</span>
+                                          <span className={styles.projectCardTeaser}>{project.shortDescription}</span>
+                                      </div>
                                     </div>
+                                    
                                     <div className={styles.projectCardCTAContainer}>
                                         <div className={styles.projectCardCTA}><Link to={"/projects/"+project.urlname}><Trans>projectView</Trans></Link></div>
                                     </div>

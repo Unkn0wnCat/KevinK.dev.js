@@ -25,7 +25,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     result.data.allProjectsJson.nodes.forEach((node) => {
         console.log("Creating Page: ", `/${node.lang}/projects/${node.urlname}`);
 
-        createPage({
+        if(node.lang !== "ignoreme") createPage({
             path: `/${node.lang}/projects/${node.urlname}`,
             component: projectTemplate,
             context: {

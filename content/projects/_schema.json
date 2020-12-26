@@ -1,0 +1,12 @@
+{
+    "urlname": "foobar",
+    "lang": "ignoreme",
+    "name": "foobar",
+    "shortDescription": "foobar",
+    "links": {
+        "website": "https://foo.bar",
+        "github": "https://foo.bar"
+    },
+    "image": "../images/test.jpg",
+    "featured": 0
+}

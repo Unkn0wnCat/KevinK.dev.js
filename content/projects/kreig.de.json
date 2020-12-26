@@ -7,5 +7,6 @@
     "links": {
         "website": "https://kreig.de"
     },
-    "image": "../images/KREIG.de.jpg"
+    "image": "../images/KREIG.de.jpg",
+    "featured": 1
 }
