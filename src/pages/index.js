@@ -2,13 +2,14 @@ import * as React from "react"
 import Layout from "../layouts/default"
 
 import styles from "./index.module.scss"
+import projectStyles from "./projects.module.scss"
 
 import { Trans, Link } from "gatsby-plugin-react-i18next"
 import {graphql} from "gatsby";
 
 
 export const query = graphql`
-  query {
+  query GetMetaAndProjects($language: String) {
     site {
       siteMetadata {
         contactEmail
@@ -16,6 +17,22 @@ export const query = graphql`
         mapsLink
         contactTwitter
         contactGitHub
+      }
+    }
+    allProjectsJson(filter: {lang: {eq: $language}, featured: {ne: null}}, sort: {fields: featured, order: ASC}) {
+      nodes {
+        lang
+        urlname
+        name
+        image {
+          childImageSharp {
+            resize(width: 400, quality: 90) {
+              src
+            }
+          }
+        }
+        shortDescription
+        featured
       }
     }
   }
@@ -26,7 +43,7 @@ class IndexPage extends React.Component {
     let meta = this.props.data.site.siteMetadata;
 
     return (
-      <Layout title="Kevin Kandlbinder" module="home">
+      <Layout title="Kevin Kandlbinder" module="home" transparentTopbar={true}>
         <section className={styles.heroSection}>
           <div className={styles.profile + " profile"}>
             <div data-bg="url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)" style={{backgroundImage: "url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)"}} className={styles.profileImage + " lazy"}></div>
@@ -58,6 +75,31 @@ class IndexPage extends React.Component {
             <i className="fas fa-fw fa-chevron-right"></i>
           </div>
         </a>
+        <section className="featuredSection">
+          <article>
+            <h1><Trans>featuredProjects</Trans></h1>
+            <div className={projectStyles.projectList}>
+                {this.props.data.allProjectsJson.nodes.map((project) => {
+                    return (
+                        <div className={projectStyles.projectCard}>
+                            {/*<div className="projectCardActivityIndicator activityIndicatorBlue">Live</div>*/}
+                            <div className={projectStyles.projectCardImage} style={{ backgroundImage: "url("+project.image.childImageSharp.resize.src+")" }}>
+                              <div className={projectStyles.projectCardMeta}>
+                                  <span className={projectStyles.projectCardTitle}>{project.name}</span>
+                                  <span className={projectStyles.projectCardTeaser}>{project.shortDescription}</span>
+                              </div>
+                            </div>
+                            
+                            <div className={projectStyles.projectCardCTAContainer}>
+                                <div className={projectStyles.projectCardCTA}><Link to={"/projects/"+project.urlname}><Trans>projectView</Trans></Link></div>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+            <Link to="/projects" className={styles.seeMoreButton}><Trans>seeMore</Trans> <i className="fas fa-fw fa-chevron-right"></i></Link>
+          </article>
+        </section>
         <Link className={styles.section + " " + styles.donationSection} to="/donate">
           <div>
             <span><Trans>donationCatchphrase</Trans></span>

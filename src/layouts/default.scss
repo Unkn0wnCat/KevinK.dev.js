@@ -20,7 +20,7 @@ body, html, #___gatsby, #gatsby-focus-wrapper {
 }
 
 footer {
-    background: #000710;
+    background: darken($background, 1);
     width: 100%;
     color: white;
     padding: 5px;
@@ -45,19 +45,28 @@ footer {
     left: 0;
     display: flex;
     width: 100%;
-    background: #000710;
+    background: rgba($background, .95);
+    backdrop-filter: blur(5px);
     z-index: 999;
     transition: background .25s;
 
     .topBarInner {
         display: flex;
-        width: 90%;
-        max-width: 900px;
+        width: 100%;
+        max-width: $layoutWidth;
         margin: auto;
+        
+        > :first-child {
+            padding-left: $layoutPadding;
+        }
+        
+        > :last-child {
+            padding-right: $layoutPadding;
+        }
         
         a {
             display: block;
-            padding: 10px 15px;
+            padding: 10px $layoutPadding;
             color: white;
             /*text-decoration: underline dotted white;*/
             text-decoration: none;
@@ -76,6 +85,7 @@ footer {
 
 .homeBar.homeBarTransparent {
     background: transparent;
+    backdrop-filter: blur(0);
 }
 
 .flexSpacer {

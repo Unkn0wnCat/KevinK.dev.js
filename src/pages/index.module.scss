@@ -4,10 +4,10 @@
 .heroSection {
     width: 100%;
     background: #000710;
-    min-height: 500px;
+    min-height: 600px;
     padding-top: 100px;
     overflow: hidden;
-    background: radial-gradient(ellipse at top left, #1f0ba659, transparent), radial-gradient(ellipse at bottom right, #4a086829, transparent);
+    background: linear-gradient(to bottom, transparent 80%, $background), radial-gradient(ellipse at top left, #1f0ba659, transparent), radial-gradient(ellipse at bottom right, #4a086829, transparent);
 
     @media(pointer: coarse), (pointer: none) {
         min-height: 700px;
@@ -136,7 +136,6 @@
 
 .creditSection {
     @include homeBanner;
-    background: #060606;
     
     > div {
         padding: 15px !important;
@@ -148,4 +147,12 @@
             line-height: 15px !important;
         }
     }
+}
+
+.seeMoreButton {
+    @include button;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px 20px;
 }

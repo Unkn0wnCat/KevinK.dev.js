@@ -12,7 +12,7 @@ class Layout extends React.Component {
         return (
             <>
                 <SEO description={this.props.description} lang={this.props.lang} meta={this.props.meta} title={this.props.title} />
-                <Navigation isHome={this.props.module == "home"} module={this.props.module} />
+                <Navigation isHome={this.props.transparentTopbar} module={this.props.module} />
                 <div id="content" role="main">
                     {this.props.children}
                 </div>
@@ -29,6 +29,7 @@ Layout.defaultProps = {
     module: `none`,
     meta: [],
     description: ``,
+    transparentTopbar: false
 }
 
 Layout.propTypes = {
@@ -36,7 +37,8 @@ Layout.propTypes = {
     lang: PropTypes.string,
     meta: PropTypes.arrayOf(PropTypes.object),
     title: PropTypes.string.isRequired,
-    module: PropTypes.string.isRequired
+    module: PropTypes.string.isRequired,
+    transparentTopbar: PropTypes.bool
 }
 
 export default Layout;
