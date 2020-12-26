@@ -19,7 +19,7 @@ export const query = graphql`
         contactGitHub
       }
     }
-    allProjectsJson(filter: {lang: {eq: $language}, featured: {ne: null}}, sort: {fields: featured, order: ASC}) {
+    allProjectsJson(filter: {lang: {eq: $language}, featured: {gte: 0}}, sort: {fields: featured, order: ASC}) {
       nodes {
         lang
         urlname
