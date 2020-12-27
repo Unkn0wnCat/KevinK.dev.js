@@ -24,7 +24,8 @@
         "afractal.node-essentials",
         "eg2.vscode-npm-script",
         "syler.sass-indented",
-        "visualstudioexptteam.vscodeintellicode"
+        "visualstudioexptteam.vscodeintellicode",
+        "EditorConfig.EditorConfig"
     ],
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     "forwardPorts": [
