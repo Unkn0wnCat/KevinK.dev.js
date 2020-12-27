@@ -13,7 +13,18 @@
     },
     // Add the IDs of extensions you want installed when the container is created.
     "extensions": [
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "aaron-bond.better-comments",
+        "wscats.qf",
+        "eamodio.gitlens",
+        "kumar-harsh.graphql-for-vscode",
+        "antfu.i18n-ally",
+        "mrmlnc.vscode-json5",
+        "ms-vsliveshare.vsliveshare",
+        "afractal.node-essentials",
+        "eg2.vscode-npm-script",
+        "syler.sass-indented",
+        "visualstudioexptteam.vscodeintellicode"
     ],
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     "forwardPorts": [
