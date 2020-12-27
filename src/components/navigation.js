@@ -27,7 +27,7 @@ const Navigation = ({isHome, module}) => {
 }
 
 Navigation.propTypes = {
-    isHome: PropTypes.boolean.isRequired,
+    isHome: PropTypes.bool.isRequired,
     module: PropTypes.string.isRequired
   }
 
