@@ -33,7 +33,7 @@ export default function SocialPage({data}) {
                         {
                             data.allSocialsJson.nodes.map((social) => {
                                 return (
-                                    <a className={styles.socialCard} href={social.url}>
+                                    <a className={styles.socialCard} href={social.url} target="_blank" rel="noreferrer">
                                         <div className={styles.socialImage} style={{backgroundImage: "url("+social.image+")"}}>
                                             <span className={styles.socialName}>{social.platformName}</span>
                                             <span className={styles.socialUsername}>{social.platformHandle}</span>
