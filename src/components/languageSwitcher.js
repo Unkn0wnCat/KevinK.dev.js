@@ -5,8 +5,8 @@ export default function LanguageSwitcher() {
     const {languages, originalPath} = useI18next();
 
     return (
-        <div class="languageModalInner">
-            <h2>Languages (<a href="#top" class="modalCloseLink">&times;</a>)</h2>
+        <div className="languageModalInner">
+            <h2>Languages (<a href="#top" className="modalCloseLink">&times;</a>)</h2>
             <ul>
                 {languages.map((lng) => (
                     <li key={lng}>

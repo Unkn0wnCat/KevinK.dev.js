@@ -1,8 +1,9 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Trans, Link } from "gatsby-plugin-react-i18next"
 import { graphql, StaticQuery } from 'gatsby'
 
-export default function Navigation({isHome, module}) {
+const Navigation = ({isHome, module}) => {
     return (
         <div className={"topBar" + (isHome ? " homeBar" : "")}>
             <nav className="topBarInner">
@@ -24,3 +25,10 @@ export default function Navigation({isHome, module}) {
         </div>
     );
 }
+
+Navigation.propTypes = {
+    isHome: PropTypes.boolean.isRequired,
+    module: PropTypes.string.isRequired
+  }
+
+export default Navigation;

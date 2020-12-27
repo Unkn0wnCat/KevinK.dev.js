@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../layouts/default";
 import { Trans, Link, useI18next } from "gatsby-plugin-react-i18next"
 import { graphql } from 'gatsby'
+import PropTypes from "prop-types"
 
 import styles from "./projects.module.scss";
 
@@ -25,7 +26,7 @@ query GetProjects($language: String) {
 }
 `
 
-export default function ProjectsPage({data}) {
+const ProjectsPage = ({data}) => {
     
     const {t} = useI18next();
     return (
@@ -39,7 +40,7 @@ export default function ProjectsPage({data}) {
                     <div className={styles.projectList}>
                         {data.allProjectsJson.nodes.map((project) => {
                             return (
-                                <div className={styles.projectCard}>
+                                <div className={styles.projectCard} key={project.lang+project.urlname}>
                                     {/*<div className="projectCardActivityIndicator activityIndicatorBlue">Live</div>*/}
                                     <div className={styles.projectCardImage} style={{ backgroundImage: "url("+project.image.childImageSharp.resize.src+")" }}>
                                       <div className={styles.projectCardMeta}>
@@ -62,3 +63,9 @@ export default function ProjectsPage({data}) {
         </Layout>
     );
 }
+
+ProjectsPage.propTypes = {
+  data: PropTypes.object
+}
+
+export default ProjectsPage;

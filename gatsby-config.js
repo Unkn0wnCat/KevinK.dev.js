@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const extConfig = require("./config")
 
 module.exports = {
@@ -15,6 +16,7 @@ module.exports = {
       },
     assetPrefix: "/assets",
     plugins: [
+        `gatsby-plugin-eslint`,
         {
             resolve: "gatsby-plugin-asset-path"
         },

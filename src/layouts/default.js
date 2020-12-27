@@ -17,7 +17,7 @@ class Layout extends React.Component {
                     {this.props.children}
                 </div>
                 <footer role="contentinfo">CC-BY 4.0 Kevin Kandlbinder, <Link to="/legal/about" class="spf-link"><Trans i18nKey="imprint">Imprint</Trans></Link> | <Link to="/legal/datasec" class="spf-link"><Trans i18nKey="datasec">Data Protection</Trans></Link> | <Link to="/legal/disclaimer" class="spf-link"><Trans i18nKey="disclaimer">Disclaimer</Trans></Link> | <a href="#languageChooser">Language</a></footer>
-                <div class="languageModal" id="languageChooser">
+                <div className="languageModal" id="languageChooser">
                     <LanguageSwitcher />
                 </div>
             </>
@@ -38,7 +38,8 @@ Layout.propTypes = {
     meta: PropTypes.arrayOf(PropTypes.object),
     title: PropTypes.string.isRequired,
     module: PropTypes.string.isRequired,
-    transparentTopbar: PropTypes.bool
+    transparentTopbar: PropTypes.bool,
+    children: PropTypes.object.isRequired
 }
 
 export default Layout;

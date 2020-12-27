@@ -40,12 +40,12 @@ export default function DonatePage() {
                     <p><Trans>donateDescription</Trans></p>
 
                     <div className={styles.priceAmount}>
-                        <label for="priceInput" className={styles.sronly}>Amount</label>
+                        <label htmlFor="priceInput" className={styles.sronly}>Amount</label>
                         <input type="number" min="1" placeholder="10.00" step="1" value={amount} onChange={(ev) => {setAmount(ev.target.value)}} name="priceInput" id="priceInput" />
                         <div>€</div>
                     </div>
 
-                    <a className={styles.donateButton} rel="noopener" id="payPalBtn" href={"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business="+encodeURIComponent(site.siteMetadata.payPalMail)+"&item_name="+encodeURIComponent(site.siteMetadata.title)+"&currency_code=EUR&image_url="+(encodeURIComponent(site.siteMetadata.siteUrl+file.childImageSharp.resize.src))+"&return="+(encodeURIComponent(site.siteMetadata.siteUrl+"/"+path+"thank-you/"))+"&rm=0&cancel_return="+(encodeURIComponent(site.siteMetadata.siteUrl+"/"+path))+"&amount="+amount}><span>Donate using PayPal</span><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i></a>
+                    <a className={styles.donateButton} rel="noopener" id="payPalBtn" href={"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business="+encodeURIComponent(site.siteMetadata.payPalMail)+"&item_name="+encodeURIComponent(site.siteMetadata.title)+"&currency_code=EUR&image_url="+(encodeURIComponent(site.siteMetadata.siteUrl+file.childImageSharp.resize.src))+"&return="+(encodeURIComponent(site.siteMetadata.siteUrl+"/"+path+"thank-you/"))+"&rm=0&cancel_return="+(encodeURIComponent(site.siteMetadata.siteUrl+"/"+path))+"&amount="+amount}><span>Donate using PayPal</span><i className="fas fa-fw fa-chevron-right" aria-hidden="true"></i></a>
                 </article>
             </section>
         </Layout>

@@ -50,6 +50,12 @@
     "@fab/input-static": "^1.0.0-rc.8",
     "@fab/plugin-render-html": "^1.0.0-rc.8",
     "@fab/plugin-rewire-assets": "^1.0.0-rc.8",
-    "@fab/server": "^1.0.0-rc.8"
+    "@fab/server": "^1.0.0-rc.8",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.21.5",
+    "gatsby-plugin-eslint": "^2.0.8"
   }
 }

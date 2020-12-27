@@ -2,6 +2,7 @@ import React from "react"
 import {graphql} from "gatsby"
 import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../layouts/default";
+import PropTypes from "prop-types"
 
 import styles from "./project.module.scss";
 
@@ -26,7 +27,7 @@ query GetProject($urlname: String!, $lang: String!) {
 }
 `
 
-export default function ProjectTemplate({data}) {
+const ProjectTemplate = ({data}) => {
   const {t} = useTranslation();
   let project = data.allProjectsJson.nodes[0];
   let projectName = project.name;
@@ -74,3 +75,9 @@ export default function ProjectTemplate({data}) {
         </Layout>
     );
 }
+
+ProjectTemplate.propTypes = {
+  data: PropTypes.object.isRequired
+}
+
+export default ProjectTemplate;

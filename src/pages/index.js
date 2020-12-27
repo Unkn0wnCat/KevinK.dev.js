@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from "../layouts/default"
+import PropTypes from "prop-types"
 
 import styles from "./index.module.scss"
 import projectStyles from "./projects.module.scss"
@@ -81,7 +82,7 @@ class IndexPage extends React.Component {
             <div className={projectStyles.projectList}>
                 {this.props.data.allProjectsJson.nodes.map((project) => {
                     return (
-                        <div className={projectStyles.projectCard}>
+                        <div className={projectStyles.projectCard} key={project.lang+"/"+project.urlname}>
                             {/*<div className="projectCardActivityIndicator activityIndicatorBlue">Live</div>*/}
                             <div className={projectStyles.projectCardImage} style={{ backgroundImage: "url("+project.image.childImageSharp.resize.src+")" }}>
                               <div className={projectStyles.projectCardMeta}>
@@ -109,6 +110,10 @@ class IndexPage extends React.Component {
       </Layout>
     )
   }
+}
+
+IndexPage.propTypes = {
+  data: PropTypes.object.isRequired
 }
 
 export default IndexPage
