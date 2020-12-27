@@ -1,16 +1,14 @@
 import React, {useState} from "react"
 import Layout from "../layouts/default";
 import {useStaticQuery, graphql} from "gatsby";
-import { Trans, Link, useI18next, I18nextContext } from "gatsby-plugin-react-i18next"
+import { Trans, useI18next, I18nextContext } from "gatsby-plugin-react-i18next"
 
 import styles from "./donate.module.scss";
-
-import logo from "../images/roundedbglogo@10x.png";
 
 export default function DonatePage() {
     const [amount, setAmount] = useState(5);
     const {t} = useI18next();
-    const {language, path} = React.useContext(I18nextContext);
+    const {path} = React.useContext(I18nextContext);
 
     const { site, file } = useStaticQuery(
         graphql`
@@ -43,7 +41,7 @@ export default function DonatePage() {
 
                     <div className={styles.priceAmount}>
                         <label for="priceInput" className={styles.sronly}>Amount</label>
-                        <input type="number" min="1" placeholder="10.00" step="1" value={amount} onChange={(ev) => {setAmount(ev.target.value)}} id="priceInput" />
+                        <input type="number" min="1" placeholder="10.00" step="1" value={amount} onChange={(ev) => {setAmount(ev.target.value)}} name="priceInput" id="priceInput" />
                         <div>€</div>
                     </div>
 

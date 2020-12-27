@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../layouts/default";
-import { Trans, Link, useI18next } from "gatsby-plugin-react-i18next"
+import { Trans, useI18next } from "gatsby-plugin-react-i18next"
 import { graphql } from 'gatsby'
 
 import styles from "./friends.module.scss";
@@ -51,7 +51,7 @@ export default function SocialPage({data}) {
                                         
                                         {/*<span class="friendBio"></span>*/}
                                         <div className={styles.contactLinks}>
-                                            <a className={styles.contactLink} href={friend.url} target="_blank" rel="noopener"><i class="fas fa-globe-europe" aria-hidden="true"></i> {friend.url}</a>
+                                            <a className={styles.contactLink} href={friend.url} target="_blank" rel="noreferrer"><i class="fas fa-globe-europe" aria-hidden="true"></i> {friend.url}</a>
                                         </div>
                                     </div>
                                 );

@@ -1,6 +1,6 @@
 import React from "react"
 import {graphql} from "gatsby"
-import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../layouts/default";
 
 import styles from "./project.module.scss";
@@ -58,8 +58,8 @@ export default function ProjectTemplate({data}) {
               <div>
                 <h1>Links</h1>
                 <div className={styles.linkList}>
-                  {project.links.github !== null ? <a href={project.links.github} target="_blank"><i className="fab fa-github" aria-hidden="true"></i> <Trans>projectViewGitHub</Trans></a> : null}
-                  {project.links.website !== null ? <a href={project.links.website} target="_blank"><i className="fas fa-external-link-alt" aria-hidden="true"></i> <Trans>projectViewWebsite</Trans></a> : null}
+                  {project.links.github !== null ? <a href={project.links.github} target="_blank" rel="noreferrer"><i className="fab fa-github" aria-hidden="true"></i> <Trans>projectViewGitHub</Trans></a> : null}
+                  {project.links.website !== null ? <a href={project.links.website} target="_blank" rel="noreferrer"><i className="fas fa-external-link-alt" aria-hidden="true"></i> <Trans>projectViewWebsite</Trans></a> : null}
 
                 </div>
               </div>

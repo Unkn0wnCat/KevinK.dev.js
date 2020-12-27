@@ -56,9 +56,9 @@ class IndexPage extends React.Component {
               <div className={styles.contactLinks}>
                 <a className={styles.contactLink} href={"tel:"+meta.contactPhone}><i className="fas fa-fw fa-phone"></i>{meta.contactPhone}</a>
                 <a className={styles.contactLink} href={"mailto:"+meta.contactEmail}><i className="far fa-fw fa-envelope"></i>{meta.contactEmail}</a>
-                <a className={styles.contactLink} href={meta.mapsLink} rel="noopener" target="_blank"><i className="fas fa-fw fa-map-marker-alt"></i><Trans>homeMyLocation</Trans></a>
-                <a className={styles.contactLink} href={"https://twitter.com/"+meta.contactTwitter} rel="noopener" target="_blank"><i className="fab fa-fw fa-twitter"></i>@{meta.contactTwitter}</a>
-                <a className={styles.contactLink} href={"https://github.com/"+meta.contactGitHub} rel="noopener" target="_blank"><i className="fab fa-fw fa-github"></i>{meta.contactGitHub}</a>
+                <a className={styles.contactLink} href={meta.mapsLink} rel="noreferrer" target="_blank"><i className="fas fa-fw fa-map-marker-alt"></i><Trans>homeMyLocation</Trans></a>
+                <a className={styles.contactLink} href={"https://twitter.com/"+meta.contactTwitter} rel="noreferrer" target="_blank"><i className="fab fa-fw fa-twitter"></i>@{meta.contactTwitter}</a>
+                <a className={styles.contactLink} href={"https://github.com/"+meta.contactGitHub} rel="noreferrer" target="_blank"><i className="fab fa-fw fa-github"></i>{meta.contactGitHub}</a>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ class IndexPage extends React.Component {
             <p><Trans>homeAboutMeHello</Trans><br/><Trans>homeAboutMeText</Trans></p>
           </article>
         </section>
-        <a className={styles.creditSection} href="https://unsplash.com/@jannikkiel" target="_blank" rel="noopener">
+        <a className={styles.creditSection} href="https://unsplash.com/@jannikkiel" target="_blank" rel="noreferrer">
           <div>
             <span><i className="fas fa-fw fa-camera"></i> <Trans>homeImageCredit</Trans></span>
             <i className="fas fa-fw fa-chevron-right"></i>
