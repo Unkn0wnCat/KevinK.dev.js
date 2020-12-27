@@ -1,12 +1,12 @@
 /* eslint-disable no-undef */
 let $ = require("jquery");
 
-$(function() {
-    $(window).on("scroll", function() {
+$(function () {
+    $(window).on("scroll", function () {
         performUpdate();
     });
 
-    $(window).on("navigate", function() {
+    $(window).on("navigate", function () {
         performUpdate();
     });
 
@@ -14,7 +14,7 @@ $(function() {
 });
 
 function performUpdate() {
-    if(window.scrollY < 15) {
+    if (window.scrollY < 15) {
         $(".topBar").addClass("homeBarTransparent");
     } else {
         $(".topBar").removeClass("homeBarTransparent");

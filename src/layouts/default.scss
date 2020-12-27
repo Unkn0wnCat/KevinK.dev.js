@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-body, html, #___gatsby, #gatsby-focus-wrapper {
+body,
+html,
+#___gatsby,
+#gatsby-focus-wrapper {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -55,15 +58,15 @@ footer {
         width: 100%;
         max-width: $layoutWidth;
         margin: auto;
-        
+
         > :first-child {
             padding-left: $layoutPadding;
         }
-        
+
         > :last-child {
             padding-right: $layoutPadding;
         }
-        
+
         a {
             display: block;
             padding: 10px $layoutPadding;
@@ -93,7 +96,10 @@ footer {
     text-align: center;
 }
 
-section > div:not(.profile), section > article, .section > div:not(.profile), .section > article {
+section>div:not(.profile),
+section>article,
+.section>div:not(.profile),
+.section>article {
     max-width: $layoutWidth;
     width: 100%;
     padding: 39px 20px;
@@ -148,7 +154,7 @@ h1 {
             color: white;
             text-decoration-style: dotted;
         }
-        
+
     }
 
     .modalCloseLink {

@@ -9,7 +9,8 @@
     overflow: hidden;
     background: linear-gradient(to bottom, transparent 80%, $background), radial-gradient(ellipse at top left, #1f0ba659, transparent), radial-gradient(ellipse at bottom right, #4a086829, transparent);
 
-    @media(pointer: coarse), (pointer: none) {
+    @media(pointer: coarse),
+    (pointer: none) {
         min-height: 700px;
     }
 
@@ -24,18 +25,18 @@
         &:hover .profileImage {
             transform: translate(4px, -4px);
         }
-    
+
         &:hover .profileImageDummy {
             transform: translate(-3px, 3px);
         }
-    
+
         .hello {
             font-weight: 100;
             opacity: .75;
             display: block;
             margin-bottom: -5px;
         }
-        
+
         .name {
             font-weight: 100;
             font-size: 2em;
@@ -59,17 +60,19 @@
             padding: 6px 0 6px 25px;
             color: $textColor;
 
-            @media(pointer: coarse), (pointer: none) {
+            @media(pointer: coarse),
+            (pointer: none) {
                 padding-top: 15px;
                 padding-bottom: 15px;
             }
         }
-        
-        .contactLink:hover, .contactLink:active {
+
+        .contactLink:hover,
+        .contactLink:active {
             text-decoration: underline dotted rgba(0, 0, 0, .5);
         }
-        
-        .contactLink > i {
+
+        .contactLink>i {
             color: $accentColor;
             margin-left: -25px;
             margin-right: 5px;
@@ -86,8 +89,9 @@
             padding: 20px 20px 20px 230px;
             color: $textColor;
         }
-    
-        .profileImage, .profileImageDummy {
+
+        .profileImage,
+        .profileImageDummy {
             display: inline-block;
             width: 250px;
             height: 350px;
@@ -100,12 +104,12 @@
             transform: translate(0, 0);
             transition: transform .25s;
         }
-    
+
         .profileImage {
             z-index: 20;
             /*box-shadow: -5px 7px 10px -6px rgba(127,127,127,.4);*/
         }
-    
+
         .profileImageDummy {
             z-index: 10;
             background: $accentColor;
@@ -115,35 +119,39 @@
         }
 
         @media (max-width: 590px) {
-            .profileImage,.profileImageDummy {
+
+            .profileImage,
+            .profileImageDummy {
                 display: none;
             }
-        
+
             .profileCard {
                 padding: 20px 20px 20px 20px;
                 transform: translate(20px, 20px);
             }
-        
-        
+
+
         }
     }
-    
+
 }
 
-.amazonAlexaSection, .donationSection, .hireMeSection {
+.amazonAlexaSection,
+.donationSection,
+.hireMeSection {
     @include homeBanner;
 }
 
 .creditSection {
     @include homeBanner;
-    
-    > div {
+
+    >div {
         padding: 15px !important;
         line-height: 15px;
         font-size: 1.2em;
         color: white;
-        
-        > span > i {
+
+        >span>i {
             line-height: 15px !important;
         }
     }

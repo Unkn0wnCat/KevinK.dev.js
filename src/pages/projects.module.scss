@@ -23,15 +23,15 @@
         &.activityIndicatorGreen {
             background: #26de81;
         }
-        
+
         &.activityIndicatorYellow {
             background: #f7b731;
         }
-        
+
         &.activityIndicatorRed {
             background: #fc5c65;
         }
-        
+
         &.activityIndicatorBlue {
             background: #45aaf2;
         }
@@ -77,13 +77,13 @@
         .projectCardCTAContainer {
             flex-direction: column;
         }
-    
+
         .projectCardCTA:nth-child(2) {
             border-left: none;
         }
     }
 
-    .projectCardCTAContainer > * {
+    .projectCardCTAContainer>* {
         flex-grow: 1;
     }
 }

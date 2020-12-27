@@ -4,7 +4,7 @@ import Navigation from "../components/navigation"
 import SEO from "../components/seo";
 
 import "./default.scss";
-import {Link, Trans} from 'gatsby-plugin-react-i18next';
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import LanguageSwitcher from "../components/languageSwitcher";
 
 class Layout extends React.Component {

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
     "siteName": "KevinK.dev",
     "siteAuthor": "@Unkn0wnKevin",

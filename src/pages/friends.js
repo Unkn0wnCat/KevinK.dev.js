@@ -20,9 +20,9 @@ query AllFriendsQuery {
   
 `
 
-const FriendsPage = ({data}) => {
-    
-    const {t} = useI18next();
+const FriendsPage = ({ data }) => {
+
+    const { t } = useI18next();
 
     function shuffle(a) {
         for (let i = a.length - 1; i > 0; i--) {
@@ -44,12 +44,12 @@ const FriendsPage = ({data}) => {
                         {
                             shuffle(data.allFriendsJson.nodes).map((friend) => {
                                 return (
-                                    <div className={styles.friendProfile} key={friend.url+"#"+friend.name}>
-                                        <div className={styles.friendImage} style={{backgroundImage: "url("+friend.imageURL+")"}}>
+                                    <div className={styles.friendProfile} key={friend.url + "#" + friend.name}>
+                                        <div className={styles.friendImage} style={{ backgroundImage: "url(" + friend.imageURL + ")" }}>
                                             <span className={styles.friendName}>{friend.name}</span>
                                             <span className={styles.friendTitle}>{friend.profession}</span>
                                         </div>
-                                        
+
                                         {/*<span class="friendBio"></span>*/}
                                         <div className={styles.contactLinks}>
                                             <a className={styles.contactLink} href={friend.url} target="_blank" rel="noreferrer"><i className="fas fa-globe-europe" aria-hidden="true"></i> {friend.url}</a>

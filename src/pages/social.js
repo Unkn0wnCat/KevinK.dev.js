@@ -19,9 +19,9 @@ query AllSocialsQuery {
   }  
 `
 
-const SocialPage = ({data}) => {
-    
-    const {t} = useI18next();
+const SocialPage = ({ data }) => {
+
+    const { t } = useI18next();
     return (
         <Layout module="social" title={t("social")} description={t("socialDescription")}>
             <section>
@@ -35,7 +35,7 @@ const SocialPage = ({data}) => {
                             data.allSocialsJson.nodes.map((social) => {
                                 return (
                                     <a className={styles.socialCard} href={social.url} target="_blank" rel="noreferrer" key={social.url}>
-                                        <div className={styles.socialImage} style={{backgroundImage: "url("+social.image+")"}}>
+                                        <div className={styles.socialImage} style={{ backgroundImage: "url(" + social.image + ")" }}>
                                             <span className={styles.socialName}>{social.platformName}</span>
                                             <span className={styles.socialUsername}>{social.platformHandle}</span>
                                         </div>

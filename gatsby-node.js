@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const path = require(`path`);
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
@@ -23,9 +24,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
 
     result.data.allProjectsJson.nodes.forEach((node) => {
+        // eslint-disable-next-line no-undef
         console.log("Creating Page: ", `/${node.lang}/projects/${node.urlname}`);
 
-        if(node.lang !== "ignoreme") createPage({
+        if (node.lang !== "ignoreme") createPage({
             path: `/${node.lang}/projects/${node.urlname}`,
             component: projectTemplate,
             context: {

@@ -10,16 +10,18 @@
 @mixin cardGeneric {
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: -1px 11px 33px -10px rgba(127,127,127,0.3);
+    box-shadow: -1px 11px 33px -10px rgba(127, 127, 127, 0.3);
     transition: transform .25s, box-shadow .25s;
     color: $textColor;
     text-decoration: none;
     margin: 20px;
     background: $background;
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
         transform: scale(1.05);
-        box-shadow: -1px 11px 33px -10px rgba(127,127,127,0.2), -1px 11px 33px -10px rgba($accentColor, .75);
+        box-shadow: -1px 11px 33px -10px rgba(127, 127, 127, 0.2), -1px 11px 33px -10px rgba($accentColor, .75);
     }
 }
 
@@ -33,7 +35,9 @@
     box-shadow: 0 0 33px -10px rgba($accentColor, .5);
     transition: box-shadow .25s;
 
-    &:hover, &:active, &:hover {
+    &:hover,
+    &:active,
+    &:hover {
         box-shadow: 0 0 33px -10px rgba($accentColor, .9);
     }
 }
@@ -54,7 +58,7 @@
         height: 50px;
     }
 
-    > div {
+    >div {
         display: flex;
         height: 100%;
         padding: 20px !important;
@@ -62,13 +66,13 @@
         font-size: 1.7em;
         color: white;
 
-        > span {
+        >span {
             margin-left: auto;
             margin-right: auto;
         }
 
-        > i {
-            
+        >i {
+
             display: inline-flex;
             flex-direction: column;
             justify-content: center;

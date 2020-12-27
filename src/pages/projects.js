@@ -26,42 +26,42 @@ query GetProjects($language: String) {
 }
 `
 
-const ProjectsPage = ({data}) => {
-    
-    const {t} = useI18next();
-    return (
-        <Layout module="projects" title={t("projects")} description={t("projectsDescription")}>
-            <section>
-                <article>
-                    <h1><Trans>projects</Trans></h1>
+const ProjectsPage = ({ data }) => {
 
-                    <p><Trans>projectsDescription</Trans></p>
+  const { t } = useI18next();
+  return (
+    <Layout module="projects" title={t("projects")} description={t("projectsDescription")}>
+      <section>
+        <article>
+          <h1><Trans>projects</Trans></h1>
 
-                    <div className={styles.projectList}>
-                        {data.allProjectsJson.nodes.map((project) => {
-                            return (
-                                <div className={styles.projectCard} key={project.lang+project.urlname}>
-                                    {/*<div className="projectCardActivityIndicator activityIndicatorBlue">Live</div>*/}
-                                    <div className={styles.projectCardImage} style={{ backgroundImage: "url("+project.image.childImageSharp.resize.src+")" }}>
-                                      <div className={styles.projectCardMeta}>
-                                          <span className={styles.projectCardTitle}>{project.name}</span>
-                                          <span className={styles.projectCardTeaser}>{project.shortDescription}</span>
-                                      </div>
-                                    </div>
-                                    
-                                    <div className={styles.projectCardCTAContainer}>
-                                        <div className={styles.projectCardCTA}><Link to={"/projects/"+project.urlname}><Trans>projectView</Trans></Link></div>
-                                    </div>
-                                </div>
-                            );
-                        })}
+          <p><Trans>projectsDescription</Trans></p>
+
+          <div className={styles.projectList}>
+            {data.allProjectsJson.nodes.map((project) => {
+              return (
+                <div className={styles.projectCard} key={project.lang + project.urlname}>
+                  {/*<div className="projectCardActivityIndicator activityIndicatorBlue">Live</div>*/}
+                  <div className={styles.projectCardImage} style={{ backgroundImage: "url(" + project.image.childImageSharp.resize.src + ")" }}>
+                    <div className={styles.projectCardMeta}>
+                      <span className={styles.projectCardTitle}>{project.name}</span>
+                      <span className={styles.projectCardTeaser}>{project.shortDescription}</span>
                     </div>
+                  </div>
 
-                    {/*<pre>{JSON.stringify(data, null, 2)}</pre>*/}
-                </article>
-            </section>
-        </Layout>
-    );
+                  <div className={styles.projectCardCTAContainer}>
+                    <div className={styles.projectCardCTA}><Link to={"/projects/" + project.urlname}><Trans>projectView</Trans></Link></div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/*<pre>{JSON.stringify(data, null, 2)}</pre>*/}
+        </article>
+      </section>
+    </Layout>
+  );
 }
 
 ProjectsPage.propTypes = {

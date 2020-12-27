@@ -2,10 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "gatsby-plugin-react-i18next"
 import { useStaticQuery, graphql } from "gatsby"
-import {useTranslation} from 'gatsby-plugin-react-i18next';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 function SEO({ description, meta, title }) {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -60,14 +60,14 @@ function SEO({ description, meta, title }) {
           content: metaDescription,
         },
         {
-            name: "keywords",
-            content: site.siteMetadata.keywords
+          name: "keywords",
+          content: site.siteMetadata.keywords
         }
-      ].concat(meta)} 
+      ].concat(meta)}
     >
-        <script src="https://kit.fontawesome.com/1377f925e0.js" crossOrigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Roboto&display=swap" rel="stylesheet"/> 
+      <script src="https://kit.fontawesome.com/1377f925e0.js" crossOrigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
     </Helmet>
   )
 }

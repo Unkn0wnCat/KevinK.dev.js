@@ -13,7 +13,7 @@ module.exports = {
         mapsLink: extConfig.mapsLink,
         contactTwitter: extConfig.contactTwitter,
         contactGitHub: extConfig.contactGitHub
-      },
+    },
     assetPrefix: "/assets",
     plugins: [
         `gatsby-plugin-eslint`,
@@ -58,25 +58,25 @@ module.exports = {
         {
             resolve: `gatsby-plugin-react-i18next`,
             options: {
-              path: `${__dirname}/locales`,
-              languages: extConfig.languages,
-              defaultLanguage: null,
-              siteUrl: extConfig.siteURL,
-              i18nextOptions: {
-                interpolation: {
-                  escapeValue: false // not needed for react as it escapes by default
+                path: `${__dirname}/locales`,
+                languages: extConfig.languages,
+                defaultLanguage: null,
+                siteUrl: extConfig.siteURL,
+                i18nextOptions: {
+                    interpolation: {
+                        escapeValue: false // not needed for react as it escapes by default
+                    },
+                    keySeparator: false,
+                    nsSeparator: false
                 },
-                keySeparator: false,
-                nsSeparator: false
-              },
-              pages: [
-                  {
-                      matchPath: '/:lang/projects/:urlname',
-                      getLanguageFromPath: true,
-                      excludeLanguages: extConfig.languages
-                  }
-              ]
+                pages: [
+                    {
+                        matchPath: '/:lang/projects/:urlname',
+                        getLanguageFromPath: true,
+                        excludeLanguages: extConfig.languages
+                    }
+                ]
             }
-          }
+        }
     ]
 }

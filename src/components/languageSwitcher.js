@@ -1,8 +1,8 @@
 import React from "react"
-import {Link, Trans, useI18next} from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 
 export default function LanguageSwitcher() {
-    const {languages, originalPath} = useI18next();
+    const { languages, originalPath } = useI18next();
 
     return (
         <div className="languageModalInner">
