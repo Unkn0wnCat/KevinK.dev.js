@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@fab/actions": "^1.0.0-rc.9",
-    "@fab/cli": "^1.0.0-rc.8",
+    "@fab/cli": "^1.0.0-rc.9",
     "@fab/input-static": "^1.0.0-rc.9",
     "@fab/plugin-render-html": "^1.0.0-rc.8",
     "@fab/plugin-rewire-assets": "^1.0.0-rc.9",
