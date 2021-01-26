@@ -8,6 +8,8 @@ import projectStyles from "./projects.module.scss"
 import { Trans, Link } from "gatsby-plugin-react-i18next"
 import { graphql } from "gatsby";
 
+import anime from "animejs";
+
 
 export const query = graphql`
   query GetMetaAndProjects($language: String) {
@@ -40,6 +42,31 @@ export const query = graphql`
 `;
 
 class IndexPage extends React.Component {
+  componentDidMount() {
+    anime({
+      targets: ["."+styles.profileCard+" > span", "."+styles.profileCard+" a"],
+      opacity: [0, 1],
+      translateX: [100, 0],
+      duration: 250,
+      delay: anime.stagger(20),
+      easing: 'easeInOutCirc'
+    });
+    anime({
+      targets: ["."+styles.profileImageDummy],
+      translateX: [0, -3],
+      translateY: [0, 3],
+      duration: 250,
+      easing: 'easeInOutCirc'
+    });
+    anime({
+      targets: ["."+styles.profileImage],
+      translateX: [0, 4],
+      translateY: [0, -4],
+      duration: 250,
+      easing: 'easeInOutCirc'
+    });
+  }
+
   render() {
     let meta = this.props.data.site.siteMetadata;
 
