@@ -82,7 +82,7 @@ class IndexPage extends React.Component {
             <div className={projectStyles.projectList}>
               {this.props.data.allProjectsJson.nodes.map((project) => {
                 return (
-                  <div className={projectStyles.projectCard} key={project.lang + "/" + project.urlname}>
+                  <Link className={projectStyles.projectCard} key={project.lang + "/" + project.urlname} to={"/projects/" + project.urlname}>
                     {/*<div className="projectCardActivityIndicator activityIndicatorBlue">Live</div>*/}
                     <div className={projectStyles.projectCardImage} style={{ backgroundImage: "url(" + project.image.childImageSharp.resize.src + ")" }}>
                       <div className={projectStyles.projectCardMeta}>
@@ -91,10 +91,10 @@ class IndexPage extends React.Component {
                       </div>
                     </div>
 
-                    <div className={projectStyles.projectCardCTAContainer}>
+                    {/*<div className={projectStyles.projectCardCTAContainer}>
                       <div className={projectStyles.projectCardCTA}><Link to={"/projects/" + project.urlname}><Trans>projectView</Trans></Link></div>
-                    </div>
-                  </div>
+                    </div>*/}
+                  </Link>
                 );
               })}
             </div>
