@@ -100,14 +100,14 @@
             z-index: 20;
             /*box-shadow: -5px 7px 10px -6px rgba(127,127,127,.4);*/
             box-shadow: -1px 11px 33px -10px #e5502b4b;
-            transform: translate(4px, -4px);
+            //transform: translate(4px, -4px);
         }
 
         .profileImageDummy {
             z-index: 10;
             background: $accentColor;
             opacity: .2;
-            transform: translate(-3px, 3px);
+            //transform: translate(-3px, 3px);
             /*box-shadow: 0 0 10px -10px var(--accent-color);
             background: transparent;*/
         }
