@@ -34,7 +34,7 @@
     "gatsby-plugin-sharp": "^2.13.2",
     "gatsby-plugin-sitemap": "^2.11.0",
     "gatsby-source-filesystem": "^2.10.0",
-    "gatsby-transformer-json": "^2.10.0",
+    "gatsby-transformer-json": "^2.11.0",
     "gatsby-transformer-sharp": "^2.11.0",
     "i18next": "^19.8.7",
     "jquery": "^3.5.1",
