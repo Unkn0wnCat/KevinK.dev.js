@@ -7,13 +7,22 @@ import PropTypes from "prop-types"
 import styles from "./social.module.scss";
 
 export const query = graphql`
-query AllSocialsQuery {
+query AllSocialsQuery($language: String!) {
     allSocialsJson {
       nodes {
         image
         platformHandle
         platformName
         url
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
   }  

@@ -29,6 +29,13 @@ module.exports = {
                 path: `./content/`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/locales`,
+                name: `locale`
+            },
+        },
         `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-manifest`,
@@ -58,9 +65,10 @@ module.exports = {
         {
             resolve: `gatsby-plugin-react-i18next`,
             options: {
-                path: `${__dirname}/locales`,
+                localeJsonSourceName: `locale`, 
                 languages: extConfig.languages,
-                defaultLanguage: null,
+                defaultLanguage: `en`,
+                generateDefaultLanguagePage: true,
                 siteUrl: extConfig.siteURL,
                 i18nextOptions: {
                     interpolation: {

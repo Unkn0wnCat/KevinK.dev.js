@@ -1,35 +1,45 @@
 import React, { useState } from "react"
 import Layout from "../layouts/default";
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import { Trans, useI18next, I18nextContext } from "gatsby-plugin-react-i18next"
+import PropTypes from "prop-types"
 
 import styles from "./donate.module.scss";
 
-export default function DonatePage() {
+export const query = graphql`
+query ($language: String!) {
+  site {
+    siteMetadata {
+      title
+      siteUrl
+      payPalMail
+    }
+  }
+  file(relativePath: {eq: "images/pplogo.png"}) {
+      childImageSharp {
+          resize(width: 240, height: 240, fit: CONTAIN) {
+              src
+          }
+      }
+  }
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
+      }
+    }
+  }
+}
+`;
+
+function DonatePage(props) {
   const [amount, setAmount] = useState(5);
   const { t } = useI18next();
   const { path } = React.useContext(I18nextContext);
 
-  const { site, file } = useStaticQuery(
-    graphql`
-          query {
-            site {
-              siteMetadata {
-                title
-                siteUrl
-                payPalMail
-              }
-            }
-            file(relativePath: {eq: "images/pplogo.png"}) {
-                childImageSharp {
-                    resize(width: 240, height: 240, fit: CONTAIN) {
-                        src
-                    }
-                }
-            }
-          }
-        `
-  )
+  const { site, file } = props.data;
 
   return (
     <Layout module="donate" title={t("donate")} description={t("donationCatchphrase")}>
@@ -51,3 +61,9 @@ export default function DonatePage() {
     </Layout>
   );
 }
+
+DonatePage.propTypes = {
+  data: PropTypes.object.isRequired
+};
+
+export default DonatePage;

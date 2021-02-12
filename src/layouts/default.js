@@ -39,7 +39,7 @@ Layout.propTypes = {
     title: PropTypes.string.isRequired,
     module: PropTypes.string.isRequired,
     transparentTopbar: PropTypes.bool,
-    children: PropTypes.object.isRequired
+    children: PropTypes.any.isRequired
 }
 
 export default Layout;

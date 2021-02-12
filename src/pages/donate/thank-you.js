@@ -1,20 +1,30 @@
 import React from "react"
 import Layout from "../../layouts/default";
 import { Trans, useI18next } from "gatsby-plugin-react-i18next"
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql } from "gatsby";
+import PropTypes from "prop-types"
 
-export default function ImprintPage() {
-  const { site } = useStaticQuery(
-    graphql`
-          query {
-            site {
-              siteMetadata {
-                contactEmail
-              }
-            }
-          }
-        `
-  )
+export const query = graphql`
+  query GetThankYouPage($language: String!) {
+    site {
+      siteMetadata {
+        contactEmail
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`
+
+function ThankYouPage(props) {
+  const { site } = props.data
 
   let contactEmail = site.siteMetadata.contactEmail;
   const { t } = useI18next();
@@ -30,3 +40,9 @@ export default function ImprintPage() {
     </Layout>
   );
 }
+
+ThankYouPage.propTypes = {
+  data: PropTypes.object.isRequired
+};
+
+export default ThankYouPage;

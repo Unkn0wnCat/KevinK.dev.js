@@ -7,13 +7,22 @@ import PropTypes from "prop-types"
 import styles from "./friends.module.scss";
 
 export const query = graphql`
-query AllFriendsQuery {
+query AllFriendsQuery($language: String!) {
     allFriendsJson {
       nodes {
         name
         profession
         url
         imageURL
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
   }

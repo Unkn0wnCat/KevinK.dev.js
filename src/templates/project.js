@@ -7,7 +7,7 @@ import PropTypes from "prop-types"
 import styles from "./project.module.scss";
 
 export const query = graphql`
-query GetProject($urlname: String!, $lang: String!) {
+query GetProject($urlname: String!, $lang: String!, $language: String!) {
   allProjectsJson(filter: {urlname: {eq: $urlname}, lang: {eq: $lang}}) {
     nodes {
       lang
@@ -22,6 +22,15 @@ query GetProject($urlname: String!, $lang: String!) {
       }
       longDescription
       shortDescription
+    }
+  }
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
+      }
     }
   }
 }
