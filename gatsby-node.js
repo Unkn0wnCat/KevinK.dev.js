@@ -102,7 +102,7 @@ exports.onPostBuild = async ({graphql, reporter}) => {
       return
     }
 
-    let projects = res.data.allProjectsJson.nodes;
+    let projects = res.data.allProjectsJson.nodes.filter((project => { return project.lang !== "ignoreme" }));
 
     fs.writeFileSync(`${projectsPrefix}.json`, JSON.stringify({
       success: true,
@@ -119,8 +119,6 @@ exports.onPostBuild = async ({graphql, reporter}) => {
     });
 
     projects.forEach((project) => {
-      if(project.lang == "ignoreme") return;
-
       fs.writeFileSync(`${projectsPrefix}/${project.lang}/${project.urlname}.json`, JSON.stringify({
         success: true,
         project: {
