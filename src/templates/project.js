@@ -63,7 +63,7 @@ const ProjectTemplate = ({ data }) => {
           </article>
         </section>
         : null}
-      {project.links.github !== null || project.links.website !== null ?
+      {project.links !== null ?
         <section className={styles.projectLinks}>
           <div>
             <h1>Links</h1>
