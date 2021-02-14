@@ -19,7 +19,8 @@ async function checkLang({ request }) {
         requestURL.pathname.startsWith("/icons") ||
         requestURL.pathname.startsWith("/manifest.webmanifest") ||
         requestURL.pathname.startsWith("/favicon") ||
-        requestURL.pathname.startsWith("/sw.js")) {
+        requestURL.pathname.startsWith("/sw.js") ||
+        requestURL.pathname.startsWith("/api")) {
 
         return;
     }
