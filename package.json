@@ -55,7 +55,7 @@
     "@fab/plugin-rewire-assets": "^1.0.0-rc.9",
     "@fab/server": "^1.0.0-rc.9",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.19.0",
+    "eslint": "^7.20.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-react": "^7.22.0",
