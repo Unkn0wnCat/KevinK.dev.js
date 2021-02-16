@@ -1,0 +1,43 @@
+name: Build Site
+
+on:
+  push:
+
+jobs:
+  update:
+    name: Update Site
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      name: Checkout Repo
+
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - run: npm install
+      name: Install Dependencies
+
+    - run: npm run build
+      name: Build Site
+      
+    - name: Archive Release (zip)
+      uses: thedoctor0/zip-release@master
+      with:
+        path: './public'
+        filename: 'public.zip'
+      
+    - name: Archive Release (tar)
+      uses: thedoctor0/zip-release@master
+      with:
+        path: './public'
+        filename: 'public.tar'
+        type: 'tar'
+        
+    - uses: actions/upload-artifact@v2
+      name: Upload Artifacts
+      with:
+        name: site-build
+        path: public.*
