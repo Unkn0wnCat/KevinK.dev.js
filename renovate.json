@@ -1,5 +1,12 @@
 {
   "extends": [
     "config:base"
+  ],
+  "assignees": [
+    "Unkn0wnCat"
+  ],
+  "automerge": true,
+  "baseBranches": [
+    "master"
   ]
 }
