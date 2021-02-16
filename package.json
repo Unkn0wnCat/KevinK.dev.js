@@ -48,7 +48,7 @@
     "react-i18next": "11.8.6"
   },
   "devDependencies": {
-    "@fab/actions": "1.0.0-rc.9",
+    "@fab/actions": "1.0.0-rc.3-beta.1",
     "@fab/cli": "1.0.0-rc.9",
     "@fab/input-static": "1.0.0-rc.9",
     "@fab/plugin-render-html": "1.0.0-rc.9",
