@@ -5,7 +5,7 @@ on:
 
 jobs:
   update:
-    name: Update Site
+    name: Build Site
     runs-on: ubuntu-latest
 
     steps:
@@ -22,22 +22,9 @@ jobs:
 
     - run: npm run build
       name: Build Site
-      
-    - name: Archive Release (zip)
-      uses: thedoctor0/zip-release@master
-      with:
-        path: './public'
-        filename: 'public.zip'
-      
-    - name: Archive Release (tar)
-      uses: thedoctor0/zip-release@master
-      with:
-        path: './public'
-        filename: 'public.tar'
-        type: 'tar'
         
     - uses: actions/upload-artifact@v2
       name: Upload Artifacts
       with:
-        name: site-build
-        path: public.*
+        name: site
+        path: public
