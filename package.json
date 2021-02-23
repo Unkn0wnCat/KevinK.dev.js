@@ -19,8 +19,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@babel/cli": "7.12.17",
-    "@babel/plugin-transform-typescript": "7.12.17",
+    "@babel/cli": "7.13.0",
+    "@babel/plugin-transform-typescript": "7.13.0",
     "animejs": "3.2.1",
     "babel-plugin-i18next-extract": "0.8.2",
     "gatsby": "2.32.4",
