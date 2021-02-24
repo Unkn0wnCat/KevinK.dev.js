@@ -23,7 +23,7 @@
     "@babel/plugin-transform-typescript": "7.13.0",
     "animejs": "3.2.1",
     "babel-plugin-i18next-extract": "0.8.2",
-    "gatsby": "2.32.5",
+    "gatsby": "2.32.6",
     "gatsby-cli": "2.19.2",
     "gatsby-plugin-asset-path": "3.0.3",
     "gatsby-plugin-manifest": "2.12.1",
