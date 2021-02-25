@@ -12,7 +12,9 @@ module.exports = {
         contactPhone: extConfig.contactPhone,
         mapsLink: extConfig.mapsLink,
         contactTwitter: extConfig.contactTwitter,
-        contactGitHub: extConfig.contactGitHub
+        contactGitHub: extConfig.contactGitHub,
+        contactMastodon: extConfig.contactMastodon,
+        contactMastodonHref: extConfig.contactMastodonHref
     },
     assetPrefix: "/assets",
     plugins: [

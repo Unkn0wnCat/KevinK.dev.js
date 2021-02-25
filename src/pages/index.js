@@ -20,6 +20,8 @@ export const query = graphql`
         mapsLink
         contactTwitter
         contactGitHub
+        contactMastodon
+        contactMastodonHref
       }
     }
     allProjectsJson(filter: {lang: {eq: $language}, featured: {gte: 0}}, sort: {fields: featured, order: ASC}) {
@@ -91,11 +93,11 @@ class IndexPage extends React.Component {
               <span className={styles.description}><Trans>homeMe</Trans> <span id="descriptionType"><Trans>homeWebDeveloper</Trans></span>.</span>
 
               <div className={styles.contactLinks}>
-                <a className={styles.contactLink} href={"tel:" + meta.contactPhone}><i className="fas fa-fw fa-phone"></i>{meta.contactPhone}</a>
-                <a className={styles.contactLink} href={"mailto:" + meta.contactEmail}><i className="far fa-fw fa-envelope"></i>{meta.contactEmail}</a>
-                <a className={styles.contactLink} href={meta.mapsLink} rel="noreferrer" target="_blank"><i className="fas fa-fw fa-map-marker-alt"></i><Trans>homeMyLocation</Trans></a>
-                <a className={styles.contactLink} href={"https://twitter.com/" + meta.contactTwitter} rel="noreferrer" target="_blank"><i className="fab fa-fw fa-twitter"></i>@{meta.contactTwitter}</a>
-                <a className={styles.contactLink} href={"https://github.com/" + meta.contactGitHub} rel="noreferrer" target="_blank"><i className="fab fa-fw fa-github"></i>{meta.contactGitHub}</a>
+                <a className={styles.contactLink} href={"tel:" + meta.contactPhone} rel="me"><i className="fas fa-fw fa-phone"></i>{meta.contactPhone}</a>
+                <a className={styles.contactLink} href={"mailto:" + meta.contactEmail} rel="me"><i className="far fa-fw fa-envelope"></i>{meta.contactEmail}</a>
+                <a className={styles.contactLink} href={meta.mapsLink} rel="noreferrer " target="_blank"><i className="fas fa-fw fa-map-marker-alt"></i><Trans>homeMyLocation</Trans></a>
+                <a className={styles.contactLink} href={meta.contactMastodonHref} rel="noreferrer me" target="_blank"><i className="fab fa-fw fa-mastodon"></i>{meta.contactMastodon}</a>
+                <a className={styles.contactLink} href={"https://github.com/" + meta.contactGitHub} rel="noreferrer me" target="_blank"><i className="fab fa-fw fa-github"></i>{meta.contactGitHub}</a>
               </div>
             </div>
           </div>

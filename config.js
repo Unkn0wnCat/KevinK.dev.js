@@ -11,5 +11,7 @@ module.exports = {
     "contactPhone": "+4941068068004",
     "mapsLink": "https://goo.gl/maps/KVq9z1PVaVP2",
     "contactTwitter": "Unkn0wnKevin",
-    "contactGitHub": "Unkn0wnCat"
+    "contactGitHub": "Unkn0wnCat",
+    "contactMastodon": "@kevin@1in1.net",
+    "contactMastodonHref": "https://mastodon.1in1.net/@kevin"
 };
