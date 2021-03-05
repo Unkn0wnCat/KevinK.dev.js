@@ -2,8 +2,8 @@ import * as React from "react"
 import Layout from "../layouts/default"
 import PropTypes from "prop-types"
 
-import styles from "./index.module.scss"
-import projectStyles from "./projects.module.scss"
+import * as styles from "./index.module.scss"
+import * as projectStyles from "./projects.module.scss"
 
 import { Trans, Link } from "gatsby-plugin-react-i18next"
 import { graphql } from "gatsby";

@@ -4,7 +4,7 @@ import { Trans, useI18next } from "gatsby-plugin-react-i18next"
 import { graphql } from 'gatsby'
 import PropTypes from "prop-types"
 
-import styles from "./friends.module.scss";
+import * as styles from "./friends.module.scss";
 
 export const query = graphql`
 query AllFriendsQuery($language: String!) {

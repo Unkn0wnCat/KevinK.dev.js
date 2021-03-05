@@ -4,7 +4,7 @@ import { Trans, Link, useI18next } from "gatsby-plugin-react-i18next"
 import { graphql } from 'gatsby'
 import PropTypes from "prop-types"
 
-import styles from "./projects.module.scss";
+import * as styles from "./projects.module.scss";
 
 export const query = graphql`
 query GetProjects($language: String) {

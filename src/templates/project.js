@@ -4,7 +4,7 @@ import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from "../layouts/default";
 import PropTypes from "prop-types"
 
-import styles from "./project.module.scss";
+import * as styles from "./project.module.scss";
 
 export const query = graphql`
 query GetProject($urlname: String!, $lang: String!, $language: String!) {
