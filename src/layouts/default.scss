@@ -53,6 +53,10 @@ footer {
     z-index: 999;
     transition: background .25s;
 
+    @supports(backdrop-filter: blur(5px)) {
+        background: rgba($background, .9);
+    }
+
     .topBarInner {
         display: flex;
         width: 100%;
