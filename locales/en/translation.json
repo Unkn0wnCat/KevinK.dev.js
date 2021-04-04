@@ -31,5 +31,8 @@
   "donateThanks": "Thanks for donating!",
   "donateThanksText": "I really appreciate you appreciating my work and showing it! Feel free to mail me at <1>{{contactEmail}}</1> if you have anything you want to talk about!",
   "featuredProjects": "Featured Projects",
-  "seeMore": "See more"
+  "seeMore": "See more",
+  "donateGitHub": "You can very easily support me via GitHub Sponsors using the following button!",
+  "donatePayPal": "If you'd rather support me via PayPal the following button is for you:",
+  "sponsorGitHub": "Sponsor using GitHub"
 }
