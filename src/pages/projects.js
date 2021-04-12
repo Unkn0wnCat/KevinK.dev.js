@@ -50,23 +50,16 @@ const ProjectsPage = ({ data }) => {
             {data.allProjectsJson.nodes.map((project) => {
               return (
                 <Link className={styles.projectCard} key={project.lang + project.urlname} to={"/projects/" + project.urlname}>
-                  {/*<div className="projectCardActivityIndicator activityIndicatorBlue">Live</div>*/}
                   <div className={styles.projectCardImage} style={{ backgroundImage: "url(" + project.image.childImageSharp.resize.src + ")" }}>
                     <div className={styles.projectCardMeta}>
                       <span className={styles.projectCardTitle}>{project.name}</span>
                       <span>{project.shortDescription}</span>
                     </div>
                   </div>
-
-                  {/*<div className={styles.projectCardCTAContainer}>
-                      <div className={styles.projectCardCTA}><Link to={"/projects/" + project.urlname}><Trans>projectView</Trans></Link></div>
-                  </div>*/}
                 </Link>
               );
             })}
           </div>
-
-          {/*<pre>{JSON.stringify(data, null, 2)}</pre>*/}
         </article>
       </section>
     </Layout>

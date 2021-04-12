@@ -121,17 +121,12 @@ class IndexPage extends React.Component {
               {this.props.data.allProjectsJson.nodes.map((project) => {
                 return (
                   <Link className={projectStyles.projectCard} key={project.lang + "/" + project.urlname} to={"/projects/" + project.urlname}>
-                    {/*<div className="projectCardActivityIndicator activityIndicatorBlue">Live</div>*/}
                     <div className={projectStyles.projectCardImage} style={{ backgroundImage: "url(" + project.image.childImageSharp.resize.src + ")" }}>
                       <div className={projectStyles.projectCardMeta}>
                         <span className={projectStyles.projectCardTitle}>{project.name}</span>
                         <span>{project.shortDescription}</span>
                       </div>
                     </div>
-
-                    {/*<div className={projectStyles.projectCardCTAContainer}>
-                      <div className={projectStyles.projectCardCTA}><Link to={"/projects/" + project.urlname}><Trans>projectView</Trans></Link></div>
-                    </div>*/}
                   </Link>
                 );
               })}

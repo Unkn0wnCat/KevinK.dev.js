@@ -59,7 +59,6 @@ const FriendsPage = ({ data }) => {
                                             <span className={styles.friendTitle}>{friend.profession}</span>
                                         </div>
 
-                                        {/*<span class="friendBio"></span>*/}
                                         <div className={styles.contactLinks}>
                                             <a className={styles.contactLink} href={friend.url} target="_blank" rel="noreferrer"><i className="fas fa-globe-europe" aria-hidden="true"></i> {friend.url}</a>
                                         </div>
@@ -68,8 +67,6 @@ const FriendsPage = ({ data }) => {
                             })
                         }
                     </div>
-
-                    {/*<pre>{JSON.stringify(data, null, 2)}</pre>*/}
                 </article>
             </section>
         </Layout>

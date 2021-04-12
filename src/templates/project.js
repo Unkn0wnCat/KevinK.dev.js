@@ -75,12 +75,6 @@ const ProjectTemplate = ({ data }) => {
           </div>
         </section>
         : null}
-      {/*<section>
-            <div>
-
-              <pre>{JSON.stringify(data, null, 2)}</pre>
-            </div>
-          </section>*/}
     </Layout>
   );
 }

@@ -53,8 +53,6 @@ const SocialPage = ({ data }) => {
                             })
                         }
                     </div>
-
-                    {/*<pre>{JSON.stringify(data, null, 2)}</pre>*/}
                 </article>
             </section>
         </Layout>

@@ -2,7 +2,6 @@ import * as React from "react"
 import { Link } from "gatsby-plugin-react-i18next"
 import Layout from "../layouts/default"
 
-// markup
 const NotFoundPage = () => {
   return (
     <Layout title="Not found">
