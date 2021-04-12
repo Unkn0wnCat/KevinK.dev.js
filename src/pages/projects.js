@@ -54,7 +54,7 @@ const ProjectsPage = ({ data }) => {
                   <div className={styles.projectCardImage} style={{ backgroundImage: "url(" + project.image.childImageSharp.resize.src + ")" }}>
                     <div className={styles.projectCardMeta}>
                       <span className={styles.projectCardTitle}>{project.name}</span>
-                      <span className={styles.projectCardTeaser}>{project.shortDescription}</span>
+                      <span>{project.shortDescription}</span>
                     </div>
                   </div>
 

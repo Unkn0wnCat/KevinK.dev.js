@@ -125,7 +125,7 @@ class IndexPage extends React.Component {
                     <div className={projectStyles.projectCardImage} style={{ backgroundImage: "url(" + project.image.childImageSharp.resize.src + ")" }}>
                       <div className={projectStyles.projectCardMeta}>
                         <span className={projectStyles.projectCardTitle}>{project.name}</span>
-                        <span className={projectStyles.projectCardTeaser}>{project.shortDescription}</span>
+                        <span>{project.shortDescription}</span>
                       </div>
                     </div>
 

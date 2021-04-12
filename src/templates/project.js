@@ -49,7 +49,7 @@ const ProjectTemplate = ({ data }) => {
           <header>
             <div className={styles.headerInner}>
               <h1><Trans>project</Trans>: {projectName}</h1>
-              <span className={styles.postMeta}>{project.shortDescription}</span>
+              <span>{project.shortDescription}</span>
             </div>
           </header>
           <div className={styles.headerPlaceholder}></div>
