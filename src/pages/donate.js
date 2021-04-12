@@ -1,39 +1,39 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 import Layout from "../layouts/default";
 import { graphql } from "gatsby";
-import { Trans, useI18next, I18nextContext } from "gatsby-plugin-react-i18next"
-import PropTypes from "prop-types"
-import GitHubButton from 'react-github-btn'
+import { Trans, useI18next, I18nextContext } from "gatsby-plugin-react-i18next";
+import PropTypes from "prop-types";
+import GitHubButton from "react-github-btn";
 
 import * as styles from "./donate.module.scss";
 
 export const query = graphql`
-query ($language: String!) {
-  site {
-    siteMetadata {
-      title
-      siteUrl
-      payPalMail
-      contactGitHub
+  query($language: String!) {
+    site {
+      siteMetadata {
+        title
+        siteUrl
+        payPalMail
+        contactGitHub
+      }
     }
-  }
-  file(relativePath: {eq: "images/pplogo.png"}) {
+    file(relativePath: { eq: "images/pplogo.png" }) {
       childImageSharp {
-          resize(width: 240, height: 240, fit: CONTAIN) {
-              src
-          }
+        resize(width: 240, height: 240, fit: CONTAIN) {
+          src
+        }
       }
-  }
-  locales: allLocale(filter: {language: {eq: $language}}) {
-    edges {
-      node {
-        ns
-        data
-        language
+    }
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
   }
-}
 `;
 
 function DonatePage(props) {
@@ -47,23 +47,81 @@ function DonatePage(props) {
     <Layout title={t("donate")} description={t("donationCatchphrase")}>
       <section>
         <article>
-          <h1><Trans>donate</Trans></h1>
+          <h1>
+            <Trans>donate</Trans>
+          </h1>
 
-          <p><Trans>donateDescription</Trans></p>
+          <p>
+            <Trans>donateDescription</Trans>
+          </p>
 
-          <p><Trans>donateGitHub</Trans></p>
+          <p>
+            <Trans>donateGitHub</Trans>
+          </p>
 
-          <p style={{display: "block", textAlign: "center"}}><GitHubButton href={"https://github.com/sponsors/"+site.siteMetadata.contactGitHub} data-color-scheme="no-preference: light; light: dark; dark: dark;" data-icon="octicon-heart" data-size="large" aria-label="Sponsor @Unkn0wnCat on GitHub"><Trans>sponsorGitHub</Trans></GitHubButton></p>
+          <p style={{ display: "block", textAlign: "center" }}>
+            <GitHubButton
+              href={
+                "https://github.com/sponsors/" + site.siteMetadata.contactGitHub
+              }
+              data-color-scheme="no-preference: light; light: dark; dark: dark;"
+              data-icon="octicon-heart"
+              data-size="large"
+              aria-label="Sponsor @Unkn0wnCat on GitHub"
+            >
+              <Trans>sponsorGitHub</Trans>
+            </GitHubButton>
+          </p>
 
-          <p><Trans>donatePayPal</Trans></p>
+          <p>
+            <Trans>donatePayPal</Trans>
+          </p>
 
           <div className={styles.priceAmount}>
-            <label htmlFor="priceInput" className={styles.sronly}>Amount</label>
-            <input type="number" min="1" placeholder="10.00" step="1" value={amount} onChange={(ev) => { setAmount(ev.target.value) }} name="priceInput" id="priceInput" />
+            <label htmlFor="priceInput" className={styles.sronly}>
+              Amount
+            </label>
+            <input
+              type="number"
+              min="1"
+              placeholder="10.00"
+              step="1"
+              value={amount}
+              onChange={(ev) => {
+                setAmount(ev.target.value);
+              }}
+              name="priceInput"
+              id="priceInput"
+            />
             <div>€</div>
           </div>
 
-          <a className={styles.donateButton} rel="noopener" id="payPalBtn" href={"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=" + encodeURIComponent(site.siteMetadata.payPalMail) + "&item_name=" + encodeURIComponent(site.siteMetadata.title) + "&currency_code=EUR&image_url=" + (encodeURIComponent(site.siteMetadata.siteUrl + file.childImageSharp.resize.src)) + "&return=" + (encodeURIComponent(site.siteMetadata.siteUrl + "/" + path + "thank-you/")) + "&rm=0&cancel_return=" + (encodeURIComponent(site.siteMetadata.siteUrl + "/" + path)) + "&amount=" + amount}><span>Donate using PayPal</span><i className="fas fa-fw fa-chevron-right" aria-hidden="true"></i></a>
+          <a
+            className={styles.donateButton}
+            rel="noopener"
+            id="payPalBtn"
+            href={
+              "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=" +
+              encodeURIComponent(site.siteMetadata.payPalMail) +
+              "&item_name=" +
+              encodeURIComponent(site.siteMetadata.title) +
+              "&currency_code=EUR&image_url=" +
+              encodeURIComponent(
+                site.siteMetadata.siteUrl + file.childImageSharp.resize.src
+              ) +
+              "&return=" +
+              encodeURIComponent(
+                site.siteMetadata.siteUrl + "/" + path + "thank-you/"
+              ) +
+              "&rm=0&cancel_return=" +
+              encodeURIComponent(site.siteMetadata.siteUrl + "/" + path) +
+              "&amount=" +
+              amount
+            }
+          >
+            <span>Donate using PayPal</span>
+            <i className="fas fa-fw fa-chevron-right" aria-hidden="true"></i>
+          </a>
         </article>
       </section>
     </Layout>
@@ -71,7 +129,7 @@ function DonatePage(props) {
 }
 
 DonatePage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 };
 
 export default DonatePage;

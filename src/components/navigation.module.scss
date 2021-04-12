@@ -7,13 +7,13 @@
     left: 0;
     display: flex;
     width: 100%;
-    background: rgba($background, .95);
+    background: rgba($background, 0.95);
     backdrop-filter: blur(5px);
     z-index: 999;
-    transition: background .25s;
+    transition: background 0.25s;
 
-    @supports(backdrop-filter: blur(5px)) {
-        background: rgba($background, .9);
+    @supports (backdrop-filter: blur(5px)) {
+        background: rgba($background, 0.9);
     }
 
     .topBarInner {
@@ -38,7 +38,7 @@
             border-top: 2px solid transparent;
 
             &:hover {
-                border-color: rgba(255, 255, 255, .25);
+                border-color: rgba(255, 255, 255, 0.25);
             }
 
             &.active {
@@ -52,8 +52,6 @@
     background: transparent;
     backdrop-filter: blur(0);
 }
-
-
 
 .flexSpacer {
     flex-grow: 1;

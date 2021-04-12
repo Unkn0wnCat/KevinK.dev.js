@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 import Layout from "../../layouts/default";
-import { Trans, useI18next } from "gatsby-plugin-react-i18next"
+import { Trans, useI18next } from "gatsby-plugin-react-i18next";
 import { graphql } from "gatsby";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
 export const query = graphql`
   query GetThankYouPage($language: String!) {
@@ -11,7 +11,7 @@ export const query = graphql`
         contactEmail
       }
     }
-    locales: allLocale(filter: {language: {eq: $language}}) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
           ns
@@ -21,10 +21,10 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 function ThankYouPage(props) {
-  const { site } = props.data
+  const { site } = props.data;
 
   let contactEmail = site.siteMetadata.contactEmail;
   const { t } = useI18next();
@@ -32,9 +32,16 @@ function ThankYouPage(props) {
     <Layout title={t("donate")}>
       <section>
         <article>
-          <h1><Trans>donateThanks</Trans></h1>
+          <h1>
+            <Trans>donateThanks</Trans>
+          </h1>
 
-          <p><Trans contactEmail={contactEmail} i18nKey="donateThanksText">donateThanksText<a href={"mailto:" + contactEmail}>{{ contactEmail }}</a></Trans></p>
+          <p>
+            <Trans contactEmail={contactEmail} i18nKey="donateThanksText">
+              donateThanksText
+              <a href={"mailto:" + contactEmail}>{{ contactEmail }}</a>
+            </Trans>
+          </p>
         </article>
       </section>
     </Layout>
@@ -42,7 +49,7 @@ function ThankYouPage(props) {
 }
 
 ThankYouPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 };
 
 export default ThankYouPage;

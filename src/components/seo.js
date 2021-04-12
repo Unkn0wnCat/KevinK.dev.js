@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "gatsby-plugin-react-i18next"
-import { useStaticQuery, graphql } from "gatsby"
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "gatsby-plugin-react-i18next";
+import { useStaticQuery, graphql } from "gatsby";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 function SEO({ description, meta, title }) {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ function SEO({ description, meta, title }) {
         }
       }
     `
-  )
+  );
 
   const metaDescription = description || t("siteDescription");
 
@@ -61,26 +61,32 @@ function SEO({ description, meta, title }) {
         },
         {
           name: "keywords",
-          content: site.siteMetadata.keywords
-        }
+          content: site.siteMetadata.keywords,
+        },
       ].concat(meta)}
     >
-      <script src="https://kit.fontawesome.com/1377f925e0.js" crossOrigin="anonymous"></script>
+      <script
+        src="https://kit.fontawesome.com/1377f925e0.js"
+        crossOrigin="anonymous"
+      ></script>
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet"
+      />
     </Helmet>
-  )
+  );
 }
 
 SEO.defaultProps = {
   meta: [],
   description: ``,
-}
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default SEO
+export default SEO;

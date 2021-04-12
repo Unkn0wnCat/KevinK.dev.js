@@ -73,7 +73,7 @@
         display: flex;
     }
 
-    @media(max-width: 900px) {
+    @media (max-width: 900px) {
         .projectCardCTAContainer {
             flex-direction: column;
         }
@@ -83,7 +83,7 @@
         }
     }
 
-    .projectCardCTAContainer>* {
+    .projectCardCTAContainer > * {
         flex-grow: 1;
     }
 }

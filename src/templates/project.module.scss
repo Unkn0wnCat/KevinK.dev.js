@@ -1,7 +1,7 @@
 @import "../variables";
 
 .projectHeader {
-    >div {
+    > div {
         padding-bottom: 0 !important;
     }
 
@@ -19,7 +19,13 @@
         left: 0;
         width: 100%;
         height: 400px;
-        background: linear-gradient(to bottom, rgba($background, .95), rgba($background, .25) 20%, rgba($background, .35) 80%, rgba($background, 1) 100%);
+        background: linear-gradient(
+            to bottom,
+            rgba($background, 0.95),
+            rgba($background, 0.25) 20%,
+            rgba($background, 0.35) 80%,
+            rgba($background, 1) 100%
+        );
 
         .headerInner {
             max-width: $layoutWidth;
@@ -42,7 +48,6 @@
                 margin-top: auto;
             }
         }
-
     }
 
     .headerPlaceholder {
@@ -51,9 +56,11 @@
     }
 }
 
-.projectAbout, .projectLinks {
+.projectAbout,
+.projectLinks {
     &:nth-of-type(2) {
-        > div, > article {
+        > div,
+        > article {
             padding-top: 20px;
         }
     }

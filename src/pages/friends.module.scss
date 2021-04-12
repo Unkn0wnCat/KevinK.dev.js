@@ -46,12 +46,12 @@
             flex-direction: column;
 
             .contactLink {
-                transition: text-decoration .5s;
+                transition: text-decoration 0.5s;
                 text-decoration: underline dotted rgba(0, 0, 0, 0);
                 padding: 6px 0 6px 25px;
                 color: $textColor;
 
-                >i {
+                > i {
                     color: $accentColor;
                     margin-left: -25px;
                     margin-right: 5px;

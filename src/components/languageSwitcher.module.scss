@@ -7,11 +7,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
-    transition: opacity .25s;
+    transition: opacity 0.25s;
 
     &:target {
         opacity: 1;
@@ -33,7 +33,6 @@
             color: white;
             text-decoration-style: dotted;
         }
-
     }
 
     .modalCloseLink {
