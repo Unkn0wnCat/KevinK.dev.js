@@ -82,7 +82,7 @@ class IndexPage extends React.Component {
     let meta = this.props.data.site.siteMetadata;
 
     return (
-      <Layout title="Kevin Kandlbinder" module="home" transparentTopbar={true}>
+      <Layout title="Kevin Kandlbinder" transparentTopbar={true}>
         <section className={styles.heroSection}>
           <div className={styles.profile + " profile"}>
             <div data-bg="url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)" style={{ backgroundImage: "url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)" }} className={styles.profileImage + " lazy"}></div>

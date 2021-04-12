@@ -21,7 +21,7 @@ export default function ImprintPage() {
 
     const { t } = useI18next();
     return (
-        <Layout module="legal" title={t("imprint")}>
+        <Layout title={t("imprint")}>
             <section>
                 <article>
                     <h1><Trans>imprint</Trans></h1>

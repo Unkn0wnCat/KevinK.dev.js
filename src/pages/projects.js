@@ -39,7 +39,7 @@ const ProjectsPage = ({ data }) => {
 
   const { t } = useI18next();
   return (
-    <Layout module="projects" title={t("projects")} description={t("projectsDescription")}>
+    <Layout title={t("projects")} description={t("projectsDescription")}>
       <section>
         <article>
           <h1><Trans>projects</Trans></h1>

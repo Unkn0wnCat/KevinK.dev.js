@@ -5,7 +5,7 @@ import Layout from "../layouts/default"
 // markup
 const NotFoundPage = () => {
   return (
-    <Layout title="Not found" module="error">
+    <Layout title="Not found">
       <section>
         <article>
           <h1>Page not found</h1>

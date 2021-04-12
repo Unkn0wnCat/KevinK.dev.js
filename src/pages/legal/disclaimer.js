@@ -21,7 +21,7 @@ export default function DisclaimerPage() {
 
     const { t } = useI18next();
     return (
-        <Layout module="legal" title={t("disclaimer")}>
+        <Layout title={t("disclaimer")}>
             <section>
                 <article>
                     <h1><Trans>disclaimer</Trans></h1>

@@ -42,7 +42,7 @@ const FriendsPage = ({ data }) => {
     }
 
     return (
-        <Layout module="social" title={t("friends")} description={t("friendsDescription")}>
+        <Layout title={t("friends")} description={t("friendsDescription")}>
             <section>
                 <article>
                     <h1><Trans>social</Trans></h1>

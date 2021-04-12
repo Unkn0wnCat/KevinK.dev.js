@@ -32,7 +32,7 @@ const SocialPage = ({ data }) => {
 
     const { t } = useI18next();
     return (
-        <Layout module="social" title={t("social")} description={t("socialDescription")}>
+        <Layout title={t("social")} description={t("socialDescription")}>
             <section>
                 <article>
                     <h1><Trans>social</Trans></h1>

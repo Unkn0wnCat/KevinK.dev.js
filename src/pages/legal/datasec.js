@@ -21,7 +21,7 @@ export default function DataSecPage() {
 
     const { t } = useI18next();
     return (
-        <Layout module="legal" title={t("datasec")}>
+        <Layout title={t("datasec")}>
             <section>
                 <article>
                     <h1><Trans>datasec</Trans></h1>

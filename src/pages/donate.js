@@ -44,7 +44,7 @@ function DonatePage(props) {
   const { site, file } = props.data;
 
   return (
-    <Layout module="donate" title={t("donate")} description={t("donationCatchphrase")}>
+    <Layout title={t("donate")} description={t("donationCatchphrase")}>
       <section>
         <article>
           <h1><Trans>donate</Trans></h1>

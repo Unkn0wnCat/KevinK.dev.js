@@ -66,8 +66,7 @@ const Navigation = ({ isHome }) => {
 }
 
 Navigation.propTypes = {
-    isHome: PropTypes.bool.isRequired,
-    module: PropTypes.string.isRequired
+    isHome: PropTypes.bool.isRequired
 }
 
 export default Navigation;

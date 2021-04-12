@@ -29,7 +29,7 @@ function ThankYouPage(props) {
   let contactEmail = site.siteMetadata.contactEmail;
   const { t } = useI18next();
   return (
-    <Layout module="donate" title={t("donate")}>
+    <Layout title={t("donate")}>
       <section>
         <article>
           <h1><Trans>donateThanks</Trans></h1>
