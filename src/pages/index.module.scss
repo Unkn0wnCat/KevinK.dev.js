@@ -96,12 +96,14 @@
         .profileImage {
             z-index: 20;
             box-shadow: -1px 11px 33px -10px #e5502b4b;
+            clip-path: polygon(6% 8%, 88% 5%, 95% 91%, 7% 96%);
         }
 
         .profileImageDummy {
             z-index: 10;
             background: $accentColor;
             opacity: 0.2;
+            clip-path: polygon(14% 4%, 95% 1%, 88% 96%, 2% 89%);
         }
 
         @media (max-width: 590px) {
