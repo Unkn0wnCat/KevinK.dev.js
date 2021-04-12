@@ -36,7 +36,7 @@ export const query = graphql`
   }
 `;
 
-function DonatePage(props) {
+const DonatePage = (props) => {
   const [amount, setAmount] = useState(5);
   const { t } = useI18next();
   const { path } = React.useContext(I18nextContext);
@@ -126,7 +126,7 @@ function DonatePage(props) {
       </section>
     </Layout>
   );
-}
+};
 
 DonatePage.propTypes = {
   data: PropTypes.object.isRequired,

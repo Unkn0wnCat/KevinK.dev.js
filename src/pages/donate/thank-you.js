@@ -23,7 +23,7 @@ export const query = graphql`
   }
 `;
 
-function ThankYouPage(props) {
+const ThankYouPage = (props) => {
   const { site } = props.data;
 
   let contactEmail = site.siteMetadata.contactEmail;
@@ -46,7 +46,7 @@ function ThankYouPage(props) {
       </section>
     </Layout>
   );
-}
+};
 
 ThankYouPage.propTypes = {
   data: PropTypes.object.isRequired,

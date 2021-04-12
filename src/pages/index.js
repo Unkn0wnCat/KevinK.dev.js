@@ -54,8 +54,10 @@ export const query = graphql`
   }
 `;
 
-class IndexPage extends React.Component {
-  componentDidMount() {
+const IndexPage = (props) => {
+  React.useEffect(() => {
+    if (typeof window === "undefined") return;
+
     anime({
       targets: [
         "." + styles.profileCard + " > span",
@@ -81,162 +83,167 @@ class IndexPage extends React.Component {
       duration: 250,
       easing: "easeInOutCirc",
     });
+  }, []);
+
+  let meta = props.data.site.siteMetadata;
+
+  return (
+    <Layout title="Kevin Kandlbinder" transparentTopbar={true}>
+      <section className={styles.heroSection}>
+        <div className={styles.profile + " profile"}>
+          <div
+            data-bg="url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)"
+            style={{
+              backgroundImage:
+                "url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)",
+            }}
+            className={styles.profileImage + " lazy"}
+          ></div>
+          <div className={styles.profileImageDummy}></div>
+          <div className={styles.profileCard}>
+            <span className={styles.hello}>
+              <Trans>homeHello</Trans>
+            </span>
+            <span className={styles.name}>Kevin Kandlbinder</span>
+            <span className={styles.description}>
+              <Trans>homeMe</Trans>{" "}
+              <span id="descriptionType">
+                <Trans>homeWebDeveloper</Trans>
+              </span>
+              .
+            </span>
+
+            <div className={styles.contactLinks}>
+              <a
+                className={styles.contactLink}
+                href={"tel:" + meta.contactPhone}
+                rel="me"
+              >
+                <i className="fas fa-fw fa-phone"></i>
+                {meta.contactPhone}
+              </a>
+              <a
+                className={styles.contactLink}
+                href={"mailto:" + meta.contactEmail}
+                rel="me"
+              >
+                <i className="far fa-fw fa-envelope"></i>
+                {meta.contactEmail}
+              </a>
+              <a
+                className={styles.contactLink}
+                href={meta.mapsLink}
+                rel="noreferrer "
+                target="_blank"
+              >
+                <i className="fas fa-fw fa-map-marker-alt"></i>
+                <Trans>homeMyLocation</Trans>
+              </a>
+              <a
+                className={styles.contactLink}
+                href={meta.contactMastodonHref}
+                rel="noreferrer me"
+                target="_blank"
+              >
+                <i className="fab fa-fw fa-mastodon"></i>
+                {meta.contactMastodon}
+              </a>
+              <a
+                className={styles.contactLink}
+                href={"https://github.com/" + meta.contactGitHub}
+                rel="noreferrer me"
+                target="_blank"
+              >
+                <i className="fab fa-fw fa-github"></i>
+                {meta.contactGitHub}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="aboutSection">
+        <article>
+          <h1>
+            <Trans>homeAboutMe</Trans>
+          </h1>
+          <p>
+            <Trans>homeAboutMeHello</Trans>
+            <br />
+            <Trans>homeAboutMeText</Trans>
+          </p>
+        </article>
+      </section>
+      <a
+        className={styles.creditSection}
+        href="https://unsplash.com/@jannikkiel"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div>
+          <span>
+            <i className="fas fa-fw fa-camera"></i>{" "}
+            <Trans>homeImageCredit</Trans>
+          </span>
+          <i className="fas fa-fw fa-chevron-right"></i>
+        </div>
+      </a>
+      <section className="featuredSection">
+        <article>
+          <h1>
+            <Trans>featuredProjects</Trans>
+          </h1>
+          <div className={projectStyles.projectList}>
+            {props.data.allProjectsJson.nodes.map((project) => {
+              return (
+                <Link
+                  className={projectStyles.projectCard}
+                  key={project.lang + "/" + project.urlname}
+                  to={"/projects/" + project.urlname}
+                >
+                  <div
+                    className={projectStyles.projectCardImage}
+                    style={{
+                      backgroundImage:
+                        "url(" + project.image.childImageSharp.resize.src + ")",
+                    }}
+                  >
+                    <div className={projectStyles.projectCardMeta}>
+                      <span className={projectStyles.projectCardTitle}>
+                        {project.name}
+                      </span>
+                      <span>{project.shortDescription}</span>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+          <Link to="/projects" className={styles.seeMoreButton}>
+            <Trans>seeMore</Trans>{" "}
+            <i className="fas fa-fw fa-chevron-right"></i>
+          </Link>
+        </article>
+      </section>
+      <Link className={styles.donationSection} to="/donate">
+        <div>
+          <span>
+            <Trans>donationCatchphrase</Trans>
+          </span>
+          <i className="fas fa-fw fa-chevron-right"></i>
+        </div>
+      </Link>
+    </Layout>
+  );
+};
+
+/*class IndexPage extends React.Component {
+  componentDidMount() {
   }
 
   render() {
-    let meta = this.props.data.site.siteMetadata;
 
-    return (
-      <Layout title="Kevin Kandlbinder" transparentTopbar={true}>
-        <section className={styles.heroSection}>
-          <div className={styles.profile + " profile"}>
-            <div
-              data-bg="url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)"
-              style={{
-                backgroundImage:
-                  "url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)",
-              }}
-              className={styles.profileImage + " lazy"}
-            ></div>
-            <div className={styles.profileImageDummy}></div>
-            <div className={styles.profileCard}>
-              <span className={styles.hello}>
-                <Trans>homeHello</Trans>
-              </span>
-              <span className={styles.name}>Kevin Kandlbinder</span>
-              <span className={styles.description}>
-                <Trans>homeMe</Trans>{" "}
-                <span id="descriptionType">
-                  <Trans>homeWebDeveloper</Trans>
-                </span>
-                .
-              </span>
-
-              <div className={styles.contactLinks}>
-                <a
-                  className={styles.contactLink}
-                  href={"tel:" + meta.contactPhone}
-                  rel="me"
-                >
-                  <i className="fas fa-fw fa-phone"></i>
-                  {meta.contactPhone}
-                </a>
-                <a
-                  className={styles.contactLink}
-                  href={"mailto:" + meta.contactEmail}
-                  rel="me"
-                >
-                  <i className="far fa-fw fa-envelope"></i>
-                  {meta.contactEmail}
-                </a>
-                <a
-                  className={styles.contactLink}
-                  href={meta.mapsLink}
-                  rel="noreferrer "
-                  target="_blank"
-                >
-                  <i className="fas fa-fw fa-map-marker-alt"></i>
-                  <Trans>homeMyLocation</Trans>
-                </a>
-                <a
-                  className={styles.contactLink}
-                  href={meta.contactMastodonHref}
-                  rel="noreferrer me"
-                  target="_blank"
-                >
-                  <i className="fab fa-fw fa-mastodon"></i>
-                  {meta.contactMastodon}
-                </a>
-                <a
-                  className={styles.contactLink}
-                  href={"https://github.com/" + meta.contactGitHub}
-                  rel="noreferrer me"
-                  target="_blank"
-                >
-                  <i className="fab fa-fw fa-github"></i>
-                  {meta.contactGitHub}
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="aboutSection">
-          <article>
-            <h1>
-              <Trans>homeAboutMe</Trans>
-            </h1>
-            <p>
-              <Trans>homeAboutMeHello</Trans>
-              <br />
-              <Trans>homeAboutMeText</Trans>
-            </p>
-          </article>
-        </section>
-        <a
-          className={styles.creditSection}
-          href="https://unsplash.com/@jannikkiel"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div>
-            <span>
-              <i className="fas fa-fw fa-camera"></i>{" "}
-              <Trans>homeImageCredit</Trans>
-            </span>
-            <i className="fas fa-fw fa-chevron-right"></i>
-          </div>
-        </a>
-        <section className="featuredSection">
-          <article>
-            <h1>
-              <Trans>featuredProjects</Trans>
-            </h1>
-            <div className={projectStyles.projectList}>
-              {this.props.data.allProjectsJson.nodes.map((project) => {
-                return (
-                  <Link
-                    className={projectStyles.projectCard}
-                    key={project.lang + "/" + project.urlname}
-                    to={"/projects/" + project.urlname}
-                  >
-                    <div
-                      className={projectStyles.projectCardImage}
-                      style={{
-                        backgroundImage:
-                          "url(" +
-                          project.image.childImageSharp.resize.src +
-                          ")",
-                      }}
-                    >
-                      <div className={projectStyles.projectCardMeta}>
-                        <span className={projectStyles.projectCardTitle}>
-                          {project.name}
-                        </span>
-                        <span>{project.shortDescription}</span>
-                      </div>
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-            <Link to="/projects" className={styles.seeMoreButton}>
-              <Trans>seeMore</Trans>{" "}
-              <i className="fas fa-fw fa-chevron-right"></i>
-            </Link>
-          </article>
-        </section>
-        <Link className={styles.donationSection} to="/donate">
-          <div>
-            <span>
-              <Trans>donationCatchphrase</Trans>
-            </span>
-            <i className="fas fa-fw fa-chevron-right"></i>
-          </div>
-        </Link>
-      </Layout>
-    );
-  }
-}
+    
+}*/
 
 IndexPage.propTypes = {
   data: PropTypes.object.isRequired,
