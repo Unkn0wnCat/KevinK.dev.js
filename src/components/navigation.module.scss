@@ -1,0 +1,62 @@
+@import "../variables";
+@import "../mixins";
+
+.topBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background: rgba($background, .95);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    transition: background .25s;
+
+    @supports(backdrop-filter: blur(5px)) {
+        background: rgba($background, .9);
+    }
+
+    .topBarInner {
+        display: flex;
+        width: 100%;
+        max-width: $layoutWidth;
+        margin: auto;
+
+        > :first-child {
+            padding-left: $layoutPadding;
+        }
+
+        > :last-child {
+            padding-right: $layoutPadding;
+        }
+
+        a {
+            display: block;
+            padding: 10px $layoutPadding;
+            color: white;
+            /*text-decoration: underline dotted white;*/
+            text-decoration: none;
+            border-top: 2px solid transparent;
+
+            &:hover {
+                border-color: rgba(255, 255, 255, .25);
+            }
+
+            &.active {
+                border-color: white;
+            }
+        }
+    }
+}
+
+.homeBar.homeBarTransparent {
+    background: transparent;
+    backdrop-filter: blur(0);
+}
+
+
+
+.flexSpacer {
+    flex-grow: 1;
+    text-align: center;
+}
