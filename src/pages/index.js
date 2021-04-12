@@ -9,6 +9,9 @@ import { Trans, Link } from "gatsby-plugin-react-i18next";
 import { graphql } from "gatsby";
 
 import anime from "animejs";
+import { tsParticles } from "tsparticles";
+
+import * as particleConfig from "./index.particles.json";
 
 export const query = graphql`
   query GetMetaAndProjects($language: String) {
@@ -83,6 +86,8 @@ const IndexPage = (props) => {
       duration: 250,
       easing: "easeInOutCirc",
     });
+
+    tsParticles.load("particle-container", particleConfig);
   }, []);
 
   let meta = props.data.site.siteMetadata;
@@ -90,6 +95,8 @@ const IndexPage = (props) => {
   return (
     <Layout title="Kevin Kandlbinder" transparentTopbar={true}>
       <section className={styles.heroSection}>
+        <div className={styles.heroSectionBg} id="particle-container"></div>
+        <div className={styles.heroSectionBgOver}></div>
         <div className={styles.profile + " profile"}>
           <div
             data-bg="url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)"
@@ -235,15 +242,6 @@ const IndexPage = (props) => {
     </Layout>
   );
 };
-
-/*class IndexPage extends React.Component {
-  componentDidMount() {
-  }
-
-  render() {
-
-    
-}*/
 
 IndexPage.propTypes = {
   data: PropTypes.object.isRequired,

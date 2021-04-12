@@ -3,16 +3,32 @@
 
 .heroSection {
     width: 100%;
-    background: #000710;
-    min-height: 600px;
-    padding-top: 100px;
+    height: 600px;
     overflow: hidden;
-    background: linear-gradient(to bottom, transparent 80%, $background),
-        radial-gradient(ellipse at top left, #1f0ba659, transparent),
-        radial-gradient(ellipse at bottom right, #4a086829, transparent);
+
+    .heroSectionBg, .heroSectionBgOver {
+        position: absolute;
+        width: 100%;
+        max-width: unset;
+        height: 600px;
+        padding: 0;
+
+        @media (pointer: coarse), (pointer: none) {
+            height: 700px;
+        }
+    }
+
+    .heroSectionBg {
+        background: radial-gradient(ellipse at top left, #1f0ba659, transparent),
+            radial-gradient(ellipse at bottom right, #4a086829, transparent);
+    }
+
+    .heroSectionBgOver {
+        background: linear-gradient(to bottom, transparent 80%, $background);
+    }
 
     @media (pointer: coarse), (pointer: none) {
-        min-height: 700px;
+        height: 700px;
     }
 
     .profile {
@@ -22,6 +38,7 @@
         max-width: 600px;
         max-height: 400px;
         transform: translate(-50%, 0%);
+        top: 100px;
 
         .hello {
             font-weight: 100;
