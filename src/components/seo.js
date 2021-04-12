@@ -74,6 +74,7 @@ function SEO({ description, meta, title }) {
         href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Roboto&display=swap"
         rel="stylesheet"
       />
+      <meta name="battery-savings" content="allow-reduced-framerate"></meta>
     </Helmet>
   );
 }
