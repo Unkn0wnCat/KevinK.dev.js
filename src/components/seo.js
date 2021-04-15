@@ -69,6 +69,11 @@ function SEO({ description, meta, title }) {
         src="https://kit.fontawesome.com/1377f925e0.js"
         crossOrigin="anonymous"
       ></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet"
+      />
       <meta name="battery-savings" content="allow-reduced-framerate"></meta>
     </Helmet>
   );
