@@ -22,6 +22,21 @@ module.exports = {
     {
       resolve: "gatsby-plugin-asset-path",
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Anonymous Pro`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Roboto`,
+            variants: [`400`]
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
