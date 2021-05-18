@@ -83,7 +83,6 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
     query {
       allProjectsJson {
         nodes {
-          longDescription
           urlname
           shortDescription
           name
