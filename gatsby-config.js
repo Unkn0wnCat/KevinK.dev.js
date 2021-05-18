@@ -28,6 +28,21 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/textblocks`,
+        name: `textblocks`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/projectTextblocks`,
+        name: `projectTextblocks`,
+      },
+    },
+    "gatsby-plugin-mdx",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `./content/`,
       },
     },

@@ -5,6 +5,7 @@ import Layout from "../layouts/default";
 import PropTypes from "prop-types";
 
 import * as styles from "./project.module.scss";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 export const query = graphql`
   query GetProject($urlname: String!, $lang: String!, $language: String!) {
@@ -22,7 +23,6 @@ export const query = graphql`
         image {
           publicURL
         }
-        longDescription
         shortDescription
       }
     }
@@ -35,6 +35,15 @@ export const query = graphql`
         }
       }
     }
+    file(
+      sourceInstanceName: {eq: "projectTextblocks"}, relativeDirectory: {eq: $urlname}, name: {eq: $language}
+    ) {
+      id
+      childMdx {
+        body
+      }
+      name
+    }
   }
 `;
 
@@ -42,6 +51,7 @@ const ProjectTemplate = ({ data }) => {
   const { t } = useTranslation();
   let project = data.allProjectsJson.nodes[0];
   let projectName = project.name;
+  let file = data.file;
 
   return (
     <Layout
@@ -66,15 +76,10 @@ const ProjectTemplate = ({ data }) => {
           <div className={styles.headerPlaceholder}></div>
         </div>
       </section>
-      {project.longDescription != null ? (
+      {file != null && file.childMdx != null ? (
         <section className={styles.projectAbout}>
           <article>
-            <h1>
-              <Trans projectName={projectName} i18nKey="projectAboutHeader">
-                projectAboutHeader{{ projectName }}
-              </Trans>
-            </h1>
-            <p>{project.longDescription}</p>
+            <MDXRenderer>{file.childMdx.body}</MDXRenderer>
           </article>
         </section>
       ) : null}

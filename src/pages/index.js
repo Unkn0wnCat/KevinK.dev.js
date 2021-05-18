@@ -7,9 +7,11 @@ import * as projectStyles from "./projects.module.scss";
 
 import { Trans, Link } from "gatsby-plugin-react-i18next";
 import { graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 import anime from "animejs";
 import { tsParticles } from "tsparticles";
+
 
 import * as particleConfig from "./index.particles.json";
 
@@ -54,6 +56,15 @@ export const query = graphql`
         }
       }
     }
+    file(
+      sourceInstanceName: {eq: "textblocks"}, relativeDirectory: {eq: "home/about"}, name: {eq: $language}
+    ) {
+      id
+      childMdx {
+        body
+      }
+      name
+    }
   }
 `;
 
@@ -91,6 +102,7 @@ const IndexPage = (props) => {
   }, []);
 
   let meta = props.data.site.siteMetadata;
+  let file = props.data.file;
 
   return (
     <Layout title="Kevin Kandlbinder" transparentTopbar={true}>
@@ -170,14 +182,7 @@ const IndexPage = (props) => {
       </section>
       <section className="aboutSection">
         <article>
-          <h1>
-            <Trans>homeAboutMe</Trans>
-          </h1>
-          <p>
-            <Trans>homeAboutMeHello</Trans>
-            <br />
-            <Trans>homeAboutMeText</Trans>
-          </p>
+          <MDXRenderer>{file.childMdx.body}</MDXRenderer>
         </article>
       </section>
       <a
