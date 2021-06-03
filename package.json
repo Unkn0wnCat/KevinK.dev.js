@@ -27,7 +27,7 @@
         "babel-plugin-i18next-extract": "0.8.3",
         "gatsby": "3.6.2",
         "gatsby-cli": "3.6.0",
-        "gatsby-plugin-asset-path": "3.0.3",
+        "gatsby-plugin-asset-path": "3.0.4",
         "gatsby-plugin-manifest": "3.6.0",
         "gatsby-plugin-mdx": "2.6.0",
         "gatsby-plugin-offline": "4.6.0",
