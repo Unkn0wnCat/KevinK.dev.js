@@ -49,7 +49,7 @@
         "react-github-btn": "1.2.0",
         "react-helmet": "6.1.0",
         "react-i18next": "11.11.0",
-        "tsparticles": "1.28.1"
+        "tsparticles": "1.28.2"
     },
     "devDependencies": {
         "@fab/actions": "1.0.0-rc.3-beta.1",
