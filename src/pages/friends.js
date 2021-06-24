@@ -31,13 +31,13 @@ export const query = graphql`
 const FriendsPage = ({ data }) => {
   const { t } = useI18next();
 
-  function shuffle(a) {
+  /*function shuffle(a) {
     for (let i = a.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [a[i], a[j]] = [a[j], a[i]];
     }
     return a;
-  }
+  }*/
 
   return (
     <Layout title={t("friends")} description={t("friendsDescription")}>
@@ -52,7 +52,7 @@ const FriendsPage = ({ data }) => {
           </p>
 
           <div className={styles.friendsList}>
-            {shuffle(data.allFriendsJson.nodes).map((friend) => {
+            {/*shuffle(*/data.allFriendsJson.nodes/*)*/.map((friend) => {
               return (
                 <div
                   className={styles.friendProfile}
@@ -61,14 +61,15 @@ const FriendsPage = ({ data }) => {
                   <div
                     className={styles.friendImage}
                     style={{ backgroundImage: "url(" + friend.imageURL + ")" }}
+                    key={friend.url + "#" + friend.name + "#image"}
                   >
-                    <span className={styles.friendName}>{friend.name}</span>
-                    <span className={styles.friendTitle}>
+                    <span className={styles.friendName} key={friend.url + "#" + friend.name + "#name"}>{friend.name}</span>
+                    <span className={styles.friendTitle} key={friend.url + "#" + friend.name + "#profession"}>
                       {friend.profession}
                     </span>
                   </div>
 
-                  <div className={styles.contactLinks}>
+                  <div className={styles.contactLinks} key={friend.url + "#" + friend.name + "#links"}>
                     <a
                       className={styles.contactLink}
                       href={friend.url}
