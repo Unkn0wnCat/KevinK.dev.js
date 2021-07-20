@@ -40,7 +40,7 @@
         "gatsby-source-filesystem": "3.9.0",
         "gatsby-transformer-json": "3.9.0",
         "gatsby-transformer-sharp": "3.9.0",
-        "i18next": "20.3.3",
+        "i18next": "20.3.4",
         "locale": "0.1.0",
         "node-sass": "4.14.1",
         "prop-types": "15.7.2",
