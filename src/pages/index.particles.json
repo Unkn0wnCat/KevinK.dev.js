@@ -18,15 +18,10 @@
       },
       "polygon": {
         "nb_sides": 3
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 5,
-        "height": 5
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.4,
       "random": true,
       "anim": {
         "enable": false,
@@ -106,5 +101,7 @@
       }
     }
   },
-  "retina_detect": true
+  "detectRetina": true,
+  "pauseOnBlur": true,
+  "pauseOnOutsideViewport": true
 }
