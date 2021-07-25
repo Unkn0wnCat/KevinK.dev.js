@@ -50,12 +50,6 @@
         "tsparticles": "1.32.0"
     },
     "devDependencies": {
-        "@fab/actions": "1.0.0-rc.3-beta.1",
-        "@fab/cli": "1.0.0-rc.3-beta.1",
-        "@fab/input-static": "1.0.0-rc.3-beta.1",
-        "@fab/plugin-render-html": "1.0.0-rc.3-beta.1",
-        "@fab/plugin-rewire-assets": "1.0.0-rc.3-beta.1",
-        "@fab/server": "1.0.0-rc.3-beta.1",
         "babel-eslint": "10.1.0",
         "eslint": "7.31.0",
         "eslint-loader": "4.0.2",
