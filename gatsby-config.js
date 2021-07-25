@@ -61,7 +61,7 @@ module.exports = {
                 short_name: extConfig.siteName,
                 start_url: `/`,
                 background_color: `#000710`,
-                theme_color: `#000710`,
+                theme_color: `#e5502b`,
                 display: `minimal-ui`,
                 icon: extConfig.iconPath, // This path is relative to the root of the site.
                 cache_busting_mode: "none",
