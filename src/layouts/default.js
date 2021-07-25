@@ -8,55 +8,55 @@ import { Link, Trans } from "gatsby-plugin-react-i18next";
 import LanguageSwitcher from "../components/languageSwitcher";
 
 class Layout extends React.Component {
-  render() {
-    return (
-      <>
-        <SEO
-          description={this.props.description}
-          lang={this.props.lang}
-          meta={this.props.meta}
-          title={this.props.title}
-        />
-        <Navigation isHome={this.props.transparentTopbar} />
-        <div id="content" role="main">
-          {this.props.children}
-        </div>
-        <footer role="contentinfo">
-          CC-BY 4.0 Kevin Kandlbinder,{" "}
-          <Link to="/legal/about" className="spf-link">
-            <Trans i18nKey="imprint">Imprint</Trans>
-          </Link>{" "}
-          |{" "}
-          <Link to="/legal/datasec" className="spf-link">
-            <Trans i18nKey="datasec">Data Protection</Trans>
-          </Link>{" "}
-          |{" "}
-          <Link to="/legal/disclaimer" className="spf-link">
-            <Trans i18nKey="disclaimer">Disclaimer</Trans>
-          </Link>{" "}
-          | <a href="#languageChooser">Language</a>
-        </footer>
+    render() {
+        return (
+            <>
+                <SEO
+                    description={this.props.description}
+                    lang={this.props.lang}
+                    meta={this.props.meta}
+                    title={this.props.title}
+                />
+                <Navigation isHome={this.props.transparentTopbar} />
+                <div id="content" role="main">
+                    {this.props.children}
+                </div>
+                <footer role="contentinfo">
+                    CC-BY 4.0 Kevin Kandlbinder,{" "}
+                    <Link to="/legal/about" className="spf-link">
+                        <Trans i18nKey="imprint">Imprint</Trans>
+                    </Link>{" "}
+                    |{" "}
+                    <Link to="/legal/datasec" className="spf-link">
+                        <Trans i18nKey="datasec">Data Protection</Trans>
+                    </Link>{" "}
+                    |{" "}
+                    <Link to="/legal/disclaimer" className="spf-link">
+                        <Trans i18nKey="disclaimer">Disclaimer</Trans>
+                    </Link>{" "}
+                    | <a href="#languageChooser">Language</a>
+                </footer>
 
-        <LanguageSwitcher />
-      </>
-    );
-  }
+                <LanguageSwitcher />
+            </>
+        );
+    }
 }
 
 Layout.defaultProps = {
-  module: `none`,
-  meta: [],
-  description: ``,
-  transparentTopbar: false,
+    module: `none`,
+    meta: [],
+    description: ``,
+    transparentTopbar: false,
 };
 
 Layout.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-  transparentTopbar: PropTypes.bool,
-  children: PropTypes.any.isRequired,
+    description: PropTypes.string,
+    lang: PropTypes.string,
+    meta: PropTypes.arrayOf(PropTypes.object),
+    title: PropTypes.string.isRequired,
+    transparentTopbar: PropTypes.bool,
+    children: PropTypes.any.isRequired,
 };
 
 export default Layout;

@@ -11,9 +11,7 @@
         "develop": "gatsby develop",
         "start": "gatsby develop",
         "build": "gatsby build --prefix-paths",
-        "build:fab": "npm run build && npm run fab:build",
-        "fab:build": "fab build",
-        "fab:serve": "fab serve fab.zip",
+        "prettier": "npx prettier --write .",
         "serve": "gatsby serve",
         "clean": "gatsby clean"
     },
@@ -63,6 +61,7 @@
         "eslint-loader": "4.0.2",
         "eslint-plugin-import": "2.23.4",
         "eslint-plugin-react": "7.24.0",
-        "gatsby-plugin-eslint": "2.0.8"
+        "gatsby-plugin-eslint": "2.0.8",
+        "prettier": "2.3.2"
     }
 }

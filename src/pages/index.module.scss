@@ -6,7 +6,8 @@
     height: 600px;
     overflow: hidden;
 
-    .heroSectionBg, .heroSectionBgOver {
+    .heroSectionBg,
+    .heroSectionBgOver {
         position: absolute;
         width: 100%;
         max-width: unset;
@@ -22,7 +23,20 @@
         /*background: radial-gradient(ellipse at top left, #1f0ba659, transparent),
             radial-gradient(ellipse at bottom right, #4a086829, transparent);*/
 
-        background: linear-gradient(45deg, #000850 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #FF7A00 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+        background: linear-gradient(45deg, #000850 0%, #000320 100%),
+            radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
+            linear-gradient(225deg, #ff7a00 0%, #000000 100%),
+            linear-gradient(
+                135deg,
+                #cdffeb 10%,
+                #cdffeb 35%,
+                #009f9d 35%,
+                #009f9d 60%,
+                #07456f 60%,
+                #07456f 67%,
+                #0f0a3c 67%,
+                #0f0a3c 100%
+            );
         background-blend-mode: screen, overlay, hard-light, normal;
     }
 

@@ -7,31 +7,31 @@ import PropTypes from "prop-types";
 import * as styles from "./friends.module.scss";
 
 export const query = graphql`
-  query AllFriendsQuery($language: String!) {
-    allFriendsJson {
-      nodes {
-        name
-        profession
-        url
-        imageURL
-      }
-    }
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
+    query AllFriendsQuery($language: String!) {
+        allFriendsJson {
+            nodes {
+                name
+                profession
+                url
+                imageURL
+            }
         }
-      }
+        locales: allLocale(filter: { language: { eq: $language } }) {
+            edges {
+                node {
+                    ns
+                    data
+                    language
+                }
+            }
+        }
     }
-  }
 `;
 
 const FriendsPage = ({ data }) => {
-  const { t } = useI18next();
+    const { t } = useI18next();
 
-  /*function shuffle(a) {
+    /*function shuffle(a) {
     for (let i = a.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [a[i], a[j]] = [a[j], a[i]];
@@ -39,59 +39,102 @@ const FriendsPage = ({ data }) => {
     return a;
   }*/
 
-  return (
-    <Layout title={t("friends")} description={t("friendsDescription")}>
-      <section>
-        <article>
-          <h1>
-            <Trans>social</Trans>
-          </h1>
+    return (
+        <Layout title={t("friends")} description={t("friendsDescription")}>
+            <section>
+                <article>
+                    <h1>
+                        <Trans>social</Trans>
+                    </h1>
 
-          <p>
-            <Trans>friendsDescription</Trans>
-          </p>
+                    <p>
+                        <Trans>friendsDescription</Trans>
+                    </p>
 
-          <div className={styles.friendsList}>
-            {/*shuffle(*/data.allFriendsJson.nodes/*)*/.map((friend) => {
-              return (
-                <div
-                  className={styles.friendProfile}
-                  key={friend.url + "#" + friend.name}
-                >
-                  <div
-                    className={styles.friendImage}
-                    style={{ backgroundImage: "url(" + friend.imageURL + ")" }}
-                    key={friend.url + "#" + friend.name + "#image"}
-                  >
-                    <span className={styles.friendName} key={friend.url + "#" + friend.name + "#name"}>{friend.name}</span>
-                    <span className={styles.friendTitle} key={friend.url + "#" + friend.name + "#profession"}>
-                      {friend.profession}
-                    </span>
-                  </div>
+                    <div className={styles.friendsList}>
+                        {
+                            /*shuffle(*/ data.allFriendsJson.nodes /*)*/
+                                .map((friend) => {
+                                    return (
+                                        <div
+                                            className={styles.friendProfile}
+                                            key={
+                                                friend.url + "#" + friend.name
+                                            }>
+                                            <div
+                                                className={styles.friendImage}
+                                                style={{
+                                                    backgroundImage:
+                                                        "url(" +
+                                                        friend.imageURL +
+                                                        ")",
+                                                }}
+                                                key={
+                                                    friend.url +
+                                                    "#" +
+                                                    friend.name +
+                                                    "#image"
+                                                }>
+                                                <span
+                                                    className={
+                                                        styles.friendName
+                                                    }
+                                                    key={
+                                                        friend.url +
+                                                        "#" +
+                                                        friend.name +
+                                                        "#name"
+                                                    }>
+                                                    {friend.name}
+                                                </span>
+                                                <span
+                                                    className={
+                                                        styles.friendTitle
+                                                    }
+                                                    key={
+                                                        friend.url +
+                                                        "#" +
+                                                        friend.name +
+                                                        "#profession"
+                                                    }>
+                                                    {friend.profession}
+                                                </span>
+                                            </div>
 
-                  <div className={styles.contactLinks} key={friend.url + "#" + friend.name + "#links"}>
-                    <a
-                      className={styles.contactLink}
-                      href={friend.url}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fas fa-globe-europe" aria-hidden="true"></i>{" "}
-                      {friend.url}
-                    </a>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </article>
-      </section>
-    </Layout>
-  );
+                                            <div
+                                                className={styles.contactLinks}
+                                                key={
+                                                    friend.url +
+                                                    "#" +
+                                                    friend.name +
+                                                    "#links"
+                                                }>
+                                                <a
+                                                    className={
+                                                        styles.contactLink
+                                                    }
+                                                    href={friend.url}
+                                                    target="_blank"
+                                                    rel="noreferrer">
+                                                    <i
+                                                        className="fas fa-globe-europe"
+                                                        aria-hidden="true"></i>{" "}
+                                                    {friend.url}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    );
+                                })
+                        }
+                    </div>
+                </article>
+            </section>
+        </Layout>
+    );
 };
 
 FriendsPage.propTypes = {
-  data: PropTypes.object.isRequired,
+    data: PropTypes.object.isRequired,
 };
 
 export default FriendsPage;
