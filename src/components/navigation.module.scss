@@ -8,12 +8,22 @@
     display: flex;
     width: 100%;
     background: rgba($background, 0.95);
+    color: $textColor;
     backdrop-filter: blur(5px);
     z-index: 999;
-    transition: background 0.25s;
+    transition: background-color .25s, color .25s;
 
     @supports (backdrop-filter: blur(5px)) {
         background: rgba($background, 0.9);
+    }
+
+    @media(prefers-color-scheme: light) {
+        background: rgba($lightBackground, 0.95);
+        color: $lightTextColor;
+
+        @supports (backdrop-filter: blur(5px)) {
+            background: rgba($lightBackground, 0.9);
+        }
     }
 
     .topBarInner {
@@ -33,7 +43,7 @@
         a {
             display: block;
             padding: 10px $layoutPadding;
-            color: white;
+            color: inherit;
             text-decoration: none;
             border-top: 2px solid transparent;
 
@@ -43,6 +53,11 @@
 
             &.active {
                 border-color: white;
+                transition: border-color .25s;
+
+                @media(prefers-color-scheme: light) {
+                    border-color: $accentColor;
+                }
             }
         }
     }
@@ -50,6 +65,7 @@
 
 .homeBar.homeBarTransparent {
     background: transparent;
+    color: $textColor;
     backdrop-filter: blur(0);
 }
 

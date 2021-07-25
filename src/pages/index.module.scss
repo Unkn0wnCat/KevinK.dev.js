@@ -42,6 +42,11 @@
 
     .heroSectionBgOver {
         background: linear-gradient(to bottom, transparent 80%, $background);
+        transition: background-image .25s;
+
+        @media(prefers-color-scheme: light) {
+            background: linear-gradient(to bottom, transparent 90%, $lightBackground);
+        }
     }
 
     @media (pointer: coarse), (pointer: none) {

@@ -20,6 +20,7 @@
             padding: 10px;
             flex-direction: column-reverse;
             text-shadow: 0 0 10px black, 0 0 10px black, 0 0 20px black;
+            color: white;
 
             .friendName {
                 font-size: 2em;
@@ -50,6 +51,11 @@
                 text-decoration: underline dotted rgba(0, 0, 0, 0);
                 padding: 6px 0 6px 25px;
                 color: $textColor;
+                transition: color .25s;
+
+                @media(prefers-color-scheme: light) {
+                    color: $lightTextColor;
+                }
 
                 > i {
                     color: $accentColor;

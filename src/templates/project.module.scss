@@ -69,6 +69,12 @@
 .projectAbout {
     background: #060606;
     color: white;
+    transition: background-color .25s, color .25s;
+
+    @media(prefers-color-scheme: light) {
+        background: $lightBackground;
+        color: $lightTextColor;
+    }
 }
 
 .projectLinks {
@@ -84,7 +90,7 @@
         border-radius: 5px;
         padding: 10px 15px;
         margin: 5px;
-        color: $textColor;
+        color: inherit;
         text-decoration-skip: none;
         text-decoration: underline dotted currentColor;
 

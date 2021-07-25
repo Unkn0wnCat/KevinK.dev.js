@@ -20,6 +20,12 @@ html,
     color: $textColor;
     display: flex;
     flex-direction: column;
+    transition: background-color .25s, color .25s;
+
+    @media(prefers-color-scheme: light) {
+        background: $lightBackground;
+        color: $lightTextColor;
+    }
 }
 
 footer {
@@ -28,9 +34,15 @@ footer {
     color: white;
     padding: 5px;
     text-align: center;
+    transition: background-color .25s, color .25s;
+
+    @media(prefers-color-scheme: light) {
+        background: darken($lightBackground, 1);
+        color: $lightTextColor;
+    }
 
     a {
-        color: white;
+        color: inherit;
         text-decoration: underline dotted currentColor;
     }
 }
