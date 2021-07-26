@@ -36,11 +36,6 @@ footer {
     text-align: center;
     transition: background-color .25s, color .25s;
 
-    @media(prefers-color-scheme: light) {
-        background: darken($lightBackground, 1);
-        color: $lightTextColor;
-    }
-
     a {
         color: inherit;
         text-decoration: underline dotted currentColor;
