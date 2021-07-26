@@ -51,9 +51,9 @@
                 text-decoration: underline dotted rgba(0, 0, 0, 0);
                 padding: 6px 0 6px 25px;
                 color: $textColor;
-                transition: color .25s;
+                transition: color 0.25s;
 
-                @media(prefers-color-scheme: light) {
+                @media (prefers-color-scheme: light) {
                     color: $lightTextColor;
                 }
 

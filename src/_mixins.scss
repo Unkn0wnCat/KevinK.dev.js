@@ -10,7 +10,8 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: -1px 11px 33px -10px rgba(127, 127, 127, 0.3);
-    transition: transform 0.25s, box-shadow 0.25s, background-color 0.25s, color 0.25s;
+    transition: transform 0.25s, box-shadow 0.25s, background-color 0.25s,
+        color 0.25s;
     color: $textColor;
     text-decoration: none;
     margin: 20px;
@@ -24,7 +25,7 @@
             -1px 11px 33px -10px rgba($accentColor, 0.75);
     }
 
-    @media(prefers-color-scheme: light) {
+    @media (prefers-color-scheme: light) {
         box-shadow: -1px 11px 33px -10px rgba(29, 29, 29, 0.7);
 
         background: $lightBackground;
@@ -68,9 +69,9 @@
     display: block;
     text-decoration: none;
     color: inherit;
-    transition: background-color .25s, color .25s;
+    transition: background-color 0.25s, color 0.25s;
 
-    @media(prefers-color-scheme: light) {
+    @media (prefers-color-scheme: light) {
         background: darken($accentColor, 1);
     }
 

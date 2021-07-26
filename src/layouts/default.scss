@@ -20,9 +20,9 @@ html,
     color: $textColor;
     display: flex;
     flex-direction: column;
-    transition: background-color .25s, color .25s;
+    transition: background-color 0.25s, color 0.25s;
 
-    @media(prefers-color-scheme: light) {
+    @media (prefers-color-scheme: light) {
         background: $lightBackground;
         color: $lightTextColor;
     }
@@ -34,7 +34,7 @@ footer {
     color: white;
     padding: 5px;
     text-align: center;
-    transition: background-color .25s, color .25s;
+    transition: background-color 0.25s, color 0.25s;
 
     a {
         color: inherit;
@@ -80,9 +80,9 @@ h1 {
 
     color: $accentColor;
 
-    text-shadow: 0 0 20px rgba($accentColor, .2);
+    text-shadow: 0 0 20px rgba($accentColor, 0.2);
 
-    @media(prefers-color-scheme: light) {
-        text-shadow: 0 0 20px rgba($accentColor, .3);
+    @media (prefers-color-scheme: light) {
+        text-shadow: 0 0 20px rgba($accentColor, 0.3);
     }
 }
