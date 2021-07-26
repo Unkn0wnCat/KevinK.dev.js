@@ -80,7 +80,7 @@ h1 {
 
     color: $accentColor;
 
-    text-shadow: 0 0 20px rgba($accentColor, 0.2);
+    text-shadow: 0 0 20px rgba($accentColor, 0.15);
 
     @media (prefers-color-scheme: light) {
         text-shadow: 0 0 20px rgba($accentColor, 0.3);
