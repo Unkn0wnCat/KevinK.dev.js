@@ -47,7 +47,7 @@
         "react-github-btn": "1.2.0",
         "react-helmet": "6.1.0",
         "react-i18next": "11.11.4",
-        "tsparticles": "1.33.0"
+        "tsparticles": "1.33.1"
     },
     "devDependencies": {
         "babel-eslint": "10.1.0",
