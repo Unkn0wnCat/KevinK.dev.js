@@ -75,6 +75,7 @@ function SEO({ description, meta, title }) {
             <meta
                 name="battery-savings"
                 content="allow-reduced-framerate"></meta>
+            <script async defer data-domain="kevink.dev" src="https://analytics.kevink.dev/js/plausible.js"></script>
         </Helmet>
     );
 }
