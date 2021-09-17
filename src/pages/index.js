@@ -114,10 +114,10 @@ const IndexPage = (props) => {
                 <div className={styles.heroSectionBgOver}></div>
                 <div className={styles.profile + " profile"}>
                     <div
-                        data-bg="url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)"
+                        data-bg="url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-04.jpg)"
                         style={{
                             backgroundImage:
-                                "url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-03.jpg)",
+                                "url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-04.jpg)",
                         }}
                         className={styles.profileImage + " lazy"}></div>
                     <div className={styles.profileImageDummy}></div>
