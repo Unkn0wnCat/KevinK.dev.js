@@ -10,6 +10,11 @@
         "type": "framework"
     },
     {
+        "name": "Symfony",
+        "href": "https://symfony.com/",
+        "type": "framework"
+    },
+    {
         "name": "JavaScript",
         "type": "language"
     },
@@ -33,6 +38,10 @@
     },
     {
         "name": "Java",
+        "type": "language"
+    },
+    {
+        "name": "PHP",
         "type": "language"
     },
     {
