@@ -8,6 +8,7 @@
         @include cardGeneric;
         display: flex;
         flex-direction: column;
+        position: relative;
 
         .socialImage {
             width: 300px;
@@ -19,14 +20,26 @@
             flex-direction: column-reverse;
             text-shadow: 0 0 10px black, 0 0 10px black, 0 0 20px black;
             color: white;
+            position: relative;
+
+            .socialBg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
 
             .socialName {
                 font-size: 2em;
                 margin-top: -5px;
+                z-index: 100;
             }
 
             .socialUsername {
                 margin-top: auto;
+                z-index: 100;
             }
         }
     }

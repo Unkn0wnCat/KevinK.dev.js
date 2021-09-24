@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 
 import * as styles from "./friends.module.scss";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export const query = graphql`
     query AllFriendsQuery($language: String!) {
@@ -13,7 +14,11 @@ export const query = graphql`
                 name
                 profession
                 url
-                imageURL
+                localImage {
+                    childImageSharp {
+                    gatsbyImageData(height: 300, width: 300, placeholder: BLURRED)
+                    }
+                }
             }
         }
         locales: allLocale(filter: { language: { eq: $language } }) {
@@ -62,12 +67,6 @@ const FriendsPage = ({ data }) => {
                                         >
                                             <div
                                                 className={styles.friendImage}
-                                                style={{
-                                                    backgroundImage:
-                                                        "url(" +
-                                                        friend.imageURL +
-                                                        ")",
-                                                }}
                                                 key={
                                                     friend.url +
                                                     "#" +
@@ -75,6 +74,9 @@ const FriendsPage = ({ data }) => {
                                                     "#image"
                                                 }
                                             >
+                                                <div className={styles.friendBg}>
+                                                    <GatsbyImage image={getImage(friend.localImage)}></GatsbyImage>
+                                                </div>
                                                 <span
                                                     className={
                                                         styles.friendName
@@ -85,7 +87,7 @@ const FriendsPage = ({ data }) => {
                                                         friend.name +
                                                         "#name"
                                                     }
-                                                >
+                                                > 
                                                     {friend.name}
                                                 </span>
                                                 <span

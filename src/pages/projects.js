@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 
 import * as styles from "./projects.module.scss";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export const query = graphql`
     query GetProjects($language: String) {
@@ -18,9 +19,7 @@ export const query = graphql`
                 name
                 image {
                     childImageSharp {
-                        resize(width: 400, quality: 90) {
-                            src
-                        }
+                        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
                     }
                 }
                 shortDescription
@@ -62,14 +61,12 @@ const ProjectsPage = ({ data }) => {
                                 >
                                     <div
                                         className={styles.projectCardImage}
-                                        style={{
-                                            backgroundImage:
-                                                "url(" +
-                                                project.image.childImageSharp
-                                                    .resize.src +
-                                                ")",
-                                        }}
                                     >
+                                        <div className={
+                                            styles.projectCardBg
+                                        }>
+                                            <GatsbyImage image={project.image.childImageSharp.gatsbyImageData} objectFit="cover" style={{height: "100%"}}></GatsbyImage>
+                                        </div>
                                         <div className={styles.projectCardMeta}>
                                             <span
                                                 className={

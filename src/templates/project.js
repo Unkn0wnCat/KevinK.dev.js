@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 
 import * as styles from "./project.module.scss";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export const query = graphql`
     query GetProject($urlname: String!, $lang: String!, $language: String!) {
@@ -21,7 +22,9 @@ export const query = graphql`
                     website
                 }
                 image {
-                    publicURL
+                    childImageSharp {
+                        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                    }
                 }
                 shortDescription
             }
@@ -65,11 +68,9 @@ const ProjectTemplate = ({ data }) => {
                 <div style={{ paddingTop: 0 }}>
                     <div
                         className={styles.headerBackground}
-                        style={{
-                            backgroundImage:
-                                "url(" + project.image.publicURL + ")",
-                        }}
-                    ></div>
+                    >
+                       <GatsbyImage image={project.image.childImageSharp.gatsbyImageData} style={{width: "100%", height: "100%"}} objectFit="cover"></GatsbyImage> 
+                    </div>
                     <header>
                         <div className={styles.headerInner}>
                             <h1>

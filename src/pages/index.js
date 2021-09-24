@@ -8,7 +8,7 @@ import * as projectStyles from "./projects.module.scss";
 import { Trans, Link } from "gatsby-plugin-react-i18next";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 
 import anime from "animejs";
 import { tsParticles } from "tsparticles";
@@ -45,9 +45,7 @@ export const query = graphql`
                 name
                 image {
                     childImageSharp {
-                        resize(width: 400, quality: 90) {
-                            src
-                        }
+                        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
                     }
                 }
                 shortDescription
@@ -262,14 +260,12 @@ const IndexPage = (props) => {
                                         className={
                                             projectStyles.projectCardImage
                                         }
-                                        style={{
-                                            backgroundImage:
-                                                "url(" +
-                                                project.image.childImageSharp
-                                                    .resize.src +
-                                                ")",
-                                        }}
                                     >
+                                        <div className={
+                                            projectStyles.projectCardBg
+                                        }>
+                                            <GatsbyImage image={project.image.childImageSharp.gatsbyImageData} objectFit="cover" style={{height: "100%"}}></GatsbyImage>
+                                        </div>
                                         <div
                                             className={
                                                 projectStyles.projectCardMeta

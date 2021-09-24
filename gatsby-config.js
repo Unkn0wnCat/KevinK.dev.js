@@ -27,6 +27,20 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-transformer-json`,
         {
+            resolve: `gatsby-plugin-remote-images`,
+            options: {
+                nodeType: 'SocialsJson',
+                imagePath: 'image',
+            },
+        },
+        {
+            resolve: `gatsby-plugin-remote-images`,
+            options: {
+                nodeType: 'FriendsJson',
+                imagePath: 'imageURL',
+            },
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/content/textblocks`,

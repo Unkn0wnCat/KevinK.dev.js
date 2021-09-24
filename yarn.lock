@@ -5750,6 +5750,14 @@ gatsby-plugin-react-i18next@1.1.1:
   optionalDependencies:
     react-helmet "^6.1.0"
 
+gatsby-plugin-remote-images@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-remote-images/-/gatsby-plugin-remote-images-3.0.0.tgz#63bbba949527eafddef755e0d8891e5ad2c59db9"
+  integrity sha512-pJ2QSHM7SfJvKA+dbCpULNv9ha3DuqF4kKyuLTVDYBUbb3QWBNorXMTazshZsoLwMyER16CS3GIARsLOUkmsaQ==
+  dependencies:
+    gatsby-source-filesystem "^3.4.0"
+    lodash "^4.17.15"
+
 gatsby-plugin-robots-txt@1.6.10:
   version "1.6.10"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-robots-txt/-/gatsby-plugin-robots-txt-1.6.10.tgz#b178efe3da65718a39d1acd2e5768f687b205cf0"
@@ -5894,7 +5902,7 @@ gatsby-recipes@^0.25.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-source-filesystem@^3.14.0:
+gatsby-source-filesystem@^3.14.0, gatsby-source-filesystem@^3.4.0:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-3.14.0.tgz#ae2b930091a932b33270cb9cc2d9caaf0abc1742"
   integrity sha512-Gg5GGxiWXhjapWMYdXOGk7zp+ajYowS+xNmaDUkL1gH+IQLvE18XbvKh00B/HiFaHm4azJfS2QRrRI/mPTZX+w==
