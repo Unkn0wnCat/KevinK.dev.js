@@ -191,3 +191,69 @@
     margin-top: 40px;
     padding: 10px 20px;
 }
+
+.aboutSection {
+    > article {
+        display: flex;
+        align-items: center;
+
+        > div {
+            width: calc(50% - 40px);
+            flex-shrink: 0;
+        }
+
+        .aboutText {
+            margin-right: 20px;
+        }
+
+        .skills {
+            margin-left: 20px;
+
+            .skillList {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .skill {
+                    border: thin solid currentColor;
+                    border-radius: 100px;
+                    padding: 5px 10px;
+                    margin: 5px;
+
+                    &.skill_framework {
+                        color: #e52b3e;
+                    }
+
+                    &.skill_language {
+                        color: #6848da;
+                    }
+
+                    &.skill_platform {
+                        color: #e5752b;
+                    }
+
+                    &.skill_os {
+                        color: #2b66e5;
+                    }
+
+                    &.skill_program {
+                        color: #18bb20;
+                    }
+                }
+            }
+        }
+        
+        @media(max-width: 900px) {
+            flex-direction: column;
+
+            > div {
+                width: 100%;
+            }
+
+            .skills, .aboutText {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -27,6 +27,13 @@ export const query = graphql`
                 contactMastodonHref
             }
         }
+        allSkillsJson(sort: {fields: type, order: ASC}) {
+            nodes {
+                name
+                type
+                href
+            }
+        }
         allProjectsJson(
             filter: { lang: { eq: $language }, featured: { gte: 0 } }
             sort: { fields: featured, order: ASC }
@@ -179,9 +186,25 @@ const IndexPage = (props) => {
                     </div>
                 </div>
             </section>
-            <section className="aboutSection">
+            <section className={styles.aboutSection}>
                 <article>
-                    <MDXRenderer>{file.childMdx.body}</MDXRenderer>
+                    <div className={styles.aboutText}>
+                        <MDXRenderer>{file.childMdx.body}</MDXRenderer>
+                    </div>
+                    <div className={styles.skills}>
+                        <h2><Trans>mySkills</Trans></h2>
+                        <div className={styles.skillList}>
+                            {
+                                props.data.allSkillsJson.nodes.map((skill) => {
+                                    return (
+                                        skill.href ? 
+                                        <a className={styles.skill + " " + styles["skill_"+skill.type]} href={skill.href} target="_blank" rel="noreferrer">{skill.name}</a> : 
+                                        <span className={styles.skill + " " + styles["skill_"+skill.type]}>{skill.name}</span>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
                 </article>
             </section>
             <a
