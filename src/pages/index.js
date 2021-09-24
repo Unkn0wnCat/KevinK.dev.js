@@ -11,9 +11,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 
 import anime from "animejs";
-import { tsParticles } from "tsparticles";
 
-import * as particleConfig from "./index.particles.json";
 import { ArrowRight, AtSign, Camera, Github, Mail, MapPin, Phone } from "lucide-react";
 
 export const query = graphql`
@@ -105,8 +103,6 @@ const IndexPage = (props) => {
             duration: 250,
             easing: "easeInOutCirc",
         });
-
-        tsParticles.load("particle-container", particleConfig);
     }, []);
 
     let meta = props.data.site.siteMetadata;
