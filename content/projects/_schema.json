@@ -8,5 +8,6 @@
         "github": "https://foo.bar"
     },
     "image": "../images/test.jpg",
-    "featured": 0
+    "featured": 0,
+    "date": "20210924T131751.842+0200"
 }

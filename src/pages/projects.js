@@ -8,7 +8,7 @@ import * as styles from "./projects.module.scss";
 
 export const query = graphql`
     query GetProjects($language: String) {
-        allProjectsJson(filter: { lang: { eq: $language } }) {
+        allProjectsJson(filter: { lang: { eq: $language } }, sort: {fields: date, order: DESC}) {
             nodes {
                 lang
                 urlname

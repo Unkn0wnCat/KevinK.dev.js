@@ -1,0 +1,13 @@
+{
+    "urlname": "minerva",
+    "lang": "en",
+    "name": "MinervaTools",
+    "shortDescription": "A world management tool for Minecraft",
+    "links": {
+        "website": "https://minervatools.net",
+        "github": "https://github.com/MinervaTools"
+    },
+    "image": "../images/MinervaTools.png",
+    "featured": 2,
+    "date": "20210924T131751.842+0200"
+}
