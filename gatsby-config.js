@@ -68,7 +68,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-robots-txt`,
-        {
+        /*{
             resolve: `gatsby-plugin-offline`,
             options: {
                 precachePages: [
@@ -78,11 +78,8 @@ module.exports = {
                     "/de",
                     "/de/projects",
                 ],
-                workboxConfig: {
-                    globPatterns: ["**/*"],
-                },
             },
-        },
+        },*/
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         {
