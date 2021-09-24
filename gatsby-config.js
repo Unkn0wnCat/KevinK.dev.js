@@ -22,6 +22,7 @@ module.exports = {
         {
             resolve: "gatsby-plugin-asset-path",
         },
+        `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         `gatsby-transformer-json`,

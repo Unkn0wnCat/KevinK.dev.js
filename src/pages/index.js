@@ -8,6 +8,7 @@ import * as projectStyles from "./projects.module.scss";
 import { Trans, Link } from "gatsby-plugin-react-i18next";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import { StaticImage } from "gatsby-plugin-image";
 
 import anime from "animejs";
 import { tsParticles } from "tsparticles";
@@ -122,13 +123,10 @@ const IndexPage = (props) => {
                 <div className={styles.heroSectionBgOver}></div>
                 <div className={styles.profile + " profile"}>
                     <div
-                        data-bg="url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-04.jpg)"
-                        style={{
-                            backgroundImage:
-                                "url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-04.jpg)",
-                        }}
-                        className={styles.profileImage + " lazy"}
-                    ></div>
+                        className={styles.profileImage}
+                    >
+                        <StaticImage src={"../../content/images/kevin-kandlbinder-04.jpg"} width={250} height={350} placeholder="blurred"></StaticImage>
+                    </div>
                     <div className={styles.profileImageDummy}></div>
                     <div className={styles.profileCard}>
                         <span className={styles.hello}>
