@@ -18,9 +18,6 @@ module.exports = {
     },
     plugins: [
         `gatsby-plugin-eslint`,
-        {
-            resolve: "gatsby-plugin-asset-path",
-        },
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
