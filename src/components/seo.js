@@ -26,49 +26,53 @@ function SEO({ description, meta, title }) {
         <Helmet
             title={title}
             titleTemplate={`%s | ${site.siteMetadata.title}`}
-            meta={[
-                {
-                    name: `description`,
-                    content: metaDescription,
-                },
-                {
-                    property: `og:title`,
-                    content: title,
-                },
-                {
-                    property: `og:description`,
-                    content: metaDescription,
-                },
-                {
-                    property: `og:type`,
-                    content: `website`,
-                },
-                {
-                    name: `twitter:card`,
-                    content: `summary`,
-                },
-                {
-                    name: `twitter:creator`,
-                    content: site.siteMetadata.author,
-                },
-                {
-                    name: `twitter:title`,
-                    content: title,
-                },
-                {
-                    name: `twitter:description`,
-                    content: metaDescription,
-                },
-                {
-                    name: "keywords",
-                    content: site.siteMetadata.keywords,
-                },
-            ].concat(meta)}
         >
             <meta
                 name="battery-savings"
                 content="allow-reduced-framerate"
             ></meta>
+            {
+                [
+                    {
+                        name: `description`,
+                        content: metaDescription,
+                    },
+                    {
+                        property: `og:title`,
+                        content: title,
+                    },
+                    {
+                        property: `og:description`,
+                        content: metaDescription,
+                    },
+                    {
+                        property: `og:type`,
+                        content: `website`,
+                    },
+                    {
+                        name: `twitter:card`,
+                        content: `summary`,
+                    },
+                    {
+                        name: `twitter:creator`,
+                        content: site.siteMetadata.author,
+                    },
+                    {
+                        name: `twitter:title`,
+                        content: title,
+                    },
+                    {
+                        name: `twitter:description`,
+                        content: metaDescription,
+                    },
+                    {
+                        name: "keywords",
+                        content: site.siteMetadata.keywords,
+                    },
+                ].concat(meta).map((m) => {
+                    return <meta key={m.name} name={m.name} content={m.content}></meta>;
+                })
+            }
             <script
                 async
                 defer
