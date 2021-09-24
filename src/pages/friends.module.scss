@@ -61,18 +61,19 @@
             .contactLink {
                 transition: text-decoration 0.5s;
                 text-decoration: underline dotted rgba(0, 0, 0, 0);
-                padding: 6px 0 6px 25px;
+                padding: 6px 0 6px 0;
                 color: $textColor;
                 transition: color 0.25s;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    color: $accentColor;
+                    margin-right: 10px;
+                }
 
                 @media (prefers-color-scheme: light) {
                     color: $lightTextColor;
-                }
-
-                > i {
-                    color: $accentColor;
-                    margin-left: -25px;
-                    margin-right: 5px;
                 }
             }
         }

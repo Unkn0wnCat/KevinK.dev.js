@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import * as styles from "./project.module.scss";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { ExternalLink, Github } from "lucide-react";
 
 export const query = graphql`
     query GetProject($urlname: String!, $lang: String!, $language: String!) {
@@ -100,10 +101,7 @@ const ProjectTemplate = ({ data }) => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <i
-                                        className="fab fa-github"
-                                        aria-hidden="true"
-                                    ></i>{" "}
+                                    <Github height={15}/>{" "}
                                     <Trans>projectViewGitHub</Trans>
                                 </a>
                             ) : null}
@@ -113,10 +111,7 @@ const ProjectTemplate = ({ data }) => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <i
-                                        className="fas fa-external-link-alt"
-                                        aria-hidden="true"
-                                    ></i>{" "}
+                                    <ExternalLink height={15}/>{" "}
                                     <Trans>projectViewWebsite</Trans>
                                 </a>
                             ) : null}

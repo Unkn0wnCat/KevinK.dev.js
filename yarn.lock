@@ -1131,6 +1131,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/anonymous-pro@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/anonymous-pro/-/anonymous-pro-4.5.0.tgz#cc618eb2692ed0414f45c5e1c2ab1efeb5ca10d7"
+  integrity sha512-4+JsJ0J/0NZvqiKv6TtkG5fCrs5RNSylAQ4vEifCRTlIZCWUDAjEmRz6s0DdRicTSLaOBoAUIp7efufWmHbpmw==
+
 "@gatsbyjs/reach-router@^1.3.6":
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/reach-router/-/reach-router-1.3.6.tgz#4e8225836959be247890b66f21a3198a0589e34d"
@@ -7978,6 +7983,11 @@ lru-queue@^0.1.0:
   integrity sha1-Jzi9nw089PhEkMVzbEhpmsYyzaM=
   dependencies:
     es5-ext "~0.10.2"
+
+lucide-react@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.16.0.tgz#38573a3e287712cb1d56aa6dd46e47e3323ba8f4"
+  integrity sha512-R5chQb550S+znoZPAJTHRqAOq6NiMCr4Pm8C0irPBNPEjx3Oarvqt+dbiFu4DWaSR2bMh2iOj0IgtOepoPDdaQ==
 
 make-dir@^2.1.0:
   version "2.1.0"

@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import GitHubButton from "react-github-btn";
 
 import * as styles from "./donate.module.scss";
+import { ArrowRight } from "lucide-react";
 
 export const query = graphql`
     query ($language: String!) {
@@ -127,10 +128,7 @@ const DonatePage = (props) => {
                         }
                     >
                         <span>Donate using PayPal</span>
-                        <i
-                            className="fas fa-fw fa-chevron-right"
-                            aria-hidden="true"
-                        ></i>
+                        <ArrowRight/>
                     </a>
                 </article>
             </section>

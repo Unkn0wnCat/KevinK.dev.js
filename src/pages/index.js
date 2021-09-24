@@ -14,6 +14,7 @@ import anime from "animejs";
 import { tsParticles } from "tsparticles";
 
 import * as particleConfig from "./index.particles.json";
+import { ArrowRight, AtSign, Camera, Github, Mail, MapPin, Phone } from "lucide-react";
 
 export const query = graphql`
     query GetMetaAndProjects($language: String) {
@@ -145,7 +146,7 @@ const IndexPage = (props) => {
                                 href={"tel:" + meta.contactPhone}
                                 rel="me"
                             >
-                                <i className="fas fa-fw fa-phone"></i>
+                                <Phone width={20} />
                                 {meta.contactPhone}
                             </a>
                             <a
@@ -153,7 +154,7 @@ const IndexPage = (props) => {
                                 href={"mailto:" + meta.contactEmail}
                                 rel="me"
                             >
-                                <i className="far fa-fw fa-envelope"></i>
+                                <Mail width={20}/>
                                 {meta.contactEmail}
                             </a>
                             <a
@@ -162,7 +163,7 @@ const IndexPage = (props) => {
                                 rel="noreferrer "
                                 target="_blank"
                             >
-                                <i className="fas fa-fw fa-map-marker-alt"></i>
+                                <MapPin width={20} />
                                 <Trans>homeMyLocation</Trans>
                             </a>
                             <a
@@ -171,7 +172,7 @@ const IndexPage = (props) => {
                                 rel="noreferrer me"
                                 target="_blank"
                             >
-                                <i className="fab fa-fw fa-mastodon"></i>
+                                <AtSign width={20}/>
                                 {meta.contactMastodon}
                             </a>
                             <a
@@ -182,7 +183,7 @@ const IndexPage = (props) => {
                                 rel="noreferrer me"
                                 target="_blank"
                             >
-                                <i className="fab fa-fw fa-github"></i>
+                                <Github width={20}/>
                                 {meta.contactGitHub}
                             </a>
                         </div>
@@ -237,10 +238,10 @@ const IndexPage = (props) => {
             >
                 <div>
                     <span>
-                        <i className="fas fa-fw fa-camera"></i>{" "}
+                        <Camera/>{" "}
                         <Trans>homeImageCredit</Trans>
                     </span>
-                    <i className="fas fa-fw fa-chevron-right"></i>
+                    <ArrowRight/>
                 </div>
             </a>
             <section className="featuredSection">
@@ -289,7 +290,7 @@ const IndexPage = (props) => {
                     </div>
                     <Link to="/projects" className={styles.seeMoreButton}>
                         <Trans>seeMore</Trans>{" "}
-                        <i className="fas fa-fw fa-chevron-right"></i>
+                        <ArrowRight/>
                     </Link>
                 </article>
             </section>
@@ -298,7 +299,7 @@ const IndexPage = (props) => {
                     <span>
                         <Trans>donationCatchphrase</Trans>
                     </span>
-                    <i className="fas fa-fw fa-chevron-right"></i>
+                    <ArrowRight/>
                 </div>
             </Link>
         </Layout>

@@ -93,8 +93,16 @@
         .contactLink {
             transition: text-decoration 0.5s;
             text-decoration: underline dotted rgba(0, 0, 0, 0);
-            padding: 6px 0 6px 25px;
+            padding: 6px 0 6px 0;
             color: $textColor;
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 10px;
+                color: $accentColor;
+                flex-shrink: 0;
+            }
 
             @media (pointer: coarse), (pointer: none) {
                 padding-top: 15px;
@@ -167,6 +175,10 @@
 .donationSection,
 .hireMeSection {
     @include homeBanner;
+
+    svg {
+        height: 50px;
+    }
 }
 
 .creditSection {
@@ -178,8 +190,13 @@
         font-size: 1.2em;
         color: white;
 
-        > span > i {
-            line-height: 15px !important;
+        > span {
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 10px;
+            }
         }
     }
 }

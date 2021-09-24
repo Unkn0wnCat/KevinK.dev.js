@@ -42,7 +42,7 @@
 }
 
 @mixin buttonBasic {
-    display: block;
+    display: flex;
     padding: 10px;
     text-align: center;
     background: $accentColor;
@@ -50,6 +50,12 @@
     text-decoration: none;
     box-shadow: 0 0 33px -10px rgba($accentColor, 0.5);
     transition: box-shadow 0.25s;
+    align-items: center;
+    justify-content: center;
+    
+    svg {
+        margin-left: 10px;
+    }
 
     &:hover,
     &:active,
@@ -66,17 +72,12 @@
 @mixin homeBanner {
     background: lighten($background, 1);
     cursor: pointer;
-    display: block;
     text-decoration: none;
     color: inherit;
     transition: background-color 0.25s, color 0.25s;
 
     @media (prefers-color-scheme: light) {
         background: darken($accentColor, 1);
-    }
-
-    img {
-        height: 50px;
     }
 
     > div {

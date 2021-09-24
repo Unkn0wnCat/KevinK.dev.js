@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 
 import * as styles from "./friends.module.scss";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Globe2 } from "lucide-react";
 
 export const query = graphql`
     query AllFriendsQuery($language: String!) {
@@ -122,10 +123,7 @@ const FriendsPage = ({ data }) => {
                                                     target="_blank"
                                                     rel="noreferrer"
                                                 >
-                                                    <i
-                                                        className="fas fa-globe-europe"
-                                                        aria-hidden="true"
-                                                    ></i>{" "}
+                                                    <Globe2 height={20}/>{" "}
                                                     {friend.url}
                                                 </a>
                                             </div>
