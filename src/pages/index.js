@@ -27,7 +27,7 @@ export const query = graphql`
                 contactMastodonHref
             }
         }
-        allSkillsJson(sort: {fields: type, order: ASC}) {
+        allSkillsJson(sort: { fields: type, order: ASC }) {
             nodes {
                 name
                 type
@@ -117,7 +117,8 @@ const IndexPage = (props) => {
             <section className={styles.heroSection}>
                 <div
                     className={styles.heroSectionBg}
-                    id="particle-container"></div>
+                    id="particle-container"
+                ></div>
                 <div className={styles.heroSectionBgOver}></div>
                 <div className={styles.profile + " profile"}>
                     <div
@@ -126,7 +127,8 @@ const IndexPage = (props) => {
                             backgroundImage:
                                 "url(https://cdn.kevink.dev/images/kevin/kevin-kandlbinder-04.jpg)",
                         }}
-                        className={styles.profileImage + " lazy"}></div>
+                        className={styles.profileImage + " lazy"}
+                    ></div>
                     <div className={styles.profileImageDummy}></div>
                     <div className={styles.profileCard}>
                         <span className={styles.hello}>
@@ -145,14 +147,16 @@ const IndexPage = (props) => {
                             <a
                                 className={styles.contactLink}
                                 href={"tel:" + meta.contactPhone}
-                                rel="me">
+                                rel="me"
+                            >
                                 <i className="fas fa-fw fa-phone"></i>
                                 {meta.contactPhone}
                             </a>
                             <a
                                 className={styles.contactLink}
                                 href={"mailto:" + meta.contactEmail}
-                                rel="me">
+                                rel="me"
+                            >
                                 <i className="far fa-fw fa-envelope"></i>
                                 {meta.contactEmail}
                             </a>
@@ -160,7 +164,8 @@ const IndexPage = (props) => {
                                 className={styles.contactLink}
                                 href={meta.mapsLink}
                                 rel="noreferrer "
-                                target="_blank">
+                                target="_blank"
+                            >
                                 <i className="fas fa-fw fa-map-marker-alt"></i>
                                 <Trans>homeMyLocation</Trans>
                             </a>
@@ -168,7 +173,8 @@ const IndexPage = (props) => {
                                 className={styles.contactLink}
                                 href={meta.contactMastodonHref}
                                 rel="noreferrer me"
-                                target="_blank">
+                                target="_blank"
+                            >
                                 <i className="fab fa-fw fa-mastodon"></i>
                                 {meta.contactMastodon}
                             </a>
@@ -178,7 +184,8 @@ const IndexPage = (props) => {
                                     "https://github.com/" + meta.contactGitHub
                                 }
                                 rel="noreferrer me"
-                                target="_blank">
+                                target="_blank"
+                            >
                                 <i className="fab fa-fw fa-github"></i>
                                 {meta.contactGitHub}
                             </a>
@@ -192,17 +199,36 @@ const IndexPage = (props) => {
                         <MDXRenderer>{file.childMdx.body}</MDXRenderer>
                     </div>
                     <div className={styles.skills}>
-                        <h2><Trans>mySkills</Trans></h2>
+                        <h2>
+                            <Trans>mySkills</Trans>
+                        </h2>
                         <div className={styles.skillList}>
-                            {
-                                props.data.allSkillsJson.nodes.map((skill) => {
-                                    return (
-                                        skill.href ? 
-                                        <a className={styles.skill + " " + styles["skill_"+skill.type]} href={skill.href} target="_blank" rel="noreferrer">{skill.name}</a> : 
-                                        <span className={styles.skill + " " + styles["skill_"+skill.type]}>{skill.name}</span>
-                                    )
-                                })
-                            }
+                            {props.data.allSkillsJson.nodes.map((skill) => {
+                                return skill.href ? (
+                                    <a
+                                        className={
+                                            styles.skill +
+                                            " " +
+                                            styles["skill_" + skill.type]
+                                        }
+                                        href={skill.href}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        {skill.name}
+                                    </a>
+                                ) : (
+                                    <span
+                                        className={
+                                            styles.skill +
+                                            " " +
+                                            styles["skill_" + skill.type]
+                                        }
+                                    >
+                                        {skill.name}
+                                    </span>
+                                );
+                            })}
                         </div>
                     </div>
                 </article>
@@ -211,7 +237,8 @@ const IndexPage = (props) => {
                 className={styles.creditSection}
                 href="https://unsplash.com/@jannikkiel"
                 target="_blank"
-                rel="noreferrer">
+                rel="noreferrer"
+            >
                 <div>
                     <span>
                         <i className="fas fa-fw fa-camera"></i>{" "}
@@ -231,7 +258,8 @@ const IndexPage = (props) => {
                                 <Link
                                     className={projectStyles.projectCard}
                                     key={project.lang + "/" + project.urlname}
-                                    to={"/projects/" + project.urlname}>
+                                    to={"/projects/" + project.urlname}
+                                >
                                     <div
                                         className={
                                             projectStyles.projectCardImage
@@ -242,15 +270,18 @@ const IndexPage = (props) => {
                                                 project.image.childImageSharp
                                                     .resize.src +
                                                 ")",
-                                        }}>
+                                        }}
+                                    >
                                         <div
                                             className={
                                                 projectStyles.projectCardMeta
-                                            }>
+                                            }
+                                        >
                                             <span
                                                 className={
                                                     projectStyles.projectCardTitle
-                                                }>
+                                                }
+                                            >
                                                 {project.name}
                                             </span>
                                             <span>

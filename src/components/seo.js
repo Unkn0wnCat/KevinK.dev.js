@@ -63,10 +63,12 @@ function SEO({ description, meta, title }) {
                     name: "keywords",
                     content: site.siteMetadata.keywords,
                 },
-            ].concat(meta)}>
+            ].concat(meta)}
+        >
             <script
                 src="https://kit.fontawesome.com/1377f925e0.js"
-                crossOrigin="anonymous"></script>
+                crossOrigin="anonymous"
+            ></script>
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link
                 href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Roboto&display=swap"
@@ -74,8 +76,14 @@ function SEO({ description, meta, title }) {
             />
             <meta
                 name="battery-savings"
-                content="allow-reduced-framerate"></meta>
-            <script async defer data-domain="kevink.dev" src="https://analytics.kevink.dev/js/plausible.js"></script>
+                content="allow-reduced-framerate"
+            ></meta>
+            <script
+                async
+                defer
+                data-domain="kevink.dev"
+                src="https://analytics.kevink.dev/js/plausible.js"
+            ></script>
         </Helmet>
     );
 }

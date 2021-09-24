@@ -8,7 +8,10 @@ import * as styles from "./projects.module.scss";
 
 export const query = graphql`
     query GetProjects($language: String) {
-        allProjectsJson(filter: { lang: { eq: $language } }, sort: {fields: date, order: DESC}) {
+        allProjectsJson(
+            filter: { lang: { eq: $language } }
+            sort: { fields: date, order: DESC }
+        ) {
             nodes {
                 lang
                 urlname
@@ -55,7 +58,8 @@ const ProjectsPage = ({ data }) => {
                                 <Link
                                     className={styles.projectCard}
                                     key={project.lang + project.urlname}
-                                    to={"/projects/" + project.urlname}>
+                                    to={"/projects/" + project.urlname}
+                                >
                                     <div
                                         className={styles.projectCardImage}
                                         style={{
@@ -64,12 +68,14 @@ const ProjectsPage = ({ data }) => {
                                                 project.image.childImageSharp
                                                     .resize.src +
                                                 ")",
-                                        }}>
+                                        }}
+                                    >
                                         <div className={styles.projectCardMeta}>
                                             <span
                                                 className={
                                                     styles.projectCardTitle
-                                                }>
+                                                }
+                                            >
                                                 {project.name}
                                             </span>
                                             <span>

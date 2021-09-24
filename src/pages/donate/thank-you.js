@@ -39,7 +39,8 @@ const ThankYouPage = (props) => {
                     <p>
                         <Trans
                             contactEmail={contactEmail}
-                            i18nKey="donateThanksText">
+                            i18nKey="donateThanksText"
+                        >
                             donateThanksText
                             <a href={"mailto:" + contactEmail}>
                                 {{ contactEmail }}

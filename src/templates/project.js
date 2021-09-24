@@ -59,7 +59,8 @@ const ProjectTemplate = ({ data }) => {
         <Layout
             description={project.shortDescription}
             title={t("project") + ": " + projectName}
-            transparentTopbar={true}>
+            transparentTopbar={true}
+        >
             <section className={styles.projectHeader}>
                 <div style={{ paddingTop: 0 }}>
                     <div
@@ -67,7 +68,8 @@ const ProjectTemplate = ({ data }) => {
                         style={{
                             backgroundImage:
                                 "url(" + project.image.publicURL + ")",
-                        }}></div>
+                        }}
+                    ></div>
                     <header>
                         <div className={styles.headerInner}>
                             <h1>
@@ -95,10 +97,12 @@ const ProjectTemplate = ({ data }) => {
                                 <a
                                     href={project.links.github}
                                     target="_blank"
-                                    rel="noreferrer">
+                                    rel="noreferrer"
+                                >
                                     <i
                                         className="fab fa-github"
-                                        aria-hidden="true"></i>{" "}
+                                        aria-hidden="true"
+                                    ></i>{" "}
                                     <Trans>projectViewGitHub</Trans>
                                 </a>
                             ) : null}
@@ -106,10 +110,12 @@ const ProjectTemplate = ({ data }) => {
                                 <a
                                     href={project.links.website}
                                     target="_blank"
-                                    rel="noreferrer">
+                                    rel="noreferrer"
+                                >
                                     <i
                                         className="fas fa-external-link-alt"
-                                        aria-hidden="true"></i>{" "}
+                                        aria-hidden="true"
+                                    ></i>{" "}
                                     <Trans>projectViewWebsite</Trans>
                                 </a>
                             ) : null}

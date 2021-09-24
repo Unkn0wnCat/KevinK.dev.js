@@ -58,9 +58,8 @@ const FriendsPage = ({ data }) => {
                                     return (
                                         <div
                                             className={styles.friendProfile}
-                                            key={
-                                                friend.url + "#" + friend.name
-                                            }>
+                                            key={friend.url + "#" + friend.name}
+                                        >
                                             <div
                                                 className={styles.friendImage}
                                                 style={{
@@ -74,7 +73,8 @@ const FriendsPage = ({ data }) => {
                                                     "#" +
                                                     friend.name +
                                                     "#image"
-                                                }>
+                                                }
+                                            >
                                                 <span
                                                     className={
                                                         styles.friendName
@@ -84,7 +84,8 @@ const FriendsPage = ({ data }) => {
                                                         "#" +
                                                         friend.name +
                                                         "#name"
-                                                    }>
+                                                    }
+                                                >
                                                     {friend.name}
                                                 </span>
                                                 <span
@@ -96,7 +97,8 @@ const FriendsPage = ({ data }) => {
                                                         "#" +
                                                         friend.name +
                                                         "#profession"
-                                                    }>
+                                                    }
+                                                >
                                                     {friend.profession}
                                                 </span>
                                             </div>
@@ -108,17 +110,20 @@ const FriendsPage = ({ data }) => {
                                                     "#" +
                                                     friend.name +
                                                     "#links"
-                                                }>
+                                                }
+                                            >
                                                 <a
                                                     className={
                                                         styles.contactLink
                                                     }
                                                     href={friend.url}
                                                     target="_blank"
-                                                    rel="noreferrer">
+                                                    rel="noreferrer"
+                                                >
                                                     <i
                                                         className="fas fa-globe-europe"
-                                                        aria-hidden="true"></i>{" "}
+                                                        aria-hidden="true"
+                                                    ></i>{" "}
                                                     {friend.url}
                                                 </a>
                                             </div>

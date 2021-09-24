@@ -49,7 +49,8 @@ const Navigation = ({ isHome }) => {
                 styles.topBar +
                 (isHome ? " " + styles.homeBar : "") +
                 (atTop ? " " + styles.homeBarTransparent : "")
-            }>
+            }
+        >
             <nav className={styles.topBarInner}>
                 <StaticQuery
                     query={graphql`
@@ -71,13 +72,15 @@ const Navigation = ({ isHome }) => {
                 <Link
                     id="navBtnProjects"
                     to="/projects"
-                    activeClassName={styles.active}>
+                    activeClassName={styles.active}
+                >
                     <Trans>projects</Trans>
                 </Link>
                 <Link
                     id="navBtnSocial"
                     to="/social"
-                    activeClassName={styles.active}>
+                    activeClassName={styles.active}
+                >
                     <Trans>social</Trans>
                 </Link>
             </nav>

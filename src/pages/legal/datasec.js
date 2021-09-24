@@ -288,7 +288,8 @@ export default function DataSecPage() {
                         verarbeiten (Art. 44 bis 49 DSGVO,{" "}
                         <a
                             href="https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu_de"
-                            target="blank">
+                            target="blank"
+                        >
                             Informationsseite der EU-Kommission
                         </a>
                         ).
@@ -567,7 +568,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.amazon.de/gp/help/customer/display.html?nodeId=201909010">
+                                href="https://www.amazon.de/gp/help/customer/display.html?nodeId=201909010"
+                            >
                                 https://www.amazon.de/gp/help/customer/display.html?nodeId=201909010
                             </a>
                             .<br />
@@ -693,7 +695,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://automattic.com/privacy/">
+                                href="https://automattic.com/privacy/"
+                            >
                                 https://automattic.com/privacy/
                             </a>
                             .<br />
@@ -751,7 +754,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://soundcloud.com/pages/privacy">
+                                href="https://soundcloud.com/pages/privacy"
+                            >
                                 https://soundcloud.com/pages/privacy
                             </a>
                             .
@@ -820,7 +824,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.privacyshield.gov/participant?id=a2zt0000000TSnwAAG&amp;status=Active">
+                                href="https://www.privacyshield.gov/participant?id=a2zt0000000TSnwAAG&amp;status=Active"
+                            >
                                 https://www.privacyshield.gov/participant?id=a2zt0000000TSnwAAG&amp;status=Active
                             </a>
                             ).
@@ -882,7 +887,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.whatsapp.com/legal">
+                                href="https://www.whatsapp.com/legal"
+                            >
                                 https://www.whatsapp.com/legal
                             </a>
                             .<br />
@@ -1125,7 +1131,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.privacyshield.gov/participant?id=a2zt0000000GnZKAA0&amp;status=Active">
+                                href="https://www.privacyshield.gov/participant?id=a2zt0000000GnZKAA0&amp;status=Active"
+                            >
                                 https://www.privacyshield.gov/participant?id=a2zt0000000GnZKAA0&amp;status=Active
                             </a>
                             ).
@@ -1153,7 +1160,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.cloudflare.com/security-policy">
+                                href="https://www.cloudflare.com/security-policy"
+                            >
                                 https://www.cloudflare.com/security-policy
                             </a>
                             .
@@ -1177,7 +1185,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.google.com/intl/de/tagmanager/use-policy.html">
+                                href="https://www.google.com/intl/de/tagmanager/use-policy.html"
+                            >
                                 https://www.google.com/intl/de/tagmanager/use-policy.html
                             </a>
                             .<br />
@@ -1235,7 +1244,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="http://tools.google.com/dlpage/gaoptout?hl=de">
+                                href="http://tools.google.com/dlpage/gaoptout?hl=de"
+                            >
                                 http://tools.google.com/dlpage/gaoptout?hl=de
                             </a>
                             .<br />
@@ -1259,7 +1269,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active">
+                                href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active"
+                            >
                                 https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active
                             </a>
                             ).
@@ -1272,7 +1283,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://policies.google.com/privacy">
+                                href="https://policies.google.com/privacy"
+                            >
                                 https://policies.google.com/privacy
                             </a>
                             ) sowie in den Einstellungen für die Darstellung von
@@ -1280,7 +1292,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://adssettings.google.com/authenticated">
+                                href="https://adssettings.google.com/authenticated"
+                            >
                                 (https://adssettings.google.com/authenticated
                             </a>
                             ).
@@ -1300,7 +1313,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://support.google.com/analytics/answer/2790010?hl=de&amp;ref_topic=6010376">
+                                href="https://support.google.com/analytics/answer/2790010?hl=de&amp;ref_topic=6010376"
+                            >
                                 Universal-Analytics
                             </a>
                             “ ein. „Universal Analytics“ bezeichnet ein
@@ -1445,7 +1459,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://vimeo.com/privacy">
+                                href="https://vimeo.com/privacy"
+                            >
                                 https://vimeo.com/privacy
                             </a>
                             . Wir weisen darauf hin, dass Vimeo Google Analytics
@@ -1454,14 +1469,16 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://policies.google.com/privacy">
+                                href="https://policies.google.com/privacy"
+                            >
                                 https://policies.google.com/privacy
                             </a>
                             ) sowie Opt-Out-Möglichkeiten für Google-Analytics (
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="http://tools.google.com/dlpage/gaoptout?hl=de">
+                                href="http://tools.google.com/dlpage/gaoptout?hl=de"
+                            >
                                 http://tools.google.com/dlpage/gaoptout?hl=de
                             </a>
                             ) oder die Einstellungen von Google für die
@@ -1469,7 +1486,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://adssettings.google.com/">
+                                href="https://adssettings.google.com/"
+                            >
                                 https://adssettings.google.com/
                             </a>
                             ).
@@ -1487,14 +1505,16 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.google.com/policies/privacy/">
+                                href="https://www.google.com/policies/privacy/"
+                            >
                                 https://www.google.com/policies/privacy/
                             </a>
                             , Opt-Out:{" "}
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://adssettings.google.com/authenticated">
+                                href="https://adssettings.google.com/authenticated"
+                            >
                                 https://adssettings.google.com/authenticated
                             </a>
                             .
@@ -1521,7 +1541,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.google.com/policies/privacy/">
+                                href="https://www.google.com/policies/privacy/"
+                            >
                                 https://www.google.com/policies/privacy/
                             </a>
                             .
@@ -1542,14 +1563,16 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.google.com/policies/privacy/">
+                                href="https://www.google.com/policies/privacy/"
+                            >
                                 https://www.google.com/policies/privacy/
                             </a>
                             , Opt-Out:{" "}
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://adssettings.google.com/authenticated">
+                                href="https://adssettings.google.com/authenticated"
+                            >
                                 https://adssettings.google.com/authenticated
                             </a>
                             .
@@ -1572,14 +1595,16 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.google.com/policies/privacy/">
+                                href="https://www.google.com/policies/privacy/"
+                            >
                                 https://www.google.com/policies/privacy/
                             </a>
                             , Opt-Out:{" "}
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://adssettings.google.com/authenticated">
+                                href="https://adssettings.google.com/authenticated"
+                            >
                                 https://adssettings.google.com/authenticated
                             </a>
                             .
@@ -1595,7 +1620,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.openstreetmap.de">
+                                href="https://www.openstreetmap.de"
+                            >
                                 https://www.openstreetmap.de
                             </a>
                             ), die auf Grundlage der Open Data Commons Open
@@ -1605,7 +1631,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://wiki.openstreetmap.org/wiki/Privacy_Policy">
+                                href="https://wiki.openstreetmap.org/wiki/Privacy_Policy"
+                            >
                                 https://wiki.openstreetmap.org/wiki/Privacy_Policy
                             </a>
                             . <br />
@@ -1626,7 +1653,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://wiki.openstreetmap.org/wiki/Privacy_Policy">
+                                href="https://wiki.openstreetmap.org/wiki/Privacy_Policy"
+                            >
                                 https://wiki.openstreetmap.org/wiki/Privacy_Policy
                             </a>
                             .
@@ -1677,21 +1705,24 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active">
+                                href="https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active"
+                            >
                                 https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active
                             </a>
                             ). Datenschutzerklärung:{" "}
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://twitter.com/de/privacy">
+                                href="https://twitter.com/de/privacy"
+                            >
                                 https://twitter.com/de/privacy
                             </a>
                             , Opt-Out:{" "}
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://twitter.com/personalization">
+                                href="https://twitter.com/personalization"
+                            >
                                 https://twitter.com/personalization
                             </a>
                             .
@@ -1717,7 +1748,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="http://instagram.com/about/legal/privacy/">
+                                href="http://instagram.com/about/legal/privacy/"
+                            >
                                 http://instagram.com/about/legal/privacy/
                             </a>
                             .{" "}
@@ -1743,7 +1775,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://about.pinterest.com/de/privacy-policy">
+                                href="https://about.pinterest.com/de/privacy-policy"
+                            >
                                 https://about.pinterest.com/de/privacy-policy
                             </a>
                             .{" "}
@@ -1768,7 +1801,8 @@ export default function DataSecPage() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://privacy.xing.com/de/datenschutzerklaerung">
+                                href="https://privacy.xing.com/de/datenschutzerklaerung"
+                            >
                                 https://privacy.xing.com/de/datenschutzerklaerung
                             </a>
                             .{" "}
@@ -1778,7 +1812,8 @@ export default function DataSecPage() {
                         href="https://datenschutz-generator.de"
                         className="dsg1-6"
                         rel="nofollow noreferrer"
-                        target="_blank">
+                        target="_blank"
+                    >
                         Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas
                         Schwenke
                     </a>

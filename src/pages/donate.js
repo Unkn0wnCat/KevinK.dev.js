@@ -68,7 +68,8 @@ const DonatePage = (props) => {
                             data-color-scheme="no-preference: light; light: dark; dark: dark;"
                             data-icon="octicon-heart"
                             data-size="large"
-                            aria-label="Sponsor @Unkn0wnCat on GitHub">
+                            aria-label="Sponsor @Unkn0wnCat on GitHub"
+                        >
                             <Trans>sponsorGitHub</Trans>
                         </GitHubButton>
                     </p>
@@ -123,11 +124,13 @@ const DonatePage = (props) => {
                             ) +
                             "&amount=" +
                             amount
-                        }>
+                        }
+                    >
                         <span>Donate using PayPal</span>
                         <i
                             className="fas fa-fw fa-chevron-right"
-                            aria-hidden="true"></i>
+                            aria-hidden="true"
+                        ></i>
                     </a>
                 </article>
             </section>

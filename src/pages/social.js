@@ -52,13 +52,15 @@ const SocialPage = ({ data }) => {
                                     href={social.url}
                                     target="_blank"
                                     rel="noreferrer me"
-                                    key={social.url}>
+                                    key={social.url}
+                                >
                                     <div
                                         className={styles.socialImage}
                                         style={{
                                             backgroundImage:
                                                 "url(" + social.image + ")",
-                                        }}>
+                                        }}
+                                    >
                                         <span className={styles.socialName}>
                                             {social.platformName}
                                         </span>
