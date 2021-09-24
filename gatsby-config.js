@@ -16,7 +16,6 @@ module.exports = {
         contactMastodon: extConfig.contactMastodon,
         contactMastodonHref: extConfig.contactMastodonHref,
     },
-    assetPrefix: "/assets",
     plugins: [
         `gatsby-plugin-eslint`,
         {
