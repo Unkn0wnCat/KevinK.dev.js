@@ -13,6 +13,7 @@ import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 import anime from "animejs";
 
 import { ArrowRight, AtSign, Camera, Github, Mail, MapPin, Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const query = graphql`
     query GetMetaAndProjects($language: String) {
@@ -75,6 +76,8 @@ export const query = graphql`
 `;
 
 const IndexPage = (props) => {
+    const {t} = useTranslation();
+
     React.useEffect(() => {
         if (typeof window === "undefined") return;
 
@@ -109,7 +112,7 @@ const IndexPage = (props) => {
     let file = props.data.file;
 
     return (
-        <Layout title="Kevin Kandlbinder" transparentTopbar={true}>
+        <Layout title="Kevin Kandlbinder" transparentTopbar={true} description={t("siteDescription")}>
             <section className={styles.heroSection}>
                 <div
                     className={styles.heroSectionBg}
