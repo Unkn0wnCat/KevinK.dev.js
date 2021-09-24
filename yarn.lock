@@ -1131,7 +1131,7 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/anonymous-pro@^4.5.0":
+"@fontsource/anonymous-pro@4.5.0":
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/@fontsource/anonymous-pro/-/anonymous-pro-4.5.0.tgz#cc618eb2692ed0414f45c5e1c2ab1efeb5ca10d7"
   integrity sha512-4+JsJ0J/0NZvqiKv6TtkG5fCrs5RNSylAQ4vEifCRTlIZCWUDAjEmRz6s0DdRicTSLaOBoAUIp7efufWmHbpmw==
@@ -5633,7 +5633,7 @@ gatsby-plugin-eslint@4.0.0:
   dependencies:
     webpack-merge "^5.8.0"
 
-gatsby-plugin-image@^1.14.0:
+gatsby-plugin-image@1.14.0:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.14.0.tgz#b6d3c14b280b150ad32b3975e90e685b50365bf4"
   integrity sha512-o5D4k4OQDdzXQu1VUWM4TLmi86D2fnGNxLKc/SgvGiqCr8e/opNJcWHELU52XQ11zqSU0jzOkDRQGu9tWesRlg==
@@ -5755,7 +5755,7 @@ gatsby-plugin-react-i18next@1.1.1:
   optionalDependencies:
     react-helmet "^6.1.0"
 
-gatsby-plugin-remote-images@^3.0.0:
+gatsby-plugin-remote-images@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-remote-images/-/gatsby-plugin-remote-images-3.0.0.tgz#63bbba949527eafddef755e0d8891e5ad2c59db9"
   integrity sha512-pJ2QSHM7SfJvKA+dbCpULNv9ha3DuqF4kKyuLTVDYBUbb3QWBNorXMTazshZsoLwMyER16CS3GIARsLOUkmsaQ==
@@ -5780,7 +5780,7 @@ gatsby-plugin-sass@4.14.0:
     resolve-url-loader "^3.1.2"
     sass-loader "^10.1.1"
 
-gatsby-plugin-sharp@^3.14.0:
+gatsby-plugin-sharp@3.14.0:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.14.0.tgz#e087b37d03704e019803439adfb7696339b2262d"
   integrity sha512-i4jrmOElr0mB2tWlpfxzX72zimiheGny0GF+jPPYY77Uoie43AH7GGZm6wyhdtqKlphYDhgatOMU7xeiWQar6g==
@@ -5907,7 +5907,7 @@ gatsby-recipes@^0.25.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-source-filesystem@^3.14.0, gatsby-source-filesystem@^3.4.0:
+gatsby-source-filesystem@3.14.0, gatsby-source-filesystem@^3.4.0:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-3.14.0.tgz#ae2b930091a932b33270cb9cc2d9caaf0abc1742"
   integrity sha512-Gg5GGxiWXhjapWMYdXOGk7zp+ajYowS+xNmaDUkL1gH+IQLvE18XbvKh00B/HiFaHm4azJfS2QRrRI/mPTZX+w==
@@ -5954,7 +5954,7 @@ gatsby-transformer-json@3.14.0:
     "@babel/runtime" "^7.15.4"
     bluebird "^3.7.2"
 
-gatsby-transformer-sharp@^3.14.0:
+gatsby-transformer-sharp@3.14.0:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-3.14.0.tgz#c4c28de17f9970be701249ad0ba6ceeeed6ba79c"
   integrity sha512-p0bBu4Sheo4MrrrTRXEu+jcOvsvKmzr1Wc/CQ9VD1U7vTPj74a8JiMJ9GrXrkei5qcXXeXACjBTu5F0Hyg6qMQ==
@@ -6786,10 +6786,10 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
-i18next@21.0.2:
-  version "21.0.2"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-21.0.2.tgz#a394cbd0cc1879a9ad7a4a979a222d12033022cc"
-  integrity sha512-cSjRitffS1xm90YgPFTaqut89Y4Oc2i4aiCmAuhxHPryYdKzSIGl1YSv8PzlW+UPFOKRIUCOYZ5Rn+aUXKq/qQ==
+i18next@21.1.0:
+  version "21.1.0"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-21.1.0.tgz#48da88faf63ba4523d704e9259ca816541e00de5"
+  integrity sha512-1JJSAh7jI4bcBzwk8OQVrifyLdYYMJoanF8+9rcqbROAiKr3eEV9Cc3rd4065teylbo+d/h8OaTnheRZAKG4WA==
   dependencies:
     "@babel/runtime" "^7.12.0"
 
@@ -7984,7 +7984,7 @@ lru-queue@^0.1.0:
   dependencies:
     es5-ext "~0.10.2"
 
-lucide-react@^0.16.0:
+lucide-react@0.16.0:
   version "0.16.0"
   resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.16.0.tgz#38573a3e287712cb1d56aa6dd46e47e3323ba8f4"
   integrity sha512-R5chQb550S+znoZPAJTHRqAOq6NiMCr4Pm8C0irPBNPEjx3Oarvqt+dbiFu4DWaSR2bMh2iOj0IgtOepoPDdaQ==
