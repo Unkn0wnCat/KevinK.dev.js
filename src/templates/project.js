@@ -26,6 +26,7 @@ export const query = graphql`
                     childImageSharp {
                         gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
                     }
+                    publicURL
                 }
                 shortDescription
             }
@@ -64,6 +65,7 @@ const ProjectTemplate = ({ data }) => {
             description={project.shortDescription}
             title={t("project") + ": " + projectName}
             transparentTopbar={true}
+            image={project.image.publicURL}
         >
             <section className={styles.projectHeader}>
                 <div style={{ paddingTop: 0 }}>

@@ -2,9 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "gatsby-plugin-react-i18next";
 import { useStaticQuery, graphql } from "gatsby";
+import { useLocation } from "@reach/router"
 import { useTranslation } from "gatsby-plugin-react-i18next";
+import useSiteMetadata from "../helpers/useSiteMetadata";
 
-function SEO({ description, meta, title }) {
+function SEO({ description, meta, title, speakable, image, children }) {
     const { t } = useTranslation();
     const { site } = useStaticQuery(
         graphql`
@@ -21,6 +23,10 @@ function SEO({ description, meta, title }) {
     );
 
     const metaDescription = description || t("siteDescription");
+
+    const siteMeta = useSiteMetadata();
+    const location = useLocation();
+
 
     return (
         <Helmet
@@ -79,6 +85,45 @@ function SEO({ description, meta, title }) {
                 data-domain="kevink.dev"
                 src="https://analytics.kevink.dev/js/plausible.js"
             ></script>
+
+            {
+                image && [
+                    <meta name="twitter:image" content={meta.siteUrl + image} key="twimg"/>,
+                    <meta name="og:image" content={meta.siteUrl + image} key="ogimg"/>,
+                ]
+            }
+
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org/",
+                    "@type": "WebPage",
+                    "name": title,
+                    "url": siteMeta.siteUrl+location.pathname,
+                    "speakable": speakable,
+                    "image": meta.siteUrl + image,
+                    "about": {
+                        "@type": "Person",
+                        "name": siteMeta.givenName + " " + siteMeta.familyName,
+                        "givenName": siteMeta.givenName,
+                        "familyName": siteMeta.familyName,
+                        "birthDate": siteMeta.birthDate,
+                        "address": siteMeta.address,
+                        "email": siteMeta.contactEmail,
+                        "telephone": siteMeta.contactPhone,
+                        "gender": siteMeta.gender,
+                        "height": siteMeta.height,
+                        "nationality": {
+                            "@type": "Country",
+                            "name": siteMeta.nationality
+                        },
+                        "image": siteMeta.siteUrl + "/owner.jpg",
+                        "sameAs": siteMeta.sameAs
+                    }
+                })}
+            </script>
+
+            {children}
         </Helmet>
     );
 }
@@ -92,6 +137,9 @@ SEO.propTypes = {
     description: PropTypes.string,
     meta: PropTypes.arrayOf(PropTypes.object),
     title: PropTypes.string.isRequired,
+    speakable: PropTypes.any,
+    image: PropTypes.string,
+    children: PropTypes.any
 };
 
 export default SEO;

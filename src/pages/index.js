@@ -112,7 +112,16 @@ const IndexPage = (props) => {
     let file = props.data.file;
 
     return (
-        <Layout title="Kevin Kandlbinder" transparentTopbar={true} description={t("siteDescription")}>
+        <Layout title="Kevin Kandlbinder" transparentTopbar={true} description={t("siteDescription")}
+        image={meta.siteUrl + "/owner.jpg"}
+        speakable={{
+            "@type": "SpeakableSpecification",
+            "xPath": [
+                "/html/head/title",
+                "/html/head/meta[@name='description']/@content",
+                "article"
+            ]
+        }}>
             <section className={styles.heroSection}>
                 <div
                     className={styles.heroSectionBg}

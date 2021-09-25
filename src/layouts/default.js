@@ -16,7 +16,9 @@ class Layout extends React.Component {
                     lang={this.props.lang}
                     meta={this.props.meta}
                     title={this.props.title}
-                />
+                    image={this.props.image}
+                    speakable={this.props.speakable}
+                >{this.props.seoAdditional ?? null}</SEO>
                 <Navigation isHome={this.props.transparentTopbar} />
                 <div id="content" role="main">
                     {this.props.children}
@@ -57,6 +59,9 @@ Layout.propTypes = {
     title: PropTypes.string.isRequired,
     transparentTopbar: PropTypes.bool,
     children: PropTypes.any.isRequired,
+    seoAdditional: PropTypes.any,
+    image: PropTypes.string,
+    speakable: PropTypes.any
 };
 
 export default Layout;
