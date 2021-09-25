@@ -241,20 +241,45 @@
                         color: #e52b3e;
                     }
 
-                    &.skill_language {
-                        color: #6848da;
-                    }
-
                     &.skill_platform {
                         color: #e5752b;
                     }
 
-                    &.skill_os {
-                        color: #2b66e5;
-                    }
-
                     &.skill_program {
                         color: #18bb20;
+                    }
+
+                    &.skill_os {
+                        color: #6d94e9;
+                    }
+
+                    &.skill_language {
+                        color: #886af5;
+                    }
+
+
+                    @media(prefers-color-scheme: light) {
+
+                        &.skill_os {
+                            color: #2b66e5;
+                        }
+
+                        &.skill_language {
+                            color: #6848da;
+                        }
+
+                        &.skill_framework {
+                            color: #db1e31;
+                        }
+    
+                        &.skill_platform {
+                            color: #aa4f12;
+                        }
+    
+                        &.skill_program {
+                            color: #17681b;
+                        }
+
                     }
                 }
             }

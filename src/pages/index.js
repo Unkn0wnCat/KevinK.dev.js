@@ -113,7 +113,7 @@ const IndexPage = (props) => {
 
     return (
         <Layout title="Kevin Kandlbinder" transparentTopbar={true} description={t("siteDescription")}
-        image={meta.siteUrl + "/owner.jpg"}
+        image={"/owner.jpg"}
         speakable={{
             "@type": "SpeakableSpecification",
             "xPath": [

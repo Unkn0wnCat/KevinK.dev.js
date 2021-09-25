@@ -45,13 +45,18 @@
     display: flex;
     padding: 10px;
     text-align: center;
-    background: $accentColor;
+    background: $accentColorDarker;
     color: white;
     text-decoration: none;
     box-shadow: 0 0 33px -10px rgba($accentColor, 0.5);
     transition: box-shadow 0.25s;
     align-items: center;
     justify-content: center;
+    text-shadow: 0 0 10px black;
+
+    @media(prefers-color-scheme: light) {
+        background-color: $accentColor;
+    }
     
     svg {
         margin-left: 10px;
