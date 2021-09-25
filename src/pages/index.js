@@ -117,8 +117,6 @@ const IndexPage = (props) => {
         speakable={{
             "@type": "SpeakableSpecification",
             "xPath": [
-                "/html/head/title",
-                "/html/head/meta[@name='description']/@content",
                 "article"
             ]
         }}>
