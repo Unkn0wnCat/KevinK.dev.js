@@ -88,8 +88,8 @@ function SEO({ description, meta, title, speakable, image, children }) {
 
             {
                 image && [
-                    <meta name="twitter:image" content={meta.siteUrl + image} key="twimg"/>,
-                    <meta name="og:image" content={meta.siteUrl + image} key="ogimg"/>,
+                    <meta name="twitter:image" content={siteMeta.siteUrl + image} key="twimg"/>,
+                    <meta name="og:image" content={siteMeta.siteUrl + image} key="ogimg"/>,
                 ]
             }
 
@@ -101,7 +101,7 @@ function SEO({ description, meta, title, speakable, image, children }) {
                     "name": title,
                     "url": siteMeta.siteUrl+location.pathname,
                     "speakable": speakable,
-                    "image": meta.siteUrl + image,
+                    "image": siteMeta.siteUrl + image,
                     "about": {
                         "@type": "Person",
                         "name": siteMeta.givenName + " " + siteMeta.familyName,
