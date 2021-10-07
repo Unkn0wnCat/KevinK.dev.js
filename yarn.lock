@@ -5784,10 +5784,10 @@ gatsby-plugin-react-i18next@1.1.1:
   optionalDependencies:
     react-helmet "^6.1.0"
 
-gatsby-plugin-remote-images@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-remote-images/-/gatsby-plugin-remote-images-3.0.0.tgz#63bbba949527eafddef755e0d8891e5ad2c59db9"
-  integrity sha512-pJ2QSHM7SfJvKA+dbCpULNv9ha3DuqF4kKyuLTVDYBUbb3QWBNorXMTazshZsoLwMyER16CS3GIARsLOUkmsaQ==
+gatsby-plugin-remote-images@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-remote-images/-/gatsby-plugin-remote-images-3.1.1.tgz#0d69ad48625ec3751e9ea94e4763324b3ca113b6"
+  integrity sha512-YwJw56voa58Qmu7C0n1vL8wXk3wNWBSkma6JkptYdatmw3F4g/6cFujGJbo7wk8fPTZVMOE1O7glXFKkFh6/SQ==
   dependencies:
     gatsby-source-filesystem "^3.4.0"
     lodash "^4.17.15"
