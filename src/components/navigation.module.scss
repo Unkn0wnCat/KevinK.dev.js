@@ -16,6 +16,7 @@
     transition: opacity 0.25s, left 0.25s;
     pointer-events: none;
     overscroll-behavior: contain;
+    
 
     &.active {
         left: 0;
@@ -112,6 +113,7 @@
         .hamburger {
             display: none;
             height: 43px;
+            margin-top: -3px;
 
             @media (max-width: 500px) {
                 display: block;

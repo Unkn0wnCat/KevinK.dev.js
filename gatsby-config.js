@@ -32,6 +32,13 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-transformer-json`,
         {
+            resolve: `gatsby-plugin-portal`,
+            options: {
+                key: "osnav",
+                id: "osnav",
+            },
+        },
+        {
             resolve: `gatsby-plugin-remote-images`,
             options: {
                 nodeType: "SocialsJson",
