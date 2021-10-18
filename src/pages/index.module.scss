@@ -19,6 +19,8 @@
         max-width: unset;
         height: 100%;
         padding: 0;
+        top: 0;
+        left: 0;
 
         @media (pointer: coarse), (pointer: none) {
             height: 700px;
@@ -34,7 +36,6 @@
     .heroSectionBg {
         /*background: radial-gradient(ellipse at top left, #1f0ba659, transparent),
             radial-gradient(ellipse at bottom right, #4a086829, transparent);*/
-        margin-top: -100px;
 
         background: linear-gradient(45deg, #000850 0%, #000320 100%),
             radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
