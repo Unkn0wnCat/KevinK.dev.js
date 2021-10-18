@@ -3,12 +3,10 @@ import Layout from "../layouts/default";
 import PropTypes from "prop-types";
 
 import * as styles from "./index.module.scss";
-import * as projectStyles from "./projects.module.scss";
 
 import { Trans, Link } from "gatsby-plugin-react-i18next";
 import { graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 import anime from "animejs";
 
@@ -28,30 +26,6 @@ export const query = graphql`
                 contactMastodonHref
             }
         }
-        allSkillsJson(sort: { fields: type, order: ASC }) {
-            nodes {
-                name
-                type
-                href
-            }
-        }
-        allProjectsJson(
-            filter: { lang: { eq: $language }, featured: { gte: 0 } }
-            sort: { fields: featured, order: ASC }
-        ) {
-            nodes {
-                lang
-                urlname
-                name
-                image {
-                    childImageSharp {
-                        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-                    }
-                }
-                shortDescription
-                featured
-            }
-        }
         locales: allLocale(filter: { language: { eq: $language } }) {
             edges {
                 node {
@@ -60,17 +34,6 @@ export const query = graphql`
                     language
                 }
             }
-        }
-        file(
-            sourceInstanceName: { eq: "textblocks" }
-            relativeDirectory: { eq: "home/about" }
-            name: { eq: $language }
-        ) {
-            id
-            childMdx {
-                body
-            }
-            name
         }
     }
 `;
@@ -109,7 +72,6 @@ const IndexPage = (props) => {
     }, []);
 
     let meta = props.data.site.siteMetadata;
-    let file = props.data.file;
 
     return (
         <Layout title="Kevin Kandlbinder" transparentTopbar={true} description={t("siteDescription")}
@@ -195,46 +157,30 @@ const IndexPage = (props) => {
                         </div>
                     </div>
                 </div>
-            </section>
-            <section className={styles.aboutSection}>
-                <article>
-                    <div className={styles.aboutText}>
-                        <MDXRenderer>{file.childMdx.body}</MDXRenderer>
-                    </div>
-                    <div className={styles.skills}>
-                        <h2>
-                            <Trans>mySkills</Trans>
-                        </h2>
-                        <div className={styles.skillList}>
-                            {props.data.allSkillsJson.nodes.map((skill) => {
-                                return skill.href ? (
-                                    <a
-                                        className={
-                                            styles.skill +
-                                            " " +
-                                            styles["skill_" + skill.type]
-                                        }
-                                        href={skill.href}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        {skill.name}
-                                    </a>
-                                ) : (
-                                    <span
-                                        className={
-                                            styles.skill +
-                                            " " +
-                                            styles["skill_" + skill.type]
-                                        }
-                                    >
-                                        {skill.name}
-                                    </span>
-                                );
-                            })}
+                <div className={styles.spacer}></div>
+                <div className={styles.landingCta}>
+                    <Link to={"/projects"}>
+                        <div>
+                            <span className={styles.ctaAccent}>{t("explore")}</span>{" "}
+                            <span>{t("myProjects")}</span>
                         </div>
-                    </div>
-                </article>
+                        <ArrowRight/>
+                    </Link>
+                    <Link to={"/social"}>
+                        <div>
+                            <span className={styles.ctaAccent}>{t("discover")}</span>{" "}
+                            <span>{t("mySocials")}</span>
+                        </div>
+                        <ArrowRight/>
+                    </Link>
+                    <Link to={"/about"}>
+                        <div>
+                            <span className={styles.ctaAccent}>{t("learn")}</span>{" "}
+                            <span>{t("moreAboutMe")}</span>
+                        </div>
+                        <ArrowRight/>
+                    </Link>
+                </div>
             </section>
             <a
                 className={styles.creditSection}
@@ -250,64 +196,6 @@ const IndexPage = (props) => {
                     <ArrowRight/>
                 </div>
             </a>
-            <section className="featuredSection">
-                <article>
-                    <h1>
-                        <Trans>featuredProjects</Trans>
-                    </h1>
-                    <div className={projectStyles.projectList}>
-                        {props.data.allProjectsJson.nodes.map((project) => {
-                            return (
-                                <Link
-                                    className={projectStyles.projectCard}
-                                    key={project.lang + "/" + project.urlname}
-                                    to={"/projects/" + project.urlname}
-                                >
-                                    <div
-                                        className={
-                                            projectStyles.projectCardImage
-                                        }
-                                    >
-                                        <div className={
-                                            projectStyles.projectCardBg
-                                        }>
-                                            <GatsbyImage image={project.image.childImageSharp.gatsbyImageData} objectFit="cover" style={{height: "100%"}}></GatsbyImage>
-                                        </div>
-                                        <div
-                                            className={
-                                                projectStyles.projectCardMeta
-                                            }
-                                        >
-                                            <span
-                                                className={
-                                                    projectStyles.projectCardTitle
-                                                }
-                                            >
-                                                {project.name}
-                                            </span>
-                                            <span>
-                                                {project.shortDescription}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </Link>
-                            );
-                        })}
-                    </div>
-                    <Link to="/projects" className={styles.seeMoreButton}>
-                        <Trans>seeMore</Trans>{" "}
-                        <ArrowRight/>
-                    </Link>
-                </article>
-            </section>
-            <Link className={styles.donationSection} to="/donate">
-                <div>
-                    <span>
-                        <Trans>donationCatchphrase</Trans>
-                    </span>
-                    <ArrowRight/>
-                </div>
-            </Link>
         </Layout>
     );
 };

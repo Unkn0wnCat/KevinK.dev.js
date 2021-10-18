@@ -9,7 +9,7 @@
 @mixin cardGeneric {
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: -1px 11px 33px -10px rgba(127, 127, 127, 0.3);
+    box-shadow: -1px 11px 33px -10px rgba(27, 27, 27, 0.3);
     transition: transform 0.25s, box-shadow 0.25s, background-color 0.25s,
         color 0.25s;
     color: $textColor;
