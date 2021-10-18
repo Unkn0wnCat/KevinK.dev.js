@@ -128,7 +128,7 @@ const DonatePage = (props) => {
                         }
                     >
                         <span>Donate using PayPal</span>
-                        <ArrowRight/>
+                        <ArrowRight />
                     </a>
                 </article>
             </section>

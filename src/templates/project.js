@@ -24,7 +24,10 @@ export const query = graphql`
                 }
                 image {
                     childImageSharp {
-                        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                        gatsbyImageData(
+                            placeholder: BLURRED
+                            layout: FULL_WIDTH
+                        )
                     }
                     publicURL
                 }
@@ -69,10 +72,14 @@ const ProjectTemplate = ({ data }) => {
         >
             <section className={styles.projectHeader}>
                 <div style={{ paddingTop: 0 }}>
-                    <div
-                        className={styles.headerBackground}
-                    >
-                       <GatsbyImage image={project.image.childImageSharp.gatsbyImageData} style={{width: "100%", height: "100%"}} objectFit="cover"></GatsbyImage> 
+                    <div className={styles.headerBackground}>
+                        <GatsbyImage
+                            image={
+                                project.image.childImageSharp.gatsbyImageData
+                            }
+                            style={{ width: "100%", height: "100%" }}
+                            objectFit="cover"
+                        ></GatsbyImage>
                     </div>
                     <header>
                         <div className={styles.headerInner}>
@@ -103,7 +110,7 @@ const ProjectTemplate = ({ data }) => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <Github height={15}/>{" "}
+                                    <Github height={15} />{" "}
                                     <Trans>projectViewGitHub</Trans>
                                 </a>
                             ) : null}
@@ -113,7 +120,7 @@ const ProjectTemplate = ({ data }) => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <ExternalLink height={15}/>{" "}
+                                    <ExternalLink height={15} />{" "}
                                     <Trans>projectViewWebsite</Trans>
                                 </a>
                             ) : null}

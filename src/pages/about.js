@@ -34,7 +34,10 @@ export const query = graphql`
                 name
                 image {
                     childImageSharp {
-                        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                        gatsbyImageData(
+                            placeholder: BLURRED
+                            layout: FULL_WIDTH
+                        )
                     }
                 }
                 shortDescription
@@ -65,7 +68,7 @@ export const query = graphql`
 `;
 
 const AboutPage = (props) => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     React.useEffect(() => {
         if (typeof window === "undefined") return;
@@ -99,15 +102,15 @@ const AboutPage = (props) => {
     let file = props.data.file;
 
     return (
-        <Layout title={t("about")} description={t("siteDescription")}
-        image={"/owner.jpg"}
-        speakable={{
-            "@type": "SpeakableSpecification",
-            "xPath": [
-                "article"
-            ]
-        }}>
-            
+        <Layout
+            title={t("about")}
+            description={t("siteDescription")}
+            image={"/owner.jpg"}
+            speakable={{
+                "@type": "SpeakableSpecification",
+                xPath: ["article"],
+            }}
+        >
             <section className={styles.aboutSection} id="about">
                 <article>
                     <div className={styles.aboutText}>
@@ -166,10 +169,20 @@ const AboutPage = (props) => {
                                             projectStyles.projectCardImage
                                         }
                                     >
-                                        <div className={
-                                            projectStyles.projectCardBg
-                                        }>
-                                            <GatsbyImage image={project.image.childImageSharp.gatsbyImageData} objectFit="cover" style={{height: "100%"}}></GatsbyImage>
+                                        <div
+                                            className={
+                                                projectStyles.projectCardBg
+                                            }
+                                        >
+                                            <GatsbyImage
+                                                image={
+                                                    project.image
+                                                        .childImageSharp
+                                                        .gatsbyImageData
+                                                }
+                                                objectFit="cover"
+                                                style={{ height: "100%" }}
+                                            ></GatsbyImage>
                                         </div>
                                         <div
                                             className={
@@ -193,8 +206,7 @@ const AboutPage = (props) => {
                         })}
                     </div>
                     <Link to="/projects" className={styles.seeMoreButton}>
-                        <Trans>seeMore</Trans>{" "}
-                        <ArrowRight/>
+                        <Trans>seeMore</Trans> <ArrowRight />
                     </Link>
                 </article>
             </section>
@@ -203,7 +215,7 @@ const AboutPage = (props) => {
                     <span>
                         <Trans>donationCatchphrase</Trans>
                     </span>
-                    <ArrowRight/>
+                    <ArrowRight />
                 </div>
             </Link>
         </Layout>

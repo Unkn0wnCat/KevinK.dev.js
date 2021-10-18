@@ -10,7 +10,15 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import anime from "animejs";
 
-import { ArrowRight, AtSign, Camera, Github, Mail, MapPin, Phone } from "lucide-react";
+import {
+    ArrowRight,
+    AtSign,
+    Camera,
+    Github,
+    Mail,
+    MapPin,
+    Phone,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export const query = graphql`
@@ -39,7 +47,7 @@ export const query = graphql`
 `;
 
 const IndexPage = (props) => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     React.useEffect(() => {
         if (typeof window === "undefined") return;
@@ -74,14 +82,16 @@ const IndexPage = (props) => {
     let meta = props.data.site.siteMetadata;
 
     return (
-        <Layout title="Kevin Kandlbinder" transparentTopbar={true} description={t("siteDescription")}
-        image={"/owner.jpg"}
-        speakable={{
-            "@type": "SpeakableSpecification",
-            "xPath": [
-                "article"
-            ]
-        }}>
+        <Layout
+            title="Kevin Kandlbinder"
+            transparentTopbar={true}
+            description={t("siteDescription")}
+            image={"/owner.jpg"}
+            speakable={{
+                "@type": "SpeakableSpecification",
+                xPath: ["article"],
+            }}
+        >
             <section className={styles.heroSection}>
                 <div
                     className={styles.heroSectionBg}
@@ -89,10 +99,15 @@ const IndexPage = (props) => {
                 ></div>
                 <div className={styles.heroSectionBgOver}></div>
                 <div className={styles.profile + " profile"}>
-                    <div
-                        className={styles.profileImage}
-                    >
-                        <StaticImage src={"../../content/images/kevin-kandlbinder-04.jpg"} width={250} height={350} placeholder="blurred"></StaticImage>
+                    <div className={styles.profileImage}>
+                        <StaticImage
+                            src={
+                                "../../content/images/kevin-kandlbinder-04.jpg"
+                            }
+                            width={250}
+                            height={350}
+                            placeholder="blurred"
+                        ></StaticImage>
                     </div>
                     <div className={styles.profileImageDummy}></div>
                     <div className={styles.profileCard}>
@@ -122,7 +137,7 @@ const IndexPage = (props) => {
                                 href={"mailto:" + meta.contactEmail}
                                 rel="me"
                             >
-                                <Mail width={20}/>
+                                <Mail width={20} />
                                 {meta.contactEmail}
                             </a>
                             <a
@@ -140,7 +155,7 @@ const IndexPage = (props) => {
                                 rel="noreferrer me"
                                 target="_blank"
                             >
-                                <AtSign width={20}/>
+                                <AtSign width={20} />
                                 {meta.contactMastodon}
                             </a>
                             <a
@@ -151,7 +166,7 @@ const IndexPage = (props) => {
                                 rel="noreferrer me"
                                 target="_blank"
                             >
-                                <Github width={20}/>
+                                <Github width={20} />
                                 {meta.contactGitHub}
                             </a>
                         </div>
@@ -161,24 +176,30 @@ const IndexPage = (props) => {
                 <div className={styles.landingCta}>
                     <Link to={"/projects"}>
                         <div>
-                            <span className={styles.ctaAccent}>{t("explore")}</span>{" "}
+                            <span className={styles.ctaAccent}>
+                                {t("explore")}
+                            </span>{" "}
                             <span>{t("myProjects")}</span>
                         </div>
-                        <ArrowRight/>
+                        <ArrowRight />
                     </Link>
                     <Link to={"/social"}>
                         <div>
-                            <span className={styles.ctaAccent}>{t("discover")}</span>{" "}
+                            <span className={styles.ctaAccent}>
+                                {t("discover")}
+                            </span>{" "}
                             <span>{t("mySocials")}</span>
                         </div>
-                        <ArrowRight/>
+                        <ArrowRight />
                     </Link>
                     <Link to={"/about"}>
                         <div>
-                            <span className={styles.ctaAccent}>{t("learn")}</span>{" "}
+                            <span className={styles.ctaAccent}>
+                                {t("learn")}
+                            </span>{" "}
                             <span>{t("moreAboutMe")}</span>
                         </div>
-                        <ArrowRight/>
+                        <ArrowRight />
                     </Link>
                 </div>
             </section>
@@ -190,10 +211,9 @@ const IndexPage = (props) => {
             >
                 <div>
                     <span>
-                        <Camera/>{" "}
-                        <Trans>homeImageCredit</Trans>
+                        <Camera /> <Trans>homeImageCredit</Trans>
                     </span>
-                    <ArrowRight/>
+                    <ArrowRight />
                 </div>
             </a>
         </Layout>

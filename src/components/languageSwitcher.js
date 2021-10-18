@@ -7,7 +7,11 @@ export default function LanguageSwitcher() {
     const { languages, originalPath } = useI18next();
 
     return (
-        <div className={styles.languageModal} id="languageChooser" role="dialog">
+        <div
+            className={styles.languageModal}
+            id="languageChooser"
+            role="dialog"
+        >
             <div className={styles.languageModalInner}>
                 <h2>
                     Languages (

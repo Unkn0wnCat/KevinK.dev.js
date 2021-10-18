@@ -17,7 +17,11 @@ export const query = graphql`
                 url
                 localImage {
                     childImageSharp {
-                    gatsbyImageData(height: 300, width: 300, placeholder: BLURRED)
+                        gatsbyImageData(
+                            height: 300
+                            width: 300
+                            placeholder: BLURRED
+                        )
                     }
                 }
             }
@@ -75,8 +79,14 @@ const FriendsPage = ({ data }) => {
                                                     "#image"
                                                 }
                                             >
-                                                <div className={styles.friendBg}>
-                                                    <GatsbyImage image={getImage(friend.localImage)}></GatsbyImage>
+                                                <div
+                                                    className={styles.friendBg}
+                                                >
+                                                    <GatsbyImage
+                                                        image={getImage(
+                                                            friend.localImage
+                                                        )}
+                                                    ></GatsbyImage>
                                                 </div>
                                                 <span
                                                     className={
@@ -88,7 +98,7 @@ const FriendsPage = ({ data }) => {
                                                         friend.name +
                                                         "#name"
                                                     }
-                                                > 
+                                                >
                                                     {friend.name}
                                                 </span>
                                                 <span
@@ -123,7 +133,7 @@ const FriendsPage = ({ data }) => {
                                                     target="_blank"
                                                     rel="noreferrer"
                                                 >
-                                                    <Globe2 height={20}/>{" "}
+                                                    <Globe2 height={20} />{" "}
                                                     {friend.url}
                                                 </a>
                                             </div>

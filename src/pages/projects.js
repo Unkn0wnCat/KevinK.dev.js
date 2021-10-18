@@ -20,7 +20,10 @@ export const query = graphql`
                 name
                 image {
                     childImageSharp {
-                        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                        gatsbyImageData(
+                            placeholder: BLURRED
+                            layout: FULL_WIDTH
+                        )
                     }
                     publicURL
                 }
@@ -43,27 +46,33 @@ const ProjectsPage = ({ data }) => {
     const { t } = useI18next();
     const meta = useSiteMetadata();
     return (
-        <Layout title={t("projects")} description={t("projectsDescription")} seoAdditional={
-            
-            <script type="application/ld+json">
-                {JSON.stringify(
-                    {
-                        "@context":"https://schema.org",
-                        "@type":"ItemList",
-                        "itemListElement":data.allProjectsJson.nodes.map((project, i) => {
-                            return {
-                                "@type":"ListItem",
-                                "position":i,
-                                "url": meta.siteUrl+"/projects/"+project.urlname,
-                                "image": project.image.publicURL,
-                                "name": project.name,
-                                "description": project.shortDescription
+        <Layout
+            title={t("projects")}
+            description={t("projectsDescription")}
+            seoAdditional={
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ItemList",
+                        itemListElement: data.allProjectsJson.nodes.map(
+                            (project, i) => {
+                                return {
+                                    "@type": "ListItem",
+                                    position: i,
+                                    url:
+                                        meta.siteUrl +
+                                        "/projects/" +
+                                        project.urlname,
+                                    image: project.image.publicURL,
+                                    name: project.name,
+                                    description: project.shortDescription,
+                                };
                             }
-                        })
-                    }
-                )}
-            </script>
-        }>
+                        ),
+                    })}
+                </script>
+            }
+        >
             <section>
                 <article>
                     <h1>
@@ -82,13 +91,17 @@ const ProjectsPage = ({ data }) => {
                                     key={project.lang + project.urlname}
                                     to={"/projects/" + project.urlname}
                                 >
-                                    <div
-                                        className={styles.projectCardImage}
-                                    >
-                                        <div className={
-                                            styles.projectCardBg
-                                        }>
-                                            <GatsbyImage image={project.image.childImageSharp.gatsbyImageData} objectFit="cover" style={{height: "100%"}}></GatsbyImage>
+                                    <div className={styles.projectCardImage}>
+                                        <div className={styles.projectCardBg}>
+                                            <GatsbyImage
+                                                image={
+                                                    project.image
+                                                        .childImageSharp
+                                                        .gatsbyImageData
+                                                }
+                                                objectFit="cover"
+                                                style={{ height: "100%" }}
+                                            ></GatsbyImage>
                                         </div>
                                         <div className={styles.projectCardMeta}>
                                             <span

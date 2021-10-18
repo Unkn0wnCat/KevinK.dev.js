@@ -23,5 +23,11 @@ module.exports = {
     height: "168 cm",
     nationality: "Germany",
     personImage: "./content/images/kevin-kandlbinder-04.jpg",
-    sameAs: ["https://mastodon.1in1.net/@kevin", "https://github.com/Unkn0wnCat", "https://unkn0wncat.net/", "https://twitter.com/@Unkn0wnKevin", "https://unsplash.com/@unkn0wncat"]
+    sameAs: [
+        "https://mastodon.1in1.net/@kevin",
+        "https://github.com/Unkn0wnCat",
+        "https://unkn0wncat.net/",
+        "https://twitter.com/@Unkn0wnKevin",
+        "https://unsplash.com/@unkn0wncat",
+    ],
 };

@@ -13,7 +13,7 @@
     color: white;
     overflow: auto;
     opacity: 0;
-    transition: opacity .25s, left .25s;
+    transition: opacity 0.25s, left 0.25s;
     pointer-events: none;
     overscroll-behavior: contain;
 
@@ -23,7 +23,7 @@
         pointer-events: auto;
     }
 
-    @media(prefers-color-scheme: light) {
+    @media (prefers-color-scheme: light) {
         background-color: rgba($lightBackground, 0.9);
         color: black;
     }
@@ -61,7 +61,7 @@
                 border-left: 3px solid white;
                 border-right: 3px solid white;
 
-                @media(prefers-color-scheme: light) {
+                @media (prefers-color-scheme: light) {
                     border-left: 3px solid black;
                     border-right: 3px solid black;
                 }
@@ -113,7 +113,7 @@
             display: none;
             height: 43px;
 
-            @media(max-width: 500px) {
+            @media (max-width: 500px) {
                 display: block;
             }
         }
@@ -139,7 +139,7 @@
                 }
             }
 
-            @media(max-width: 500px) {
+            @media (max-width: 500px) {
                 &:not(.logo) {
                     display: none;
                 }

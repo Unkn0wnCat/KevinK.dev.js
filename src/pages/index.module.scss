@@ -51,7 +51,6 @@
                 #0f0a3c 100%
             );
         background-blend-mode: screen, overlay, hard-light, normal;
-
     }
 
     .heroSectionBgOver {
@@ -60,10 +59,9 @@
         /*background-color: $background;
         transition: background-color 0.25s, box-shadow 0.25s;*/
 
-        @media(max-width: 950px) {
+        @media (max-width: 950px) {
             display: none;
         }
-        
 
         @media (prefers-color-scheme: light) {
             background-color: $lightBackground;
@@ -74,8 +72,8 @@
         position: relative;
         display: flex;
         justify-content: space-around;
-        
-        @media(max-width: 1000px) {
+
+        @media (max-width: 1000px) {
             flex-direction: column;
             bottom: 0;
         }
@@ -92,7 +90,7 @@
             border-radius: 10px;
             align-items: center;
 
-            @media(max-width: 1000px) {
+            @media (max-width: 1000px) {
                 margin: 10px;
                 font-size: 1.2em;
             }
@@ -315,9 +313,7 @@
                         color: #886af5;
                     }
 
-
-                    @media(prefers-color-scheme: light) {
-
+                    @media (prefers-color-scheme: light) {
                         &.skill_os {
                             color: #2b66e5;
                         }
@@ -329,15 +325,14 @@
                         &.skill_framework {
                             color: #db1e31;
                         }
-    
+
                         &.skill_platform {
                             color: #aa4f12;
                         }
-    
+
                         &.skill_program {
                             color: #17681b;
                         }
-
                     }
                 }
             }

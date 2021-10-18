@@ -23,7 +23,7 @@ module.exports = {
         height: extConfig.height,
         nationality: extConfig.nationality,
         personImage: extConfig.personImage,
-        sameAs: extConfig.sameAs
+        sameAs: extConfig.sameAs,
     },
     plugins: [
         `gatsby-plugin-eslint`,
@@ -34,15 +34,15 @@ module.exports = {
         {
             resolve: `gatsby-plugin-remote-images`,
             options: {
-                nodeType: 'SocialsJson',
-                imagePath: 'image',
+                nodeType: "SocialsJson",
+                imagePath: "image",
             },
         },
         {
             resolve: `gatsby-plugin-remote-images`,
             options: {
-                nodeType: 'FriendsJson',
-                imagePath: 'imageURL',
+                nodeType: "FriendsJson",
+                imagePath: "imageURL",
             },
         },
         {

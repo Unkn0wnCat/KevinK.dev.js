@@ -2,8 +2,6 @@
 @import "~@fontsource/fira-code/700.css";
 @import "../variables";
 
-
-
 * {
     box-sizing: border-box;
 }
@@ -69,7 +67,6 @@ section > article,
 }
 
 article {
-
     a {
         color: $accentColor;
         text-decoration: underline dotted currentColor;
