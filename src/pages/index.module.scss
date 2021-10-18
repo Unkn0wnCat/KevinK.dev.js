@@ -75,7 +75,7 @@
 
         .name {
             font-weight: 100;
-            font-size: 2em;
+            font-size: 1.8em;
             display: block;
         }
 
@@ -92,7 +92,7 @@
 
         .contactLink {
             transition: text-decoration 0.5s;
-            text-decoration: underline dotted rgba(0, 0, 0, 0);
+            text-decoration: underline dotted rgba(white, 0);
             padding: 6px 0 6px 0;
             color: $textColor;
             display: flex;
@@ -112,7 +112,7 @@
 
         .contactLink:hover,
         .contactLink:active {
-            text-decoration: underline dotted rgba(0, 0, 0, 0.5);
+            text-decoration: underline dotted rgba(white, 0.5);
         }
 
         .contactLink > i {

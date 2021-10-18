@@ -19,7 +19,7 @@
     "dependencies": {
         "@babel/cli": "7.15.7",
         "@babel/plugin-transform-typescript": "7.15.8",
-        "@fontsource/anonymous-pro": "4.5.0",
+        "@fontsource/fira-code": "^4.5.1",
         "@mdx-js/mdx": "1.6.22",
         "@mdx-js/react": "1.6.22",
         "animejs": "3.2.1",
