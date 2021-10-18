@@ -10,14 +10,12 @@ import { X } from "lucide-react";
 import { Fade as Hamburger } from "hamburger-react";
 
 const OffScreenNav = ({ active, close }) => {
-    if (typeof window === "undefined") {
-        return null;
-    }
+    if (typeof document === "undefined") return <></>;
 
     return createPortal(
         <div
             className={
-                styles.offscreenNav + " " + (active ? styles.active : "")
+                styles.offscreenNav + (active ? " " + styles.active : "")
             }
         >
             <div className={styles.inner}>
@@ -53,8 +51,13 @@ const OffScreenNav = ({ active, close }) => {
                 </Link>
             </div>
         </div>,
-        window.document.body
+        document.body
     );
+};
+
+OffScreenNav.propTypes = {
+    close: PropTypes.func.isRequired,
+    active: PropTypes.bool.isRequired,
 };
 
 const Navigation = ({ isHome }) => {
