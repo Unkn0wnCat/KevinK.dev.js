@@ -64,7 +64,7 @@
         "eslint-plugin-react": "7.26.1",
         "gatsby-plugin-eslint": "4.0.0",
         "husky": "7.0.4",
-        "lint-staged": "11.2.4",
+        "lint-staged": "11.2.5",
         "prettier": "2.4.1"
     },
     "lint-staged": {
