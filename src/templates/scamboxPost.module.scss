@@ -35,10 +35,13 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        text-shadow: 0 0 10px black;
         z-index: 20;
-        //color: $accentColor;
         font-size: 1.5em;
+        text-shadow: 0 0 10px black;
+
+        @media(prefers-color-scheme: light) {
+            text-shadow: 0 0 10px white;
+        }
 
         > svg {
             margin-right: 10px;
