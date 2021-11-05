@@ -115,7 +115,7 @@
             height: 43px;
             margin-top: -3px;
 
-            @media (max-width: 500px) {
+            @media (max-width: 600px) {
                 display: block;
             }
         }
@@ -141,7 +141,7 @@
                 }
             }
 
-            @media (max-width: 500px) {
+            @media (max-width: 600px) {
                 &:not(.logo) {
                     display: none;
                 }

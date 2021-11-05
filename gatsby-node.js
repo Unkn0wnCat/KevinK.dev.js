@@ -6,6 +6,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions;
 
     const projectTemplate = path.resolve(`src/templates/project.js`);
+    const scamboxTemplate = path.resolve(`src/templates/scamboxPost.js`);
 
     const result = await graphql(`
         query AllPagesQuery {
@@ -13,6 +14,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 nodes {
                     lang
                     urlname
+                }
+            }
+
+            scambox: allFile(
+                filter: { sourceInstanceName: { eq: "scamboxContent" } }
+            ) {
+                nodes {
+                    childMdx {
+                        id
+                        body
+                        frontmatter {
+                            platform
+                            tags
+                            title
+                            url
+                        }
+                    }
                 }
             }
         }
@@ -39,6 +57,26 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     urlname: node.urlname,
                 },
             });
+    });
+
+    result.data.scambox.nodes.forEach((node) => {
+        if (!node.childMdx) return;
+
+        // eslint-disable-next-line no-undef
+        console.log(
+            "Creating Page: ",
+            `/*/scambox/${node.childMdx.frontmatter.url}`
+        );
+
+        //["en", "de"].forEach((lang) => {
+        createPage({
+            path: `/scambox/${node.childMdx.frontmatter.url}`,
+            component: scamboxTemplate,
+            context: {
+                mdxId: node.childMdx.id,
+            },
+        });
+        //})
     });
 };
 

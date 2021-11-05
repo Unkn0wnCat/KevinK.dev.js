@@ -1,0 +1,67 @@
+@import "../variables";
+@import "../mixins";
+
+.scamboxSection {
+    flex-grow: 1;
+}
+
+.noticeBox {
+    background-color: $noticeColor;
+    padding: $layoutPadding;
+    border-radius: 10px;
+
+    > p {
+        margin-bottom: 0;
+    }
+}
+
+.meta {
+    display: block;
+    margin-top: -25px;
+    margin-bottom: $layoutPadding*2;
+}
+
+.chatBox {
+    width: 100%;
+    min-height: 600px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 20px;
+
+    > span {
+        position: relative;
+        top: 0;
+        left: 20px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-shadow: 0 0 10px black;
+        z-index: 20;
+        //color: $accentColor;
+        font-size: 1.5em;
+
+        > svg {
+            margin-right: 10px;
+        }
+    }
+
+
+    > iframe {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 25px);
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        box-shadow: -1px 11px 33px -10px rgba(127, 127, 127, 0.2),
+            -1px 11px 33px -10px rgba($accentColor, 0.25);
+
+        @media (prefers-color-scheme: light) {
+            box-shadow: -1px 11px 33px -10px rgba(29, 29, 29, 0.2),
+                -1px 11px 33px -10px rgba($accentColor, 0.25);
+        }
+    }
+
+}

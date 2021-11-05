@@ -66,6 +66,13 @@ module.exports = {
                 name: `projectTextblocks`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/content/scambox`,
+                name: `scamboxContent`,
+            },
+        },
         "gatsby-plugin-mdx",
         {
             resolve: `gatsby-source-filesystem`,

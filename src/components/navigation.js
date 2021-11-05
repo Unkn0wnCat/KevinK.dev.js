@@ -104,6 +104,13 @@ const Navigation = ({ isHome }) => {
                 >
                     <Trans>social</Trans>
                 </Link>
+                <Link
+                    id="navBtnScambox"
+                    to="/scambox"
+                    activeClassName={styles.active}
+                >
+                    <Trans>scambox</Trans>
+                </Link>
                 <div className={styles.hamburger}>
                     <Hamburger
                         toggle={setOffscreenNavActive}
