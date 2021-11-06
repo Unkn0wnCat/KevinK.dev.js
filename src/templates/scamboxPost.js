@@ -17,6 +17,47 @@ const ScamBoxPost = ({ data }) => {
         <Layout
             title={`${data.mdx.frontmatter.title} | ${t("scambox")}`}
             description={data.mdx.excerpt}
+            seoAdditional={
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "NewsArticle",
+                        headline: data.mdx.frontmatter.title,
+                        /*"image": [
+                        "https://example.com/photos/1x1/photo.jpg",
+                        "https://example.com/photos/4x3/photo.jpg",
+                        "https://example.com/photos/16x9/photo.jpg"
+                    ],*/
+                        datePublished: data.mdx.publishedIso,
+                        dateModified: data.mdx.publishedIso,
+                        author: [
+                            {
+                                "@type": "Person",
+                                name: "Kevin Kandlbinder",
+                                url: "https://kevink.dev",
+                            },
+                        ],
+                    })}
+                </script>
+            }
+            meta={[
+                {
+                    name: "og:type",
+                    content: "article",
+                },
+                {
+                    name: "article:published_time",
+                    content: data.mdx.publishedIso,
+                },
+                {
+                    name: "article:section",
+                    content: "Scambox",
+                },
+                {
+                    name: "keywords",
+                    content: data.mdx.frontmatter.tags.join(", "),
+                },
+            ]}
         >
             <section className={styles.scamboxSection}>
                 <article>
@@ -72,6 +113,7 @@ export const query = graphql`
                 tags
                 title
                 published(formatString: "DD.MM.YYYY")
+                publishedIso: published(formatString: "")
             }
         }
         locales: allLocale(filter: { language: { eq: $language } }) {
