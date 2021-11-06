@@ -1,12 +1,12 @@
 /* eslint-disable no-undef */
 const path = require(`path`);
 const fs = require("fs");
+const { paginate } = require("gatsby-awesome-pagination");
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-    const { createPage } = actions;
+    const { createPage, createRedirect } = actions;
 
     const projectTemplate = path.resolve(`src/templates/project.js`);
-    const scamboxTemplate = path.resolve(`src/templates/scamboxPost.js`);
 
     const result = await graphql(`
         query AllPagesQuery {
@@ -17,8 +17,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 }
             }
 
-            scambox: allFile(
-                filter: { sourceInstanceName: { eq: "scamboxContent" } }
+            blog: allFile(
+                filter: { sourceInstanceName: { eq: "blogContent" } }
             ) {
                 nodes {
                     childMdx {
@@ -29,6 +29,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                             tags
                             title
                             url
+                            section
+                            language
+                            published(formatString: "YYYY/MM")
                         }
                     }
                 }
@@ -59,24 +62,121 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             });
     });
 
-    result.data.scambox.nodes.forEach((node) => {
+    const blogListingTemplate = path.resolve(`src/templates/blogListing.js`);
+    const blogTemplate = path.resolve(`src/templates/blogPost.js`);
+
+    console.log("Creating blog listing...");
+
+    ["en", "de"].forEach((lang) =>
+        paginate({
+            createPage,
+            items: result.data.blog.nodes,
+            itemsPerPage: 10,
+            pathPrefix: `/${lang}/blog`,
+            component: blogListingTemplate,
+            context: {
+                lang,
+            },
+        })
+    );
+
+    let processedSections = ["blog"];
+
+    result.data.blog.nodes.forEach((node) => {
         if (!node.childMdx) return;
+
+        if (
+            !processedSections.includes(
+                node.childMdx.frontmatter.section ?? "blog"
+            )
+        ) {
+            processedSections.push(node.childMdx.frontmatter.section);
+
+            console.log(
+                "Creating section listing for " +
+                    node.childMdx.frontmatter.section +
+                    "..."
+            );
+
+            ["en", "de"].forEach((lang) =>
+                paginate({
+                    createPage,
+                    items: result.data.blog.nodes.filter(
+                        (e) =>
+                            e.childMdx.frontmatter.section ===
+                            node.childMdx.frontmatter.section
+                    ),
+                    itemsPerPage: 10,
+                    pathPrefix: `/${lang}/blog/${node.childMdx.frontmatter.section}`,
+                    component: blogListingTemplate,
+                    context: {
+                        lang,
+                        section: node.childMdx.frontmatter.section,
+                    },
+                })
+            );
+        }
 
         // eslint-disable-next-line no-undef
         console.log(
             "Creating Page: ",
-            `/*/scambox/${node.childMdx.frontmatter.url}`
+            `/${node.childMdx.frontmatter.language}/blog/${
+                node.childMdx.frontmatter.section ?? "blog"
+            }/${node.childMdx.frontmatter.url}`
         );
 
-        //["en", "de"].forEach((lang) => {
         createPage({
-            path: `/scambox/${node.childMdx.frontmatter.url}`,
-            component: scamboxTemplate,
+            path: `/${node.childMdx.frontmatter.language}/blog/${
+                node.childMdx.frontmatter.section
+                    ? node.childMdx.frontmatter.section + "/"
+                    : ""
+            }${node.childMdx.frontmatter.published}/${
+                node.childMdx.frontmatter.url
+            }`,
+            component: blogTemplate,
             context: {
                 mdxId: node.childMdx.id,
+                lang: node.childMdx.frontmatter.language,
             },
         });
-        //})
+
+        ["en", "de"].forEach((lang) => {
+            if (lang === node.childMdx.frontmatter.language) return;
+
+            createRedirect({
+                fromPath: `/${lang}/blog/${
+                    node.childMdx.frontmatter.section
+                        ? node.childMdx.frontmatter.section + "/"
+                        : ""
+                }${node.childMdx.frontmatter.published}/${
+                    node.childMdx.frontmatter.url
+                }`,
+                toPath: `/${node.childMdx.frontmatter.language}/blog/${
+                    node.childMdx.frontmatter.section
+                        ? node.childMdx.frontmatter.section + "/"
+                        : ""
+                }${node.childMdx.frontmatter.published}/${
+                    node.childMdx.frontmatter.url
+                }`,
+                redirectInBrowser: true,
+                permanent: true,
+            });
+
+            if (node.childMdx.frontmatter.section === "scambox") {
+                createRedirect({
+                    fromPath: `/${lang}/scambox/${node.childMdx.frontmatter.url}`,
+                    toPath: `/${node.childMdx.frontmatter.language}/blog/${
+                        node.childMdx.frontmatter.section
+                            ? node.childMdx.frontmatter.section + "/"
+                            : ""
+                    }${node.childMdx.frontmatter.published}/${
+                        node.childMdx.frontmatter.url
+                    }`,
+                    redirectInBrowser: true,
+                    permanent: true,
+                });
+            }
+        });
     });
 };
 

@@ -1,0 +1,109 @@
+@import "../variables";
+@import "../mixins";
+
+.sectionBacklink {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    font-size: .8em;
+    text-decoration: none;
+}
+
+.sectionList {
+    @include flexList;
+
+    .sectionCard {
+        @include cardGeneric;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .sectionImage {
+            width: 300px;
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            padding: 10px;
+            flex-direction: column-reverse;
+            text-shadow: 0 0 10px black, 0 0 10px black, 0 0 20px black;
+            color: white;
+            position: relative;
+
+            .sectionBg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+
+            .sectionName {
+                font-size: 2em;
+                margin-top: -5px;
+                z-index: 100;
+            }
+        }
+    }
+}
+
+
+.pageSwitcher {
+    display: flex;
+    margin-top: $layoutPadding;
+
+    >* {
+        width: 33%;
+    }
+
+    :nth-child(2) {
+        text-align: center;
+    }
+    :nth-child(3) {
+        text-align: right;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: $layoutPadding;
+
+    .post {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        color: inherit;
+        padding: $layoutPadding;
+
+        border-bottom: thin dotted grey;
+
+        .title {
+            color: $accentColor;
+            font-size: 1.5em;
+            text-decoration: underline dotted currentColor;
+        }
+
+        .meta {
+            margin-bottom: 10px;
+            opacity: .5;
+        }
+
+        .excerpt {
+            margin-left: 10px;
+
+            > span {
+                color: $accentColor;
+                text-decoration: underline dotted currentColor;
+            }
+        }
+    }
+}
+
+.moreSoon {
+    display: block;
+    padding: $layoutPadding;
+    text-align: center;
+    opacity: .5;
+}

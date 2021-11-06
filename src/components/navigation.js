@@ -105,11 +105,11 @@ const Navigation = ({ isHome }) => {
                     <Trans>social</Trans>
                 </Link>
                 <Link
-                    id="navBtnScambox"
-                    to="/scambox"
+                    id="navBtnBlog"
+                    to="/blog"
                     activeClassName={styles.active}
                 >
-                    <Trans>scambox</Trans>
+                    <Trans>blog.title</Trans>
                 </Link>
                 <div className={styles.hamburger}>
                     <Hamburger

@@ -8,14 +8,15 @@ import Utterances from "utterances-react";
 
 import Layout from "../layouts/default";
 
-import * as styles from "./scamboxPost.module.scss";
+import * as styles from "./blogPost.module.scss";
+import { Link } from "gatsby-plugin-react-i18next";
 
-const ScamBoxPost = ({ data }) => {
-    const { t, i18n } = useTranslation();
+const BlogPost = ({ data }) => {
+    const { t } = useTranslation();
 
     return (
         <Layout
-            title={`${data.mdx.frontmatter.title} | ${t("scambox")}`}
+            title={`${data.mdx.frontmatter.title}`}
             description={data.mdx.excerpt}
             seoAdditional={
                 <script type="application/ld+json">
@@ -28,13 +29,12 @@ const ScamBoxPost = ({ data }) => {
                         "https://example.com/photos/4x3/photo.jpg",
                         "https://example.com/photos/16x9/photo.jpg"
                     ],*/
-                        datePublished: data.mdx.publishedIso,
-                        dateModified: data.mdx.publishedIso,
+                        datePublished: data.mdx.frontmatter.publishedIso,
+                        dateModified: data.mdx.frontmatter.publishedIso,
                         author: [
                             {
                                 "@type": "Person",
-                                name: "Kevin Kandlbinder",
-                                url: "https://kevink.dev",
+                                name: data.mdx.frontmatter.author.name,
                             },
                         ],
                     })}
@@ -47,11 +47,15 @@ const ScamBoxPost = ({ data }) => {
                 },
                 {
                     name: "article:published_time",
-                    content: data.mdx.publishedIso,
+                    content: data.mdx.frontmatter.publishedIso,
                 },
                 {
                     name: "article:section",
-                    content: "Scambox",
+                    content: t(
+                        `blog.section.${
+                            data.mdx.frontmatter.section ?? "blog"
+                        }.name`
+                    ),
                 },
                 {
                     name: "keywords",
@@ -63,17 +67,24 @@ const ScamBoxPost = ({ data }) => {
                 <article>
                     <h1>{data.mdx.frontmatter.title}</h1>
                     <span className={styles.meta}>
-                        {t("scamboxPosted", {
+                        {t("blog.meta", {
                             date: data.mdx.frontmatter.published,
+                            author: data.mdx.frontmatter.author.name,
                         })}
-                    </span>
 
-                    {i18n.language !== "en" && (
-                        <div className={styles.noticeBox}>
-                            <b>{t("scamboxNotice")}</b>
-                            <p>{t("scamboxLanguage")}</p>
-                        </div>
-                    )}
+                        {data.mdx.frontmatter.section && (
+                            <>
+                                {" | "}
+                                <Link
+                                    to={`/blog/${data.mdx.frontmatter.section}`}
+                                >
+                                    {t(
+                                        `blog.section.${data.mdx.frontmatter.section}.name`
+                                    )}
+                                </Link>
+                            </>
+                        )}
+                    </span>
 
                     <MDXProvider components={{ Chat }}>
                         <MDXRenderer>{data.mdx.body}</MDXRenderer>
@@ -81,7 +92,7 @@ const ScamBoxPost = ({ data }) => {
 
                     <Utterances
                         repo="Unkn0wnCat/KevinK.dev.js"
-                        issueTerm={`Scambox-Comments: ${data.mdx.frontmatter.title}`}
+                        issueTerm={`Blog-Comments: ${data.mdx.frontmatter.title}`}
                         theme="preferred-color-scheme"
                         label="comments"
                         style={{
@@ -114,6 +125,10 @@ export const query = graphql`
                 title
                 published(formatString: "DD.MM.YYYY")
                 publishedIso: published(formatString: "")
+                author {
+                    name
+                }
+                section
             }
         }
         locales: allLocale(filter: { language: { eq: $language } }) {
@@ -128,4 +143,4 @@ export const query = graphql`
     }
 `;
 
-export default ScamBoxPost;
+export default BlogPost;

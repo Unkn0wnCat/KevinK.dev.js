@@ -48,11 +48,11 @@ const OffScreenNav = ({ active, close }) => {
                     <Trans>social</Trans>
                 </Link>
                 <Link
-                    id="osnavBtnScambox"
-                    to="/scambox"
+                    id="osnavBtnBlog"
+                    to="/blog"
                     activeClassName={styles.active}
                 >
-                    <Trans>scambox</Trans>
+                    <Trans>blog.title</Trans>
                 </Link>
             </div>
         </div>,

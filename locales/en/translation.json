@@ -48,5 +48,31 @@
   "scamboxDescription": "Take a dive with me into all of the scams I get on the daily, and maybe laugh at them a little!",
   "scamboxReadFull": "Read full post »",
   "scamboxPosted": "Posted on {{date}}",
-  "moreSoon": "More to come"
+  "moreSoon": "More to come",
+  "language": {
+      "en": {
+          "name": "English"
+      },
+      "de": {
+          "name": "German"
+      }
+  },
+  "blog": {
+      "title": "Blog",
+      "readFull": "Read full post »",
+      "meta": "Posted on {{date}} by {{author}}",
+      "page": "Page {{page}}/{{maxPage}}",
+      "previous": "Previous",
+      "next": "Next",
+      "section": {
+          "blog": {
+            "name": "Blog",
+            "description": "Read all about my exciting life!"
+          },
+          "scambox": {
+              "name": "Scambox",
+              "description": "Take a dive with me into all of the scams I get on the daily, and maybe laugh at them a little!"
+          }
+      }
+  }
 }

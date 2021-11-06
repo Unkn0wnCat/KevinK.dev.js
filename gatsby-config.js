@@ -69,8 +69,8 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                path: `${__dirname}/content/scambox`,
-                name: `scamboxContent`,
+                path: `${__dirname}/content/blog`,
+                name: `blogContent`,
             },
         },
         "gatsby-plugin-mdx",
@@ -128,8 +128,8 @@ module.exports = {
                     interpolation: {
                         escapeValue: false, // not needed for react as it escapes by default
                     },
-                    keySeparator: false,
-                    nsSeparator: false,
+                    keySeparator: ".",
+                    nsSeparator: ":",
                 },
                 pages: [
                     {
@@ -137,8 +137,14 @@ module.exports = {
                         getLanguageFromPath: true,
                         excludeLanguages: extConfig.languages,
                     },
+                    {
+                        matchPath: "/:lang/blog/:urlname*",
+                        getLanguageFromPath: true,
+                        excludeLanguages: extConfig.languages,
+                    },
                 ],
             },
         },
+        `gatsby-plugin-netlify`,
     ],
 };
