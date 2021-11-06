@@ -48,5 +48,31 @@
   "scamboxDescription": "Tauche mit mir ein in die Welt der Scams, die ich tagtäglich so bekomme, und lach ein bisschen mit mir!",
   "scamboxReadFull": "Ganzen Post lesen »",
   "scamboxPosted": "Gepostet am {{date}}",
-  "moreSoon": "Bald an dieser Stelle mehr"
+  "moreSoon": "Bald an dieser Stelle mehr",
+  "language": {
+      "en": {
+          "name": "Englisch"
+      },
+      "de": {
+          "name": "Deutsch"
+      }
+  },
+  "blog": {
+      "title": "Blog",
+      "readFull": "Ganzen Post lesen »",
+      "meta": "Gepostet am {{date}} von {{author}}",
+      "page": "Seite {{page}}/{{maxPage}}",
+      "previous": "Zurück",
+      "next": "Weiter",
+      "section": {
+          "blog": {
+            "name": "Blog",
+            "description": "Begleite mich in meinem spannendem Leben!"
+          },
+          "scambox": {
+              "name": "Scambox",
+              "description": "Tauche mit mir ein in die Welt der Scams, die ich tagtäglich so bekomme, und lach ein bisschen mit mir!"
+          }
+      }
+  }
 }
