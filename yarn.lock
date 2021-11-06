@@ -1599,7 +1599,7 @@
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
-"@icons-pack/react-simple-icons@^4.6.1":
+"@icons-pack/react-simple-icons@4.6.1":
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-4.6.1.tgz#47e07a43ff90ce3ff7d64806cdac76fa68b986fc"
   integrity sha512-ICONbofFzeTkXvmbnptDv4P9cqtW/N/8EFOqyzJQJ80b8fJoLzqhM7EKslBmWziIwjY9FBnOoL2ofzQOoDG1Gg==
@@ -12762,7 +12762,7 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-utterances-react@^0.1.3:
+utterances-react@0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/utterances-react/-/utterances-react-0.1.3.tgz#b83343762976a6d16f73aa80cbf6a49a5f7b6353"
   integrity sha512-y74esCvqDf57ZBx+jMMaQN6lGM8SWYcq92VdPjriBE0/0ukDE28XoaAqZP6YALccnaPHTs9lZT8Ll7pdeK7S/A==
