@@ -1,35 +1,35 @@
 {
-    "site": {
-        "description": "Hallo, ich bin Kevin Kandlbinder, ein Entwickler und Hobby-Fotograf aus Norddeutschland."
-    },
-    "layout": {
-        "imprint": "Impressum",
-        "datasec": "Datenschutz",
-        "disclaimer": "Disclaimer"
-    },
-    "project": {
-        "title": "Projekt",
-        "plural": "Projekte",
-        "aboutHeader": "Über {{projectName}}",
-        "viewGitHub": "Auf GitHub anschauen",
-        "viewWebsite": "Projekt-Website anschauen",
-        "description": "Das ist woran ich grade arbeite oder woran ich gearbeitet habe.",
-        "view": "Anschauen"
-    },
-    "home": {
-        "title": "Home",
-        "hello": "Hallo, ich bin",
-        "me": "Ich bin",
-        "webDeveloper": "Web Developer",
-        "imageCredit": "Portrait aufgenommen von Jannik Kiel",
-        "myLocation": "Quickborn, Schleswig-Holstein, Deutschland",
-      "explore": "Erkunde",
-      "myProjects": "meine Projekte",
-      "discover": "Entdecke",
-      "mySocials": "meine Accounts",
-      "learn": "Erfahre",
-      "moreAboutMe": "mehr über mich"
-    },
+  "site": {
+    "description": "Hallo, ich bin Kevin Kandlbinder, ein Entwickler und Hobby-Fotograf aus Norddeutschland."
+  },
+  "layout": {
+    "imprint": "Impressum",
+    "datasec": "Datenschutz",
+    "disclaimer": "Disclaimer"
+  },
+  "project": {
+    "title": "Projekt",
+    "plural": "Projekte",
+    "aboutHeader": "Über {{projectName}}",
+    "viewGitHub": "Auf GitHub anschauen",
+    "viewWebsite": "Projekt-Website anschauen",
+    "description": "Das ist woran ich grade arbeite oder woran ich gearbeitet habe.",
+    "view": "Anschauen"
+  },
+  "home": {
+    "title": "Home",
+    "hello": "Hallo, ich bin",
+    "me": "Ich bin",
+    "webDeveloper": "Web Developer",
+    "imageCredit": "Portrait aufgenommen von Jannik Kiel",
+    "myLocation": "Quickborn, Schleswig-Holstein, Deutschland",
+    "explore": "Erkunde",
+    "myProjects": "meine Projekte",
+    "discover": "Entdecke",
+    "mySocials": "meine Accounts",
+    "learn": "Erfahre",
+    "moreAboutMe": "mehr über mich"
+  },
   "about": {
     "title": "Über",
     "donationCatchphrase": "Gefällt dir was du siehst? Spende doch etwas.",
@@ -38,9 +38,9 @@
     "mySkills": "Meine Fähigkeiten"
   },
   "social": {
-      "title": "Soziales",
-      "descriptionWithLink": "Finde mich auf anderen Plattformen oder <1>besuche meine Freunde</1>!",
-      "description": "Finde mich auf anderen Plattformen!"
+    "title": "Soziales",
+    "descriptionWithLink": "Finde mich auf anderen Plattformen oder <1>besuche meine Freunde</1>!",
+    "description": "Finde mich auf anderen Plattformen!"
   },
   "friends": {
     "title": "Freunde",
@@ -58,29 +58,31 @@
   },
   "menu": "Menü",
   "language": {
-      "en": {
-          "name": "Englisch"
-      },
-      "de": {
-          "name": "Deutsch"
-      }
+    "en": {
+      "name": "Englisch"
+    },
+    "de": {
+      "name": "Deutsch"
+    }
   },
   "blog": {
-      "title": "Blog",
-      "readFull": "Ganzen Post lesen »",
-      "meta": "Gepostet am {{date}} von {{author}}",
-      "page": "Seite {{page}}/{{maxPage}}",
-      "previous": "Zurück",
-      "next": "Weiter",
-      "section": {
-          "blog": {
-            "name": "Blog",
-            "description": "Begleite mich in meinem spannendem Leben!"
-          },
-          "scambox": {
-              "name": "Scambox",
-              "description": "Tauche mit mir ein in die Welt der Scams, die ich tagtäglich so bekomme, und lach ein bisschen mit mir!"
-          }
+    "title": "Blog",
+    "readFull": "Ganzen Post lesen »",
+    "meta": "Gepostet am {{date}} von {{author}}",
+    "page": "Seite {{page}}/{{maxPage}}",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "section": {
+      "blog": {
+        "name": "Blog",
+        "description": "Begleite mich in meinem spannendem Leben!"
+      },
+      "scambox": {
+        "name": "Scambox",
+        "description": "Tauche mit mir ein in die Welt der Scams, die ich tagtäglich so bekomme, und lach ein bisschen mit mir!"
       }
+    },
+    "sections": "Rubriken",
+    "posts": "Beiträge"
   }
 }

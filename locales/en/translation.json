@@ -1,28 +1,28 @@
 {
-    "site": {
-        "description": "Hello, I am Kevin Kandlbinder, a developer and hobby photographer from northern Germany."
-    },
-    "layout": {
-        "imprint": "Imprint",
-        "datasec": "Data Protection",
-        "disclaimer": "Disclaimer"
-    },
-    "project": {
-        "title": "Project",
-        "plural": "Projects",
-        "aboutHeader": "About {{projectName}}",
-        "viewGitHub": "View on GitHub",
-        "viewWebsite": "View Project-Website",
-        "description": "This is what I am working on or have worked on.",
-        "view": "View"
-    },
+  "site": {
+    "description": "Hello, I am Kevin Kandlbinder, a developer and hobby photographer from northern Germany."
+  },
+  "layout": {
+    "imprint": "Imprint",
+    "datasec": "Data Protection",
+    "disclaimer": "Disclaimer"
+  },
+  "project": {
+    "title": "Project",
+    "plural": "Projects",
+    "aboutHeader": "About {{projectName}}",
+    "viewGitHub": "View on GitHub",
+    "viewWebsite": "View Project-Website",
+    "description": "This is what I am working on or have worked on.",
+    "view": "View"
+  },
   "home": {
-      "title": "Home",
-      "hello": "Hello, I am",
-      "me": "I am",
-      "webDeveloper": "a web developer",
-      "imageCredit": "Portrait taken by Jannik Kiel",
-      "myLocation": "Quickborn, Schleswig-Holstein, Germany",
+    "title": "Home",
+    "hello": "Hello, I am",
+    "me": "I am",
+    "webDeveloper": "a web developer",
+    "imageCredit": "Portrait taken by Jannik Kiel",
+    "myLocation": "Quickborn, Schleswig-Holstein, Germany",
     "explore": "Explore",
     "myProjects": "my projects",
     "discover": "Discover",
@@ -38,9 +38,9 @@
     "mySkills": "My Skills"
   },
   "social": {
-      "title": "Social",
-      "descriptionWithLink": "Find me on other platforms or <1>visit my friends</1>!",
-      "description": "Find me on other platforms!"
+    "title": "Social",
+    "descriptionWithLink": "Find me on other platforms or <1>visit my friends</1>!",
+    "description": "Find me on other platforms!"
   },
   "friends": {
     "title": "Friends",
@@ -58,29 +58,31 @@
   },
   "menu": "Menu",
   "language": {
-      "en": {
-          "name": "English"
-      },
-      "de": {
-          "name": "German"
-      }
+    "en": {
+      "name": "English"
+    },
+    "de": {
+      "name": "German"
+    }
   },
   "blog": {
-      "title": "Blog",
-      "readFull": "Read full post »",
-      "meta": "Posted on {{date}} by {{author}}",
-      "page": "Page {{page}}/{{maxPage}}",
-      "previous": "Previous",
-      "next": "Next",
-      "section": {
-          "blog": {
-            "name": "Blog",
-            "description": "Read all about my exciting life!"
-          },
-          "scambox": {
-              "name": "Scambox",
-              "description": "Take a dive with me into all of the scams I get on the daily, and maybe laugh at them a little!"
-          }
+    "title": "Blog",
+    "readFull": "Read full post »",
+    "meta": "Posted on {{date}} by {{author}}",
+    "page": "Page {{page}}/{{maxPage}}",
+    "previous": "Previous",
+    "next": "Next",
+    "section": {
+      "blog": {
+        "name": "Blog",
+        "description": "Read all about my exciting life!"
+      },
+      "scambox": {
+        "name": "Scambox",
+        "description": "Take a dive with me into all of the scams I get on the daily, and maybe laugh at them a little!"
       }
+    },
+    "sections": "Sections",
+    "posts": "Posts"
   }
 }

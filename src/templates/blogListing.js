@@ -34,7 +34,7 @@ const BlogListing = ({ data, pageContext }) => {
 
                     {!hasSection && (
                         <>
-                            <h2>Sections</h2>
+                            <h2>{t("blog.sections")}</h2>
 
                             <div className={styles.sectionList}>
                                 <Link
@@ -46,7 +46,7 @@ const BlogListing = ({ data, pageContext }) => {
                                             <StaticImage src="https://source.unsplash.com/gf8e6XvG_3E/300x150"></StaticImage>
                                         </div>
                                         <span className={styles.sectionName}>
-                                            Scambox
+                                            {t("blog.section.scambox.name")}
                                         </span>
                                     </div>
                                 </Link>
@@ -54,7 +54,7 @@ const BlogListing = ({ data, pageContext }) => {
                         </>
                     )}
 
-                    <h2>Posts</h2>
+                    <h2>{t("blog.posts")}</h2>
 
                     <div className={styles.list}>
                         {data.posts.nodes.map((post) => {
