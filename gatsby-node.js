@@ -5,6 +5,11 @@ const { paginate } = require("gatsby-awesome-pagination");
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage, createRedirect } = actions;
 
+    const activity = reporter.activityTimer(`Generate pages`);
+
+    activity.start();
+    activity.setStatus("Sourcing data for pages...");
+
     const projectTemplate = path.resolve(`src/templates/project.js`);
 
     const result = await graphql(`
@@ -43,6 +48,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         return;
     }
 
+    activity.setStatus("Generating project pages...");
+
     result.data.allProjectsJson.nodes.forEach((node) => {
         if (node.lang === "ignoreme") return;
 
@@ -59,6 +66,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             },
         });
     });
+
+    activity.setStatus("Generating blog pages...");
 
     const blogListingTemplate = path.resolve(`src/templates/blogListing.js`);
     const blogTemplate = path.resolve(`src/templates/blogPost.js`);
@@ -175,4 +184,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             }
         });
     });
+
+    activity.setStatus("Pages generated.");
+    activity.end();
 };
