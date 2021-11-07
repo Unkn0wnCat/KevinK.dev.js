@@ -92,8 +92,8 @@ const IndexPage = (props) => {
             easing: "easeInOutCirc",
         });
 
-        // eslint-disable-next-line no-undef
         if (typeof window !== "undefined")
+            // eslint-disable-next-line no-undef
             window.setTimeout(loadTsParticles, 1000);
     }, []);
 
