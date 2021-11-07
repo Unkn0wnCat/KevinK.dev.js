@@ -20,7 +20,7 @@ import {
     Phone,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import * as particleConfig from "./index.particles.json";
+//import * as particleConfig from "./index.particles.json";
 
 export const query = graphql`
     query GetMetaAndProjects($language: String) {
@@ -47,7 +47,7 @@ export const query = graphql`
     }
 `;
 
-const loadTsParticles = async () => {
+/*const loadTsParticles = async () => {
     import("tsparticles").then(({ tsParticles }) => {
         tsParticles.load("particle-container", particleConfig).then(() => {
             anime({
@@ -58,7 +58,7 @@ const loadTsParticles = async () => {
             });
         });
     });
-};
+};*/
 
 const IndexPage = (props) => {
     const { t } = useTranslation();
@@ -92,9 +92,9 @@ const IndexPage = (props) => {
             easing: "easeInOutCirc",
         });
 
-        if (typeof window !== "undefined")
+        /*if (typeof window !== "undefined")
             // eslint-disable-next-line no-undef
-            window.setTimeout(loadTsParticles, 1000);
+            window.setTimeout(loadTsParticles, 1000);*/
     }, []);
 
     let meta = props.data.site.siteMetadata;
