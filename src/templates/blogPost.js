@@ -24,11 +24,6 @@ const BlogPost = ({ data }) => {
                         "@context": "https://schema.org",
                         "@type": "NewsArticle",
                         headline: data.mdx.frontmatter.title,
-                        /*"image": [
-                        "https://example.com/photos/1x1/photo.jpg",
-                        "https://example.com/photos/4x3/photo.jpg",
-                        "https://example.com/photos/16x9/photo.jpg"
-                    ],*/
                         datePublished: data.mdx.frontmatter.publishedIso,
                         dateModified: data.mdx.frontmatter.publishedIso,
                         author: [

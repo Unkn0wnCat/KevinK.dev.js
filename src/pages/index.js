@@ -97,7 +97,6 @@ const IndexPage = (props) => {
                     className={styles.heroSectionBg}
                     id="particle-container"
                 ></div>
-                {/*<div className={styles.heroSectionBgOver}></div>*/}
                 <div className={styles.profile + " profile"}>
                     <div className={styles.profileImage}>
                         <StaticImage

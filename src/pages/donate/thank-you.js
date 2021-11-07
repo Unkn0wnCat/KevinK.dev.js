@@ -29,17 +29,17 @@ const ThankYouPage = (props) => {
     let contactEmail = site.siteMetadata.contactEmail;
     const { t } = useI18next();
     return (
-        <Layout title={t("donate")}>
+        <Layout title={t("donate.thanks")}>
             <section>
                 <article>
                     <h1>
-                        <Trans>donateThanks</Trans>
+                        <Trans>donate.thanks</Trans>
                     </h1>
 
                     <p>
                         <Trans
                             contactEmail={contactEmail}
-                            i18nKey="donateThanksText"
+                            i18nKey="donate.thanksText"
                         >
                             donateThanksText
                             <a href={"mailto:" + contactEmail}>

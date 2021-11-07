@@ -111,7 +111,7 @@ const AboutPage = (props) => {
                 xPath: ["article"],
             }}
         >
-            <section className={styles.aboutSection} id="about">
+            <section className={styles.aboutSection}>
                 <article>
                     <div className={styles.aboutText}>
                         <MDXRenderer>{file.childMdx.body}</MDXRenderer>

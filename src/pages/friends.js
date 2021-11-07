@@ -41,14 +41,6 @@ export const query = graphql`
 const FriendsPage = ({ data }) => {
     const { t } = useI18next();
 
-    /*function shuffle(a) {
-    for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  }*/
-
     return (
         <Layout
             title={t("friends.title")}
@@ -65,85 +57,73 @@ const FriendsPage = ({ data }) => {
                     </p>
 
                     <div className={styles.friendsList}>
-                        {
-                            /*shuffle(*/ data.allFriendsJson.nodes /*)*/
-                                .map((friend) => {
-                                    return (
-                                        <div
-                                            className={styles.friendProfile}
-                                            key={friend.url + "#" + friend.name}
-                                        >
-                                            <div
-                                                className={styles.friendImage}
-                                                key={
-                                                    friend.url +
-                                                    "#" +
-                                                    friend.name +
-                                                    "#image"
-                                                }
-                                            >
-                                                <div
-                                                    className={styles.friendBg}
-                                                >
-                                                    <GatsbyImage
-                                                        image={getImage(
-                                                            friend.localImage
-                                                        )}
-                                                    ></GatsbyImage>
-                                                </div>
-                                                <span
-                                                    className={
-                                                        styles.friendName
-                                                    }
-                                                    key={
-                                                        friend.url +
-                                                        "#" +
-                                                        friend.name +
-                                                        "#name"
-                                                    }
-                                                >
-                                                    {friend.name}
-                                                </span>
-                                                <span
-                                                    className={
-                                                        styles.friendTitle
-                                                    }
-                                                    key={
-                                                        friend.url +
-                                                        "#" +
-                                                        friend.name +
-                                                        "#profession"
-                                                    }
-                                                >
-                                                    {friend.profession}
-                                                </span>
-                                            </div>
-
-                                            <div
-                                                className={styles.contactLinks}
-                                                key={
-                                                    friend.url +
-                                                    "#" +
-                                                    friend.name +
-                                                    "#links"
-                                                }
-                                            >
-                                                <a
-                                                    className={
-                                                        styles.contactLink
-                                                    }
-                                                    href={friend.url}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                >
-                                                    <Globe2 height={20} />{" "}
-                                                    {friend.url}
-                                                </a>
-                                            </div>
+                        {data.allFriendsJson.nodes.map((friend) => {
+                            return (
+                                <div
+                                    className={styles.friendProfile}
+                                    key={friend.url + "#" + friend.name}
+                                >
+                                    <div
+                                        className={styles.friendImage}
+                                        key={
+                                            friend.url +
+                                            "#" +
+                                            friend.name +
+                                            "#image"
+                                        }
+                                    >
+                                        <div className={styles.friendBg}>
+                                            <GatsbyImage
+                                                image={getImage(
+                                                    friend.localImage
+                                                )}
+                                            ></GatsbyImage>
                                         </div>
-                                    );
-                                })
-                        }
+                                        <span
+                                            className={styles.friendName}
+                                            key={
+                                                friend.url +
+                                                "#" +
+                                                friend.name +
+                                                "#name"
+                                            }
+                                        >
+                                            {friend.name}
+                                        </span>
+                                        <span
+                                            className={styles.friendTitle}
+                                            key={
+                                                friend.url +
+                                                "#" +
+                                                friend.name +
+                                                "#profession"
+                                            }
+                                        >
+                                            {friend.profession}
+                                        </span>
+                                    </div>
+
+                                    <div
+                                        className={styles.contactLinks}
+                                        key={
+                                            friend.url +
+                                            "#" +
+                                            friend.name +
+                                            "#links"
+                                        }
+                                    >
+                                        <a
+                                            className={styles.contactLink}
+                                            href={friend.url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <Globe2 height={20} /> {friend.url}
+                                        </a>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </article>
             </section>

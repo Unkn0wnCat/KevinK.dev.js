@@ -20,11 +20,11 @@ export const query = graphql`
 export default function DisclaimerPage() {
     const { t } = useI18next();
     return (
-        <Layout title={t("disclaimer")}>
+        <Layout title={t("layout.disclaimer")}>
             <section>
                 <article>
                     <h1>
-                        <Trans>disclaimer</Trans>
+                        <Trans>layout.disclaimer</Trans>
                     </h1>
 
                     <h2>Haftung für Inhalte</h2>

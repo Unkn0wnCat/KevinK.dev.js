@@ -20,11 +20,11 @@ export const query = graphql`
 export default function DataSecPage() {
     const { t } = useI18next();
     return (
-        <Layout title={t("datasec")}>
+        <Layout title={t("layout.datasec")}>
             <section>
                 <article>
                     <h1>
-                        <Trans>datasec</Trans>
+                        <Trans>layout.datasec</Trans>
                     </h1>
 
                     <h3 id="dsg-general-intro"></h3>

@@ -83,32 +83,16 @@ const Navigation = ({ isHome }) => {
                     )}
                 />
                 <div className="flexSpacer"></div>
-                <Link
-                    id="navBtnProjects"
-                    to="/about"
-                    activeClassName={styles.active}
-                >
+                <Link to="/about" activeClassName={styles.active}>
                     <Trans>about.title</Trans>
                 </Link>
-                <Link
-                    id="navBtnProjects"
-                    to="/projects"
-                    activeClassName={styles.active}
-                >
+                <Link to="/projects" activeClassName={styles.active}>
                     <Trans>project.plural</Trans>
                 </Link>
-                <Link
-                    id="navBtnSocial"
-                    to="/social"
-                    activeClassName={styles.active}
-                >
+                <Link to="/social" activeClassName={styles.active}>
                     <Trans>social.title</Trans>
                 </Link>
-                <Link
-                    id="navBtnBlog"
-                    to="/blog"
-                    activeClassName={styles.active}
-                >
+                <Link to="/blog" activeClassName={styles.active}>
                     <Trans>blog.title</Trans>
                 </Link>
                 <div className={styles.hamburger}>

@@ -102,18 +102,6 @@ module.exports = {
             },
         },
         `gatsby-plugin-robots-txt`,
-        /*{
-            resolve: `gatsby-plugin-offline`,
-            options: {
-                precachePages: [
-                    "/",
-                    "/en",
-                    "/en/projects",
-                    "/de",
-                    "/de/projects",
-                ],
-            },
-        },*/
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         {

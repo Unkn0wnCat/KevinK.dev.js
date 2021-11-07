@@ -30,8 +30,6 @@
     }
 
     .heroSectionBg {
-        /*background: radial-gradient(ellipse at top left, #1f0ba659, transparent),
-            radial-gradient(ellipse at bottom right, #4a086829, transparent);*/
 
         background: linear-gradient(45deg, #000850 0%, #000320 100%),
             radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
@@ -53,8 +51,6 @@
     .heroSectionBgOver {
         bottom: 0;
         height: 150px;
-        /*background-color: $background;
-        transition: background-color 0.25s, box-shadow 0.25s;*/
 
         @media (max-width: 950px) {
             display: none;

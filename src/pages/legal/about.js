@@ -20,11 +20,11 @@ export const query = graphql`
 export default function ImprintPage() {
     const { t } = useI18next();
     return (
-        <Layout title={t("imprint")}>
+        <Layout title={t("layout.imprint")}>
             <section>
                 <article>
                     <h1>
-                        <Trans>imprint</Trans>
+                        <Trans>layout.imprint</Trans>
                     </h1>
 
                     <p>Angaben gemäß § 5 TMG</p>
