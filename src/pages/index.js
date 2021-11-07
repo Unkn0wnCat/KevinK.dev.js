@@ -85,7 +85,7 @@ const IndexPage = (props) => {
         <Layout
             title="Kevin Kandlbinder"
             transparentTopbar={true}
-            description={t("siteDescription")}
+            description={t("site.description")}
             image={"/owner.jpg"}
             speakable={{
                 "@type": "SpeakableSpecification",
@@ -112,13 +112,13 @@ const IndexPage = (props) => {
                     <div className={styles.profileImageDummy}></div>
                     <div className={styles.profileCard}>
                         <span className={styles.hello}>
-                            <Trans>homeHello</Trans>
+                            <Trans>home.hello</Trans>
                         </span>
                         <span className={styles.name}>Kevin Kandlbinder</span>
                         <span className={styles.description}>
-                            <Trans>homeMe</Trans>{" "}
+                            <Trans>home.me</Trans>{" "}
                             <span id="descriptionType">
-                                <Trans>homeWebDeveloper</Trans>
+                                <Trans>home.webDeveloper</Trans>
                             </span>
                             .
                         </span>
@@ -147,7 +147,7 @@ const IndexPage = (props) => {
                                 target="_blank"
                             >
                                 <MapPin width={20} />
-                                <Trans>homeMyLocation</Trans>
+                                <Trans>home.myLocation</Trans>
                             </a>
                             <a
                                 className={styles.contactLink}
@@ -177,27 +177,27 @@ const IndexPage = (props) => {
                     <Link to={"/projects"}>
                         <div>
                             <span className={styles.ctaAccent}>
-                                {t("explore")}
+                                {t("home.explore")}
                             </span>{" "}
-                            <span>{t("myProjects")}</span>
+                            <span>{t("home.myProjects")}</span>
                         </div>
                         <ArrowRight />
                     </Link>
                     <Link to={"/social"}>
                         <div>
                             <span className={styles.ctaAccent}>
-                                {t("discover")}
+                                {t("home.discover")}
                             </span>{" "}
-                            <span>{t("mySocials")}</span>
+                            <span>{t("home.mySocials")}</span>
                         </div>
                         <ArrowRight />
                     </Link>
                     <Link to={"/about"}>
                         <div>
                             <span className={styles.ctaAccent}>
-                                {t("learn")}
+                                {t("home.learn")}
                             </span>{" "}
-                            <span>{t("moreAboutMe")}</span>
+                            <span>{t("home.moreAboutMe")}</span>
                         </div>
                         <ArrowRight />
                     </Link>
@@ -211,7 +211,7 @@ const IndexPage = (props) => {
             >
                 <div>
                     <span>
-                        <Camera /> <Trans>homeImageCredit</Trans>
+                        <Camera /> <Trans>home.imageCredit</Trans>
                     </span>
                     <ArrowRight />
                 </div>

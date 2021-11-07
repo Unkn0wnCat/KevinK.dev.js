@@ -24,14 +24,14 @@ const OffScreenNav = ({ active, close }) => {
                     <Trans>menu</Trans>
                 </span>
                 <Link to="/" activeClassName={styles.active}>
-                    <Trans>home</Trans>
+                    <Trans>home.title</Trans>
                 </Link>
                 <Link
                     id="osnavBtnProjects"
                     to="/about"
                     activeClassName={styles.active}
                 >
-                    <Trans>about</Trans>
+                    <Trans>about.title</Trans>
                 </Link>
                 <Link
                     id="osnavBtnProjects"

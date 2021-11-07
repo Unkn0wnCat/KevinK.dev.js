@@ -47,8 +47,8 @@ const ProjectsPage = ({ data }) => {
     const meta = useSiteMetadata();
     return (
         <Layout
-            title={t("projects")}
-            description={t("projectsDescription")}
+            title={t("project.plural")}
+            description={t("project.description")}
             seoAdditional={
                 <script type="application/ld+json">
                     {JSON.stringify({
@@ -76,11 +76,11 @@ const ProjectsPage = ({ data }) => {
             <section>
                 <article>
                     <h1>
-                        <Trans>projects</Trans>
+                        <Trans>project.plural</Trans>
                     </h1>
 
                     <p>
-                        <Trans>projectsDescription</Trans>
+                        <Trans>project.description</Trans>
                     </p>
 
                     <div className={styles.projectList}>

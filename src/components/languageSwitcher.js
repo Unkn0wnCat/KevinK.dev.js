@@ -24,7 +24,7 @@ export default function LanguageSwitcher() {
                     {languages.map((lng) => (
                         <li key={lng}>
                             <Link to={originalPath} language={lng}>
-                                <Trans>{lng}</Trans>
+                                <Trans>language.{lng}.name</Trans>
                             </Link>
                         </li>
                     ))}

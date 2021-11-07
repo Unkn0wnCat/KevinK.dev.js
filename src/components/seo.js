@@ -22,7 +22,7 @@ function SEO({ description, meta, title, speakable, image, children }) {
         `
     );
 
-    const metaDescription = description || t("siteDescription");
+    const metaDescription = description || t("site.description");
 
     const siteMeta = useSiteMetadata();
     const location = useLocation();

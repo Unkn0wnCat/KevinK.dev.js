@@ -45,19 +45,22 @@ const DonatePage = (props) => {
     const { site, file } = props.data;
 
     return (
-        <Layout title={t("donate")} description={t("donationCatchphrase")}>
+        <Layout
+            title={t("donate.title")}
+            description={t("about.donationCatchphrase")}
+        >
             <section>
                 <article>
                     <h1>
-                        <Trans>donate</Trans>
+                        <Trans>donate.title</Trans>
                     </h1>
 
                     <p>
-                        <Trans>donateDescription</Trans>
+                        <Trans>donate.description</Trans>
                     </p>
 
                     <p>
-                        <Trans>donateGitHub</Trans>
+                        <Trans>donate.gitHub</Trans>
                     </p>
 
                     <p style={{ display: "block", textAlign: "center" }}>
@@ -71,12 +74,12 @@ const DonatePage = (props) => {
                             data-size="large"
                             aria-label="Sponsor @Unkn0wnCat on GitHub"
                         >
-                            <Trans>sponsorGitHub</Trans>
+                            <Trans>donate.sponsorGitHub</Trans>
                         </GitHubButton>
                     </p>
 
                     <p>
-                        <Trans>donatePayPal</Trans>
+                        <Trans>donate.payPal</Trans>
                     </p>
 
                     <div className={styles.priceAmount}>
@@ -127,7 +130,9 @@ const DonatePage = (props) => {
                             amount
                         }
                     >
-                        <span>Donate using PayPal</span>
+                        <span>
+                            <Trans>donate.donatePayPal</Trans>
+                        </span>
                         <ArrowRight />
                     </a>
                 </article>

@@ -88,21 +88,21 @@ const Navigation = ({ isHome }) => {
                     to="/about"
                     activeClassName={styles.active}
                 >
-                    <Trans>about</Trans>
+                    <Trans>about.title</Trans>
                 </Link>
                 <Link
                     id="navBtnProjects"
                     to="/projects"
                     activeClassName={styles.active}
                 >
-                    <Trans>projects</Trans>
+                    <Trans>project.plural</Trans>
                 </Link>
                 <Link
                     id="navBtnSocial"
                     to="/social"
                     activeClassName={styles.active}
                 >
-                    <Trans>social</Trans>
+                    <Trans>social.title</Trans>
                 </Link>
                 <Link
                     id="navBtnBlog"

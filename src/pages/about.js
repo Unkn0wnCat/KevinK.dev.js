@@ -103,8 +103,8 @@ const AboutPage = (props) => {
 
     return (
         <Layout
-            title={t("about")}
-            description={t("siteDescription")}
+            title={t("about.title")}
+            description={t("site.description")}
             image={"/owner.jpg"}
             speakable={{
                 "@type": "SpeakableSpecification",
@@ -118,7 +118,7 @@ const AboutPage = (props) => {
                     </div>
                     <div className={styles.skills}>
                         <h2>
-                            <Trans>mySkills</Trans>
+                            <Trans>about.mySkills</Trans>
                         </h2>
                         <div className={styles.skillList}>
                             {props.data.allSkillsJson.nodes.map((skill) => {
@@ -154,7 +154,7 @@ const AboutPage = (props) => {
             <section>
                 <article>
                     <h1>
-                        <Trans>featuredProjects</Trans>
+                        <Trans>about.featuredProjects</Trans>
                     </h1>
                     <div className={projectStyles.projectList}>
                         {props.data.allProjectsJson.nodes.map((project) => {
@@ -206,14 +206,14 @@ const AboutPage = (props) => {
                         })}
                     </div>
                     <Link to="/projects" className={styles.seeMoreButton}>
-                        <Trans>seeMore</Trans> <ArrowRight />
+                        <Trans>about.moreProjects</Trans> <ArrowRight />
                     </Link>
                 </article>
             </section>
             <Link className={styles.donationSection} to="/donate">
                 <div>
                     <span>
-                        <Trans>donationCatchphrase</Trans>
+                        <Trans>about.donationCatchphrase</Trans>
                     </span>
                     <ArrowRight />
                 </div>

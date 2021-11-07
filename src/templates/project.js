@@ -66,7 +66,7 @@ const ProjectTemplate = ({ data }) => {
     return (
         <Layout
             description={project.shortDescription}
-            title={t("project") + ": " + projectName}
+            title={t("project.title") + ": " + projectName}
             transparentTopbar={true}
             image={project.image.publicURL}
         >
@@ -84,7 +84,7 @@ const ProjectTemplate = ({ data }) => {
                     <header>
                         <div className={styles.headerInner}>
                             <h1>
-                                <Trans>project</Trans>: {projectName}
+                                <Trans>project.title</Trans>: {projectName}
                             </h1>
                             <span>{project.shortDescription}</span>
                         </div>
@@ -111,7 +111,7 @@ const ProjectTemplate = ({ data }) => {
                                     rel="noreferrer"
                                 >
                                     <Github height={15} />{" "}
-                                    <Trans>projectViewGitHub</Trans>
+                                    <Trans>project.viewGitHub</Trans>
                                 </a>
                             ) : null}
                             {project.links.website !== null ? (
@@ -121,7 +121,7 @@ const ProjectTemplate = ({ data }) => {
                                     rel="noreferrer"
                                 >
                                     <ExternalLink height={15} />{" "}
-                                    <Trans>projectViewWebsite</Trans>
+                                    <Trans>project.viewWebsite</Trans>
                                 </a>
                             ) : null}
                         </div>

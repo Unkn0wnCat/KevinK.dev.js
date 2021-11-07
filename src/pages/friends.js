@@ -50,15 +50,18 @@ const FriendsPage = ({ data }) => {
   }*/
 
     return (
-        <Layout title={t("friends")} description={t("friendsDescription")}>
+        <Layout
+            title={t("friends.title")}
+            description={t("friends.description")}
+        >
             <section>
                 <article>
                     <h1>
-                        <Trans>social</Trans>
+                        <Trans>friends.title</Trans>
                     </h1>
 
                     <p>
-                        <Trans>friendsDescription</Trans>
+                        <Trans>friends.description</Trans>
                     </p>
 
                     <div className={styles.friendsList}>

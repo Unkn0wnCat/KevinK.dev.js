@@ -36,15 +36,15 @@ export const query = graphql`
 const SocialPage = ({ data }) => {
     const { t } = useI18next();
     return (
-        <Layout title={t("social")} description={t("socialDescription")}>
+        <Layout title={t("social.title")} description={t("social.description")}>
             <section>
                 <article>
                     <h1>
-                        <Trans>social</Trans>
+                        <Trans>social.title</Trans>
                     </h1>
 
                     <p>
-                        <Trans i18nKey="socialDescriptionWithLink">
+                        <Trans i18nKey="social.descriptionWithLink">
                             socialDescriptionWith<Link to="/friends">Link</Link>
                         </Trans>
                     </p>
