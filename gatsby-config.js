@@ -139,5 +139,89 @@ module.exports = {
                 generateMatchPathRewrites: false,
             },
         },
+        {
+            resolve: `gatsby-plugin-feed`,
+            options: {
+                query: `
+                {
+                  site {
+                    siteMetadata {
+                      title
+                      description
+                      siteUrl
+                      site_url: siteUrl
+                    }
+                  }
+                }
+              `,
+                feeds: [
+                    {
+                        serialize: ({ query: { site, blog } }) => {
+                            return blog.nodes.map((node) => {
+                                if (!node.childMdx) return null;
+
+                                return {
+                                    title: node.childMdx.frontmatter.title,
+                                    description: node.childMdx.excerpt,
+                                    date: node.childMdx.frontmatter.date,
+                                    url:
+                                        site.siteMetadata.siteUrl +
+                                        `/${
+                                            node.childMdx.frontmatter.language
+                                        }/blog/${
+                                            node.childMdx.frontmatter.section
+                                                ? node.childMdx.frontmatter
+                                                      .section + "/"
+                                                : ""
+                                        }${
+                                            node.childMdx.frontmatter.published
+                                        }/${node.childMdx.frontmatter.url}`,
+                                    guid:
+                                        site.siteMetadata.siteUrl +
+                                        `/${
+                                            node.childMdx.frontmatter.language
+                                        }/blog/${
+                                            node.childMdx.frontmatter.section
+                                                ? node.childMdx.frontmatter
+                                                      .section + "/"
+                                                : ""
+                                        }${
+                                            node.childMdx.frontmatter.published
+                                        }/${node.childMdx.frontmatter.url}`,
+                                    section: node.childMdx.frontmatter.section,
+                                };
+                            });
+                        },
+                        query: `
+                    {
+                        blog: allFile(
+                            filter: { sourceInstanceName: { eq: "blogContent" } }
+                        ) {
+                            nodes {
+                                childMdx {
+                                    id
+                                    body
+                                    excerpt
+                                    frontmatter {
+                                        platform
+                                        tags
+                                        title
+                                        url
+                                        section
+                                        language
+                                        published(formatString: "YYYY/MM")
+                                        date: published
+                                    }
+                                }
+                            }
+                        }
+                    }
+                  `,
+                        output: "/blog/feed.xml",
+                        title: extConfig.siteName + " Blog",
+                    },
+                ],
+            },
+        },
     ],
 };
