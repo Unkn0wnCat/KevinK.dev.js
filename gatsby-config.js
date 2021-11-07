@@ -188,7 +188,7 @@ module.exports = {
                                         }${
                                             node.childMdx.frontmatter.published
                                         }/${node.childMdx.frontmatter.url}`,
-                                    section: node.childMdx.frontmatter.section,
+                                    category: node.childMdx.frontmatter.section,
                                 };
                             });
                         },
