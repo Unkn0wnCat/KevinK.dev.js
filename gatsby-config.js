@@ -217,7 +217,7 @@ module.exports = {
                         }
                     }
                   `,
-                        output: "/blog/feed.xml",
+                        output: "/blog/feed.rss",
                         title: extConfig.siteName + " Blog",
                     },
                 ],
