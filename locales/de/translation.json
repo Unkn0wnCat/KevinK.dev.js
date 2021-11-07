@@ -84,5 +84,10 @@
     },
     "sections": "Rubriken",
     "posts": "Beiträge"
+  },
+  "not_found": {
+      "title": "Nicht Gefunden",
+      "titleExt": "Seite Nicht Gefunden",
+      "text": "Ups... Diese Seite existiert nicht, also gehen wir am besten <1>zurück zur Startseite</1> und probieren es nochmal."
   }
 }

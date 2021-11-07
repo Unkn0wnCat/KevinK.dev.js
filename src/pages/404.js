@@ -1,21 +1,40 @@
 import * as React from "react";
-import { Link } from "gatsby-plugin-react-i18next";
+import { Link, useTranslation, Trans } from "gatsby-plugin-react-i18next";
 import Layout from "../layouts/default";
+import { graphql } from "gatsby";
 
 const NotFoundPage = () => {
+    const { t } = useTranslation();
+
     return (
-        <Layout title="Not found">
+        <Layout title={t("not_found.title")}>
             <section>
                 <article>
-                    <h1>Page not found</h1>
+                    <h1>{t("not_found.titleExt")}</h1>
                     <p>
-                        Whoops... That page doesn&apos;t exist, so you may as
-                        well <Link to="/">go home</Link>.
+                        <Trans
+                            i18nKey="not_found.text"
+                            components={{ 1: <Link to="/" /> }}
+                        />
                     </p>
                 </article>
             </section>
         </Layout>
     );
 };
+
+export const query = graphql`
+    query ($language: String) {
+        locales: allLocale(filter: { language: { eq: $language } }) {
+            edges {
+                node {
+                    ns
+                    data
+                    language
+                }
+            }
+        }
+    }
+`;
 
 export default NotFoundPage;

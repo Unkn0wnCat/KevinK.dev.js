@@ -84,5 +84,10 @@
     },
     "sections": "Sections",
     "posts": "Posts"
+  },
+  "not_found": {
+      "title": "Not Found",
+      "titleExt": "Page Not Found",
+      "text": "Whoops... That page doesn't exist, so you may as well <1>go home</1>."
   }
 }
