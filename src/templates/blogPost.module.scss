@@ -17,7 +17,7 @@
 .meta {
     display: block;
     margin-top: -25px;
-    margin-bottom: $layoutPadding*2;
+    margin-bottom: $layoutPadding * 2;
 }
 
 .chatBox {
@@ -38,7 +38,7 @@
         font-size: 1.5em;
         text-shadow: 0 0 10px black;
 
-        @media(prefers-color-scheme: light) {
+        @media (prefers-color-scheme: light) {
             text-shadow: 0 0 10px white;
         }
 
@@ -46,7 +46,6 @@
             margin-right: 10px;
         }
     }
-
 
     > iframe {
         position: absolute;
@@ -65,5 +64,4 @@
                 -1px 11px 33px -10px rgba($accentColor, 0.25);
         }
     }
-
 }

@@ -1,95 +1,95 @@
 {
-  "site": {
-    "description": "Hello, I am Kevin Kandlbinder, a developer and hobby photographer from northern Germany."
-  },
-  "layout": {
-    "imprint": "Imprint",
-    "datasec": "Data Protection",
-    "disclaimer": "Disclaimer"
-  },
-  "project": {
-    "title": "Project",
-    "plural": "Projects",
-    "aboutHeader": "About {{projectName}}",
-    "viewGitHub": "View on GitHub",
-    "viewWebsite": "View Project-Website",
-    "description": "This is what I am working on or have worked on.",
-    "view": "View"
-  },
-  "home": {
-    "title": "Home",
-    "hello": "Hello, I am",
-    "me": "I am",
-    "webDeveloper": "a web developer",
-    "imageCredit": "Portrait taken by Jannik Kiel",
-    "myLocation": "Quickborn, Schleswig-Holstein, Germany",
-    "explore": "Explore",
-    "myProjects": "my projects",
-    "discover": "Discover",
-    "mySocials": "my socials",
-    "learn": "Learn",
-    "moreAboutMe": "more about me"
-  },
-  "about": {
-    "title": "About",
-    "donationCatchphrase": "Like what you're seeing? Consider donating.",
-    "moreProjects": "Explore more Projects",
-    "featuredProjects": "Featured Projects",
-    "mySkills": "My Skills",
-    "myCareer": "My Career-Path",
-    "birth": "Born 03.11.2001"
-  },
-  "social": {
-    "title": "Social",
-    "descriptionWithLink": "Find me on other platforms or <1>visit my friends</1>!",
-    "description": "Find me on other platforms!"
-  },
-  "friends": {
-    "title": "Friends",
-    "description": "In this list you can find friends of mine and this site. Feel free to check them out for more interesting projects."
-  },
-  "donate": {
-    "title": "Donate",
-    "description": "Hey! It looks like you're thinking about donating to me. That's nice of you! If you want your donation to go towards a specific project, feel free to write your wishes into the donation comment.",
-    "thanks": "Thanks for donating!",
-    "thanksText": "I really appreciate you appreciating my work and showing it! Feel free to mail me at <1>{{contactEmail}}</1> if you have anything you want to talk about!",
-    "gitHub": "You can very easily support me via GitHub Sponsors using the following button!",
-    "payPal": "If you'd rather support me via PayPal the following button is for you:",
-    "sponsorGitHub": "Sponsor using GitHub",
-    "donatePayPal": "Donate using PayPal"
-  },
-  "menu": "Menu",
-  "language": {
-    "en": {
-      "name": "English"
+    "site": {
+        "description": "Hello, I am Kevin Kandlbinder, a developer and hobby photographer from northern Germany."
     },
-    "de": {
-      "name": "German"
+    "layout": {
+        "imprint": "Imprint",
+        "datasec": "Data Protection",
+        "disclaimer": "Disclaimer"
+    },
+    "project": {
+        "title": "Project",
+        "plural": "Projects",
+        "aboutHeader": "About {{projectName}}",
+        "viewGitHub": "View on GitHub",
+        "viewWebsite": "View Project-Website",
+        "description": "This is what I am working on or have worked on.",
+        "view": "View"
+    },
+    "home": {
+        "title": "Home",
+        "hello": "Hello, I am",
+        "me": "I am",
+        "webDeveloper": "a web developer",
+        "imageCredit": "Portrait taken by Jannik Kiel",
+        "myLocation": "Quickborn, Schleswig-Holstein, Germany",
+        "explore": "Explore",
+        "myProjects": "my projects",
+        "discover": "Discover",
+        "mySocials": "my socials",
+        "learn": "Learn",
+        "moreAboutMe": "more about me"
+    },
+    "about": {
+        "title": "About",
+        "donationCatchphrase": "Like what you're seeing? Consider donating.",
+        "moreProjects": "Explore more Projects",
+        "featuredProjects": "Featured Projects",
+        "mySkills": "My Skills",
+        "myCareer": "My Career-Path",
+        "birth": "Born 03.11.2001"
+    },
+    "social": {
+        "title": "Social",
+        "descriptionWithLink": "Find me on other platforms or <1>visit my friends</1>!",
+        "description": "Find me on other platforms!"
+    },
+    "friends": {
+        "title": "Friends",
+        "description": "In this list you can find friends of mine and this site. Feel free to check them out for more interesting projects."
+    },
+    "donate": {
+        "title": "Donate",
+        "description": "Hey! It looks like you're thinking about donating to me. That's nice of you! If you want your donation to go towards a specific project, feel free to write your wishes into the donation comment.",
+        "thanks": "Thanks for donating!",
+        "thanksText": "I really appreciate you appreciating my work and showing it! Feel free to mail me at <1>{{contactEmail}}</1> if you have anything you want to talk about!",
+        "gitHub": "You can very easily support me via GitHub Sponsors using the following button!",
+        "payPal": "If you'd rather support me via PayPal the following button is for you:",
+        "sponsorGitHub": "Sponsor using GitHub",
+        "donatePayPal": "Donate using PayPal"
+    },
+    "menu": "Menu",
+    "language": {
+        "en": {
+            "name": "English"
+        },
+        "de": {
+            "name": "German"
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "readFull": "Read full post »",
+        "meta": "Posted on {{date}} by {{author}}",
+        "page": "Page {{page}}/{{maxPage}}",
+        "previous": "Previous",
+        "next": "Next",
+        "section": {
+            "blog": {
+                "name": "Blog",
+                "description": "Read all about my exciting life!"
+            },
+            "scambox": {
+                "name": "Scambox",
+                "description": "Take a dive with me into all of the scams I get on the daily, and maybe laugh at them a little!"
+            }
+        },
+        "sections": "Sections",
+        "posts": "Posts"
+    },
+    "not_found": {
+        "title": "Not Found",
+        "titleExt": "Page Not Found",
+        "text": "Whoops... That page doesn't exist, so you may as well <1>go home</1>."
     }
-  },
-  "blog": {
-    "title": "Blog",
-    "readFull": "Read full post »",
-    "meta": "Posted on {{date}} by {{author}}",
-    "page": "Page {{page}}/{{maxPage}}",
-    "previous": "Previous",
-    "next": "Next",
-    "section": {
-      "blog": {
-        "name": "Blog",
-        "description": "Read all about my exciting life!"
-      },
-      "scambox": {
-        "name": "Scambox",
-        "description": "Take a dive with me into all of the scams I get on the daily, and maybe laugh at them a little!"
-      }
-    },
-    "sections": "Sections",
-    "posts": "Posts"
-  },
-  "not_found": {
-      "title": "Not Found",
-      "titleExt": "Page Not Found",
-      "text": "Whoops... That page doesn't exist, so you may as well <1>go home</1>."
-  }
 }

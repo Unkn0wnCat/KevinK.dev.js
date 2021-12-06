@@ -15,7 +15,6 @@
     transition: opacity 0.25s, left 0.25s;
     pointer-events: none;
     overscroll-behavior: contain;
-    
 
     &.active {
         left: 0;

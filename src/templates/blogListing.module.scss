@@ -4,7 +4,7 @@
     display: block;
     margin-top: 2rem;
     margin-bottom: -2rem;
-    font-size: .8em;
+    font-size: 0.8em;
     text-decoration: none;
 }
 
@@ -47,12 +47,11 @@
     }
 }
 
-
 .pageSwitcher {
     display: flex;
     margin-top: $layoutPadding;
 
-    >* {
+    > * {
         width: 33%;
     }
 
@@ -86,7 +85,7 @@
 
         .meta {
             margin-bottom: 10px;
-            opacity: .5;
+            opacity: 0.5;
         }
 
         .excerpt {
@@ -104,5 +103,5 @@
     display: block;
     padding: $layoutPadding;
     text-align: center;
-    opacity: .5;
+    opacity: 0.5;
 }

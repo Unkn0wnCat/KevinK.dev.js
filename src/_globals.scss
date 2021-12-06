@@ -7,10 +7,9 @@ $textColor: white;
 $lightTextColor: black;
 $layoutPadding: 20px;
 
-$noticeColor: rgba(#e52b3e, .15);
+$noticeColor: rgba(#e52b3e, 0.15);
 
 $mainFont: "Fira Code", monospace;
-
 
 @mixin flexList {
     display: flex;
