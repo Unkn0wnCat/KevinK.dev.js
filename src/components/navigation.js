@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { Trans, Link } from "gatsby-plugin-react-i18next";
+import { Trans, Link, useTranslation } from "gatsby-plugin-react-i18next";
 import { graphql, StaticQuery } from "gatsby";
 
 import * as styles from "./navigation.module.scss";
@@ -11,6 +11,7 @@ import OffScreenNav from "./offscreenNav";
 const Navigation = ({ isHome }) => {
     let [atTop, setAtTop] = useState(false);
     const [offscreenNavActive, setOffscreenNavActive] = useState(false);
+    const { t } = useTranslation();
 
     const closeOffscreenNav = () => setOffscreenNavActive(false);
 

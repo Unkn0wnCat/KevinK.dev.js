@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React from "react";
 import PropTypes from "prop-types";
-import { Trans, Link } from "gatsby-plugin-react-i18next";
+import { Trans, Link, useTranslation } from "gatsby-plugin-react-i18next";
 import { createPortal } from "react-dom";
 
 import * as styles from "./navigation.module.scss";
