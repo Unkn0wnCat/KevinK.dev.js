@@ -1,0 +1,21 @@
+{
+    "type": "education",
+    "title": {
+        "en": "University of Applied Science Wedel",
+        "de": "Fachhochschule Wedel"
+    },
+    "sortDate": "2021-10-04 13:30",
+    "startDate": {
+        "en": "October 2021",
+        "de": "Oktober 2021"
+    },
+    "endDate": {
+        "en": "Present",
+        "de": "Jetzt"
+    },
+    "description": {
+        "en": "Bachelor of business informatics",
+        "de": "Bachelor in Wirtschaftsinformatik"
+    },
+    "externalLink": "https://www.fh-wedel.de"
+}

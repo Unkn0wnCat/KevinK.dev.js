@@ -1,0 +1,17 @@
+{
+    "type": "job-experience",
+    "title": {
+        "en": "Edeka Nord",
+        "de": "Edeka Nord"
+    },
+    "sortDate": "2019-03-01 00:00",
+    "startDate": {
+        "en": "March 2019",
+        "de": "März 2019"
+    },
+    "description": {
+        "de": "Schülerpraktikum mit Erfahrungen in SAP-Administration und -Programmierung, UNIX-Administration, Monitoring und IT-Hilfestellung",
+        "en": "Student internship with experiences in SAP-administration and -development, UNIX-administration, monitoring and IT-support"
+    },
+    "externalLink": "https://verbund.edeka/nord/"
+}

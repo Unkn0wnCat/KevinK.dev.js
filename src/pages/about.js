@@ -10,9 +10,13 @@ import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-import anime from "animejs";
-
-import { ArrowRight } from "lucide-react";
+import {
+    ArrowRight,
+    Briefcase,
+    ExternalLink,
+    GraduationCap,
+    Loader,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export const query = graphql`
@@ -64,42 +68,41 @@ export const query = graphql`
             }
             name
         }
+
+        career: allCareerJson(sort: { order: DESC, fields: sortDate }) {
+            nodes {
+                id
+                type
+                sortDate
+                title {
+                    de
+                    en
+                }
+                startDate {
+                    de
+                    en
+                }
+                endDate {
+                    de
+                    en
+                }
+                description {
+                    de
+                    en
+                }
+                externalLink
+            }
+        }
     }
 `;
 
 const AboutPage = (props) => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
-    React.useEffect(() => {
-        if (typeof window === "undefined") return;
-
-        anime({
-            targets: [
-                "." + styles.profileCard + " > span",
-                "." + styles.profileCard + " a",
-            ],
-            opacity: [0, 1],
-            translateX: [100, 0],
-            duration: 250,
-            delay: anime.stagger(20),
-            easing: "easeInOutCirc",
-        });
-        anime({
-            targets: ["." + styles.profileImageDummy],
-            translateX: [0, -3],
-            translateY: [0, 3],
-            duration: 250,
-            easing: "easeInOutCirc",
-        });
-        anime({
-            targets: ["." + styles.profileImage],
-            translateX: [0, 4],
-            translateY: [0, -4],
-            duration: 250,
-            easing: "easeInOutCirc",
-        });
-    }, []);
     let file = props.data.file;
+
+    const career = props.data.career.nodes;
+    const lang = i18n.language;
 
     return (
         <Layout
@@ -209,6 +212,84 @@ const AboutPage = (props) => {
                         <Trans>about.moreProjects</Trans> <ArrowRight />
                     </Link>
                 </article>
+            </section>
+            <section>
+                <div>
+                    <h1>
+                        <Trans>about.myCareer</Trans>
+                    </h1>
+
+                    <div className={styles.careerContainer}>
+                        <div className={styles.birth}>
+                            <Loader /> <Trans>about.birth</Trans>
+                        </div>
+                        <div className={styles.mainline}></div>
+
+                        {career.map((careerEntry) => {
+                            return (
+                                <div
+                                    className={
+                                        styles.entry +
+                                        " " +
+                                        styles["entryType" + careerEntry.type]
+                                    }
+                                    key={careerEntry.id}
+                                >
+                                    <div className={styles.entryContent}>
+                                        <span className={styles.date}>
+                                            {careerEntry.startDate &&
+                                            careerEntry.startDate[lang]
+                                                ? careerEntry.startDate[lang]
+                                                : ""}
+                                            {careerEntry.endDate &&
+                                            careerEntry.endDate[lang]
+                                                ? " - " +
+                                                  careerEntry.endDate[lang]
+                                                : ""}
+                                        </span>
+                                        <span className={styles.title}>
+                                            {careerEntry.type ==
+                                                "education" && (
+                                                <GraduationCap />
+                                            )}
+                                            {careerEntry.type ==
+                                                "job-experience" && (
+                                                <Briefcase />
+                                            )}
+                                            {careerEntry.title[lang]}
+                                        </span>
+                                        {careerEntry.description &&
+                                            careerEntry.description[lang] && (
+                                                <p>
+                                                    {
+                                                        careerEntry.description[
+                                                            lang
+                                                        ]
+                                                    }
+                                                </p>
+                                            )}
+                                        {careerEntry.externalLink && (
+                                            <a
+                                                href={careerEntry.externalLink}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <ExternalLink />
+                                                {(() => {
+                                                    // eslint-disable-next-line no-undef
+                                                    let url = new URL(
+                                                        careerEntry.externalLink
+                                                    );
+                                                    return url.hostname;
+                                                })()}
+                                            </a>
+                                        )}
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
             </section>
             <Link className={styles.donationSection} to="/donate">
                 <div>

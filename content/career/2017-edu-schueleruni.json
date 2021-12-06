@@ -1,0 +1,21 @@
+{
+    "type": "education",
+    "title": {
+        "en": "FH-Wedel \"Schüleruni\"",
+        "de": "FH-Wedel Schüleruni"
+    },
+    "sortDate": "2018-03-01 00:00",
+    "startDate": {
+        "en": "December 2017",
+        "de": "Dezember 2017"
+    },
+    "endDate": {
+        "en": "March 2018",
+        "de": "März 2018"
+    },
+    "description": {
+        "en": "The \"Schüleruni\"-program was a short dive into a study of computer sciences for school students.",
+        "de": "Die Schüleruni war ein kurzer Einblick in ein Informatikstudium für Schüler."
+    },
+    "externalLink": "https://www.fh-wedel.de/wir/organisation/pressestelle/news/news/article/erste-schueleruni-endet-erfolgreich/"
+}

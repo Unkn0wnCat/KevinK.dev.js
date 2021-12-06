@@ -1,0 +1,17 @@
+{
+    "type": "education",
+    "title": {
+        "en": "Elsensee-Gymnasium",
+        "de": "Elsensee-Gymnasium"
+    },
+    "sortDate": "2021-06-01 00:00",
+    "startDate": {
+        "en": "August 2012",
+        "de": "August 2012"
+    },
+    "endDate": {
+        "en": "June 2021",
+        "de": "Juni 2021"
+    },
+    "externalLink": "https://www.elsensee-gymnasium.de"
+}

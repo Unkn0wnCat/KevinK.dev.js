@@ -1,0 +1,21 @@
+{
+    "type": "job-experience",
+    "title": {
+        "en": "Henning-Kahl",
+        "de": "Henning-Kahl"
+    },
+    "sortDate": "2018-07-01 00:00",
+    "startDate": {
+        "en": "June 2018",
+        "de": "Juni 2018"
+    },
+    "endDate": {
+        "en": "July 2018",
+        "de": "Juli 2018"
+    },
+    "description": {
+        "de": "Unabhängige Web-Entwicklung und Consulting",
+        "en": "Independent web-development and consulting"
+    },
+    "externalLink": "https://hkhs.de/"
+}

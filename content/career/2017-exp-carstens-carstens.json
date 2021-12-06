@@ -1,0 +1,17 @@
+{
+    "type": "job-experience",
+    "title": {
+        "en": "Carstens & Carstens Partnerschaft mbB",
+        "de": "Carstens & Carstens Partnerschaft mbB"
+    },
+    "sortDate": "2017-03-01 00:00",
+    "startDate": {
+        "en": "March 2017",
+        "de": "März 2017"
+    },
+    "description": {
+        "de": "Schülerpraktikum mit Erfahrungen im Webdesign, Buchhaltung und administrativer Arbeit",
+        "en": "Student internship with experiences in webdesign, accounting and administrative work"
+    },
+    "externalLink": "https://recht-und-steuern-carstens.de/"
+}

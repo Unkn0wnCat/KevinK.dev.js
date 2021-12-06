@@ -73,6 +73,13 @@ module.exports = {
                 name: `blogContent`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/content/career`,
+                name: `careerContent`,
+            },
+        },
         "gatsby-plugin-mdx",
         {
             resolve: `gatsby-source-filesystem`,
