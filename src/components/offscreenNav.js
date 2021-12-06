@@ -8,6 +8,7 @@ import * as styles from "./navigation.module.scss";
 import { X } from "lucide-react";
 
 const OffScreenNav = ({ active, close }) => {
+    const { t } = useTranslation();
     if (typeof document === "undefined") return <></>;
 
     return createPortal(
@@ -17,7 +18,11 @@ const OffScreenNav = ({ active, close }) => {
             }
         >
             <div className={styles.inner}>
-                <button className={styles.close} onClick={close}>
+                <button
+                    className={styles.close}
+                    onClick={close}
+                    aria-label={t("closeMenu")}
+                >
                     <X />
                 </button>
                 <span>

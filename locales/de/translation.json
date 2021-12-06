@@ -59,6 +59,8 @@
         "donatePayPal": "Über PayPal spenden"
     },
     "menu": "Menü",
+    "closeMenu": "Menü schließen",
+    "openMenu": "Menü öffnen",
     "language": {
         "en": {
             "name": "Englisch"

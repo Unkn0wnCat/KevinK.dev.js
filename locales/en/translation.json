@@ -59,6 +59,8 @@
         "donatePayPal": "Donate using PayPal"
     },
     "menu": "Menu",
+    "closeMenu": "Close Menu",
+    "openMenu": "Open Menu",
     "language": {
         "en": {
             "name": "English"

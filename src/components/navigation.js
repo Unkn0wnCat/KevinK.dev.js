@@ -101,6 +101,7 @@ const Navigation = ({ isHome }) => {
                         toggled={offscreenNavActive}
                         rounded
                         size={30}
+                        label={t("openMenu")}
                     />
                 </div>
             </nav>
