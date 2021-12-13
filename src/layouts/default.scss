@@ -79,9 +79,9 @@ h1 {
 
     color: $accentColor;
 
-    text-shadow: 0 0 20px rgba($accentColor, 0.15);
+    text-shadow: $textShadowAccent;
 
     @media (prefers-color-scheme: light) {
-        text-shadow: 0 0 20px rgba($accentColor, 0.3);
+        text-shadow: $textShadowAccentLight;
     }
 }

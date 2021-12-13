@@ -33,21 +33,7 @@
     }
 
     .heroSectionBg {
-        background: linear-gradient(45deg, #000850 0%, #000320 100%),
-            radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
-            linear-gradient(225deg, #ff7a00 0%, #000000 100%),
-            linear-gradient(
-                135deg,
-                #cdffeb 10%,
-                #cdffeb 35%,
-                #009f9d 35%,
-                #009f9d 60%,
-                #07456f 60%,
-                #07456f 67%,
-                #0f0a3c 67%,
-                #0f0a3c 100%
-            );
-        background-blend-mode: screen, overlay, hard-light, normal;
+        @include homeBg;
     }
 
     .heroSectionBgOver {
@@ -197,15 +183,15 @@
 
         .profileImage {
             z-index: 20;
-            box-shadow: -1px 11px 33px -10px #e5502b4b;
-            clip-path: polygon(6% 8%, 88% 5%, 95% 91%, 7% 96%);
+            box-shadow: $homeProfileShadow;
+            clip-path: $homeProfileClipFront;
         }
 
         .profileImageDummy {
             z-index: 10;
             background: $accentColor;
             opacity: 0.2;
-            clip-path: polygon(14% 4%, 95% 1%, 88% 96%, 2% 89%);
+            clip-path: $homeProfileClipBack;
         }
 
         @media (max-width: 690px) {
@@ -289,44 +275,44 @@
                     margin: 5px;
 
                     &.skill_framework {
-                        color: #e52b3e;
+                        color: $skillColor1
                     }
 
                     &.skill_platform {
-                        color: #e5752b;
+                        color: $skillColor2
                     }
 
                     &.skill_program {
-                        color: #18bb20;
+                        color: $skillColor3;
                     }
 
                     &.skill_os {
-                        color: #6d94e9;
+                        color: $skillColor4;
                     }
 
                     &.skill_language {
-                        color: #886af5;
+                        color: $skillColor5;
                     }
 
                     @media (prefers-color-scheme: light) {
-                        &.skill_os {
-                            color: #2b66e5;
-                        }
-
-                        &.skill_language {
-                            color: #6848da;
-                        }
-
                         &.skill_framework {
-                            color: #db1e31;
+                            color: $skillColor1Light;
                         }
 
                         &.skill_platform {
-                            color: #aa4f12;
+                            color: $skillColor2Light;
                         }
 
                         &.skill_program {
-                            color: #17681b;
+                            color: $skillColor3Light;
+                        }
+                        
+                        &.skill_os {
+                            color: $skillColor4Light;
+                        }
+
+                        &.skill_language {
+                            color: $skillColor5Light;
                         }
                     }
                 }
@@ -377,7 +363,7 @@
         height: calc(100% - 40px);
         background-color: $accentColor;
         border-radius: 100px;
-        box-shadow: 0 0 15px 0 rgba(229, 43, 62, 0.25);
+        box-shadow: $aboutCVShadow;
 
         &::before {
             content: " ";
@@ -388,20 +374,8 @@
             height: 5px;
             background-color: $accentColor;
             border-radius: 100px;
-            box-shadow: 0 0 15px 0 rgba(229, 43, 62, 0.25);
+            box-shadow: $aboutCVShadow;
         }
-
-        /*&::after {
-          content: " ";
-          position: absolute;
-          bottom: -10px;
-          left: 0;
-          width: 5px;
-          height: 5px;
-          background-color: $accentColor;
-          border-radius: 100px;
-          box-shadow: 0 0 15px 0 rgba(229, 43, 62, 0.25);
-        }*/
     }
 
     .entry {
@@ -487,9 +461,9 @@
         }
 
         &.entryTypeeducation {
-            --entry-color: #5070ff;
+            --entry-color: #{$aboutCVColorEdu};
             @media (prefers-color-scheme: light) {
-                --entry-color: #2347e9;
+                --entry-color: #{$aboutCVColorEduLight};
             }
         }
     }
