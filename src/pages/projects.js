@@ -45,6 +45,7 @@ export const query = graphql`
 const ProjectsPage = ({ data }) => {
     const { t } = useI18next();
     const meta = useSiteMetadata();
+
     return (
         <Layout
             title={t("project.plural")}

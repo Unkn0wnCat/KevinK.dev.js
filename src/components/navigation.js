@@ -7,11 +7,14 @@ import { graphql, StaticQuery } from "gatsby";
 import * as styles from "./navigation.module.scss";
 import { Fade as Hamburger } from "hamburger-react";
 import OffScreenNav from "./offscreenNav";
+import useSiteMetadata from "../helpers/useSiteMetadata";
 
 const Navigation = ({ isHome }) => {
     let [atTop, setAtTop] = useState(false);
     const [offscreenNavActive, setOffscreenNavActive] = useState(false);
     const { t } = useTranslation();
+
+    const { modules } = useSiteMetadata();
 
     const closeOffscreenNav = () => setOffscreenNavActive(false);
 
@@ -87,15 +90,19 @@ const Navigation = ({ isHome }) => {
                 <Link to="/about" activeClassName={styles.active}>
                     <Trans>about.title</Trans>
                 </Link>
-                <Link to="/projects" activeClassName={styles.active}>
-                    <Trans>project.plural</Trans>
-                </Link>
+                {modules.projects && (
+                    <Link to="/projects" activeClassName={styles.active}>
+                        <Trans>project.plural</Trans>
+                    </Link>
+                )}
                 <Link to="/social" activeClassName={styles.active}>
                     <Trans>social.title</Trans>
                 </Link>
-                <Link to="/blog" activeClassName={styles.active}>
-                    <Trans>blog.title</Trans>
-                </Link>
+                {modules.blog && (
+                    <Link to="/blog" activeClassName={styles.active}>
+                        <Trans>blog.title</Trans>
+                    </Link>
+                )}
                 <div className={styles.hamburger}>
                     <Hamburger
                         toggle={setOffscreenNavActive}

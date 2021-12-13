@@ -18,6 +18,7 @@ import {
     Loader,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import useSiteMetadata from "../helpers/useSiteMetadata";
 
 export const query = graphql`
     query GetProjectsAndSkills($language: String) {
@@ -98,6 +99,7 @@ export const query = graphql`
 
 const AboutPage = (props) => {
     const { t, i18n } = useTranslation();
+    const { modules } = useSiteMetadata();
 
     let file = props.data.file;
 
@@ -291,14 +293,16 @@ const AboutPage = (props) => {
                     </div>
                 </div>
             </section>
-            <Link className={styles.donationSection} to="/donate">
-                <div>
-                    <span>
-                        <Trans>about.donationCatchphrase</Trans>
-                    </span>
-                    <ArrowRight />
-                </div>
-            </Link>
+            {modules.donation && (
+                <Link className={styles.donationSection} to="/donate">
+                    <div>
+                        <span>
+                            <Trans>about.donationCatchphrase</Trans>
+                        </span>
+                        <ArrowRight />
+                    </div>
+                </Link>
+            )}
         </Layout>
     );
 };

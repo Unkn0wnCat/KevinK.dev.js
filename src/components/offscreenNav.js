@@ -6,9 +6,12 @@ import { createPortal } from "react-dom";
 
 import * as styles from "./navigation.module.scss";
 import { X } from "lucide-react";
+import useSiteMetadata from "../helpers/useSiteMetadata";
 
 const OffScreenNav = ({ active, close }) => {
     const { t } = useTranslation();
+    const { modules } = useSiteMetadata();
+
     if (typeof document === "undefined") return <></>;
 
     return createPortal(
@@ -34,15 +37,19 @@ const OffScreenNav = ({ active, close }) => {
                 <Link to="/about" activeClassName={styles.active}>
                     <Trans>about.title</Trans>
                 </Link>
-                <Link to="/projects" activeClassName={styles.active}>
-                    <Trans>project.plural</Trans>
-                </Link>
+                {modules.projects && (
+                    <Link to="/projects" activeClassName={styles.active}>
+                        <Trans>project.plural</Trans>
+                    </Link>
+                )}
                 <Link to="/social" activeClassName={styles.active}>
                     <Trans>social.title</Trans>
                 </Link>
-                <Link to="/blog" activeClassName={styles.active}>
-                    <Trans>blog.title</Trans>
-                </Link>
+                {modules.blog && (
+                    <Link to="/blog" activeClassName={styles.active}>
+                        <Trans>blog.title</Trans>
+                    </Link>
+                )}
             </div>
         </div>,
         document.getElementById("osnav")

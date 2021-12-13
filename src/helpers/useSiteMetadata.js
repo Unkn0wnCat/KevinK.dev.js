@@ -26,6 +26,11 @@ const useSiteMetadata = () => {
                         height
                         nationality
                         sameAs
+                        modules {
+                            blog
+                            projects
+                            donation
+                        }
                     }
                 }
             }

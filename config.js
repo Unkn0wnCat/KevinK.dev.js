@@ -3,6 +3,11 @@ module.exports = {
     siteName: "KevinK.dev",
     siteAuthor: "@Unkn0wnKevin",
     siteURL: "https://kevink.dev",
+    modules: {
+        blog: true,
+        projects: true,
+        donation: true,
+    },
     payPalMail: "kevin@1in9.net",
     siteKeywords:
         "Kevin Kandlbinder, Kevin, Kandlbinder, Web, Web Developer, Developer, JavaScript, PHP, Java, Photos, Fotos",

@@ -1,11 +1,101 @@
 /* eslint-disable no-undef */
 const extConfig = require("./config");
 
+const dynamicPlugins = [];
+
+if (extConfig.modules.blog) {
+    dynamicPlugins.push({
+        resolve: `gatsby-plugin-feed`,
+        options: {
+            query: `
+            {
+              site {
+                siteMetadata {
+                  title
+                  description
+                  siteUrl
+                  site_url: siteUrl
+                }
+              }
+            }
+          `,
+            feeds: [
+                {
+                    serialize: ({ query: { site, blog } }) => {
+                        return blog.nodes.map((node) => {
+                            if (!node.childMdx) return null;
+
+                            return {
+                                title: node.childMdx.frontmatter.title,
+                                description: node.childMdx.excerpt,
+                                date: node.childMdx.frontmatter.date,
+                                url:
+                                    site.siteMetadata.siteUrl +
+                                    `/${
+                                        node.childMdx.frontmatter.language
+                                    }/blog/${
+                                        node.childMdx.frontmatter.section
+                                            ? node.childMdx.frontmatter
+                                                  .section + "/"
+                                            : ""
+                                    }${node.childMdx.frontmatter.published}/${
+                                        node.childMdx.frontmatter.url
+                                    }`,
+                                guid:
+                                    site.siteMetadata.siteUrl +
+                                    `/${
+                                        node.childMdx.frontmatter.language
+                                    }/blog/${
+                                        node.childMdx.frontmatter.section
+                                            ? node.childMdx.frontmatter
+                                                  .section + "/"
+                                            : ""
+                                    }${node.childMdx.frontmatter.published}/${
+                                        node.childMdx.frontmatter.url
+                                    }`,
+                                category: node.childMdx.frontmatter.section,
+                            };
+                        });
+                    },
+                    query: `
+                {
+                    blog: allFile(
+                        filter: { sourceInstanceName: { eq: "blogContent" } }
+                    ) {
+                        nodes {
+                            childMdx {
+                                id
+                                body
+                                excerpt
+                                frontmatter {
+                                    platform
+                                    tags
+                                    title
+                                    url
+                                    section
+                                    language
+                                    published(formatString: "YYYY/MM")
+                                    date: published
+                                }
+                            }
+                        }
+                    }
+                }
+              `,
+                    output: "/blog/feed.rss",
+                    title: extConfig.siteName + " Blog",
+                },
+            ],
+        },
+    });
+}
+
 module.exports = {
     siteMetadata: {
         title: extConfig.siteName,
         author: extConfig.siteAuthor,
         siteUrl: extConfig.siteURL,
+        modules: extConfig.modules,
         keywords: extConfig.siteKeywords,
         payPalMail: extConfig.payPalMail,
         contactEmail: extConfig.contactEmail,
@@ -146,89 +236,6 @@ module.exports = {
                 generateMatchPathRewrites: false,
             },
         },
-        {
-            resolve: `gatsby-plugin-feed`,
-            options: {
-                query: `
-                {
-                  site {
-                    siteMetadata {
-                      title
-                      description
-                      siteUrl
-                      site_url: siteUrl
-                    }
-                  }
-                }
-              `,
-                feeds: [
-                    {
-                        serialize: ({ query: { site, blog } }) => {
-                            return blog.nodes.map((node) => {
-                                if (!node.childMdx) return null;
-
-                                return {
-                                    title: node.childMdx.frontmatter.title,
-                                    description: node.childMdx.excerpt,
-                                    date: node.childMdx.frontmatter.date,
-                                    url:
-                                        site.siteMetadata.siteUrl +
-                                        `/${
-                                            node.childMdx.frontmatter.language
-                                        }/blog/${
-                                            node.childMdx.frontmatter.section
-                                                ? node.childMdx.frontmatter
-                                                      .section + "/"
-                                                : ""
-                                        }${
-                                            node.childMdx.frontmatter.published
-                                        }/${node.childMdx.frontmatter.url}`,
-                                    guid:
-                                        site.siteMetadata.siteUrl +
-                                        `/${
-                                            node.childMdx.frontmatter.language
-                                        }/blog/${
-                                            node.childMdx.frontmatter.section
-                                                ? node.childMdx.frontmatter
-                                                      .section + "/"
-                                                : ""
-                                        }${
-                                            node.childMdx.frontmatter.published
-                                        }/${node.childMdx.frontmatter.url}`,
-                                    category: node.childMdx.frontmatter.section,
-                                };
-                            });
-                        },
-                        query: `
-                    {
-                        blog: allFile(
-                            filter: { sourceInstanceName: { eq: "blogContent" } }
-                        ) {
-                            nodes {
-                                childMdx {
-                                    id
-                                    body
-                                    excerpt
-                                    frontmatter {
-                                        platform
-                                        tags
-                                        title
-                                        url
-                                        section
-                                        language
-                                        published(formatString: "YYYY/MM")
-                                        date: published
-                                    }
-                                }
-                            }
-                        }
-                    }
-                  `,
-                        output: "/blog/feed.rss",
-                        title: extConfig.siteName + " Blog",
-                    },
-                ],
-            },
-        },
+        ...dynamicPlugins,
     ],
 };
