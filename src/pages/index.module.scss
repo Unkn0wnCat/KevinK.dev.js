@@ -275,11 +275,11 @@
                     margin: 5px;
 
                     &.skill_framework {
-                        color: $skillColor1
+                        color: $skillColor1;
                     }
 
                     &.skill_platform {
-                        color: $skillColor2
+                        color: $skillColor2;
                     }
 
                     &.skill_program {
@@ -306,7 +306,7 @@
                         &.skill_program {
                             color: $skillColor3Light;
                         }
-                        
+
                         &.skill_os {
                             color: $skillColor4Light;
                         }

@@ -6,34 +6,32 @@ $layoutPadding: 20px;
 $mainFont: "Fira Code", monospace;
 
 $theme: (
-  "accent": #e52b3e,
-  "background": #070707,
-  "text": white,
-  "red": #e52b3e,
-  "orange": #e5752b,
-  "green": #18bb20,
-  "blue": #6d94e9,
-  "purple": #886af5
+    "accent": #e52b3e,
+    "background": #070707,
+    "text": white,
+    "red": #e52b3e,
+    "orange": #e5752b,
+    "green": #18bb20,
+    "blue": #6d94e9,
+    "purple": #886af5,
 );
 
 $theme-light: (
-  "accent": #e52b3e,
-  "background": white,
-  "text": black,
-  "red": #db1e31,
-  "orange": #aa4f12,
-  "green": #17681b,
-  "blue": #2b66e5,
-  "purple": #6848da
+    "accent": #e52b3e,
+    "background": white,
+    "text": black,
+    "red": #db1e31,
+    "orange": #aa4f12,
+    "green": #17681b,
+    "blue": #2b66e5,
+    "purple": #6848da,
 );
-
-
 
 $accentColor: map.get($theme, "accent");
 $background: map.get($theme, "background");
 $lightBackground: map.get($theme-light, "background");
 $textColor: map.get($theme, "text");
-$lightTextColor:  map.get($theme-light, "text");
+$lightTextColor: map.get($theme-light, "text");
 $accentColorDarker: darken($accentColor, 5);
 $borderColor: rgba(0, 0, 0, 0.25);
 $border: thin solid $borderColor;
@@ -56,11 +54,12 @@ $skillColor5Light: map.get($theme-light, "purple");
 $noticeColor: rgba($accentColor, 0.15);
 
 $cardShadow: -1px 11px 33px -10px rgba(27, 27, 27, 0.3);
-$cardHoverShadow: -1px 11px 33px -10px rgba(127, 127, 127, 0.2), -1px 11px 33px -10px rgba($accentColor, 0.75);
+$cardHoverShadow: -1px 11px 33px -10px rgba(127, 127, 127, 0.2),
+    -1px 11px 33px -10px rgba($accentColor, 0.75);
 
 $cardLightShadow: -1px 11px 33px -10px rgba(29, 29, 29, 0.7);
 $cardLightHoverShadow: -1px 11px 33px -10px rgba(29, 29, 29, 0.2),
--1px 11px 33px -10px rgba($accentColor, 0.75);
+    -1px 11px 33px -10px rgba($accentColor, 0.75);
 
 $homeProfileShadow: -1px 11px 33px -10px rgba($accentColor, 0.25);
 $homeProfileClipFront: polygon(6% 8%, 88% 5%, 95% 91%, 7% 96%);
@@ -69,7 +68,6 @@ $homeProfileClipBack: polygon(14% 4%, 95% 1%, 88% 96%, 2% 89%);
 $aboutCVShadow: 0 0 15px 0 rgba($accentColor, 0.25);
 $aboutCVColorEdu: map.get($theme, "blue");
 $aboutCVColorEduLight: map.get($theme-light, "blue");
-
 
 @mixin homeBg {
     background: linear-gradient(45deg, #000850 0%, #000320 100%),
