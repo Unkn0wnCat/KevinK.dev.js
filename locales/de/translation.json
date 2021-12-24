@@ -77,9 +77,13 @@
         "previous": "Zurück",
         "next": "Weiter",
         "section": {
+            "blog": {
+                "name": "Blog",
+                "description": "Begleite mich in meinem spannendem Leben!"
+            },
             "general": {
                 "name": "Allgemein",
-                "description": "Begleite mich in meinem spannendem Leben!"
+                "description": "Dies, das und alles dazwischen."
             },
             "scambox": {
                 "name": "Scambox",

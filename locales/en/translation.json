@@ -77,9 +77,13 @@
         "previous": "Previous",
         "next": "Next",
         "section": {
+            "blog": {
+                "name": "Blog",
+                "description": "Read all about my exciting life!"
+            },
             "general": {
                 "name": "General",
-                "description": "Read all about my exciting life!"
+                "description": "This and that and everything in between."
             },
             "scambox": {
                 "name": "Scambox",
