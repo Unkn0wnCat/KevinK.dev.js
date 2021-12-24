@@ -58,7 +58,7 @@ const BlogPost = ({ data }) => {
                 },
             ]}
         >
-            <section className={styles.scamboxSection}>
+            <section className={styles.postSection}>
                 <article>
                     <h1>{data.mdx.frontmatter.title}</h1>
                     <span className={styles.meta}>
@@ -82,7 +82,13 @@ const BlogPost = ({ data }) => {
                     </span>
 
                     <MDXProvider components={{ Chat }}>
-                        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+                        <MDXRenderer
+                            localImages={
+                                data.mdx.frontmatter.embeddedImagesLocal
+                            }
+                        >
+                            {data.mdx.body}
+                        </MDXRenderer>
                     </MDXProvider>
 
                     <Utterances
@@ -124,6 +130,12 @@ export const query = graphql`
                     name
                 }
                 section
+                embeddedImagesLocal {
+                    childImageSharp {
+                        gatsbyImageData
+                    }
+                    publicURL
+                }
             }
         }
         locales: allLocale(filter: { language: { eq: $language } }) {

@@ -147,7 +147,10 @@ export const query = graphql`
         posts: allFile(
             filter: {
                 sourceInstanceName: { eq: "blogContent" }
-                childMdx: { frontmatter: { section: { eq: $section } } }
+                childMdx: {
+                    body: { ne: null }
+                    frontmatter: { section: { eq: $section } }
+                }
             }
             sort: { fields: childMdx___frontmatter___published, order: DESC }
             limit: $limit

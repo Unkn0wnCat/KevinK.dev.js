@@ -1,7 +1,14 @@
 @import "../globals";
 
-.scamboxSection {
+.postSection {
     flex-grow: 1;
+
+    > article {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }
 
 .noticeBox {

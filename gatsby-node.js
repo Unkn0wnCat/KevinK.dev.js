@@ -24,7 +24,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             }
 
             blog: allFile(
-                filter: { sourceInstanceName: { eq: "blogContent" } }
+                filter: {
+                    sourceInstanceName: { eq: "blogContent" }
+                    childMdx: { body: { ne: null } }
+                }
             ) {
                 nodes {
                     childMdx {
@@ -94,14 +97,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             })
         );
 
-        let processedSections = ["blog"];
+        let processedSections = [];
 
         result.data.blog.nodes.forEach((node) => {
             if (!node.childMdx) return;
 
             if (
                 !processedSections.includes(
-                    node.childMdx.frontmatter.section ?? "blog"
+                    node.childMdx.frontmatter.section ?? "general"
                 )
             ) {
                 processedSections.push(node.childMdx.frontmatter.section);
@@ -134,16 +137,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             reporter.info(
                 "Creating Page: " +
                     `/${node.childMdx.frontmatter.language}/blog/${
-                        node.childMdx.frontmatter.section ?? "blog"
+                        node.childMdx.frontmatter.section ?? "general"
                     }/${node.childMdx.frontmatter.url}`
             );
 
             createPage({
                 path: `/${node.childMdx.frontmatter.language}/blog/${
-                    node.childMdx.frontmatter.section
-                        ? node.childMdx.frontmatter.section + "/"
-                        : ""
-                }${node.childMdx.frontmatter.published}/${
+                    node.childMdx.frontmatter.section ?? "general"
+                }/${node.childMdx.frontmatter.published}/${
                     node.childMdx.frontmatter.url
                 }`,
                 component: blogTemplate,
@@ -158,16 +159,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
                 createRedirect({
                     fromPath: `/${lang}/blog/${
-                        node.childMdx.frontmatter.section
-                            ? node.childMdx.frontmatter.section + "/"
-                            : ""
-                    }${node.childMdx.frontmatter.published}/${
+                        node.childMdx.frontmatter.section ?? "general"
+                    }/${node.childMdx.frontmatter.published}/${
                         node.childMdx.frontmatter.url
                     }`,
                     toPath: `/${node.childMdx.frontmatter.language}/blog/${
-                        node.childMdx.frontmatter.section
-                            ? node.childMdx.frontmatter.section + "/"
-                            : ""
+                        (node.childMdx.frontmatter.section ?? "general") + "/"
                     }${node.childMdx.frontmatter.published}/${
                         node.childMdx.frontmatter.url
                     }`,
@@ -179,10 +176,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     createRedirect({
                         fromPath: `/${lang}/scambox/${node.childMdx.frontmatter.url}`,
                         toPath: `/${node.childMdx.frontmatter.language}/blog/${
-                            node.childMdx.frontmatter.section
-                                ? node.childMdx.frontmatter.section + "/"
-                                : ""
-                        }${node.childMdx.frontmatter.published}/${
+                            node.childMdx.frontmatter.section ?? "general"
+                        }/${node.childMdx.frontmatter.published}/${
                             node.childMdx.frontmatter.url
                         }`,
                         redirectInBrowser: true,

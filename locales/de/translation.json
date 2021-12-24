@@ -77,8 +77,8 @@
         "previous": "Zurück",
         "next": "Weiter",
         "section": {
-            "blog": {
-                "name": "Blog",
+            "general": {
+                "name": "Allgemein",
                 "description": "Begleite mich in meinem spannendem Leben!"
             },
             "scambox": {

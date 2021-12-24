@@ -119,6 +119,7 @@ module.exports = {
         `gatsby-plugin-eslint`,
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
+        `gatsby-remark-images`,
         `gatsby-transformer-sharp`,
         `gatsby-transformer-json`,
         {
@@ -170,7 +171,28 @@ module.exports = {
                 name: `careerContent`,
             },
         },
-        "gatsby-plugin-mdx",
+        {
+            resolve: `gatsby-plugin-mdx`,
+            options: {
+                gatsbyRemarkPlugins: [
+                    {
+                        resolve: "gatsby-remark-copy-linked-files",
+                        options: {
+                            destinationDir: "mdassets",
+                        },
+                    },
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 1200,
+                            showCaptions: true,
+                            markdownCaptions: false,
+                            withWebp: true,
+                        },
+                    },
+                ],
+            },
+        },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
