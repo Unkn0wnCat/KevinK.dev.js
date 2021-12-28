@@ -58,7 +58,7 @@
         "react-dom": "17.0.2",
         "react-github-btn": "1.2.1",
         "react-helmet": "6.1.0",
-        "react-i18next": "11.15.1",
+        "react-i18next": "11.15.2",
         "sass": "1.45.1",
         "tsparticles": "1.37.6",
         "utterances-react": "0.1.3"
