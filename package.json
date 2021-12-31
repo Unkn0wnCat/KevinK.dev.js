@@ -18,8 +18,8 @@
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "@babel/cli": "7.16.0",
-        "@babel/plugin-transform-typescript": "7.16.1",
+        "@babel/cli": "7.16.7",
+        "@babel/plugin-transform-typescript": "7.16.7",
         "@fontsource/fira-code": "4.5.2",
         "@icons-pack/react-simple-icons": "4.6.1",
         "@mdx-js/mdx": "1.6.22",
