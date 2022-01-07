@@ -59,7 +59,7 @@
         "react-github-btn": "1.2.1",
         "react-helmet": "6.1.0",
         "react-i18next": "11.15.3",
-        "sass": "1.45.2",
+        "sass": "1.46.0",
         "tsparticles": "1.38.0",
         "utterances-react": "0.1.3"
     },
