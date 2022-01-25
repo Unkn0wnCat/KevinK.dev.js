@@ -116,6 +116,7 @@ module.exports = {
         sameAs: extConfig.sameAs,
     },
     plugins: [
+        `gatsby-plugin-remove-serviceworker`,
         `gatsby-plugin-eslint`,
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
