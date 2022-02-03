@@ -10,9 +10,24 @@
         "type": "framework"
     },
     {
+        "name": "NodeJS",
+        "href": "https://nodejs.org/",
+        "type": "framework"
+    },
+    {
         "name": "Symfony",
         "href": "https://symfony.com/",
         "type": "framework"
+    },
+    {
+        "name": "GoLang",
+        "href": "https://golang.org/",
+        "type": "language"
+    },
+    {
+        "name": "TypeScript",
+        "href": "https://www.typescriptlang.org/",
+        "type": "language"
     },
     {
         "name": "JavaScript",
@@ -23,8 +38,8 @@
         "type": "language"
     },
     {
-        "name": "NodeJS",
-        "href": "https://nodejs.org/",
+        "name": "SCSS / Sass",
+        "href": "https://sass-lang.com/",
         "type": "language"
     },
     {
@@ -32,8 +47,7 @@
         "type": "language"
     },
     {
-        "name": "SCSS / Sass",
-        "href": "https://sass-lang.com/",
+        "name": "RegEx",
         "type": "language"
     },
     {
@@ -42,20 +56,6 @@
     },
     {
         "name": "PHP",
-        "type": "language"
-    },
-    {
-        "name": "TypeScript",
-        "href": "https://www.typescriptlang.org/",
-        "type": "language"
-    },
-    {
-        "name": "GoLang",
-        "href": "https://golang.org/",
-        "type": "language"
-    },
-    {
-        "name": "MySQL",
         "type": "language"
     },
     {
@@ -88,13 +88,8 @@
         "type": "os"
     },
     {
-        "name": "JetBrains IDEs",
-        "href": "https://www.jetbrains.com/",
-        "type": "program"
-    },
-    {
-        "name": "Visual Studio Code",
-        "href": "https://code.visualstudio.com/",
+        "name": "Docker",
+        "href": "https://www.docker.com/",
         "type": "program"
     },
     {
@@ -108,8 +103,22 @@
         "type": "program"
     },
     {
-        "name": "Docker",
-        "href": "https://www.docker.com/",
+        "name": "MySQL",
+        "type": "program"
+    },
+    {
+        "name": "MongoDB",
+        "href": "https://www.mongodb.com/",
+        "type": "program"
+    },
+    {
+        "name": "JetBrains IDEs",
+        "href": "https://www.jetbrains.com/",
+        "type": "program"
+    },
+    {
+        "name": "Visual Studio Code",
+        "href": "https://code.visualstudio.com/",
         "type": "program"
     },
     {
