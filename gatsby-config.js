@@ -125,30 +125,30 @@ module.exports = {
         },
         `gatsby-plugin-remove-serviceworker`,
         `gatsby-plugin-eslint`,
-        `gatsby-plugin-image`,
-        `gatsby-plugin-sharp`,
-        `gatsby-remark-images`,
-        `gatsby-transformer-sharp`,
         `gatsby-transformer-json`,
-        {
-            resolve: `gatsby-plugin-portal`,
-            options: {
-                key: "osnav",
-                id: "osnav",
-            },
-        },
-        {
-            resolve: `gatsby-plugin-remote-images`,
-            options: {
-                nodeg: "SocialsJson",
-                imagePath: "image",
-            },
-        },
         {
             resolve: `gatsby-plugin-remote-images`,
             options: {
                 nodeType: "FriendsJson",
                 imagePath: "imageURL",
+            },
+        },
+        {
+            resolve: `gatsby-plugin-remote-images`,
+            options: {
+                nodeType: "SocialsJson",
+                imagePath: "image",
+            },
+        },
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sharp`,
+        `gatsby-remark-images`,
+        `gatsby-transformer-sharp`,
+        {
+            resolve: `gatsby-plugin-portal`,
+            options: {
+                key: "osnav",
+                id: "osnav",
             },
         },
         {

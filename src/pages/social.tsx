@@ -16,7 +16,11 @@ export const query = graphql`
                 url
                 localImage {
                     childImageSharp {
-                        gatsbyImageData(height: 300, width: 300)
+                        gatsbyImageData(
+                            height: 300
+                            width: 300
+                            placeholder: BLURRED
+                        )
                     }
                 }
             }
