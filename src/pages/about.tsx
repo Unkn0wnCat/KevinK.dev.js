@@ -167,7 +167,7 @@ const AboutPage = (props) => {
                                 <Link
                                     className={projectStyles.projectCard}
                                     key={project.lang + "/" + project.urlname}
-                                    to={"/projects/" + project.urlname}
+                                    to={"/projects/" + project.urlname + "/"}
                                 >
                                     <div
                                         className={
@@ -211,7 +211,7 @@ const AboutPage = (props) => {
                             );
                         })}
                     </div>
-                    <Link to="/projects" className={styles.seeMoreButton}>
+                    <Link to="/projects/" className={styles.seeMoreButton}>
                         <Trans>about.moreProjects</Trans> <ArrowRight />
                     </Link>
                 </article>
@@ -295,7 +295,7 @@ const AboutPage = (props) => {
                 </div>
             </section>
             {modules.donation && (
-                <Link className={styles.donationSection} to="/donate">
+                <Link className={styles.donationSection} to="/donate/">
                     <div>
                         <span>
                             <Trans>about.donationCatchphrase</Trans>

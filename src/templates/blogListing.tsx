@@ -24,7 +24,7 @@ const BlogListing = ({ data, pageContext }) => {
             <section>
                 <article>
                     {hasSection && (
-                        <Link to={"/blog"} className={styles.sectionBacklink}>
+                        <Link to={"/blog/"} className={styles.sectionBacklink}>
                             {t("blog.title")} /
                         </Link>
                     )}
@@ -39,7 +39,7 @@ const BlogListing = ({ data, pageContext }) => {
                             <div className={styles.sectionList}>
                                 <Link
                                     className={styles.sectionCard}
-                                    to={"/blog/scambox"}
+                                    to={"/blog/scambox/"}
                                 >
                                     <div className={styles.sectionImage}>
                                         <div className={styles.sectionBg}>
@@ -69,7 +69,7 @@ const BlogListing = ({ data, pageContext }) => {
                                             : ""
                                     }${
                                         post.childMdx.frontmatter.urlPublished
-                                    }/${post.childMdx.frontmatter.url}`}
+                                    }/${post.childMdx.frontmatter.url}/`}
                                     key={post.childMdx.slug}
                                     className={styles.post}
                                 >
@@ -89,7 +89,7 @@ const BlogListing = ({ data, pageContext }) => {
                                                 <>
                                                     {" | "}
                                                     <Link
-                                                        to={`/blog/${post.childMdx.frontmatter.section}`}
+                                                        to={`/blog/${post.childMdx.frontmatter.section}/`}
                                                     >
                                                         {t(
                                                             `blog.section.${post.childMdx.frontmatter.section}.name`

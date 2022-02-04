@@ -90,19 +90,19 @@ const Navigation = ({ isHome }: NavigationProps) => {
                     )}
                 />
                 <div className="flexSpacer"></div>
-                <Link to="/about" activeClassName={styles.active}>
+                <Link to="/about/" activeClassName={styles.active}>
                     <Trans>about.title</Trans>
                 </Link>
                 {modules.projects && (
-                    <Link to="/projects" activeClassName={styles.active}>
+                    <Link to="/projects/" activeClassName={styles.active}>
                         <Trans>project.plural</Trans>
                     </Link>
                 )}
-                <Link to="/social" activeClassName={styles.active}>
+                <Link to="/social/" activeClassName={styles.active}>
                     <Trans>social.title</Trans>
                 </Link>
                 {modules.blog && (
-                    <Link to="/blog" activeClassName={styles.active}>
+                    <Link to="/blog/" activeClassName={styles.active}>
                         <Trans>blog.title</Trans>
                     </Link>
                 )}

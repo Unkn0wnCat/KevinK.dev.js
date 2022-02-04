@@ -192,7 +192,7 @@ const IndexPage = (props) => {
                 </div>
                 <div className={styles.spacer}></div>
                 <div className={styles.landingCta}>
-                    <Link to={"/projects"}>
+                    <Link to={"/projects/"}>
                         <div>
                             <span className={styles.ctaAccent}>
                                 {t("home.explore")}
@@ -201,7 +201,7 @@ const IndexPage = (props) => {
                         </div>
                         <ArrowRight />
                     </Link>
-                    <Link to={"/social"}>
+                    <Link to={"/social/"}>
                         <div>
                             <span className={styles.ctaAccent}>
                                 {t("home.discover")}
@@ -210,7 +210,7 @@ const IndexPage = (props) => {
                         </div>
                         <ArrowRight />
                     </Link>
-                    <Link to={"/about"}>
+                    <Link to={"/about/"}>
                         <div>
                             <span className={styles.ctaAccent}>
                                 {t("home.learn")}

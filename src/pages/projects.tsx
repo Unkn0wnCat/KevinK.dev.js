@@ -90,7 +90,7 @@ const ProjectsPage = ({ data }) => {
                                 <Link
                                     className={styles.projectCard}
                                     key={project.lang + project.urlname}
-                                    to={"/projects/" + project.urlname}
+                                    to={"/projects/" + project.urlname + "/"}
                                 >
                                     <div className={styles.projectCardImage}>
                                         <div className={styles.projectCardBg}>

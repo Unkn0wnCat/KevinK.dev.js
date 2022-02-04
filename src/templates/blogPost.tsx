@@ -71,7 +71,7 @@ const BlogPost = ({ data }) => {
                             <>
                                 {" | "}
                                 <Link
-                                    to={`/blog/${data.mdx.frontmatter.section}`}
+                                    to={`/blog/${data.mdx.frontmatter.section}/`}
                                 >
                                     {t(
                                         `blog.section.${data.mdx.frontmatter.section}.name`
