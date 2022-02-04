@@ -43,7 +43,7 @@ const BlogListing = ({ data, pageContext }) => {
                                 >
                                     <div className={styles.sectionImage}>
                                         <div className={styles.sectionBg}>
-                                            <StaticImage src="https://source.unsplash.com/gf8e6XvG_3E/300x150"></StaticImage>
+                                            <StaticImage src="https://source.unsplash.com/gf8e6XvG_3E/300x150" alt={t("blog.section.scambox.name")}></StaticImage>
                                         </div>
                                         <span className={styles.sectionName}>
                                             {t("blog.section.scambox.name")}

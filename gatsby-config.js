@@ -116,6 +116,13 @@ module.exports = {
         sameAs: extConfig.sameAs,
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-typescript`,
+            options: {
+                isTSX: true,
+                allExtensions: true,
+            },
+        },
         `gatsby-plugin-remove-serviceworker`,
         `gatsby-plugin-eslint`,
         `gatsby-plugin-image`,
@@ -133,7 +140,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-remote-images`,
             options: {
-                nodeType: "SocialsJson",
+                nodeg: "SocialsJson",
                 imagePath: "image",
             },
         },

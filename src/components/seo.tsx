@@ -1,12 +1,19 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Helmet } from "gatsby-plugin-react-i18next";
 import { useStaticQuery, graphql } from "gatsby";
 import { useLocation } from "@reach/router";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import useSiteMetadata from "../helpers/useSiteMetadata";
 
-function SEO({ description, meta, title, speakable, image, children }) {
+type SEOProps = {
+    description?: string,
+    meta?: any[],
+    title: string,
+    speakable?: any,
+    image?: string
+}
+
+function SEO({ description, meta, title, speakable, image, children }: React.PropsWithChildren<SEOProps>) {
     const { t } = useTranslation();
     const { site } = useStaticQuery(
         graphql`
@@ -138,15 +145,6 @@ function SEO({ description, meta, title, speakable, image, children }) {
 SEO.defaultProps = {
     meta: [],
     description: ``,
-};
-
-SEO.propTypes = {
-    description: PropTypes.string,
-    meta: PropTypes.arrayOf(PropTypes.object),
-    title: PropTypes.string.isRequired,
-    speakable: PropTypes.any,
-    image: PropTypes.string,
-    children: PropTypes.any,
 };
 
 export default SEO;

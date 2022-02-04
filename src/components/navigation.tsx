@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 import { Trans, Link, useTranslation } from "gatsby-plugin-react-i18next";
 import { graphql, StaticQuery } from "gatsby";
 
@@ -9,7 +8,11 @@ import { Fade as Hamburger } from "hamburger-react";
 import OffScreenNav from "./offscreenNav";
 import useSiteMetadata from "../helpers/useSiteMetadata";
 
-const Navigation = ({ isHome }) => {
+type NavigationProps = {
+    isHome?: boolean
+}
+
+const Navigation = ({ isHome }: NavigationProps) => {
     let [atTop, setAtTop] = useState(false);
     const [offscreenNavActive, setOffscreenNavActive] = useState(false);
     const { t } = useTranslation();
@@ -115,10 +118,6 @@ const Navigation = ({ isHome }) => {
             </nav>
         </div>
     );
-};
-
-Navigation.propTypes = {
-    isHome: PropTypes.bool.isRequired,
 };
 
 export default Navigation;

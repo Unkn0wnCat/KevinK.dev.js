@@ -77,6 +77,7 @@ const FriendsPage = ({ data }) => {
                                                 image={getImage(
                                                     friend.localImage
                                                 )}
+                                                alt={friend.name}
                                             ></GatsbyImage>
                                         </div>
                                         <span

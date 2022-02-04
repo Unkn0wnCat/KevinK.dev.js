@@ -102,6 +102,7 @@ const ProjectsPage = ({ data }) => {
                                                 }
                                                 objectFit="cover"
                                                 style={{ height: "100%" }}
+                                                alt={project.name}
                                             ></GatsbyImage>
                                         </div>
                                         <div className={styles.projectCardMeta}>

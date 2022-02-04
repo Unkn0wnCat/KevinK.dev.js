@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 import React from "react";
-import PropTypes from "prop-types";
 import { Trans, Link, useTranslation } from "gatsby-plugin-react-i18next";
 import { createPortal } from "react-dom";
 
@@ -8,7 +7,12 @@ import * as styles from "./navigation.module.scss";
 import { X } from "lucide-react";
 import useSiteMetadata from "../helpers/useSiteMetadata";
 
-const OffScreenNav = ({ active, close }) => {
+type OffScreenNavProps = {
+    active: boolean,
+    close: () => void
+}
+
+const OffScreenNav = ({ active, close }: OffScreenNavProps) => {
     const { t } = useTranslation();
     const { modules } = useSiteMetadata();
 
@@ -54,11 +58,6 @@ const OffScreenNav = ({ active, close }) => {
         </div>,
         document.getElementById("osnav")
     );
-};
-
-OffScreenNav.propTypes = {
-    close: PropTypes.func.isRequired,
-    active: PropTypes.bool.isRequired,
 };
 
 export default OffScreenNav;

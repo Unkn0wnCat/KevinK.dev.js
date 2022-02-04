@@ -65,6 +65,7 @@ const SocialPage = ({ data }) => {
                                                 image={getImage(
                                                     social.localImage
                                                 )}
+                                                alt={social.platformName}
                                             ></GatsbyImage>
                                         </div>
                                         <span className={styles.socialName}>

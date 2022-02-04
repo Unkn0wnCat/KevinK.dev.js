@@ -124,6 +124,7 @@ const IndexPage = (props) => {
                             width={250}
                             height={350}
                             placeholder="blurred"
+                            alt="Kevin Kandlbinder"
                         ></StaticImage>
                     </div>
                     <div className={styles.profileImageDummy}></div>

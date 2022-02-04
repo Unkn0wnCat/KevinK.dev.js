@@ -187,6 +187,7 @@ const AboutPage = (props) => {
                                                 }
                                                 objectFit="cover"
                                                 style={{ height: "100%" }}
+                                                alt={project.name}
                                             ></GatsbyImage>
                                         </div>
                                         <div

@@ -12,7 +12,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     activity.start();
     activity.setStatus("Sourcing data for pages...");
 
-    const projectTemplate = path.resolve(`src/templates/project.js`);
+    const projectTemplate = path.resolve(`src/templates/project.tsx`);
 
     const result = await graphql(`
         query AllPagesQuery {
@@ -78,9 +78,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         activity.setStatus("Generating blog pages...");
 
         const blogListingTemplate = path.resolve(
-            `src/templates/blogListing.js`
+            `src/templates/blogListing.tsx`
         );
-        const blogTemplate = path.resolve(`src/templates/blogPost.js`);
+        const blogTemplate = path.resolve(`src/templates/blogPost.tsx`);
 
         reporter.info("Creating blog listings...");
 

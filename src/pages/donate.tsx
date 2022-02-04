@@ -93,7 +93,7 @@ const DonatePage = (props) => {
                             step="1"
                             value={amount}
                             onChange={(ev) => {
-                                setAmount(ev.target.value);
+                                setAmount(parseInt(ev.target.value));
                             }}
                             name="priceInput"
                             id="priceInput"

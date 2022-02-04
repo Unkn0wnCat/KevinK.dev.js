@@ -3,7 +3,7 @@ import { Link, Trans, useI18next } from "gatsby-plugin-react-i18next";
 
 import * as styles from "./languageSwitcher.module.scss";
 
-export default function LanguageSwitcher() {
+const LanguageSwitcher = () => {
     const { languages, originalPath } = useI18next();
 
     return (
@@ -33,3 +33,5 @@ export default function LanguageSwitcher() {
         </div>
     );
 }
+
+export default LanguageSwitcher
