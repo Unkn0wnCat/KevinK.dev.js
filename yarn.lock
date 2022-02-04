@@ -2244,6 +2244,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.9.6.tgz#040a64d7faf9e5d9e940357125f0963012e66f04"
   integrity sha512-YHUZhBOMTM3mjFkXVcK+WwAcYmyhe1wL4lfqNtzI0b3qAy7yuSetnM7QJazgE5PFmgVTNGiLOgRFfJMqW7XpSQ==
 
+"@types/node@17.0.14":
+  version "17.0.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.14.tgz#33b9b94f789a8fedd30a68efdbca4dbb06b61f20"
+  integrity sha512-SbjLmERksKOGzWzPNuW7fJM7fk3YXVTFiZWB/Hs99gwhk+/dnrQRPBQjPW9aO+fi1tAffi9PrwFvsmOKmDTyng==
+
 "@types/node@>=10.0.0":
   version "16.11.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.6.tgz#6bef7a2a0ad684cf6e90fcfe31cecabd9ce0a3ae"
@@ -2253,11 +2258,6 @@
   version "15.14.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.14.9.tgz#bc43c990c3c9be7281868bbc7b8fdd6e2b57adfa"
   integrity sha512-qjd88DrCxupx/kJD5yQgZdcYKZKSIGBVDIBE1/LTGcNm3d2Np/jxojkdePDdfnBHJc5W7vSMpbJ1aB7p/Py69A==
-
-"@types/node@^17.0.14":
-  version "17.0.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.14.tgz#33b9b94f789a8fedd30a68efdbca4dbb06b61f20"
-  integrity sha512-SbjLmERksKOGzWzPNuW7fJM7fk3YXVTFiZWB/Hs99gwhk+/dnrQRPBQjPW9aO+fi1tAffi9PrwFvsmOKmDTyng==
 
 "@types/node@^8.5.7":
   version "8.10.66"
@@ -2296,7 +2296,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@^17.0.11":
+"@types/react-dom@17.0.11":
   version "17.0.11"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
   integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
@@ -2312,7 +2312,7 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^17.0.39":
+"@types/react@17.0.39":
   version "17.0.39"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.39.tgz#d0f4cde092502a6db00a1cded6e6bf2abb7633ce"
   integrity sha512-UVavlfAxDd/AgAacMa60Azl7ygyQNRwC/DsHZmKgNvPmRR5p70AJ5Q9EAmL2NWOJmeV+vVUI4IAP7GZrN8h8Ug==
@@ -6322,7 +6322,7 @@ gatsby-plugin-sitemap@5.6.0:
     minimatch "^3.0.4"
     sitemap "^7.0.0"
 
-gatsby-plugin-typescript@^4.6.0:
+gatsby-plugin-typescript@4.6.0, gatsby-plugin-typescript@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-4.6.0.tgz#bc01ea2990bd6504d9a88042c1a22911d57520f3"
   integrity sha512-1LipVvvBT871P48izX7gk83xc2VSx6J6ruDLBnc57CqAPmNlDa3rRO2bEUNd9Zwk+uOUNi+kl1tKxYwW5G1eSg==
@@ -12562,7 +12562,7 @@ type@^2.5.0:
   resolved "https://registry.yarnpkg.com/type/-/type-2.5.0.tgz#0a2e78c2e77907b252abe5f298c1b01c63f0db3d"
   integrity sha512-180WMDQaIMm3+7hGXWf12GtdniDEy7nYcyFMKJn/eZz/6tSLXrUN9V0wKSbMjej0I1WHWbpREDEKHtqPQa9NNw==
 
-typed-scss-modules@^5.0.0:
+typed-scss-modules@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/typed-scss-modules/-/typed-scss-modules-5.0.0.tgz#23ecaf2c6e2ab49e65a08f68f58b3ce5b6b120f1"
   integrity sha512-etRLDmalISFpUaLKAbwyVL3xP5riEesByBYF9BBg5zKbgE/7L15xxwYshiYsFvvKK0T5+1DXBBbByrbi+ppD7A==
