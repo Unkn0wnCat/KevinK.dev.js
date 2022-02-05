@@ -20,6 +20,7 @@ import {
     Phone,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "@react-hook/media-query";
 //import * as particleConfig from "./index.particles.json";
 
 export const query = graphql`
@@ -62,9 +63,11 @@ export const query = graphql`
 
 const IndexPage = (props) => {
     const { t } = useTranslation();
+    const reduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)")
 
     React.useEffect(() => {
         if (typeof window === "undefined") return;
+        if (reduceMotion) return;
 
         anime({
             targets: [
@@ -95,7 +98,7 @@ const IndexPage = (props) => {
         /*if (typeof window !== "undefined")
             // eslint-disable-next-line no-undef
             window.setTimeout(loadTsParticles, 1000);*/
-    }, []);
+    }, [reduceMotion]);
 
     let meta = props.data.site.siteMetadata;
 

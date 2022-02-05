@@ -1,0 +1,138 @@
+@use "sass:math";
+@use "sass:map";
+@import "../../globals";
+
+.screenReader {
+    opacity: 0.001;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    padding: $layoutPadding;
+    margin: $layoutPadding (-$layoutPadding);
+    background-color: rgba(gray, 0.1);
+    border-radius: 10px;
+
+    &.openBottom {
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 20px;
+        background-image: linear-gradient(
+            to top,
+            $background,
+            transparent 20px
+        );
+    }
+
+    &.openBoth {
+        border-radius: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to top, $background, transparent 20px),
+            linear-gradient(to bottom, $background, transparent 20px);
+    }
+
+    &.openTop {
+        border-radius: 0 0 10px 10px;
+        margin-top: 20px;
+        background-image: linear-gradient(
+            to bottom,
+            $background,
+            transparent 20px
+        );
+    }
+
+    @media (prefers-color-scheme: light) {
+        &.openBottom {
+            background-image: linear-gradient(
+                to top,
+                $lightBackground,
+                transparent 20px
+            );
+        }
+
+        &.openBoth {
+            background-image: linear-gradient(
+                    to top,
+                    $lightBackground,
+                    transparent 20px
+                ),
+                linear-gradient(to bottom, $lightBackground, transparent 20px);
+        }
+
+        &.openTop {
+            background-image: linear-gradient(
+                to bottom,
+                $lightBackground,
+                transparent 20px
+            );
+        }
+    }
+}
+
+.chatnotice {
+    display: flex;
+    justify-content: center;
+
+    margin: math.div($layoutPadding, 2) $layoutPadding;
+
+    > span {
+        max-width: 500px;
+        opacity: 0.75;
+        font-style: italic;
+        text-align: center;
+    }
+}
+
+.chatmsg {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 $layoutPadding;
+
+    align-items: flex-start;
+
+    --msg-color: #{map.get($theme, "blue")};
+
+    &.alignRight {
+        align-items: flex-end;
+
+        --msg-color: #{$accentColor};
+    }
+
+    .name {
+        margin: 5px;
+    }
+
+    .chatbubble {
+        position: relative;
+        padding: math.div($layoutPadding, 2) $layoutPadding;
+        border-radius: 10px;
+        border: thin solid var(--msg-color);
+        max-width: 700px;
+
+        hr {
+            display: block;
+            margin: math.div($layoutPadding, 2) (-$layoutPadding);
+            border: none;
+            border-top: thin solid var(--msg-color);
+        }
+    }
+}
+
+.chatBlah {
+    display: inline-block;
+    margin: 0 5px;
+    opacity: 0.25;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}

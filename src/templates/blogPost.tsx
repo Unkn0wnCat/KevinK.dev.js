@@ -22,7 +22,7 @@ const BlogPost = ({ data }) => {
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "NewsArticle",
+                        "@type": "BlogPosting",
                         headline: data.mdx.frontmatter.title,
                         datePublished: data.mdx.frontmatter.publishedIso,
                         dateModified: data.mdx.frontmatter.publishedIso,
@@ -30,6 +30,7 @@ const BlogPost = ({ data }) => {
                             {
                                 "@type": "Person",
                                 name: data.mdx.frontmatter.author.name,
+                                url: "https://kevink.dev/blog/"
                             },
                         ],
                     })}

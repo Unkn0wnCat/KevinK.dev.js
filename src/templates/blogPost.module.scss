@@ -2,6 +2,8 @@
 
 .postSection {
     flex-grow: 1;
+    max-width: 1000px;
+    margin: 0 auto;
 
     > article {
         img {

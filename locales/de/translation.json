@@ -91,7 +91,16 @@
             }
         },
         "sections": "Rubriken",
-        "posts": "Beiträge"
+        "posts": "Beiträge",
+        "scambox": {
+            "chatbox": {
+                "begin": "Beginn der Chataufzeichnung",
+                "end": "Ende der Chataufzeichnung",
+                "interrupt": "Unterbrechung der Chataufzeichnung",
+                "resume": "Fortsetzung der Chataufzeichnung",
+                "says": "sagt:"
+            }
+        }
     },
     "not_found": {
         "title": "Nicht Gefunden",

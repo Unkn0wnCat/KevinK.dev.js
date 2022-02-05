@@ -91,7 +91,16 @@
             }
         },
         "sections": "Sections",
-        "posts": "Posts"
+        "posts": "Posts",
+        "scambox": {
+            "chatbox": {
+                "begin": "Begin of chat-log",
+                "resume": "Continuation of chat-log",
+                "interrupt": "Interruption of chat-log",
+                "end": "End of chat-log",
+                "says": "says:"
+            }
+        }
     },
     "not_found": {
         "title": "Not Found",
