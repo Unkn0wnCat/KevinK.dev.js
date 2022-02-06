@@ -6,9 +6,9 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Utterances from "utterances-react";
 
-import Layout from "../layouts/default";
+import Layout from "../../layouts/default";
 
-import * as styles from "./blogPost.module.scss";
+import * as styles from "./post.module.scss";
 import { Link } from "gatsby-plugin-react-i18next";
 
 const BlogPost = ({ data }) => {

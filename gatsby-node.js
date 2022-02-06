@@ -78,9 +78,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         activity.setStatus("Generating blog pages...");
 
         const blogListingTemplate = path.resolve(
-            `src/templates/blogListing.tsx`
+            `src/templates/blog/listing.tsx`
         );
-        const blogTemplate = path.resolve(`src/templates/blogPost.tsx`);
+        const blogTemplate = path.resolve(`src/templates/blog/post.tsx`);
 
         reporter.info("Creating blog listings...");
 

@@ -5,9 +5,9 @@ import { Link } from "gatsby-plugin-react-i18next";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import Layout from "../layouts/default";
+import Layout from "../../layouts/default";
 
-import * as styles from "./blogListing.module.scss";
+import * as styles from "./listing.module.scss";
 
 const BlogListing = ({ data, pageContext }) => {
     const { t } = useTranslation();
