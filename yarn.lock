@@ -1368,7 +1368,7 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/encode-sans@^4.5.1":
+"@fontsource/encode-sans@4.5.1":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@fontsource/encode-sans/-/encode-sans-4.5.1.tgz#2a2d1f1fb9578275ce11061fdd7057cc1cdaa880"
   integrity sha512-ulqUy8uUbMPyasJH3KK4uSICvumQGmuXX5rJGMEwA6beeteXrSRoUCBFjd3ZwpxfKANl2q0QIduhzG3OjbQDwA==
