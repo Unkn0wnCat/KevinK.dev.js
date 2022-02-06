@@ -26,7 +26,7 @@
         margin-bottom: 20px;
         background-image: linear-gradient(
             to top,
-            $background,
+            var(--color-background),
             transparent 20px
         );
     }
@@ -35,8 +35,16 @@
         border-radius: 0;
         margin-top: 20px;
         margin-bottom: 20px;
-        background-image: linear-gradient(to top, $background, transparent 20px),
-            linear-gradient(to bottom, $background, transparent 20px);
+        background-image: linear-gradient(
+                to top,
+                var(--color-background),
+                transparent 20px
+            ),
+            linear-gradient(
+                to bottom,
+                var(--color-background),
+                transparent 20px
+            );
     }
 
     &.openTop {
@@ -44,36 +52,9 @@
         margin-top: 20px;
         background-image: linear-gradient(
             to bottom,
-            $background,
+            var(--color-background),
             transparent 20px
         );
-    }
-
-    @media (prefers-color-scheme: light) {
-        &.openBottom {
-            background-image: linear-gradient(
-                to top,
-                $lightBackground,
-                transparent 20px
-            );
-        }
-
-        &.openBoth {
-            background-image: linear-gradient(
-                    to top,
-                    $lightBackground,
-                    transparent 20px
-                ),
-                linear-gradient(to bottom, $lightBackground, transparent 20px);
-        }
-
-        &.openTop {
-            background-image: linear-gradient(
-                to bottom,
-                $lightBackground,
-                transparent 20px
-            );
-        }
     }
 }
 
@@ -104,7 +85,7 @@
     &.alignRight {
         align-items: flex-end;
 
-        --msg-color: #{$accentColor};
+        --msg-color: #{map.get($theme, "accent")};
     }
 
     .name {

@@ -45,7 +45,7 @@
         }
 
         @media (prefers-color-scheme: light) {
-            background-color: $lightBackground;
+            background-color: var(--color-background);
         }
     }
 
@@ -63,9 +63,9 @@
             @include cardGeneric;
             display: flex;
             padding: $layoutPadding;
-            background-color: $background;
+            background-color: var(--color-background);
             margin: $layoutPadding;
-            color: $textColor;
+            color: var(--color-text);
             font-size: 1.6em;
             text-decoration: none;
             border-radius: 10px;
@@ -88,7 +88,7 @@
                 flex-shrink: 0;
 
                 .ctaAccent {
-                    color: $accentColor;
+                    color: var(--color-accent);
                     font-weight: 700;
                     margin-right: 10px;
                 }
@@ -131,13 +131,13 @@
             transition: text-decoration 0.5s;
             text-decoration: underline dotted rgba(white, 0);
             padding: 6px 0 6px 0;
-            color: $textColor;
+            color: inherit;
             display: flex;
             align-items: center;
 
             svg {
                 margin-right: 10px;
-                color: $accentColor;
+                color: var(--color-accent);
                 flex-shrink: 0;
             }
 
@@ -153,7 +153,7 @@
         }
 
         .contactLink > i {
-            color: $accentColor;
+            color: var(--color-accent);
             margin-left: -25px;
             margin-right: 5px;
         }
@@ -164,7 +164,7 @@
             transform: translate(40px, 20px);
             border-radius: 5px;
             padding: 20px 20px 20px 230px;
-            color: $textColor;
+            color: white;
         }
 
         .profileImage,
@@ -189,7 +189,7 @@
 
         .profileImageDummy {
             z-index: 10;
-            background: $accentColor;
+            background: var(--color-accent);
             opacity: 0.2;
             clip-path: $homeProfileClipBack;
         }
@@ -225,7 +225,6 @@
         padding: 15px !important;
         line-height: 15px;
         font-size: 1.2em;
-        color: white;
 
         > span {
             display: flex;
@@ -275,45 +274,23 @@
                     margin: 5px;
 
                     &.skill_framework {
-                        color: $skillColor1;
+                        color: var(--color-skill-1);
                     }
 
                     &.skill_platform {
-                        color: $skillColor2;
+                        color: var(--color-skill-2);
                     }
 
                     &.skill_program {
-                        color: $skillColor3;
+                        color: var(--color-skill-3);
                     }
 
                     &.skill_os {
-                        color: $skillColor4;
+                        color: var(--color-skill-4);
                     }
 
                     &.skill_language {
-                        color: $skillColor5;
-                    }
-
-                    @media (prefers-color-scheme: light) {
-                        &.skill_framework {
-                            color: $skillColor1Light;
-                        }
-
-                        &.skill_platform {
-                            color: $skillColor2Light;
-                        }
-
-                        &.skill_program {
-                            color: $skillColor3Light;
-                        }
-
-                        &.skill_os {
-                            color: $skillColor4Light;
-                        }
-
-                        &.skill_language {
-                            color: $skillColor5Light;
-                        }
+                        color: var(--color-skill-5);
                     }
                 }
             }
@@ -361,7 +338,7 @@
         left: 17px;
         width: 5px;
         height: calc(100% - 40px);
-        background-color: $accentColor;
+        background-color: var(--color-accent);
         border-radius: 100px;
         box-shadow: $aboutCVShadow;
 
@@ -372,7 +349,7 @@
             left: 0;
             width: 5px;
             height: 5px;
-            background-color: $accentColor;
+            background-color: var(--color-accent);
             border-radius: 100px;
             box-shadow: $aboutCVShadow;
         }
@@ -382,7 +359,7 @@
         position: relative;
         margin: 20px 10px;
 
-        --entry-color: #{$accentColor};
+        --entry-color: var(--color-accent);
 
         &:first-child {
             margin-top: 0;
@@ -461,10 +438,7 @@
         }
 
         &.entryTypeeducation {
-            --entry-color: #{$aboutCVColorEdu};
-            @media (prefers-color-scheme: light) {
-                --entry-color: #{$aboutCVColorEduLight};
-            }
+            --entry-color: var(--color-cv-edu);
         }
     }
 }

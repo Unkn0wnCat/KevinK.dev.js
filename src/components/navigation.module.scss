@@ -7,9 +7,9 @@
     width: 100%;
     height: 100%;
     z-index: 1200;
-    background-color: rgba($background, 0.9);
+    background-color: var(--color-background-glass);
     backdrop-filter: blur(10px);
-    color: white;
+    color: var(--color-text);
     overflow: auto;
     opacity: 0;
     transition: opacity 0.25s, left 0.25s;
@@ -20,11 +20,6 @@
         left: 0;
         opacity: 1;
         pointer-events: auto;
-    }
-
-    @media (prefers-color-scheme: light) {
-        background-color: rgba($lightBackground, 0.9);
-        color: black;
     }
 
     .inner {
@@ -75,23 +70,14 @@
     left: 0;
     display: flex;
     width: 100%;
-    background: rgba($background, 0.95);
-    color: $textColor;
+    background: var(--color-background-transparent);
+    color: var(--color-text);
     backdrop-filter: blur(5px);
     z-index: 999;
     transition: background-color 0.25s, color 0.25s;
 
     @supports (backdrop-filter: blur(5px)) {
-        background: rgba($background, 0.9);
-    }
-
-    @media (prefers-color-scheme: light) {
-        background: rgba($lightBackground, 0.95);
-        color: $lightTextColor;
-
-        @supports (backdrop-filter: blur(5px)) {
-            background: rgba($lightBackground, 0.9);
-        }
+        background: var(--color-background-glass);
     }
 
     .topBarInner {
@@ -135,7 +121,7 @@
                 transition: border-color 0.25s;
 
                 @media (prefers-color-scheme: light) {
-                    border-color: $accentColor;
+                    border-color: var(--color-accent);
                 }
             }
 
@@ -150,7 +136,7 @@
 
 .homeBar.homeBarTransparent {
     background: transparent;
-    color: $textColor;
+    color: white;
     backdrop-filter: blur(0);
 }
 

@@ -61,18 +61,14 @@
                 transition: text-decoration 0.5s;
                 text-decoration: underline dotted rgba(0, 0, 0, 0);
                 padding: 6px 0 6px 0;
-                color: $textColor;
+                color: var(--color-text);
                 transition: color 0.25s;
                 display: flex;
                 align-items: center;
 
                 svg {
-                    color: $accentColor;
+                    color: var(--color-accent);
                     margin-right: 10px;
-                }
-
-                @media (prefers-color-scheme: light) {
-                    color: $lightTextColor;
                 }
             }
         }

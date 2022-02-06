@@ -21,11 +21,21 @@
         height: 400px;
         background: linear-gradient(
             to bottom,
-            rgba($background, 0.95),
-            rgba($background, 0.25) 20%,
-            rgba($background, 0.35) 80%,
-            rgba($background, 1) 100%
+            black,
+            var(--color-background-extreme-seethru) 20%,
+            var(--color-background-seethru) 80%,
+            var(--color-background) 100%
         );
+
+        @media (prefers-color-scheme: light) {
+            background: linear-gradient(
+                to bottom,
+                black,
+                var(--color-background-extreme-seethru) 20%,
+                var(--color-background-seethru) 60%,
+                var(--color-background) 100%
+            );
+        }
 
         .headerInner {
             max-width: $layoutWidth;
@@ -36,16 +46,22 @@
             flex-direction: column;
             text-shadow: 0 0 10px black, 0 0 20px black;
             padding: 10px 20px;
+            color: var(--color-text);
+
+            @media (prefers-color-scheme: light) {
+                text-shadow: none;
+            }
 
             * {
                 margin: 0;
-                color: white;
                 font-size: 1.25em;
             }
 
             h1 {
                 font-size: 2.2em;
                 margin-top: auto;
+                color: var(--color-accent);
+                text-shadow: $textShadowAccent;
             }
         }
     }
@@ -67,14 +83,9 @@
 }
 
 .projectAbout {
-    background: #060606;
-    color: white;
+    background: var(--color-background);
+    color: var(--color-text);
     transition: background-color 0.25s, color 0.25s;
-
-    @media (prefers-color-scheme: light) {
-        background: $lightBackground;
-        color: $lightTextColor;
-    }
 }
 
 .projectLinks {

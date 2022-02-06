@@ -78,7 +78,7 @@
         border-bottom: thin dotted grey;
 
         .title {
-            color: $accentColor;
+            color: var(--color-accent);
             font-size: 1.5em;
             text-decoration: underline dotted currentColor;
         }
@@ -92,7 +92,7 @@
             margin-left: 10px;
 
             > span {
-                color: $accentColor;
+                color: var(--color-accent);
                 text-decoration: underline dotted currentColor;
             }
         }
