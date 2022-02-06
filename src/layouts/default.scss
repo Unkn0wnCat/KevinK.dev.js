@@ -1,6 +1,8 @@
-@import "~@fontsource/fira-code/index.css";
-@import "~@fontsource/fira-code/700.css";
+@use "@fontsource/encode-sans/scss/mixins" as EncodeSans;
+@import-normalize;
 @import "../globals";
+
+@include EncodeSans.fontFaceVariable($type: "wghtOnly");
 
 * {
     box-sizing: border-box;
