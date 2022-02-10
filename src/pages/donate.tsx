@@ -99,9 +99,7 @@ const DonatePage = (props) => {
                             id="priceInput"
                         />
                         <div>€</div>
-                    </div>
-
-                    <a
+                        <a
                         className={styles.donateButton}
                         rel="noopener"
                         id="payPalBtn"
@@ -135,6 +133,7 @@ const DonatePage = (props) => {
                         </span>
                         <ArrowRight />
                     </a>
+                    </div>
                 </article>
             </section>
         </Layout>
