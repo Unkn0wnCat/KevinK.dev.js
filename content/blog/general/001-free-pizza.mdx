@@ -8,10 +8,10 @@ published: 2018-03-10 22:00:00
 author:
     name: Kevin Kandlbinder
 embeddedImagesLocal:
-  - './assets/001-free-pizza/firefox_2018-03-10_11-51-08-e1520680515546.png'
+    - "./assets/001-free-pizza/firefox_2018-03-10_11-51-08-e1520680515546.png"
 ---
 
-import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+import { getImage, GatsbyImage } from "gatsby-plugin-image";
 
 > „Never trust user input“
 
@@ -32,8 +32,9 @@ Nachdem ich das sah war die Challenge nicht mehr zu ignorieren: ICH WILL GEWINNE
 Also habe ich mich durch den Code gewühlt und mir fielen mehrere Variablen auf, die offensichtlich für die Gewinnchancen zuständig sind. (Fun Fact: Die Chance beim ersten Versuch ist größer als bei allen weiteren) Als ich aber mit denen ein bisschen ohne Ergebnis rumgespielt habe, habe ich mich direkt in die Funktionen gesetzt und nachvollzogen was das Programm genau macht wenn ich den Button drücke, und da war es: In Zeile 203
 
 fand sich die Funktion „win“…
+
 <div>
-    <GatsbyImage alt='win();' image={getImage(props.localImages[0])} />
+    <GatsbyImage alt="win();" image={getImage(props.localImages[0])} />
 </div>
 
 Aber das kann doch nicht funktionieren… Die Web-Sicherheit…
@@ -43,11 +44,19 @@ Aber das kann doch nicht funktionieren… Die Web-Sicherheit…
 Also nichts wie ab damit in die Konsole und…
 
 <div style="display: flex; align-items: center; gap: 20px;">
-    <img src="./assets/001-free-pizza/2018-03-10_11-52-49.gif" alt="Konsole" width="50%" />
-    <img src="./assets/001-free-pizza/2018-03-10_11-52-01.gif" alt="Casino"  width="50%" />
+    <img
+        src="./assets/001-free-pizza/2018-03-10_11-52-49.gif"
+        alt="Konsole"
+        width="50%"
+    />
+    <img
+        src="./assets/001-free-pizza/2018-03-10_11-52-01.gif"
+        alt="Casino"
+        width="50%"
+    />
 </div>
 
-…gewonnen, der Code war besiegt, die Challenge gemeistert, die Web-Sicherheit im A**** und ich zufrieden. Toll. Aber was nun? Sich ganz viele Gutscheine auf Prepaid-Nummern holen? Zu anstrengend. Pizza.de Bescheid sagen? Ja, aber nicht genug… Darüber schreiben und eine Moral für jeden Entwickler draus ziehen? Ja, das klingt gut!
+…gewonnen, der Code war besiegt, die Challenge gemeistert, die Web-Sicherheit im A\*\*\*\* und ich zufrieden. Toll. Aber was nun? Sich ganz viele Gutscheine auf Prepaid-Nummern holen? Zu anstrengend. Pizza.de Bescheid sagen? Ja, aber nicht genug… Darüber schreiben und eine Moral für jeden Entwickler draus ziehen? Ja, das klingt gut!
 
 ## Die Moral von der Geschicht‘...
 
@@ -55,4 +64,13 @@ Also nichts wie ab damit in die Konsole und…
 
 Das Casino sollte im Hintergrund seine Ergebnisse auf dem Server generieren, auch wenn es eine kurze Ladezeit gäbe und vom Server einen Token bekommen, mit dem der Gewinn abgeholt werden könnte. Somit würde der Server entscheiden ob ein Gutschein herausgegeben wird und nicht ein hobbyloser Typ mit einem PC.
 
-<small>Importiert aus altem Blog - <a href="https://web.archive.org/web/20201216152631/https://blog.1in9.net/2018/03/never-trust-user-input-gratis-pizza/" target="_blank" rel="noreferrer  ">Archiviertes Original</a></small>
+<small>
+    Importiert aus altem Blog -{" "}
+    <a
+        href="https://web.archive.org/web/20201216152631/https://blog.1in9.net/2018/03/never-trust-user-input-gratis-pizza/"
+        target="_blank"
+        rel="noreferrer  "
+    >
+        Archiviertes Original
+    </a>
+</small>

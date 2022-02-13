@@ -100,39 +100,41 @@ const DonatePage = (props) => {
                         />
                         <div>€</div>
                         <a
-                        className={styles.donateButton}
-                        rel="noopener"
-                        id="payPalBtn"
-                        href={
-                            "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=" +
-                            encodeURIComponent(site.siteMetadata.payPalMail) +
-                            "&item_name=" +
-                            encodeURIComponent(site.siteMetadata.title) +
-                            "&currency_code=EUR&image_url=" +
-                            encodeURIComponent(
-                                site.siteMetadata.siteUrl +
-                                    file.childImageSharp.resize.src
-                            ) +
-                            "&return=" +
-                            encodeURIComponent(
-                                site.siteMetadata.siteUrl +
-                                    "/" +
-                                    path +
-                                    "thank-you/"
-                            ) +
-                            "&rm=0&cancel_return=" +
-                            encodeURIComponent(
-                                site.siteMetadata.siteUrl + "/" + path
-                            ) +
-                            "&amount=" +
-                            amount
-                        }
-                    >
-                        <span>
-                            <Trans>donate.donatePayPal</Trans>
-                        </span>
-                        <ArrowRight />
-                    </a>
+                            className={styles.donateButton}
+                            rel="noopener"
+                            id="payPalBtn"
+                            href={
+                                "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=" +
+                                encodeURIComponent(
+                                    site.siteMetadata.payPalMail
+                                ) +
+                                "&item_name=" +
+                                encodeURIComponent(site.siteMetadata.title) +
+                                "&currency_code=EUR&image_url=" +
+                                encodeURIComponent(
+                                    site.siteMetadata.siteUrl +
+                                        file.childImageSharp.resize.src
+                                ) +
+                                "&return=" +
+                                encodeURIComponent(
+                                    site.siteMetadata.siteUrl +
+                                        "/" +
+                                        path +
+                                        "thank-you/"
+                                ) +
+                                "&rm=0&cancel_return=" +
+                                encodeURIComponent(
+                                    site.siteMetadata.siteUrl + "/" + path
+                                ) +
+                                "&amount=" +
+                                amount
+                            }
+                        >
+                            <span>
+                                <Trans>donate.donatePayPal</Trans>
+                            </span>
+                            <ArrowRight />
+                        </a>
                     </div>
                 </article>
             </section>

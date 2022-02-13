@@ -6,16 +6,25 @@ import { Link, Trans } from "gatsby-plugin-react-i18next";
 import LanguageSwitcher from "../components/languageSwitcher";
 
 type LayoutProps = {
-    description?: string,
-    meta?: any[],
-    title: string,
-    transparentTopbar?: boolean,
-    seoAdditional?: any,
-    image?: string,
-    speakable?: any
-}
+    description?: string;
+    meta?: any[];
+    title: string;
+    transparentTopbar?: boolean;
+    seoAdditional?: any;
+    image?: string;
+    speakable?: any;
+};
 
-const Layout = ({description, meta, title, image, speakable, seoAdditional, transparentTopbar, children}: React.PropsWithChildren<LayoutProps>) => {
+const Layout = ({
+    description,
+    meta,
+    title,
+    image,
+    speakable,
+    seoAdditional,
+    transparentTopbar,
+    children,
+}: React.PropsWithChildren<LayoutProps>) => {
     return (
         <>
             <SEO
@@ -50,7 +59,7 @@ const Layout = ({description, meta, title, image, speakable, seoAdditional, tran
             <LanguageSwitcher />
         </>
     );
-}
+};
 
 Layout.defaultProps = {
     module: `none`,

@@ -9,8 +9,8 @@ import OffScreenNav from "./offscreenNav";
 import useSiteMetadata from "../helpers/useSiteMetadata";
 
 type NavigationProps = {
-    isHome?: boolean
-}
+    isHome?: boolean;
+};
 
 const Navigation = ({ isHome }: NavigationProps) => {
     let [atTop, setAtTop] = useState(false);

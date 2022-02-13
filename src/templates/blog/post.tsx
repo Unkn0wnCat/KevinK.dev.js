@@ -30,7 +30,7 @@ const BlogPost = ({ data }) => {
                             {
                                 "@type": "Person",
                                 name: data.mdx.frontmatter.author.name,
-                                url: "https://kevink.dev/blog/"
+                                url: "https://kevink.dev/blog/",
                             },
                         ],
                     })}

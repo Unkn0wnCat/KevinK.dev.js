@@ -32,6 +32,6 @@ const LanguageSwitcher = () => {
             </div>
         </div>
     );
-}
+};
 
-export default LanguageSwitcher
+export default LanguageSwitcher;

@@ -8,9 +8,9 @@ import { X } from "lucide-react";
 import useSiteMetadata from "../helpers/useSiteMetadata";
 
 type OffScreenNavProps = {
-    active: boolean,
-    close: () => void
-}
+    active: boolean;
+    close: () => void;
+};
 
 const OffScreenNav = ({ active, close }: OffScreenNavProps) => {
     const { t } = useTranslation();

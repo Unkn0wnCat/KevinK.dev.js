@@ -6,14 +6,21 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import useSiteMetadata from "../helpers/useSiteMetadata";
 
 type SEOProps = {
-    description?: string,
-    meta?: any[],
-    title: string,
-    speakable?: any,
-    image?: string
-}
+    description?: string;
+    meta?: any[];
+    title: string;
+    speakable?: any;
+    image?: string;
+};
 
-function SEO({ description, meta, title, speakable, image, children }: React.PropsWithChildren<SEOProps>) {
+function SEO({
+    description,
+    meta,
+    title,
+    speakable,
+    image,
+    children,
+}: React.PropsWithChildren<SEOProps>) {
     const { t } = useTranslation();
     const { site } = useStaticQuery(
         graphql`

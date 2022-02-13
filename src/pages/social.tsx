@@ -49,7 +49,8 @@ const SocialPage = ({ data }) => {
 
                     <p>
                         <Trans i18nKey="social.descriptionWithLink">
-                            socialDescriptionWith<Link to="/friends/">Link</Link>
+                            socialDescriptionWith
+                            <Link to="/friends/">Link</Link>
                         </Trans>
                     </p>
 
