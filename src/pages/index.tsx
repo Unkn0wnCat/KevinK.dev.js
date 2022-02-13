@@ -63,7 +63,7 @@ export const query = graphql`
 
 const IndexPage = (props) => {
     const { t } = useTranslation();
-    const reduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)")
+    const reduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
 
     React.useEffect(() => {
         if (typeof window === "undefined") return;
@@ -118,7 +118,7 @@ const IndexPage = (props) => {
                     className={styles.heroSectionBg}
                     id="particle-container"
                 ></div>
-                <div className={styles.profile + " profile"}>
+                <div className={styles.profile + " profile h-card"}>
                     <div className={styles.profileImage}>
                         <StaticImage
                             src={
@@ -128,6 +128,7 @@ const IndexPage = (props) => {
                             height={350}
                             placeholder="blurred"
                             alt="Kevin Kandlbinder"
+                            className={"u-photo"}
                         ></StaticImage>
                     </div>
                     <div className={styles.profileImageDummy}></div>
@@ -135,10 +136,12 @@ const IndexPage = (props) => {
                         <span className={styles.hello}>
                             <Trans>home.hello</Trans>
                         </span>
-                        <span className={styles.name}>Kevin Kandlbinder</span>
+                        <span className={styles.name + " p-name"}>
+                            Kevin Kandlbinder
+                        </span>
                         <span className={styles.description}>
                             <Trans>home.me</Trans>{" "}
-                            <span id="descriptionType">
+                            <span id="descriptionType" className="p-job-title">
                                 <Trans>home.webDeveloper</Trans>
                             </span>
                             .
@@ -146,7 +149,7 @@ const IndexPage = (props) => {
 
                         <div className={styles.contactLinks}>
                             <a
-                                className={styles.contactLink}
+                                className={styles.contactLink + " p-tel"}
                                 href={"tel:" + meta.contactPhone}
                                 rel="me"
                             >
@@ -154,7 +157,7 @@ const IndexPage = (props) => {
                                 {meta.contactPhone}
                             </a>
                             <a
-                                className={styles.contactLink}
+                                className={styles.contactLink + " u-email"}
                                 href={"mailto:" + meta.contactEmail}
                                 rel="me"
                             >
@@ -162,7 +165,7 @@ const IndexPage = (props) => {
                                 {meta.contactEmail}
                             </a>
                             <a
-                                className={styles.contactLink}
+                                className={styles.contactLink + " p-adr"}
                                 href={meta.mapsLink}
                                 rel="noreferrer "
                                 target="_blank"
