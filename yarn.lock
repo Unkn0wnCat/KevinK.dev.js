@@ -5899,7 +5899,7 @@ gatsby-plugin-manifest@4.7.0:
 
 gatsby-plugin-mdx@3.7.1:
   version "3.7.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-3.7.1.tgz#5d2452da9325c09d9079e3089e1fc1acc58ed49e"
+  resolved "https://registry.npmjs.org/gatsby-plugin-mdx/-/gatsby-plugin-mdx-3.7.1.tgz"
   integrity sha512-9KHxxTVjEWExELDjcIGhBAz0Gcg6TVP1l3U7bS0wAcFTfpG3vEX2vLqvPZY0uBZ0yoRtqZjT3xablH9UGOy6KA==
   dependencies:
     "@babel/core" "^7.15.5"
@@ -6230,7 +6230,7 @@ gatsby-worker@^1.7.0:
 
 gatsby@4.7.2:
   version "4.7.2"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.7.2.tgz#3bc8f7fa762361e83308dfc3d67316a236ab168e"
+  resolved "https://registry.npmjs.org/gatsby/-/gatsby-4.7.2.tgz"
   integrity sha512-DY7qoFQ8y+14UsmEkzWigHWPkkJ79elu6A2nDjg19YV8K8k96PlexkYLDYOI5kSBiCmCV+ZURVfexuVU0U0HDA==
   dependencies:
     "@babel/code-frame" "^7.14.0"
@@ -11989,10 +11989,10 @@ tslib@~2.2.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.2.0.tgz"
   integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
 
-tsparticles@1.41.1:
-  version "1.41.1"
-  resolved "https://registry.npmjs.org/tsparticles/-/tsparticles-1.41.1.tgz"
-  integrity sha512-j6vtiRBld+D8G/EGBmgcUYo35jx8VuOvL57uI1wsxYy55G8/CSW2fnTU6uV7TZ9e0EmnENLKEX1UzGKRny0aug==
+tsparticles@1.41.2:
+  version "1.41.2"
+  resolved "https://registry.npmjs.org/tsparticles/-/tsparticles-1.41.2.tgz"
+  integrity sha512-DWnttSF4adMlvKWMTXuP0BvKEGXuwamatgzgEKp7nF4YqHzejjKySGeUpmEDCKAR0BnsmatYNZ+8cU8eMrTFjw==
 
 tsutils@^3.21.0:
   version "3.21.0"
