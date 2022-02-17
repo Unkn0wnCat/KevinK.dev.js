@@ -12063,10 +12063,10 @@ type@^2.5.0:
   resolved "https://registry.npmjs.org/type/-/type-2.6.0.tgz"
   integrity sha512-eiDBDOmkih5pMbo9OqsqPRGMljLodLcwd5XD5JbtNB0o89xZAwynY9EdCDsJU7LtcVCClu9DvM7/0Ep1hYX3EQ==
 
-typed-scss-modules@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/typed-scss-modules/-/typed-scss-modules-6.0.0.tgz"
-  integrity sha512-MCMsuUzWndatQlkVLV2/L0gJ8pYWD8MhTXcO5uh741Wp8cP9EA+8m7AUzpROPbmxWN8AeMwvKfn1s1VPwSB16g==
+typed-scss-modules@6.2.0:
+  version "6.2.0"
+  resolved "https://registry.npmjs.org/typed-scss-modules/-/typed-scss-modules-6.2.0.tgz"
+  integrity sha512-2OrxgivyfWZvXZ3LkFljBN8x5kzPVI8xKJxEkfNNcEkyPpVp60msl5O44UAYUgLN3O2rO41fWuLJsc2f1NCBmQ==
   dependencies:
     bundle-require "^3.0.4"
     camelcase "^6.3.0"
