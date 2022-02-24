@@ -11989,10 +11989,10 @@ tslib@~2.2.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.2.0.tgz"
   integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
 
-tsparticles@1.41.4:
-  version "1.41.4"
-  resolved "https://registry.npmjs.org/tsparticles/-/tsparticles-1.41.4.tgz"
-  integrity sha512-kJvODc6Hj7monW9YCF4nnLgSubkndNPsHOMjCF8pGgDSV5pce6w+Ar4bPE8nZveGEXNSxnPwR+1MN0zwgx4MGg==
+tsparticles@1.41.5:
+  version "1.41.5"
+  resolved "https://registry.npmjs.org/tsparticles/-/tsparticles-1.41.5.tgz"
+  integrity sha512-USK4VZsr5HxiSyCvMuC6F7+SwOrM0zJDkPNlZXLBnf++d8xJ6P+jafEKr89JVUeYCWuDyAfS2GtYaXgOC1+bOA==
 
 tsutils@^3.21.0:
   version "3.21.0"
