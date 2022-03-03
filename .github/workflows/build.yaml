@@ -23,7 +23,7 @@ jobs:
             - run: npm run build
               name: Build Site
 
-            - uses: actions/upload-artifact@v2
+            - uses: actions/upload-artifact@v3
               name: Upload Artifacts
               with:
                   name: site
