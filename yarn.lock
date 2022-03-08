@@ -8314,10 +8314,10 @@ lru-queue@^0.1.0:
   dependencies:
     es5-ext "~0.10.2"
 
-lucide-react@0.17.8:
-  version "0.17.8"
-  resolved "https://registry.npmjs.org/lucide-react/-/lucide-react-0.17.8.tgz"
-  integrity sha512-92PLQcO9tpsleEsa0HZ8Hl1HHSrcLtFI5TIll4iX668bn/RNHRg/3YUVZ6W1i7jYTShbi+ghEzfX0JzYreiAyA==
+lucide-react@0.17.9:
+  version "0.17.9"
+  resolved "https://registry.npmjs.org/lucide-react/-/lucide-react-0.17.9.tgz"
+  integrity sha512-nzXHVWFp4zbKFv2m3VPKlHi+M4fYHh/coN1rXHAbeGN/z4nE0bfX9lRODwdaGbuOWPb8WEx98haqIT6ded82gg==
 
 make-dir@^2.1.0:
   version "2.1.0"
