@@ -12581,10 +12581,10 @@ tslib@~2.2.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.2.0.tgz"
   integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
 
-tsparticles@1.42.3:
-  version "1.42.3"
-  resolved "https://registry.npmjs.org/tsparticles/-/tsparticles-1.42.3.tgz"
-  integrity sha512-MlG4Zdr7agzsmmBQVv3XUH8Dm6Wv6cdr9NvA6UXgAEz+PlbRTOtIwg+KNKc2sSFSEqzxgJtrivENtJHaCawbAg==
+tsparticles@1.42.4:
+  version "1.42.4"
+  resolved "https://registry.npmjs.org/tsparticles/-/tsparticles-1.42.4.tgz"
+  integrity sha512-tfjh6hZFID+5mIdqIvAvmpGymG5kFIxB2k1fs0SIDemo7iL9qnQyvI3HankxfRtCblcwRoEYj/g5phdIhqY8vA==
 
 tsutils@^3.21.0:
   version "3.21.0"
