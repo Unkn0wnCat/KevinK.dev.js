@@ -1785,7 +1785,7 @@
 
 "@parcel/bundler-default@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/bundler-default/-/bundler-default-2.4.0.tgz#a3b88131601821514cd932b3b2ada226d7d3404d"
+  resolved "https://registry.npmjs.org/@parcel/bundler-default/-/bundler-default-2.4.0.tgz"
   integrity sha512-RaXlxo0M51739Ko3bsOJpDBZlJ+cqkDoBTozNeSc65jS2TMBIBWLMapm8095qmty39OrgYNhzjgPiIlKDS/LWA==
   dependencies:
     "@parcel/diagnostic" "2.4.0"
@@ -1806,7 +1806,7 @@
 
 "@parcel/cache@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/cache/-/cache-2.4.0.tgz#aa83243a00ee861183c6a1ce880292c6c1175022"
+  resolved "https://registry.npmjs.org/@parcel/cache/-/cache-2.4.0.tgz"
   integrity sha512-oOudoAafrCAHQY0zkU7gVHG1pAGBUz9rht7Tx4WupTmAH0O0F5UnZs6XbjoBJaPHg+CYUXK7v9wQcrNA72E3GA==
   dependencies:
     "@parcel/fs" "2.4.0"
@@ -1823,21 +1823,21 @@
 
 "@parcel/codeframe@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/codeframe/-/codeframe-2.4.0.tgz#c9a78a558f9a5c628c162d5774e2223d236d9f20"
+  resolved "https://registry.npmjs.org/@parcel/codeframe/-/codeframe-2.4.0.tgz"
   integrity sha512-PJ3W9Z0sjoS2CANyo50c+LEr9IRZrtu0WsVPSYZ5ZYRuSXrSa/6PcAlnkyDk2+hi7Od8ncT2bmDexl0Oar3Jyg==
   dependencies:
     chalk "^4.1.0"
 
 "@parcel/compressor-raw@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/compressor-raw/-/compressor-raw-2.4.0.tgz#25c701d5a3a4cea843f8d0806b9192a8b107f5d8"
+  resolved "https://registry.npmjs.org/@parcel/compressor-raw/-/compressor-raw-2.4.0.tgz"
   integrity sha512-ZErX14fTc0gKIgtnuqW7Clfln4dpXWfUaJQQIf5C3x/LkpUeEhdXeKntkvSxOddDk2JpIKDwqzAxEMZUnDo4Nw==
   dependencies:
     "@parcel/plugin" "2.4.0"
 
 "@parcel/core@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/core/-/core-2.4.0.tgz#c0533760f9d4f04757c69152aa9a6219828ac1ee"
+  resolved "https://registry.npmjs.org/@parcel/core/-/core-2.4.0.tgz"
   integrity sha512-EWZ2UWtIuwDc3fgsKyyTLpNNPoG8Yk2L117ICWF/+cqY8z/wJHm2KwLbeplDeq524shav0GJ9O4CemP3JPx0Nw==
   dependencies:
     "@parcel/cache" "2.4.0"
@@ -1875,7 +1875,7 @@
 
 "@parcel/diagnostic@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/diagnostic/-/diagnostic-2.4.0.tgz#0a94287851aee60e30f1e7f10582be274e0d1cf4"
+  resolved "https://registry.npmjs.org/@parcel/diagnostic/-/diagnostic-2.4.0.tgz"
   integrity sha512-TjWO/b2zMFhub5ouwGjazMm7iAUvdmXBfWmjrg4TBhUbhoQwBnyWfvMDtAYo7PcvXfxVPgPZv86Nv6Ym5H6cHQ==
   dependencies:
     json-source-map "^0.6.1"
@@ -1888,7 +1888,7 @@
 
 "@parcel/events@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/events/-/events-2.4.0.tgz#7526ea17dd72d97d7f4d3717285e85a36f5ead8f"
+  resolved "https://registry.npmjs.org/@parcel/events/-/events-2.4.0.tgz"
   integrity sha512-DEaEtFbhOhNAEmiXJ3MyF8Scq+sNDKiTyLax4lAC5/dpE5GvwfNnoD17C2+0gDuuDpdQkdHfXfvr50aYFt7jcw==
 
 "@parcel/fs-search@2.3.1":
@@ -1900,7 +1900,7 @@
 
 "@parcel/fs-search@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/fs-search/-/fs-search-2.4.0.tgz#1f278eb56ee054521ccb7e685886cd386e5efba7"
+  resolved "https://registry.npmjs.org/@parcel/fs-search/-/fs-search-2.4.0.tgz"
   integrity sha512-W/Vu6wbZk4wuB6AVdMkyymwh/S8Peed/PgJgSsApYD6lSTD315I6OuEdxZh3lWY+dqQdog/NJ7dvi/hdpH/Iqw==
   dependencies:
     detect-libc "^1.0.3"
@@ -1918,7 +1918,7 @@
 
 "@parcel/fs@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/fs/-/fs-2.4.0.tgz#d8a34e63356ce66e3e34a958fae052d48acd2d28"
+  resolved "https://registry.npmjs.org/@parcel/fs/-/fs-2.4.0.tgz"
   integrity sha512-CnUlWGUJ52SJVQi8QnaAPPQZOADmHMV9D9aX9GLcDm5XLT3Em7vmesG4bNLdMLwzYuzAtenhcWmuRCACuYztHw==
   dependencies:
     "@parcel/fs-search" "2.4.0"
@@ -1929,7 +1929,7 @@
 
 "@parcel/graph@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/graph/-/graph-2.4.0.tgz#a0a94baf102f456ba7c9e4e235fb677bbe0f9286"
+  resolved "https://registry.npmjs.org/@parcel/graph/-/graph-2.4.0.tgz"
   integrity sha512-5TZIAfDITkJCzgH4j4OQhnIvjV9IFwWqNBJanRl5QQTmKvdcODS3WbnK1SOJ+ZltcLVXMB+HNXmL0bX0tVolcw==
   dependencies:
     "@parcel/utils" "2.4.0"
@@ -1945,7 +1945,7 @@
 
 "@parcel/hash@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/hash/-/hash-2.4.0.tgz#4f85e42d94aa3c458a7d0b484852f5466799be1b"
+  resolved "https://registry.npmjs.org/@parcel/hash/-/hash-2.4.0.tgz"
   integrity sha512-nB+wYNUhe6+G8M7vQhdeFXtpYJYwJgBHOPZ7Hd9O2jdlamWjDbw0t/u1dJbYvGJ8ZDtLDwiItawQVpuVdskQ9g==
   dependencies:
     detect-libc "^1.0.3"
@@ -1961,7 +1961,7 @@
 
 "@parcel/logger@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/logger/-/logger-2.4.0.tgz#762b9431183557132c91419f2f7e5443837a4222"
+  resolved "https://registry.npmjs.org/@parcel/logger/-/logger-2.4.0.tgz"
   integrity sha512-DqfU0Zcs/0a7VBk+MsjJ80C66w4kM9EbkO3G12NIyEjNeG50ayW2CE9rUuJ91JaM9j0NFM1P82eyLpQPFFaVPw==
   dependencies:
     "@parcel/diagnostic" "2.4.0"
@@ -1976,14 +1976,14 @@
 
 "@parcel/markdown-ansi@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/markdown-ansi/-/markdown-ansi-2.4.0.tgz#688fa5e5f4765bde83f49fe298d8a2b416b3446f"
+  resolved "https://registry.npmjs.org/@parcel/markdown-ansi/-/markdown-ansi-2.4.0.tgz"
   integrity sha512-gPUP1xikxHiu2kFyPy35pfuVkFgAmcywO8YDQj7iYcB+k7l4QPpIYFYGXn2QADV4faf66ncMeTD4uYV8c0GqjQ==
   dependencies:
     chalk "^4.1.0"
 
 "@parcel/namer-default@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/namer-default/-/namer-default-2.4.0.tgz#df1571f4f9104ae9bdb77887693b4b7f9d5c86a6"
+  resolved "https://registry.npmjs.org/@parcel/namer-default/-/namer-default-2.4.0.tgz"
   integrity sha512-DfL+Gx0Tyoa0vsgRpNybXjuKbWNw8MTVpy7Dk7r0btfVsn1jy3SSwlxH4USf76gb00/pK6XBsMp9zn7Z8ePREQ==
   dependencies:
     "@parcel/diagnostic" "2.4.0"
@@ -1992,7 +1992,7 @@
 
 "@parcel/node-resolver-core@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/node-resolver-core/-/node-resolver-core-2.4.0.tgz#394f186fc7d431f98ac72b9d3fe140e04a21dd7d"
+  resolved "https://registry.npmjs.org/@parcel/node-resolver-core/-/node-resolver-core-2.4.0.tgz"
   integrity sha512-qiN97XcfW2fYNoYuVEhNKuVPEJKj5ONQl0fqr/NEMmYvWz3bVKjgiXNJwW558elZvCI08gEbdxgyThpuFFQeKQ==
   dependencies:
     "@parcel/diagnostic" "2.4.0"
@@ -2001,7 +2001,7 @@
 
 "@parcel/optimizer-terser@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/optimizer-terser/-/optimizer-terser-2.4.0.tgz#433965117d54c4cf113af3a6b056ff0766367468"
+  resolved "https://registry.npmjs.org/@parcel/optimizer-terser/-/optimizer-terser-2.4.0.tgz"
   integrity sha512-PdCgRgXNSY6R1HTV9VG2MHp1CgUbP5pslCyxvlbUmQAS6bvEpMOpn3qSd+U28o7mGE/qXIhvpDyi808sb+MEcg==
   dependencies:
     "@parcel/diagnostic" "2.4.0"
@@ -2026,7 +2026,7 @@
 
 "@parcel/package-manager@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/package-manager/-/package-manager-2.4.0.tgz#ab4d7a53059355dc4f17e16c97540b6c7d70c5f6"
+  resolved "https://registry.npmjs.org/@parcel/package-manager/-/package-manager-2.4.0.tgz"
   integrity sha512-21AEfAQnZbHRVViTn7QsPGe/CiGaFaDUH5f0m8qVC7fDjjhC8LM8blkqU72goaO9FbaLMadtEf2txhzly7h/bg==
   dependencies:
     "@parcel/diagnostic" "2.4.0"
@@ -2039,7 +2039,7 @@
 
 "@parcel/packager-js@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/packager-js/-/packager-js-2.4.0.tgz#033e80a161c14793ac47b74da84a2c8a22b23b76"
+  resolved "https://registry.npmjs.org/@parcel/packager-js/-/packager-js-2.4.0.tgz"
   integrity sha512-cfslIH43CJFgBS9PmdFaSnbInMCoejsFCnxtJa2GeUpjCXSfelPRp0OPx7m8n+fap4czftPhoxBALeDUElOZGQ==
   dependencies:
     "@parcel/diagnostic" "2.4.0"
@@ -2052,7 +2052,7 @@
 
 "@parcel/packager-raw@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/packager-raw/-/packager-raw-2.4.0.tgz#bdb2576f154e897947bf6331d7711d4a6258d1e8"
+  resolved "https://registry.npmjs.org/@parcel/packager-raw/-/packager-raw-2.4.0.tgz"
   integrity sha512-SFfw7chMFITj3J26ZVDJxbO6xwtPFcFBm1js8cwWMgzwuwS6CEc43k5+Abj+2/EqHU9kNJU9eWV5vT6lQwf3HA==
   dependencies:
     "@parcel/plugin" "2.4.0"
@@ -2066,14 +2066,14 @@
 
 "@parcel/plugin@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/plugin/-/plugin-2.4.0.tgz#fc940f4eb58dc271e53aa0043b68cc565853e390"
+  resolved "https://registry.npmjs.org/@parcel/plugin/-/plugin-2.4.0.tgz"
   integrity sha512-ehFUAL2+h27Lv+cYbbXA74UGy8C+eglUjcpvASOOjVRFuD6poMAMliKkKAXBhQaFx/Rvhz27A2PIPv9lL2i4UQ==
   dependencies:
     "@parcel/types" "2.4.0"
 
 "@parcel/reporter-dev-server@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/reporter-dev-server/-/reporter-dev-server-2.4.0.tgz#233e595680aa86ae599715589865b282abdf63bd"
+  resolved "https://registry.npmjs.org/@parcel/reporter-dev-server/-/reporter-dev-server-2.4.0.tgz"
   integrity sha512-24h++wevs7XYuX4dKa4PUfLSstvn3g7udajFv6CeQoME+dR25RL/wH/2LUbhV5ilgXXab76rWIndSqp78xHxPA==
   dependencies:
     "@parcel/plugin" "2.4.0"
@@ -2081,7 +2081,7 @@
 
 "@parcel/resolver-default@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/resolver-default/-/resolver-default-2.4.0.tgz#1f45b95443078f10d178b32782da95a1bea71eb6"
+  resolved "https://registry.npmjs.org/@parcel/resolver-default/-/resolver-default-2.4.0.tgz"
   integrity sha512-K7pIIFmGm1hjg/7Mzkg99i8tfCClKfBUTuc2R5j8cdr2n0mCAi4/f2mFf5svLrb5XZrnDgoQ05tHKklLEfUDUw==
   dependencies:
     "@parcel/node-resolver-core" "2.4.0"
@@ -2089,7 +2089,7 @@
 
 "@parcel/runtime-browser-hmr@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/runtime-browser-hmr/-/runtime-browser-hmr-2.4.0.tgz#369b688ce3ed95109c0fcff9157b678c5ee033db"
+  resolved "https://registry.npmjs.org/@parcel/runtime-browser-hmr/-/runtime-browser-hmr-2.4.0.tgz"
   integrity sha512-swPFtvxGoCA9LEjU/pHPNjxG1l0fte8447zXwRN/AaYrtjNu9Ww117OSKCyvCnE143E79jZOFStodTQGFuH+9A==
   dependencies:
     "@parcel/plugin" "2.4.0"
@@ -2097,7 +2097,7 @@
 
 "@parcel/runtime-js@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/runtime-js/-/runtime-js-2.4.0.tgz#bcf6d540247bda286156a876efdbf9103ce03978"
+  resolved "https://registry.npmjs.org/@parcel/runtime-js/-/runtime-js-2.4.0.tgz"
   integrity sha512-67OOvmkDdtmgzZVP/EyAzoXhJ/Ug3LUVUt7idg9arun5rdJptqEb3Um3wmH0zjcNa9jMbJt7Kl5x1wA8dJgPYg==
   dependencies:
     "@parcel/plugin" "2.4.0"
@@ -2106,7 +2106,7 @@
 
 "@parcel/runtime-react-refresh@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/runtime-react-refresh/-/runtime-react-refresh-2.4.0.tgz#fe305175228c8d19d8fba9bed5542fad549723ce"
+  resolved "https://registry.npmjs.org/@parcel/runtime-react-refresh/-/runtime-react-refresh-2.4.0.tgz"
   integrity sha512-flnr+bf06lMZPbXZZLLaFNrPHvYpfuXTVovEghyUW46qLVpaHj33dpsU/LqZplIuHgBp2ibgrKhr/hY9ell68w==
   dependencies:
     "@parcel/plugin" "2.4.0"
@@ -2115,7 +2115,7 @@
 
 "@parcel/runtime-service-worker@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/runtime-service-worker/-/runtime-service-worker-2.4.0.tgz#07375693acbd9a5940e6230409099e0861362cc3"
+  resolved "https://registry.npmjs.org/@parcel/runtime-service-worker/-/runtime-service-worker-2.4.0.tgz"
   integrity sha512-RgM5QUqW22WzstW03CtV+Oih8VGVuwsf94Cc4hLouU2EAD0NUJgATWbFocZVTZIBTKELAWh2gjpSQDdnL4Ur+A==
   dependencies:
     "@parcel/plugin" "2.4.0"
@@ -2131,7 +2131,7 @@
 
 "@parcel/transformer-js@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-js/-/transformer-js-2.4.0.tgz#e07310ef85a4c14e3d285c3c85e73c581043dfaf"
+  resolved "https://registry.npmjs.org/@parcel/transformer-js/-/transformer-js-2.4.0.tgz"
   integrity sha512-eeLHFwv3jT3GmIxpLC7B8EXExGK0MFaK91HXljOMh6l8a+GlQYw27MSFQVtoXr0Olx9Uq2uvjXP1+zSsq3LQUQ==
   dependencies:
     "@parcel/diagnostic" "2.4.0"
@@ -2148,7 +2148,7 @@
 
 "@parcel/transformer-json@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-json/-/transformer-json-2.4.0.tgz#575497fb64029071cadcf1309884c0ec4e5def3c"
+  resolved "https://registry.npmjs.org/@parcel/transformer-json/-/transformer-json-2.4.0.tgz"
   integrity sha512-3nR+d39mbURoXIypDfVCaxpwL65qMV+h8SLD78up2uhaRGklHQfN7GuemR7L+mcVAgNrmwVvZHhyNjdgYwWqqg==
   dependencies:
     "@parcel/plugin" "2.4.0"
@@ -2156,14 +2156,14 @@
 
 "@parcel/transformer-raw@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-raw/-/transformer-raw-2.4.0.tgz#ee65c296073ce3876b1380be20721105e3a6d9c7"
+  resolved "https://registry.npmjs.org/@parcel/transformer-raw/-/transformer-raw-2.4.0.tgz"
   integrity sha512-fciFbNrzj0kLlDgr6OsI0PUv414rVygDWAsgbCCq4BexDkuemMs9f9FjMctx9B2VZlctE8dTT4RGkuQumTIpUg==
   dependencies:
     "@parcel/plugin" "2.4.0"
 
 "@parcel/transformer-react-refresh-wrap@^2.3.2":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-react-refresh-wrap/-/transformer-react-refresh-wrap-2.4.0.tgz#23d1a39acddbbe71802c962f88ef376548c94cf8"
+  resolved "https://registry.npmjs.org/@parcel/transformer-react-refresh-wrap/-/transformer-react-refresh-wrap-2.4.0.tgz"
   integrity sha512-9+f6sGOWkf0jyUQ1CuFWk+04Mq3KTOCU9kRiwCHX1YdUCv5uki6r9XUSpqiYodrV+L6w9CCwLvGMLCDHxtCxMg==
   dependencies:
     "@parcel/plugin" "2.4.0"
@@ -2185,7 +2185,7 @@
 
 "@parcel/types@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/types/-/types-2.4.0.tgz#e900ba9d9c14cc8bc783724e7c66f04b87965b28"
+  resolved "https://registry.npmjs.org/@parcel/types/-/types-2.4.0.tgz"
   integrity sha512-nysGIbBEnp+7R+tKTysdcTFOZDTCodsiXFeAhYQa5bhiOnG1l9gzhxQnE2OsdsgvMm40IOsgKprqvM/DbdLfnQ==
   dependencies:
     "@parcel/cache" "2.4.0"
@@ -2211,7 +2211,7 @@
 
 "@parcel/utils@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/utils/-/utils-2.4.0.tgz#47f979e10f82caac160a6526db2f31c5713ca0d7"
+  resolved "https://registry.npmjs.org/@parcel/utils/-/utils-2.4.0.tgz"
   integrity sha512-sdNo+mZqDZT8LJYB6WWRKa4wFVZcK6Zb5Jh6Du76QvXXwHbPIQNZgJBb6gd/Rbk4GLOp2tW7MnBfq6zP9E9E2g==
   dependencies:
     "@parcel/codeframe" "2.4.0"
@@ -2244,7 +2244,7 @@
 
 "@parcel/workers@2.4.0":
   version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@parcel/workers/-/workers-2.4.0.tgz#393d5fe7942220b8846f626688e341c1be2bf1fa"
+  resolved "https://registry.npmjs.org/@parcel/workers/-/workers-2.4.0.tgz"
   integrity sha512-eSFyvEoXXPgFzQfKIlpkUjpHfIbezUCRFTPKyJAKCxvU5DSXOpb1kz5vDESWQ4qTZXKnrKvxS1PPWN6bam9z0g==
   dependencies:
     "@parcel/diagnostic" "2.4.0"
@@ -2316,7 +2316,7 @@
 
 "@swc/helpers@^0.3.6":
   version "0.3.8"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.3.8.tgz#5b9ecf4ee480ca00f1ffbc2d1a5d4eed0d1afe81"
+  resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.3.8.tgz"
   integrity sha512-aWItSZvJj4+GI6FWkjZR13xPNPctq2RRakzo+O6vN7bC2yjwdg5EFpgaSAUn95b7BGSgcflvzVDPoKmJv24IOg==
 
 "@szmarczak/http-timer@^1.1.2":
@@ -3385,7 +3385,7 @@ babel-plugin-polyfill-regenerator@^0.3.0:
 
 babel-plugin-remove-graphql-queries@^4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.11.0.tgz#3911e99376fd03ab2a90efb9b23a25c0a2335e4c"
+  resolved "https://registry.npmjs.org/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.11.0.tgz"
   integrity sha512-e5zarZEx7CZLenV5vYA/v0Rcv0KevLUU47ggtP5jGFzuGujpBj9+alzW0ZwDQe4RqiXDQwedC0s8ZRvLjClOnA==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -3416,7 +3416,7 @@ babel-plugin-transform-react-remove-prop-types@^0.4.24:
 
 babel-preset-gatsby@^2.11.0:
   version "2.11.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-2.11.0.tgz#986e47bea1c4fe0a0cba399a1312a3c2f81fedba"
+  resolved "https://registry.npmjs.org/babel-preset-gatsby/-/babel-preset-gatsby-2.11.0.tgz"
   integrity sha512-QaCqeOjKSJK80anNKFCUoH+nqcV+No3H25W54+mko/31TqXQLOkuEXcV++eefQOw8X0egLRyI6qUHxF1Y4PvqA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.14.0"
@@ -4426,7 +4426,7 @@ create-emotion@^10.0.27:
 
 create-gatsby@^2.11.0:
   version "2.11.0"
-  resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-2.11.0.tgz#e3cf715338042cac86aaac71dc8b79b5ec936cd6"
+  resolved "https://registry.npmjs.org/create-gatsby/-/create-gatsby-2.11.0.tgz"
   integrity sha512-K1E3/fTJd0CDdbiyilzHgJoFnxfcSIfqJs7cZZd783pvDoKKz4RFjPFZOIVF2EgA2R3+ofIR9p9RTkPMuv4znw==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6217,7 +6217,7 @@ gatsby-awesome-pagination@0.3.8:
 
 gatsby-cli@4.11.0, gatsby-cli@^4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-4.11.0.tgz#225b1b5919a540c583b81fa702dc8de4db865371"
+  resolved "https://registry.npmjs.org/gatsby-cli/-/gatsby-cli-4.11.0.tgz"
   integrity sha512-TV17iaK1u41K+UqWEcPFIZZJKG0qfydi4bKyswAYqHrH96nkjf+ptKp9Vx3YN1M8C7UYz4lSOjH4ZUkcNlduog==
   dependencies:
     "@babel/code-frame" "^7.14.0"
@@ -6282,31 +6282,10 @@ gatsby-core-utils@^2.14.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^3.11.0:
+gatsby-core-utils@^3.11.0, gatsby-core-utils@^3.5.2, gatsby-core-utils@^3.8.2:
   version "3.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.11.0.tgz#cd78bf1a3fa89e201dd35a5d3a8c4029d7614a9d"
+  resolved "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.11.0.tgz"
   integrity sha512-ye8ULSmSdv27sOGu2g2qQiSXhxhlgkq/O+4p+yftDn+VeQMVRx/yWinhN/GfH7ahQq6mC0wYRehkbE4GK6Ga8g==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    ci-info "2.0.0"
-    configstore "^5.0.1"
-    fastq "^1.13.0"
-    file-type "^16.5.3"
-    fs-extra "^10.0.0"
-    got "^11.8.3"
-    import-from "^4.0.0"
-    lmdb "^2.2.4"
-    lock "^1.1.0"
-    node-object-hash "^2.3.10"
-    proper-lockfile "^4.1.2"
-    resolve-from "^5.0.0"
-    tmp "^0.2.1"
-    xdg-basedir "^4.0.0"
-
-gatsby-core-utils@^3.5.2, gatsby-core-utils@^3.8.2:
-  version "3.10.1"
-  resolved "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.10.1.tgz"
-  integrity sha512-WqNMm0u1CAZm6Q+UQ4dDHwIAt3l32NeIaPuSXmDX7QcMGR3FUUk8cl2Ym6gx1hfILm1aCexqfaSCLUXtaWKkbQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
@@ -6326,14 +6305,14 @@ gatsby-core-utils@^3.5.2, gatsby-core-utils@^3.8.2:
 
 gatsby-graphiql-explorer@^2.11.0:
   version "2.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-2.11.0.tgz#7e886846482ad72bd49f515e7faa658a94342803"
+  resolved "https://registry.npmjs.org/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-2.11.0.tgz"
   integrity sha512-nMNXlF/pleO/rH66t00SdXdKq3vV0/Su5EEQY7xg3yRc38ueC2UkZq10nrJiVoc05RO8Txo5o2gpoC2DP07lFg==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
 gatsby-legacy-polyfills@^2.11.0:
   version "2.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-2.11.0.tgz#8b2afc4d97f44eb5767fe9b49f55ff675055ffd2"
+  resolved "https://registry.npmjs.org/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-2.11.0.tgz"
   integrity sha512-ulkRNCitwFjwUM4f2ufljH0WjELm6QEIOGRryNRt9LKJEB9QGmdm+KUAWIv7xrFUqKq1Pn6is64wcfXDw21zSA==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6341,7 +6320,7 @@ gatsby-legacy-polyfills@^2.11.0:
 
 gatsby-link@^4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-4.11.0.tgz#aed4450fff7be87c7e16fa97292f3b0889af11d1"
+  resolved "https://registry.npmjs.org/gatsby-link/-/gatsby-link-4.11.0.tgz"
   integrity sha512-S1/72nkdj2+hjXgjwPgxbMAy8p4QIQu08sCQpR09OG5Ts/GyES9vUscbMC4srOsfZ2QAGVMDybNV68iBD26MAw==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6351,7 +6330,7 @@ gatsby-link@^4.11.0:
 
 gatsby-page-utils@^2.11.0:
   version "2.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-2.11.0.tgz#841f9759b4cb2f9ebb776e29e62c84057ef3217e"
+  resolved "https://registry.npmjs.org/gatsby-page-utils/-/gatsby-page-utils-2.11.0.tgz"
   integrity sha512-i64+N5FXIbPT0g9UYHZQKappS0GBo6rFwiEFoKCfTsFIRGxEOAH89rJLC9P2po063CU5Rf0kLYdov0HLBAPwTQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6365,7 +6344,7 @@ gatsby-page-utils@^2.11.0:
 
 gatsby-parcel-config@^0.2.0:
   version "0.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-parcel-config/-/gatsby-parcel-config-0.2.0.tgz#0b1795d17c825bd293c372fa0acfa987aa91111e"
+  resolved "https://registry.npmjs.org/gatsby-parcel-config/-/gatsby-parcel-config-0.2.0.tgz"
   integrity sha512-BbsSm5O0R7IvCRLNSk3lBpkU8RtSOn8s7Ifa7bHF63PzTG1SUpBjwMF6301tCbvdSXWrP7n9dsfaXS6ex/TElQ==
   dependencies:
     "@gatsbyjs/parcel-namer-relative-to-cwd" "0.0.2"
@@ -6402,7 +6381,7 @@ gatsby-plugin-eslint@4.0.2:
 
 gatsby-plugin-feed@4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-4.11.0.tgz#3703df2fdc3470a5a73e5e826befafc08948c412"
+  resolved "https://registry.npmjs.org/gatsby-plugin-feed/-/gatsby-plugin-feed-4.11.0.tgz"
   integrity sha512-3Z71TdCXXfp7E5A2sepyG28KARw7IhpEIDHF0XgtmopXelsetwKL5LaKUfh3ln2fXGOy0ZoHiS8MW6F7VdM6xw==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6415,7 +6394,7 @@ gatsby-plugin-feed@4.11.0:
 
 gatsby-plugin-image@2.11.0:
   version "2.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.11.0.tgz#d527e135c7a0623fad60449756284aef66a27c50"
+  resolved "https://registry.npmjs.org/gatsby-plugin-image/-/gatsby-plugin-image-2.11.0.tgz"
   integrity sha512-tRNofGNUK9K6IrkPFj+m4oKPV4KxEzx+CFBD2kyDm0EMyUv4HJKNYoe+VppYJo7x0qUMFcChBo+RCAuVKiD+Fw==
   dependencies:
     "@babel/code-frame" "^7.14.0"
@@ -6434,7 +6413,7 @@ gatsby-plugin-image@2.11.0:
 
 gatsby-plugin-manifest@4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.11.0.tgz#d2c0f65886d4dd3d83c793c56b41f217364affd2"
+  resolved "https://registry.npmjs.org/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.11.0.tgz"
   integrity sha512-rkzq0v7bFtACW6u4/AVzyVmdDSAB6ge5IdZf29SBpHrEWD4SIWvjPzmj7UaMuhRS5MHluzUzOCzD7+He0sKHYg==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6445,7 +6424,7 @@ gatsby-plugin-manifest@4.11.0:
 
 gatsby-plugin-mdx@3.11.0:
   version "3.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-3.11.0.tgz#8c73d95d004a7979a13e0b802d88736add63b26d"
+  resolved "https://registry.npmjs.org/gatsby-plugin-mdx/-/gatsby-plugin-mdx-3.11.0.tgz"
   integrity sha512-ijQGqU+bZQrG9F9L6cWtd9iJTA/C7jxIrcNjb91M+E2ONTflCAL2M51Z3pzSvYmO7qgxcNDyug91qm/zbRs0Ig==
   dependencies:
     "@babel/core" "^7.15.5"
@@ -6501,7 +6480,7 @@ gatsby-plugin-netlify@4.1.0:
 
 gatsby-plugin-offline@5.11.0:
   version "5.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-5.11.0.tgz#f4db9a9508287233d2f02767978b56a15f5deceb"
+  resolved "https://registry.npmjs.org/gatsby-plugin-offline/-/gatsby-plugin-offline-5.11.0.tgz"
   integrity sha512-8QeuPeX2beJmIRt0hCcX2L+DN2bVZpK2eCfQDMSkNC7YqivfHftDjQQVO15wVjLB7OFjeLo1oJX7pegITE9ueA==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6514,7 +6493,7 @@ gatsby-plugin-offline@5.11.0:
 
 gatsby-plugin-page-creator@^4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.11.0.tgz#61e2bf87c30fc30120a71db96f57da1af4a2aca4"
+  resolved "https://registry.npmjs.org/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.11.0.tgz"
   integrity sha512-sPxw9az72snTROeDwcmViXOobc+4V4UDSbTO9MsxNfY4tk0HA3BDJLILUIsivK+bwPQrOuhQE2kFi4fi4k8aZA==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6538,7 +6517,7 @@ gatsby-plugin-portal@1.0.7:
 
 gatsby-plugin-react-helmet@5.11.0:
   version "5.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-5.11.0.tgz#cf20639260fd1fd6180a3cfe1c64da2636ea9655"
+  resolved "https://registry.npmjs.org/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-5.11.0.tgz"
   integrity sha512-4ouGsfCCjbXtuz9/IR8YU2PfcHQ/peSHHr5UwIu6X/cJ2A8ykZHFMewQ4ve8dfHSBmNKDBuoFe6D0Y8Q4MDI8w==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6578,7 +6557,7 @@ gatsby-plugin-robots-txt@1.7.0:
 
 gatsby-plugin-sass@5.11.0:
   version "5.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-5.11.0.tgz#dea950379ed4c4ec6ec4049422f47bf7daeb3295"
+  resolved "https://registry.npmjs.org/gatsby-plugin-sass/-/gatsby-plugin-sass-5.11.0.tgz"
   integrity sha512-IqFUMsy3n0jEGq5CpuEK52gj1WxxEuum4SwTJtM2tm5RBCUHWAY3FbqgklPzJL3481KUuE+nc5lZuX5yFepJLg==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6587,7 +6566,7 @@ gatsby-plugin-sass@5.11.0:
 
 gatsby-plugin-sharp@4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.11.0.tgz#431eccde32ac0db10fec6a5bc9eee1db7ec7a0c2"
+  resolved "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.11.0.tgz"
   integrity sha512-1DczckFCv8wu4PiVyVKADK7JmjaUjS6497t8znUulTiHkPFSl5mrF+0tQ+x+sZa27NmuWSkOmXp1s42bn4NWzw==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6612,7 +6591,7 @@ gatsby-plugin-sharp@4.11.0:
 
 gatsby-plugin-sitemap@5.11.0:
   version "5.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-5.11.0.tgz#ce396c8d5a4ce1fac67821c9db3e2cbffceab494"
+  resolved "https://registry.npmjs.org/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-5.11.0.tgz"
   integrity sha512-9Az8F0qfl+9gXNKX8KWVmYu1yxxM2P9Tuq5s+QdRXEfqyPZAnbclU1lg+PXErHNouF2uqAU3K0NQJT6LcxSfAA==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6622,7 +6601,7 @@ gatsby-plugin-sitemap@5.11.0:
 
 gatsby-plugin-typescript@4.11.0, gatsby-plugin-typescript@^4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-4.11.0.tgz#7f2c53dd96c16db86825f5eb9f062c701fe6c27e"
+  resolved "https://registry.npmjs.org/gatsby-plugin-typescript/-/gatsby-plugin-typescript-4.11.0.tgz"
   integrity sha512-Y1eAkGw2vTbRbmUfQdZyunAlpn2gztih0jnc3BRtpEnAZqG4R9kth0tg5/IZeN2QWmURFE9eo/Bi1ksQlgZzAg==
   dependencies:
     "@babel/core" "^7.15.5"
@@ -6635,7 +6614,7 @@ gatsby-plugin-typescript@4.11.0, gatsby-plugin-typescript@^4.11.0:
 
 gatsby-plugin-utils@^3.5.0:
   version "3.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.5.0.tgz#3d470726141051fc95afeccebb9649e4916a03ca"
+  resolved "https://registry.npmjs.org/gatsby-plugin-utils/-/gatsby-plugin-utils-3.5.0.tgz"
   integrity sha512-049b5Gh0NazCWAtXvYbFQVS4gmlQqy5MX4/o44TRmzIFtUyPVKDmg9n2sAttHyDN61IogBXhmE4Y1y6dAE2QrA==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6649,7 +6628,7 @@ gatsby-plugin-utils@^3.5.0:
 
 gatsby-react-router-scroll@^5.11.0:
   version "5.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-5.11.0.tgz#866b89366146d8df3852ed699d12be1e9fce4acc"
+  resolved "https://registry.npmjs.org/gatsby-react-router-scroll/-/gatsby-react-router-scroll-5.11.0.tgz"
   integrity sha512-g/lyG0X73cpI9DdYvCv5rZiV8LqHjn6q1l8Vfm/jBS7wtv8XxNR4BxUqkbMeHRcvZcX5bXku6FFSFUAOd9c3QQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6657,7 +6636,7 @@ gatsby-react-router-scroll@^5.11.0:
 
 gatsby-remark-copy-linked-files@5.11.0:
   version "5.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-5.11.0.tgz#11c7f6340aaf5103223ff048c8d0f9154dc713db"
+  resolved "https://registry.npmjs.org/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-5.11.0.tgz"
   integrity sha512-k64JUPf133iwCges5rLM0tGRRSOoDKOt5sHMuAKw/emscbn2DKbI1m76e9uQxI1xPP+LO7K21DysFou+wPQn/Q==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6671,7 +6650,7 @@ gatsby-remark-copy-linked-files@5.11.0:
 
 gatsby-remark-images@6.11.0:
   version "6.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-6.11.0.tgz#ea3c3f9619de67ad41bd400cd1802812b04c9d7e"
+  resolved "https://registry.npmjs.org/gatsby-remark-images/-/gatsby-remark-images-6.11.0.tgz"
   integrity sha512-xUBPGHEJILxbAh/pTNtkYCZ0kA1jyt3KyLrr8xwkGODJ/j2tDWVohnlzST3ps8Z0p1v3cKacWpnTsTaeUDmomg==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6688,7 +6667,7 @@ gatsby-remark-images@6.11.0:
 
 gatsby-sharp@^0.5.0:
   version "0.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-0.5.0.tgz#879d3c462eefa917cb3a50c6ec891951d9740f56"
+  resolved "https://registry.npmjs.org/gatsby-sharp/-/gatsby-sharp-0.5.0.tgz"
   integrity sha512-9wZS0ADZsKTCsU66sxIP/tCHgFaREyoYm53tepgtp/YSVWNrurx9/0kGf8XsFFY9OecrqIRNuk1cWe7XKCpbQA==
   dependencies:
     "@types/sharp" "^0.29.5"
@@ -6696,7 +6675,7 @@ gatsby-sharp@^0.5.0:
 
 gatsby-source-filesystem@4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.11.0.tgz#dce902b8f84674e002ac31b2cf0ae3da2f2047f2"
+  resolved "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-4.11.0.tgz"
   integrity sha512-9mKiTQ4B33ZxC/JEwdjA75Any/JzaS8jWmcqivfE1g0oGq5ips47qfTQ6QdPQp8R/CRUNAUHgB7pllFntn+OCA==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6733,7 +6712,7 @@ gatsby-source-filesystem@^3.4.0:
 
 gatsby-telemetry@^3.11.0:
   version "3.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.11.0.tgz#3d50f36e67bc9a21278b337c1faecf8216538cd3"
+  resolved "https://registry.npmjs.org/gatsby-telemetry/-/gatsby-telemetry-3.11.0.tgz"
   integrity sha512-OXtGdzCjTnLDaM6I7ACoSUAo7NYiQYUhEsrDZ1diGX4f2MEb1p+aLKWXh8Xn69+rpDTw7VjMb6u7ATsOqIOrhQ==
   dependencies:
     "@babel/code-frame" "^7.14.0"
@@ -6752,7 +6731,7 @@ gatsby-telemetry@^3.11.0:
 
 gatsby-transformer-json@4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-4.11.0.tgz#8c761b09c76ca236b96a615be380594b59e3058a"
+  resolved "https://registry.npmjs.org/gatsby-transformer-json/-/gatsby-transformer-json-4.11.0.tgz"
   integrity sha512-/JYHP6lCsU1Bm9c0xZVm0KBsQCk11CqU5mnrx5rd1CJdaNlYWa2+1JapIUeeoZbEDktK4ws58vKunyhq5Njp8w==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6760,7 +6739,7 @@ gatsby-transformer-json@4.11.0:
 
 gatsby-transformer-sharp@4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-4.11.0.tgz#e80bb5736cfe90e5ee7d826ee451a10f2d743c94"
+  resolved "https://registry.npmjs.org/gatsby-transformer-sharp/-/gatsby-transformer-sharp-4.11.0.tgz"
   integrity sha512-pQkQs7EALTWwuoEVOGxJt3/6CIF6AaNmp7tEqbqT3+iu6KiEAp5/YxRR56t8eQ6crVt1kajDSy1pQW8VRi5Sig==
   dependencies:
     "@babel/runtime" "^7.15.4"
@@ -6774,7 +6753,7 @@ gatsby-transformer-sharp@4.11.0:
 
 gatsby-worker@^1.11.0:
   version "1.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-worker/-/gatsby-worker-1.11.0.tgz#bf8c3b9374390260b8335d7cfccbc332d0716727"
+  resolved "https://registry.npmjs.org/gatsby-worker/-/gatsby-worker-1.11.0.tgz"
   integrity sha512-uJ5bNrifIrS20o0SYkmb379logfRKO35cqYxd2R0uNf9kWGaQOda0SZfm7Uw+Vdx7cO9Ra8p1ArijbHm7ZArCA==
   dependencies:
     "@babel/core" "^7.15.5"
@@ -6782,7 +6761,7 @@ gatsby-worker@^1.11.0:
 
 gatsby@4.11.0:
   version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.11.0.tgz#c1aa3a8a69ae120e672e0ad877315276cb0641a0"
+  resolved "https://registry.npmjs.org/gatsby/-/gatsby-4.11.0.tgz"
   integrity sha512-It4vTSzjXfhigZDStJFSqPKfjYtRyRv/ZtZUY5v8pzRLXa17OAjhhxhJRtY3bRf4MBwXgnBHD0m2yuSCKMSmtQ==
   dependencies:
     "@babel/code-frame" "^7.14.0"
@@ -8536,7 +8515,7 @@ listr2@^4.0.1:
 
 lmdb@2.2.4:
   version "2.2.4"
-  resolved "https://registry.yarnpkg.com/lmdb/-/lmdb-2.2.4.tgz#6494d5a1d1db152e0be759edcfa06893e4cbdb53"
+  resolved "https://registry.npmjs.org/lmdb/-/lmdb-2.2.4.tgz"
   integrity sha512-gto+BB2uEob8qRiTlOq+R3uX0YNHsX9mjxj9Sbdue/LIKqu6IlZjrsjKeGyOMquc/474GEqFyX2pdytpydp0rQ==
   dependencies:
     msgpackr "^1.5.4"
@@ -11400,10 +11379,10 @@ sass-loader@^10.1.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@1.49.9:
-  version "1.49.9"
-  resolved "https://registry.npmjs.org/sass/-/sass-1.49.9.tgz"
-  integrity sha512-YlYWkkHP9fbwaFRZQRXgDi3mXZShslVmmo+FVK3kHLUELHHEYrCmL1x6IUjC7wLS6VuJSAFXRQS/DxdsC4xL1A==
+sass@1.49.10:
+  version "1.49.10"
+  resolved "https://registry.npmjs.org/sass/-/sass-1.49.10.tgz"
+  integrity sha512-w37zfWJwKu4I78U4z63u1mmgoncq+v3iOB4yzQMPyAPVHHawaQSnu9C9ysGQnZEhW609jkcLioJcMCqm75JMdg==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
