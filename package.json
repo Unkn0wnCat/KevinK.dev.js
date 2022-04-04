@@ -69,7 +69,7 @@
         "react-helmet": "6.1.0",
         "react-i18next": "11.16.2",
         "sass": "1.49.11",
-        "tsparticles": "1.42.4",
+        "tsparticles": "1.43.0",
         "typed-scss-modules": "6.2.0",
         "utterances-react": "0.1.3"
     },
