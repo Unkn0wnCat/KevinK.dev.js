@@ -57,7 +57,7 @@
         "gatsby-source-filesystem": "4.11.1",
         "gatsby-transformer-json": "4.11.0",
         "gatsby-transformer-sharp": "4.11.0",
-        "hamburger-react": "2.4.1",
+        "hamburger-react": "2.5.0",
         "i18next": "21.6.14",
         "locale": "0.1.0",
         "lodash": "4.17.21",
