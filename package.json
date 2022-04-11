@@ -47,7 +47,7 @@
         "gatsby-plugin-react-i18next": "1.2.3",
         "gatsby-plugin-remote-images": "3.3.0",
         "gatsby-plugin-remove-serviceworker": "1.0.0",
-        "gatsby-plugin-robots-txt": "1.7.0",
+        "gatsby-plugin-robots-txt": "1.7.1",
         "gatsby-plugin-sass": "5.11.1",
         "gatsby-plugin-sharp": "4.11.1",
         "gatsby-plugin-sitemap": "5.11.1",
