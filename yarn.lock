@@ -8962,10 +8962,10 @@ lru-queue@^0.1.0:
   dependencies:
     es5-ext "~0.10.2"
 
-lucide-react@0.22.0:
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.22.0.tgz#b1d7119c76e8b7f1088b4f0792b90a28f1ff600e"
-  integrity sha512-n2mlnjWOCSuG2IRFoycLCdx8Kj8DZdmvfQoPNAuHqkEifcxSgJStN7I6LMgYkzWw9WVUmqQ4fhdo3h7Xo4rS0A==
+lucide-react@0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.29.0.tgz#270224985ad90ebf8180462645056852b6f94ef7"
+  integrity sha512-+wHrLNytlvRzbrXajD0oHfFH7LOWm6o//0zsHb4NihNO6f9FHe6zK2pUZZFrqQvIuF/Cps46jbkZA/wY627U9A==
 
 make-dir@^2.1.0:
   version "2.1.0"
