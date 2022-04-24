@@ -1172,10 +1172,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/encode-sans@4.5.5":
-  version "4.5.5"
-  resolved "https://registry.npmjs.org/@fontsource/encode-sans/-/encode-sans-4.5.5.tgz"
-  integrity sha512-Msrx3BjyTEUnlhC88EyvYs2z7p7mUbZh9zx9EpQ50mNLxEY7mHMruQcXhvvOMOJ8clcuOStF15YqbAduZKV0nQ==
+"@fontsource/encode-sans@4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/encode-sans/-/encode-sans-4.5.6.tgz#aa49fb0b2f5b670c75d85ea4fa75a40914ce1adc"
+  integrity sha512-zn5qAcygSgQPuqSkPalvC/3UwesLqsQMQyMtrlOLUH+W+OMVDy7+nD7DUiHSskdeHBsyBRPir7nVDfITrzkJLw==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@0.0.2":
   version "0.0.2"
