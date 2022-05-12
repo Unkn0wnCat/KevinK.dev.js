@@ -1711,10 +1711,10 @@
   resolved "https://registry.npmjs.org/@iarna/toml/-/toml-2.2.5.tgz"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
-"@icons-pack/react-simple-icons@4.6.1":
-  version "4.6.1"
-  resolved "https://registry.npmjs.org/@icons-pack/react-simple-icons/-/react-simple-icons-4.6.1.tgz"
-  integrity sha512-ICONbofFzeTkXvmbnptDv4P9cqtW/N/8EFOqyzJQJ80b8fJoLzqhM7EKslBmWziIwjY9FBnOoL2ofzQOoDG1Gg==
+"@icons-pack/react-simple-icons@4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-4.7.0.tgz#2429df1fca204f696f5a143339d0f3c5e6bd6b68"
+  integrity sha512-anz/4ucpcdvN+622AjfmCtqSLp4GCg0VuyCIXqWyAZ3mjAtSmSWMoL5aVD4irSJlMW+yCqHxRSslfZFwcE3q0A==
   dependencies:
     prop-types "^15.7.2"
 
