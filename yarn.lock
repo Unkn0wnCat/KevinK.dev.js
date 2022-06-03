@@ -11333,10 +11333,10 @@ react-helmet@6.1.0, react-helmet@^6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
-react-i18next@11.16.11:
-  version "11.16.11"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.16.11.tgz#28410a9c8412a34ab6e21ed7bbdd29ed33e5c3b8"
-  integrity sha512-x2UUTizhrnApV8Y/VmJ54/jxWVg9WwQ3CI5CC7u/aUTyqkCE6hUcymPg+Ibqw4XmYSz/Pa4dSXc9SLStQxvHKQ==
+react-i18next@11.17.0:
+  version "11.17.0"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.17.0.tgz#44a0689dac7903352733e40303b743fa465eb797"
+  integrity sha512-ewq2S4bVUTRqOMAdM/XvzCn9xUPIryzeBQRghmJ8lC6VI/8Kp7z1GwoLyt8j7GB2ywhN2SjPk7LU4sHzVeu7aw==
   dependencies:
     "@babel/runtime" "^7.14.5"
     html-escaper "^2.0.2"
