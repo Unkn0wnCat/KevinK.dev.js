@@ -1296,6 +1296,28 @@
   resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.5.4.tgz#1a89069978734e132fa4a59414ddb64e4b94fde7"
   integrity sha512-qnikpQgi30AS01aFlNQV6l8/qdZIcP76mp90ti+u4rucXHsn4afSKivQXApqxvrQG9+Ibv45STyvHizvxef/7A==
 
+"@changesets/changelog-github@^0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@changesets/changelog-github/-/changelog-github-0.4.4.tgz#a3d59b30ccc6bfa3f0b381cda7cd4017c5590a9a"
+  integrity sha512-htSILqCkyYtTB5/LoVKwx7GCJQGxAiBcYbfUKWiz/QoDARuM01owYtMXhV6/iytJZq/Dqqz3PjMZUNB4MphpbQ==
+  dependencies:
+    "@changesets/get-github-info" "^0.5.0"
+    "@changesets/types" "^5.0.0"
+    dotenv "^8.1.0"
+
+"@changesets/get-github-info@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@changesets/get-github-info/-/get-github-info-0.5.0.tgz#b91ceb2d82edef78ae1598ea9fc335a012250295"
+  integrity sha512-vm5VgHwrxkMkUjFyn3UVNKLbDp9YMHd3vMf1IyJoa/7B+6VpqmtAaXyDS0zBLfN5bhzVCHrRnj4GcZXXcqrFTw==
+  dependencies:
+    dataloader "^1.4.0"
+    node-fetch "^2.5.0"
+
+"@changesets/types@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@changesets/types/-/types-5.0.0.tgz#d5eb52d074bc0358ce47d54bca54370b907812a0"
+  integrity sha512-IT1kBLSbAgTS4WtpU6P5ko054hq12vk4tgeIFRVE7Vnm4a/wgbNvBalgiKP0MjEXbCkZbItiGQHkCGxYWR55sA==
+
 "@emotion/cache@^10.0.27":
   version "10.0.29"
   resolved "https://registry.npmjs.org/@emotion/cache/-/cache-10.0.29.tgz"
@@ -1764,11 +1786,12 @@
   resolved "https://registry.npmjs.org/@iarna/toml/-/toml-2.2.5.tgz"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
-"@icons-pack/react-simple-icons@4.7.0":
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-4.7.0.tgz#2429df1fca204f696f5a143339d0f3c5e6bd6b68"
-  integrity sha512-anz/4ucpcdvN+622AjfmCtqSLp4GCg0VuyCIXqWyAZ3mjAtSmSWMoL5aVD4irSJlMW+yCqHxRSslfZFwcE3q0A==
+"@icons-pack/react-simple-icons@4.7.1":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-4.7.1.tgz#68a6ed3d6b614e4fe6c0a6aecd18e7ad693c999f"
+  integrity sha512-qdhflLn2/lO8T5ukaZ0nwkDUV7OdmRiYlDg5qefpl+AFnvNDJ8MOIE6eod6ywRFRCHi7FGxqe3zJQ/e1O4hb/g==
   dependencies:
+    "@changesets/changelog-github" "^0.4.4"
     prop-types "^15.7.2"
 
 "@jimp/bmp@^0.16.1":
@@ -5436,9 +5459,9 @@ dotenv@^7.0.0:
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-7.0.0.tgz"
   integrity sha512-M3NhsLbV1i6HuGzBUH8vXrtxOk+tWmzWKDMbAVSUp3Zsjm7ywFeuwrUXhmhQyRK1q5B5GGy7hcXPbj3bnfZg2g==
 
-dotenv@^8.6.0:
+dotenv@^8.1.0, dotenv@^8.6.0:
   version "8.6.0"
-  resolved "https://registry.npmjs.org/dotenv/-/dotenv-8.6.0.tgz"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.6.0.tgz#061af664d19f7f4d8fc6e4ff9b584ce237adcb8b"
   integrity sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==
 
 duplexer3@^0.1.4:
@@ -9942,9 +9965,9 @@ node-fetch@2.6.1:
   resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.1.tgz"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
-node-fetch@2.6.7, node-fetch@^2.6.1, node-fetch@^2.6.6, node-fetch@^2.6.7:
+node-fetch@2.6.7, node-fetch@^2.5.0, node-fetch@^2.6.1, node-fetch@^2.6.6, node-fetch@^2.6.7:
   version "2.6.7"
-  resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
   integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
   dependencies:
     whatwg-url "^5.0.0"
