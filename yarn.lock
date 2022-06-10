@@ -1786,10 +1786,10 @@
   resolved "https://registry.npmjs.org/@iarna/toml/-/toml-2.2.5.tgz"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
-"@icons-pack/react-simple-icons@4.7.1":
-  version "4.7.1"
-  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-4.7.1.tgz#68a6ed3d6b614e4fe6c0a6aecd18e7ad693c999f"
-  integrity sha512-qdhflLn2/lO8T5ukaZ0nwkDUV7OdmRiYlDg5qefpl+AFnvNDJ8MOIE6eod6ywRFRCHi7FGxqe3zJQ/e1O4hb/g==
+"@icons-pack/react-simple-icons@4.7.2":
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-4.7.2.tgz#210033e7b80a8cbbb89d5b981f92feb87bf31a41"
+  integrity sha512-ZaavBUo4LKRgR/S3Kk2RrQiOdlNEphQvQ4+9hTmAqKgwkrbW8DIa3p2bkcTQvUI+tB1Ts3RWi2RdkZC/f0nSxQ==
   dependencies:
     "@changesets/changelog-github" "^0.4.4"
     prop-types "^15.7.2"
