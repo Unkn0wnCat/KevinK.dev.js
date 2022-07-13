@@ -2811,10 +2811,10 @@
   resolved "https://registry.npmjs.org/@turist/time/-/time-0.0.2.tgz"
   integrity sha512-qLOvfmlG2vCVw5fo/oz8WAZYlpe5a5OurgTj3diIxJCdjRHpapC+vQCz3er9LV79Vcat+DifBjeAhOAdmndtDQ==
 
-"@types/animejs@3.1.4":
-  version "3.1.4"
-  resolved "https://registry.npmjs.org/@types/animejs/-/animejs-3.1.4.tgz"
-  integrity sha512-WUjeFT2SXd6intfE6cg6eL1jk/JL88JqM2gC4WqO4iHLmbCvHUq6aoLK13lGpDWs4FtS2PHoYraJZ0dEx99Dyg==
+"@types/animejs@3.1.5":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@types/animejs/-/animejs-3.1.5.tgz#3cb6c7b90069c6e2969a392eb65ec6311e92c1ab"
+  integrity sha512-4i3i1YuNaNEPoHBJY78uzYu8qKIwyx96G04tnVtNhRMQC9I1Xhg6fY9GeWmZAzudaesKKrPkQgTCthT1zSGYyg==
 
 "@types/cacheable-request@^6.0.1":
   version "6.0.2"

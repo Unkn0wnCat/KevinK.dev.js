@@ -26,7 +26,7 @@
         "@mdx-js/mdx": "1.6.22",
         "@mdx-js/react": "1.6.22",
         "@react-hook/media-query": "1.1.1",
-        "@types/animejs": "3.1.4",
+        "@types/animejs": "3.1.5",
         "@types/node": "17.0.14",
         "@types/react": "18.0.15",
         "@types/react-dom": "18.0.6",
