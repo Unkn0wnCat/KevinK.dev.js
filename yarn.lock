@@ -1521,10 +1521,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/encode-sans@4.5.6":
-  version "4.5.6"
-  resolved "https://registry.yarnpkg.com/@fontsource/encode-sans/-/encode-sans-4.5.6.tgz#aa49fb0b2f5b670c75d85ea4fa75a40914ce1adc"
-  integrity sha512-zn5qAcygSgQPuqSkPalvC/3UwesLqsQMQyMtrlOLUH+W+OMVDy7+nD7DUiHSskdeHBsyBRPir7nVDfITrzkJLw==
+"@fontsource/encode-sans@4.5.7":
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/encode-sans/-/encode-sans-4.5.7.tgz#57bc90180fe816665b1f761485593edc49efc6fa"
+  integrity sha512-Jfu/9+a7guSj2fiy8ee2quQYJhsR+t59LCDRmQKfMt6G9/CVL61pwLPZEmS1gb9AWx0HP94R85CDYdm1q8Imiw==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@1.5.0":
   version "1.5.0"
