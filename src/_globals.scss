@@ -64,6 +64,7 @@ $aboutCVShadow: 0 0 15px 0 var(--color-accent-shadow-profile);
         )};
     --color-text: #{map.get($theme, "text")};
     --color-border: rgba(0, 0, 0, 0.25);
+    --color-fake-link: #{map.get($theme, "blue")};
 
     --color-skill-1: #{map.get($theme, "red")};
     --color-skill-2: #{map.get($theme, "orange")};
@@ -99,6 +100,7 @@ $aboutCVShadow: 0 0 15px 0 var(--color-accent-shadow-profile);
             )};
         --color-text: #{map.get($theme-light, "text")};
         --color-accent-shadow: #{rgba(map.get($theme, "accent"), 0.3)};
+        --color-fake-link: #{map.get($theme-light, "blue")};
 
         --color-skill-1: #{map.get($theme-light, "red")};
         --color-skill-2: #{map.get($theme-light, "orange")};
