@@ -1909,10 +1909,10 @@
   resolved "https://registry.npmjs.org/@iarna/toml/-/toml-2.2.5.tgz"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
-"@icons-pack/react-simple-icons@5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-5.2.0.tgz#c6bf9bc4b60d76c9155644ac1c35170d31c31300"
-  integrity sha512-98jGZQu3u0opACGlrb2UmS2jODh8ahgdws6f4KLfLqBiWAZG2y+oLDfVxZXxbOF1taQap6OUw4Ao8u0EzJFHZA==
+"@icons-pack/react-simple-icons@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-5.3.0.tgz#40a309743d59a4e7a0312af9f0229152f4d4edf2"
+  integrity sha512-T0QsruRSJafHgR1N6N+fhM7kJ+er5q1qRLI0xEQ5cajX5jAbAVsom5wWt7/UDwZqddReJYYwi2cx/R2viP+EEA==
 
 "@jimp/bmp@^0.16.1":
   version "0.16.1"
