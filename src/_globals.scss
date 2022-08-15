@@ -64,6 +64,7 @@ $aboutCVShadow: 0 0 15px 0 var(--color-accent-shadow-profile);
         )};
     --color-text: #{map.get($theme, "text")};
     --color-border: rgba(0, 0, 0, 0.25);
+    --color-fake-link: #{map.get($theme, "blue")};
 
     --color-skill-1: #{map.get($theme, "red")};
     --color-skill-2: #{map.get($theme, "orange")};
@@ -100,6 +101,7 @@ $aboutCVShadow: 0 0 15px 0 var(--color-accent-shadow-profile);
             )};
         --color-text: #{map.get($theme-light, "text")};
         --color-accent-shadow: #{rgba(map.get($theme, "accent"), 0.3)};
+        --color-fake-link: #{map.get($theme-light, "blue")};
 
         --color-skill-1: #{map.get($theme-light, "red")};
         --color-skill-2: #{map.get($theme-light, "orange")};
@@ -113,7 +115,7 @@ $aboutCVShadow: 0 0 15px 0 var(--color-accent-shadow-profile);
 }
 
 @mixin homeBg {
-    /*background: linear-gradient(45deg, #000850 0%, #000320 100%),
+    background: linear-gradient(45deg, #000850 0%, #000320 100%),
         radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
         linear-gradient(225deg, #ff7a00 0%, #000000 100%),
         linear-gradient(
@@ -127,9 +129,9 @@ $aboutCVShadow: 0 0 15px 0 var(--color-accent-shadow-profile);
             #0f0a3c 67%,
             #0f0a3c 100%
         );
-    background-blend-mode: screen, overlay, hard-light, normal;*/
+    background-blend-mode: screen, overlay, hard-light, normal;
 
-    background: linear-gradient(to bottom, rgba(black, 0.35), transparent 70px),
+   /*background: linear-gradient(to bottom, rgba(black, 0.35), transparent 70px),
         radial-gradient(circle at center, #00000063, transparent 600px),
         radial-gradient(
             circle at top right,
@@ -154,7 +156,7 @@ $aboutCVShadow: 0 0 15px 0 var(--color-accent-shadow-profile);
             #99e8c2,
             #26ceaa,
             #078d70
-        );
+        );*/
 }
 
 @mixin flexList {
