@@ -74,6 +74,7 @@ $aboutCVShadow: 0 0 15px 0 var(--color-accent-shadow-profile);
     --color-notice: #{rgba(map.get($theme, "accent"), 0.15)};
 
     --color-cv-edu: #{map.get($theme, "blue")};
+    --color-cv-intern-apprentice: #{map.get($theme, "orange")};
 
     @media (prefers-color-scheme: light) {
         --color-background: #{map.get($theme-light, "background")};
@@ -107,6 +108,7 @@ $aboutCVShadow: 0 0 15px 0 var(--color-accent-shadow-profile);
         --color-skill-5: #{map.get($theme-light, "purple")};
 
         --color-cv-edu: #{map.get($theme-light, "blue")};
+        --color-cv-intern-apprentice: #{map.get($theme-light, "orange")};
     }
 }
 

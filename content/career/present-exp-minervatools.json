@@ -1,0 +1,21 @@
+{
+    "type": "job-experience",
+    "title": {
+        "en": "MinervaTools",
+        "de": "MinervaTools"
+    },
+    "sortDate": "2021-12-19 13:16:38",
+    "startDate": {
+        "en": "December 2021",
+        "de": "Dezember 2021"
+    },
+    "endDate": {
+        "en": "Present",
+        "de": "Jetzt"
+    },
+    "description": {
+        "de": "Eigenes Unternehmen zum Verkauf von selbstentwickelten Minecraft Plugins und zugehörigen Webpanels.",
+        "en": "Own company for developing and selling Minecraft plugins and corresponding web panels."
+    },
+    "externalLink": "https://minervatools.net"
+}

@@ -12,6 +12,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import {
     ArrowRight,
+    BookOpen,
     Briefcase,
     ExternalLink,
     GraduationCap,
@@ -258,6 +259,12 @@ const AboutPage = (props) => {
                                             {careerEntry.type ==
                                                 "job-experience" && (
                                                 <Briefcase />
+                                            )}
+                                            {(careerEntry.type ==
+                                                "apprenticeship" ||
+                                                careerEntry.type ==
+                                                    "internship") && (
+                                                <BookOpen />
                                             )}
                                             {careerEntry.title[lang]}
                                         </span>

@@ -441,5 +441,13 @@
         &.entryTypeeducation {
             --entry-color: var(--color-cv-edu);
         }
+
+        &.entryTypeapprenticeship {
+            --entry-color: var(--color-cv-intern-apprentice);
+        }
+
+        &.entryTypeinternship {
+            --entry-color: var(--color-cv-intern-apprentice);
+        }
     }
 }
