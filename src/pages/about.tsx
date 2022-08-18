@@ -7,7 +7,6 @@ import * as projectStyles from "./projects.module.scss";
 
 import { Trans, Link } from "gatsby-plugin-react-i18next";
 import { graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import {
@@ -102,7 +101,7 @@ const AboutPage = (props) => {
     const { t, i18n } = useTranslation();
     const { modules } = useSiteMetadata();
 
-    let file = props.data.file;
+    //let file = props.data.file;
 
     const career = props.data.career.nodes;
     const lang = i18n.language;
@@ -120,7 +119,10 @@ const AboutPage = (props) => {
             <section className={styles.aboutSection}>
                 <article>
                     <div className={styles.aboutText}>
-                        <MDXRenderer>{file.childMdx.body}</MDXRenderer>
+                        {/*<MDXRenderer>{file.childMdx.body}</MDXRenderer>*/}
+                        {
+                            // TODO: This.
+                        }
                     </div>
                     <div className={styles.skills}>
                         <h2>

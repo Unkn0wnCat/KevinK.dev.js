@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -11,7 +10,7 @@ import Layout from "../../layouts/default";
 import * as styles from "./post.module.scss";
 import { Link } from "gatsby-plugin-react-i18next";
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data, children }) => {
     const { t } = useTranslation();
 
     return (
@@ -82,15 +81,7 @@ const BlogPost = ({ data }) => {
                         )}
                     </span>
 
-                    <MDXProvider components={{ Chat }}>
-                        <MDXRenderer
-                            localImages={
-                                data.mdx.frontmatter.embeddedImagesLocal
-                            }
-                        >
-                            {data.mdx.body}
-                        </MDXRenderer>
-                    </MDXProvider>
+                    <MDXProvider components={{ Chat }}>{children}</MDXProvider>
 
                     <Utterances
                         repo="Unkn0wnCat/KevinK.dev.js"

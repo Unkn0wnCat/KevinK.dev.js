@@ -42,6 +42,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                             language
                             published(formatString: "YYYY/MM")
                         }
+                        internal {
+                            contentFilePath
+                        }
                     }
                 }
             }
@@ -147,7 +150,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 }/${node.childMdx.frontmatter.published}/${
                     node.childMdx.frontmatter.url
                 }`,
-                component: blogTemplate,
+                component: `${blogTemplate}?__contentFilePath=${node.childMdx.internal.contentFilePath}`,
                 context: {
                     mdxId: node.childMdx.id,
                     lang: node.childMdx.frontmatter.language,

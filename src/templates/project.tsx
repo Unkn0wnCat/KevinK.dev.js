@@ -5,7 +5,6 @@ import Layout from "../layouts/default";
 import PropTypes from "prop-types";
 
 import * as styles from "./project.module.scss";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -58,10 +57,11 @@ export const query = graphql`
 `;
 
 const ProjectTemplate = ({ data }) => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     let project = data.allProjectsJson.nodes[0];
     let projectName = project.name;
     let file = data.file;
+    const lang = i18n.language;
 
     return (
         <Layout
@@ -93,13 +93,11 @@ const ProjectTemplate = ({ data }) => {
                     <div className={styles.headerPlaceholder}></div>
                 </div>
             </section>
-            {file != null && file.childMdx != null ? (
-                <section className={styles.projectAbout}>
-                    <article>
-                        <MDXRenderer>{file.childMdx.body}</MDXRenderer>
-                    </article>
-                </section>
-            ) : null}
+            {file != null && file.childMdx != null
+                ? (() => {
+                      // TODO: This.
+                  })()
+                : null}
             {project.links !== null ? (
                 <section className={styles.projectLinks}>
                     <div>
