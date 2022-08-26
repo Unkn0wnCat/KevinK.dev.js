@@ -67,7 +67,7 @@
         "react-dom": "18.2.0",
         "react-github-btn": "1.3.0",
         "react-helmet": "6.1.0",
-        "react-i18next": "11.18.4",
+        "react-i18next": "11.18.5",
         "sass": "1.54.5",
         "tsparticles": "2.2.3",
         "typed-scss-modules": "6.5.0",
