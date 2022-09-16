@@ -4168,7 +4168,7 @@ cheerio@^1.0.0-rc.10:
     parse5-htmlparser2-tree-adapter "^6.0.1"
     tslib "^2.2.0"
 
-"chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.0, chokidar@^3.4.2, chokidar@^3.5.2, chokidar@^3.5.3:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.0, chokidar@^3.4.2, chokidar@^3.5.3:
   version "3.5.3"
   resolved "https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz"
   integrity sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==
@@ -6093,7 +6093,7 @@ fastparse@^1.1.2:
   resolved "https://registry.npmjs.org/fastparse/-/fastparse-1.1.2.tgz"
   integrity sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==
 
-fastq@^1.11.1, fastq@^1.13.0, fastq@^1.6.0:
+fastq@^1.13.0, fastq@^1.6.0:
   version "1.13.0"
   resolved "https://registry.npmjs.org/fastq/-/fastq-1.13.0.tgz"
   integrity sha512-YpkpUnK8od0o1hmeSc7UUs/eB/vIPWJYjKck2QKIzAf71Vm1AAQ3EbuZB3g2JIy+pg+ERD0vqI79KyZiB2e2Nw==
@@ -6484,22 +6484,6 @@ gatsby-cli@4.23.0, gatsby-cli@^4.23.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^2.14.0:
-  version "2.14.0"
-  resolved "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-2.14.0.tgz"
-  integrity sha512-HDMb1XMqysup9raLYWB0wIQU568R9qPounF7iAwjf2esFUVV5mdBTvxEpune/7yG0RmwhNPhgrEZo2rBHeJf7A==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    ci-info "2.0.0"
-    configstore "^5.0.1"
-    file-type "^16.5.3"
-    fs-extra "^10.0.0"
-    got "^11.8.2"
-    node-object-hash "^2.3.9"
-    proper-lockfile "^4.1.2"
-    tmp "^0.2.1"
-    xdg-basedir "^4.0.0"
-
 gatsby-core-utils@^3.20.0:
   version "3.20.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.20.0.tgz#5f9f1b1777fdf61479f79eb9cf18a72af424c856"
@@ -6795,12 +6779,12 @@ gatsby-plugin-react-i18next@2.0.4:
   optionalDependencies:
     react-helmet "^6.1.0"
 
-gatsby-plugin-remote-images@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-remote-images/-/gatsby-plugin-remote-images-3.4.0.tgz#07e42733457b69aa68c6e65fb013ef9c6b9ff4c0"
-  integrity sha512-S6E6xz9pe++KF87f5wJdgBXgBTWWxlMEpTnDLck4a2b0aeO2E0mqpGdFASNBpTHWKzPnrrnkylnA/iW4lCX9/Q==
+gatsby-plugin-remote-images@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-remote-images/-/gatsby-plugin-remote-images-3.5.0.tgz#80bd781287e1f99f2575d66ad0a417c75219a828"
+  integrity sha512-HzqDN/uxj0y2yTU8nV+QRvrX0O93tKBbjtDtM1C6SEGolpzSoS6NvEzqv7gnRAKmAtOWbQTk+2Nog/mMHwR3/A==
   dependencies:
-    gatsby-source-filesystem "^3.4.0"
+    gatsby-source-filesystem "^4.0.0"
     lodash "^4.17.15"
 
 gatsby-plugin-remove-serviceworker@1.0.0:
@@ -6939,7 +6923,7 @@ gatsby-sharp@^0.17.0:
     "@types/sharp" "^0.30.5"
     sharp "^0.30.7"
 
-gatsby-source-filesystem@4.23.0:
+gatsby-source-filesystem@4.23.0, gatsby-source-filesystem@^4.0.0:
   version "4.23.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.23.0.tgz#fe53f9838cd68e9b782c08acede508d9e59ba0b7"
   integrity sha512-pyGsD3MOOU4+L785uyiDZAsxQ7HsnTxc/13VjOkbZgyXq5J6ya7AmCJUuDjClTc1yXVsCuEEVW6vkOL+BgiyJw==
@@ -6954,25 +6938,6 @@ gatsby-source-filesystem@4.23.0:
     pretty-bytes "^5.4.1"
     valid-url "^1.0.9"
     xstate "4.32.1"
-
-gatsby-source-filesystem@^3.4.0:
-  version "3.14.0"
-  resolved "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-3.14.0.tgz"
-  integrity sha512-Gg5GGxiWXhjapWMYdXOGk7zp+ajYowS+xNmaDUkL1gH+IQLvE18XbvKh00B/HiFaHm4azJfS2QRrRI/mPTZX+w==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    chokidar "^3.5.2"
-    fastq "^1.11.1"
-    file-type "^16.5.3"
-    fs-extra "^10.0.0"
-    gatsby-core-utils "^2.14.0"
-    got "^9.6.0"
-    md5-file "^5.0.0"
-    mime "^2.5.2"
-    pretty-bytes "^5.4.1"
-    progress "^2.0.3"
-    valid-url "^1.0.9"
-    xstate "^4.14.0"
 
 gatsby-telemetry@^3.23.0:
   version "3.23.0"
@@ -7373,7 +7338,7 @@ globby@^11.0.3, globby@^11.0.4, globby@^11.1.0:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
-got@^11.8.2, got@^11.8.3:
+got@^11.8.3:
   version "11.8.3"
   resolved "https://registry.npmjs.org/got/-/got-11.8.3.tgz"
   integrity sha512-7gtQ5KiPh1RtGS9/Jbv1ofDpBFuq42gyfEib+ejaRBJuj/3tQFeR5+gw57e4ipaU8c/rCjvX6fkQz2lyDlGAOg==
@@ -9546,7 +9511,7 @@ node-int64@^0.4.0:
   resolved "https://registry.yarnpkg.com/node-int64/-/node-int64-0.4.0.tgz#87a9065cdb355d3182d8f94ce11188b825c68a3b"
   integrity sha1-h6kGXNs1XTGC2PlM4RGIuCXGijs=
 
-node-object-hash@^2.3.10, node-object-hash@^2.3.9:
+node-object-hash@^2.3.10:
   version "2.3.10"
   resolved "https://registry.npmjs.org/node-object-hash/-/node-object-hash-2.3.10.tgz"
   integrity sha512-jY5dPJzw6NHd/KPSfPKJ+IHoFS81/tJ43r34ZeNMXGzCOM8jwQDCD12HYayKIB6MuznrnqIYy2e891NA2g0ibA==
@@ -13803,11 +13768,6 @@ xstate@4.32.1:
   version "4.32.1"
   resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.32.1.tgz#1a09c808a66072938861a3b4acc5b38460244b70"
   integrity sha512-QYUd+3GkXZ8i6qdixnOn28bL3EvA++LONYL/EMWwKlFSh/hiLndJ8YTnz77FDs+JUXcwU7NZJg7qoezoRHc4GQ==
-
-xstate@^4.14.0:
-  version "4.29.0"
-  resolved "https://registry.npmjs.org/xstate/-/xstate-4.29.0.tgz"
-  integrity sha512-F6WF5s6xG/bm8Oxi2ETuzwGQW8yleL5I4JPxZl49m7Uw7D4LAXu+4dvUK78Uo4D863sM8auqw6+1Xmj9mFlmDQ==
 
 xtend@^4.0.0, xtend@^4.0.1:
   version "4.0.2"
