@@ -12911,10 +12911,10 @@ type@^2.5.0:
   resolved "https://registry.npmjs.org/type/-/type-2.6.0.tgz"
   integrity sha512-eiDBDOmkih5pMbo9OqsqPRGMljLodLcwd5XD5JbtNB0o89xZAwynY9EdCDsJU7LtcVCClu9DvM7/0Ep1hYX3EQ==
 
-typed-scss-modules@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/typed-scss-modules/-/typed-scss-modules-7.0.0.tgz#d435c598bf61fe541da4cd4bb2bcaacff7873c51"
-  integrity sha512-0QjUYnkmwoi2xIG1HTfQYJvZ4uK5mi8cuyogzS8T+mOFTOqAK0zhuVpQ85V9F6b9MUaUkiTFog0p3RpShWY7aQ==
+typed-scss-modules@7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/typed-scss-modules/-/typed-scss-modules-7.0.1.tgz#f6688bba29e6ebf5a6d0a5064bfd85863c334263"
+  integrity sha512-x4qfDUT3WFvHH3NV+aadwEmRDs48JSeFNQsKQNKAzHL2wheZgiSasgkxbUQwzfA/gjwFb8L6+qxyJ3uCV0dJ+w==
   dependencies:
     bundle-require "^3.0.4"
     chalk "4.1.2"
