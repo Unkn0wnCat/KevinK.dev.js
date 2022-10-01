@@ -12571,10 +12571,10 @@ tsparticles-interaction-external-remove@^2.3.3:
   dependencies:
     tsparticles-engine "^2.3.3"
 
-tsparticles-interaction-external-repulse@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/tsparticles-interaction-external-repulse/-/tsparticles-interaction-external-repulse-2.3.3.tgz#4381926bdb983d590c382522d3f4311ea679405f"
-  integrity sha512-1WRH7QMaG6XIKK8LAjmlC9Y/W6tTk3wIcF5he3Dq9xE0N3/uOl+6E/fobh9RZbWUx0NFUts1ymFbc8y3HTZ9iA==
+tsparticles-interaction-external-repulse@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/tsparticles-interaction-external-repulse/-/tsparticles-interaction-external-repulse-2.3.4.tgz#8c149a55cdcfa9a66b0999249d0c07e80b0cdbff"
+  integrity sha512-2JeUN6XEIwepMQYhufOD/gg4Luzk7aZE1fsZbs1fdbtAkHNckmSikzAPpOgMIVGdMCkENJSGn6V+D7UpilfSMw==
   dependencies:
     tsparticles-engine "^2.3.3"
 
@@ -12634,17 +12634,17 @@ tsparticles-particles.js@^2.3.3:
   dependencies:
     tsparticles-engine "^2.3.3"
 
-tsparticles-plugin-absorbers@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/tsparticles-plugin-absorbers/-/tsparticles-plugin-absorbers-2.3.3.tgz#0d83f3aad1b7d3427653e019741da19adbfe9f99"
-  integrity sha512-Uae1A8RT0s+PchuRHhW2JYV2dcBx7WfB8kWjPd+R3YT3NRZ8dos4O3lCh3MYKRb7G1jrRTd5xD5niKPrTehH6A==
+tsparticles-plugin-absorbers@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/tsparticles-plugin-absorbers/-/tsparticles-plugin-absorbers-2.3.4.tgz#49f6d0570b2390fa2df19e8495d819314cd07026"
+  integrity sha512-H2woja+NF405cGPrqzttjKtKP7BklgfdtKXeORFgtdQqetAPF31TqVptRvReTlF7TvLVfIq9Ct962zIQiLJ8jw==
   dependencies:
     tsparticles-engine "^2.3.3"
 
-tsparticles-plugin-emitters@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/tsparticles-plugin-emitters/-/tsparticles-plugin-emitters-2.3.3.tgz#3f6d734fc61e08d162d8be4c8173674d8cd051ae"
-  integrity sha512-rJH42ICS0GErJiBpy1h0cW84lGOi9wEQorMgQLCAPdRM31Tuoo7DUf4qzJ+QJJQlrPMJo3Kel6SCAEMCdmR9WQ==
+tsparticles-plugin-emitters@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/tsparticles-plugin-emitters/-/tsparticles-plugin-emitters-2.3.4.tgz#d39a48d25c8bf349e613c99c8772e5510942b405"
+  integrity sha512-idukwsKpaDhiSNk2tHsNxO9vk2u+HZnLqJpWriNtR3l2NFQBl+vwBbWrHHC3aw2hLVOcB9YWKClMSn2nZE1Jcw==
   dependencies:
     tsparticles-engine "^2.3.3"
 
@@ -12704,10 +12704,10 @@ tsparticles-shape-text@^2.3.3:
   dependencies:
     tsparticles-engine "^2.3.3"
 
-tsparticles-slim@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/tsparticles-slim/-/tsparticles-slim-2.3.3.tgz#6a9053c4620bacff75937350ac3d123fed485ade"
-  integrity sha512-D8tKSn0k3G7nNip87pQ9kzl/z080I/D0UV9CFKX1tXRqTQ7cBNw5S3qe4FpGJSRhSy1VeHgomaapltWzV8sRKA==
+tsparticles-slim@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/tsparticles-slim/-/tsparticles-slim-2.3.4.tgz#e9e0f7f18225b0945536043022f246f2855a5d16"
+  integrity sha512-UGzzdTSewR2cOzFzpSTVieAotdyFoOwujntltEbSziGlgU0B3mVCYOj4F+NeZpRQcIbLiOpqVM0aYPE8rGwfDQ==
   dependencies:
     tsparticles-engine "^2.3.3"
     tsparticles-interaction-external-attract "^2.3.3"
@@ -12718,7 +12718,7 @@ tsparticles-slim@^2.3.3:
     tsparticles-interaction-external-pause "^2.3.3"
     tsparticles-interaction-external-push "^2.3.3"
     tsparticles-interaction-external-remove "^2.3.3"
-    tsparticles-interaction-external-repulse "^2.3.3"
+    tsparticles-interaction-external-repulse "^2.3.4"
     tsparticles-interaction-external-slow "^2.3.3"
     tsparticles-interaction-particles-attract "^2.3.3"
     tsparticles-interaction-particles-collisions "^2.3.3"
@@ -12825,17 +12825,17 @@ tsparticles-updater-wobble@^2.3.3:
   dependencies:
     tsparticles-engine "^2.3.3"
 
-tsparticles@2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-2.3.3.tgz#5a146c70e08b1d1f33d8fa185ef36c9794e1ee99"
-  integrity sha512-AoM/H6JPsyAp3IRhL//sTYeC/ZlJBGvGRmgfhieY/qaJB9mu3rV9F/JiZgSrWWDB37Rh/NGqa7Nac9IBCfWXyg==
+tsparticles@2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-2.3.4.tgz#94ef81a03fed7f389e50250253a138fc34b08317"
+  integrity sha512-0ZZN+Pv0NhS3vKkG1zO7lGXX+TOCq/UKcaGJqjI5aOA8M7ywdsw1+rwXbKygYBrJjs4fltKTgmkA2kVCwYCeMA==
   dependencies:
     tsparticles-engine "^2.3.3"
     tsparticles-interaction-external-trail "^2.3.3"
-    tsparticles-plugin-absorbers "^2.3.3"
-    tsparticles-plugin-emitters "^2.3.3"
+    tsparticles-plugin-absorbers "^2.3.4"
+    tsparticles-plugin-emitters "^2.3.4"
     tsparticles-plugin-polygon-mask "^2.3.3"
-    tsparticles-slim "^2.3.3"
+    tsparticles-slim "^2.3.4"
     tsparticles-updater-destroy "^2.3.3"
     tsparticles-updater-roll "^2.3.3"
     tsparticles-updater-tilt "^2.3.3"
