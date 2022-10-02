@@ -1892,10 +1892,10 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@icons-pack/react-simple-icons@5.7.0":
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-5.7.0.tgz#2585016da0bccaed3b3748dce8f75bab7c661667"
-  integrity sha512-zQtA7+UIxk5qWBcXgVBD6okSuLmSCw6n0D5x8YTim59i+IH5Y35gGPvJDK6ce5eCVNarCODIZylBQXb/OPX33g==
+"@icons-pack/react-simple-icons@5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-5.8.0.tgz#d8e3714dfa13928e94113d97734aeacdca0d468d"
+  integrity sha512-5szUSKt/jslgOsNmH+uRs9wfRVl399Xhwf4//V28H5TXgMXZPaqQ+w82mMwmapsMW6DigFkgynLHZcic43PQRw==
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
