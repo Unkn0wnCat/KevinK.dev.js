@@ -1643,10 +1643,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/encode-sans@4.5.7":
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/encode-sans/-/encode-sans-4.5.7.tgz#57bc90180fe816665b1f761485593edc49efc6fa"
-  integrity sha512-Jfu/9+a7guSj2fiy8ee2quQYJhsR+t59LCDRmQKfMt6G9/CVL61pwLPZEmS1gb9AWx0HP94R85CDYdm1q8Imiw==
+"@fontsource/encode-sans@4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/encode-sans/-/encode-sans-4.5.8.tgz#6686773e7b05cd7a07c87b3117de3f2b0ef73329"
+  integrity sha512-LvD5skW9a/AI3OZuN5iE/AnIT7kFUiKzqooLW7xG/3e9rLJXV2m9rs7TW0h9RIn01c7EWo1P8dIwRKknzKSHdw==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@^1.9.0":
   version "1.9.0"
