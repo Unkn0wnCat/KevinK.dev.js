@@ -32,7 +32,7 @@
         "@types/react-dom": "18.0.6",
         "animejs": "3.2.1",
         "babel-plugin-i18next-extract": "0.8.3",
-        "gatsby": "4.24.3",
+        "gatsby": "4.24.4",
         "gatsby-awesome-pagination": "0.3.8",
         "gatsby-cli": "4.24.0",
         "gatsby-plugin-asset-path": "3.0.4",
