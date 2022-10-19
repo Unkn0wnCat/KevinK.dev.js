@@ -61,7 +61,7 @@
         "i18next": "22.0.0",
         "locale": "0.1.0",
         "lodash": "4.17.21",
-        "lucide-react": "0.91.0",
+        "lucide-react": "0.92.0",
         "prop-types": "15.8.1",
         "react": "18.2.0",
         "react-dom": "18.2.0",
