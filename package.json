@@ -20,7 +20,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "@babel/cli": "7.19.3",
-        "@babel/plugin-transform-typescript": "7.19.3",
+        "@babel/plugin-transform-typescript": "7.20.0",
         "@fontsource/encode-sans": "4.5.9",
         "@icons-pack/react-simple-icons": "5.11.0",
         "@mdx-js/mdx": "1.6.22",
