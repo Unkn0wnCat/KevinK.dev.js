@@ -229,7 +229,7 @@ const IndexPage = (props) => {
             </section>
             <a
                 className={styles.creditSection}
-                href="https://unsplash.com/@jannikkiel"
+                href="https://unsplash.com/@jannikk"
                 target="_blank"
                 rel="noreferrer"
             >
