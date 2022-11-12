@@ -58,7 +58,7 @@
         "gatsby-transformer-json": "4.24.0",
         "gatsby-transformer-sharp": "4.24.0",
         "hamburger-react": "2.5.0",
-        "i18next": "22.0.4",
+        "i18next": "22.0.5",
         "locale": "0.1.0",
         "lodash": "4.17.21",
         "lucide-react": "0.100.0",
