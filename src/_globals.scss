@@ -7,7 +7,7 @@ $mainFont: "Encode SansVariable", sans-serif;
 
 $theme: (
     "accent": #e52b3e,
-    "background": #070707,
+    "background": #03051c,
     "text": white,
     "red": #e52b3e,
     "orange": #e5752b,
@@ -131,7 +131,7 @@ $aboutCVShadow: 0 0 15px 0 var(--color-accent-shadow-profile);
         );
     background-blend-mode: screen, overlay, hard-light, normal;
 
-   /*background: linear-gradient(to bottom, rgba(black, 0.35), transparent 70px),
+    /*background: linear-gradient(to bottom, rgba(black, 0.35), transparent 70px),
         radial-gradient(circle at center, #00000063, transparent 600px),
         radial-gradient(
             circle at top right,
