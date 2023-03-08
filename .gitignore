@@ -6,5 +6,6 @@ public
 /fab.zip
 
 /npm-*.log
+/yarn*.log
 
 .eslintcache

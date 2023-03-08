@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import * as styles from "./index.module.scss";
 
-import { Trans, Link } from "gatsby-plugin-react-i18next";
+import { Trans, Link, Helmet } from "gatsby-plugin-react-i18next";
 import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -113,6 +113,13 @@ const IndexPage = (props) => {
                 xPath: ["article"],
             }}
         >
+            <Helmet>
+                <link
+                    rel="pgpkey"
+                    href="/pgp/BF06118DF3B3B2EA327BB8111460B586646E180D.pub"
+                />
+                <link href="https://twitter.com/Unkn0wnKevin" rel="me"></link>
+            </Helmet>
             <section className={styles.heroSection}>
                 <div
                     className={styles.heroSectionBg}
