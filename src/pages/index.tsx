@@ -127,6 +127,14 @@ const IndexPage = (props) => {
                     rel="token_endpoint"
                     href="https://tokens.indieauth.com/token"
                 />
+                <link
+                    rel="webmention"
+                    href="https://webmention.io/kevink.dev/webmention"
+                />
+                <link
+                    rel="pingback"
+                    href="https://webmention.io/kevink.dev/xmlrpc"
+                />
             </Helmet>
             <section className={styles.heroSection}>
                 <div
