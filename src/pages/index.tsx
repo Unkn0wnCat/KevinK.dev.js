@@ -119,6 +119,14 @@ const IndexPage = (props) => {
                     href="/pgp/BF06118DF3B3B2EA327BB8111460B586646E180D.pub"
                 />
                 <link href="https://twitter.com/Unkn0wnKevin" rel="me"></link>
+                <link
+                    rel="authorization_endpoint"
+                    href="https://indieauth.com/auth"
+                />
+                <link
+                    rel="token_endpoint"
+                    href="https://tokens.indieauth.com/token"
+                />
             </Helmet>
             <section className={styles.heroSection}>
                 <div
